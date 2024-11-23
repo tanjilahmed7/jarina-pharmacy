@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.swiper2 {
+  width: 1180px;
+  height: 100%;
+  overflow: hidden;
+}
+.swiper-slide {
+  width: 220px;
+  height: 222px;
+}
+.custom-next-one,
+.custom-prev-one {
+  cursor: point;
+}
+
+.custom-next-one:hover,
+.custom-prev-one:hover {
+  background-color: #e5e5e5;
+}
