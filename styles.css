@@ -6,9 +6,18 @@
   height: 100%;
   overflow: hidden;
 }
-.swiper-slide {
+.swiper3 {
+  width: 1180px;
+  height: 100%;
+  overflow: hidden;
+}
+.mySwiper2 .swiper-slide {
   width: 220px;
   height: 222px;
+}
+.mySwiper3 .swiper-slide {
+  width: 280px;
+  height: 280px;
 }
 .custom-next-one,
 .custom-prev-one {

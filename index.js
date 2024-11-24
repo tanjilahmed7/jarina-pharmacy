@@ -10,7 +10,7 @@ const mySwiperButton = new Swiper(".mySwiper", {
   document.querySelector(".custom-next").addEventListener("click", () => {
     mySwiperButton.slideNext();
   });
-
+// SLIDER ONE 
   var swiper = new Swiper('.mySwiper2', {
     slidesPerView: 5, 
     spaceBetween: 20, 
@@ -20,4 +20,13 @@ const mySwiperButton = new Swiper(".mySwiper", {
       prevEl: '.custom-prev-one',
     },
   });
-  
+  // SLIDER THREE 
+  var swiper3 = new Swiper('.mySwiper3', {
+    slidesPerView: 4, 
+    spaceBetween: 16, 
+    loop: true, 
+    navigation: {
+      nextEl: '.custom-next-one',
+      prevEl: '.custom-prev-one',
+    },
+  });
