@@ -1,20 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html', './src/**/*.{html,js}'],
-  safelist: [
-    'bg-[url(\'/assets/image\\ 11.png\')]',
-  ],
+  content: ["./*.html", "./src/**/*.{html,js}"],
+  safelist: ["bg-[url('/assets/image\\ 11.png')]"],
   theme: {
     extend: {
-      fontFamily: {
-        oswald: ['Oswald'],
-        manrope: ['Manrope'],
-      
+      backgroundImage: {
+        bgImageMedicinesSection: "url('/assets/Vector 1.png')",
       },
-     
+      fontFamily: {
+        oswald: ["Oswald"],
+        manrope: ["Manrope"],
+      },
     },
   },
-  plugins: [
-    require('daisyui'),
-  ],
-}
+  plugins: [require("daisyui")],
+};

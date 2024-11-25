@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper1 {
+  max-width: 1185px;
+  height: 100%;
+  overflow: hidden;
+}
+
 .swiper2 {
   width: 1180px;
   height: 100%;
@@ -10,6 +17,10 @@
   width: 1180px;
   height: 100%;
   overflow: hidden;
+}
+.mySwiper1 .swiper-slide {
+  width: 220px;
+  height: 222px;
 }
 .mySwiper2 .swiper-slide {
   width: 220px;

@@ -11,13 +11,30 @@ const mySwiperButton = new Swiper(".mySwiper", {
     mySwiperButton.slideNext();
   });
 // SLIDER ONE 
-  var swiper = new Swiper('.mySwiper2', {
+  var swiper = new Swiper('.mySwiper1', {
     slidesPerView: 5, 
     spaceBetween: 20, 
     loop: true, 
     navigation: {
       nextEl: '.custom-next-one',
       prevEl: '.custom-prev-one',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+      },
     },
   });
   // SLIDER THREE 

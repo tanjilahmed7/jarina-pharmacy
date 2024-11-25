@@ -18,18 +18,17 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <body class="bg-[#FFFFFF80]">
+  <body class="bg-[#FAFAFA]">
     <!-- HEADER SECTION  -->
-    <header class="bg-[#FFFFFF80] w-full h-16">
+    <header class="bg-[#FAFAFA] w-full h-16">
       <div class="flex justify-between items-center w-full h-full px-[75px]">
         <a href="./index.html" class="flex items-center gap-2 h-[23px]">
-          
-            <img
-              class="w-[22px] h-[22px] object-contain"
-              src="./assets/Group 1.svg"
-              alt=""
-            />
-       
+          <img
+            class="w-[22px] h-[22px] object-contain"
+            src="./assets/Group 1.svg"
+            alt=""
+          />
+
           <h2 class="font-oswald font-medium text-[28.01px] leading-[44px]">
             Find Med
           </h2>
@@ -62,7 +61,7 @@
     <!-- BANNER SECTION  -->
     <section>
       <div
-        class="bg-[#E3EFF7] h-[586px] relative flex items-center justify-center flex-col rounded-t-[32px] "
+        class="bg-[#E3EFF7] h-[586px] relative flex items-center justify-center flex-col rounded-t-[32px]"
       >
         <!-- CENTER ITEM  -->
         <div class="flex flex-col items-center justify-center">
@@ -196,196 +195,383 @@
       </div>
     </section>
     <!-- POPULAR MEDICINES SECTION  -->
-    <section class="relative w-full h-[1127px] bg-[#FFFFFF80]">
-      <img
-        class="absolute  object-contain  z-0 right-[93px] "
-        src="./assets/Vector 1.png"
-        alt=""
-      />
- 
+    <section
+      class="relative w-full h-[1127px] bg-[#FAFAFA] bg-bgImageMedicinesSection bg-no-repeat"
+    >
       <div
-        class=" w-[1290px] h-[380px] z-[999px] absolute top-[120px] left-[75px] text-center"
+        class="w-full h-full flex flex-col items-center juc py-[120px] overflow-hidden gap-[120px]"
       >
-        <h1
-          class="text-[#013366] text-center font-manrope font-extrabold text-[40px]"
-        >
-          Popular Medicines
-        </h1>
         <!-- SLIDER ONE  -->
-        <div class=" w-[1290px] h-[222px] mt-8 flex flex-col items-center justify-center overflow-hidden border-2 border-red-500">
-          <div class="swiper2 mySwiper2 ">
-            <div class="swiper-wrapper ">
-              <div class="swiper-slide   bg-[#FFFFFF] rounded-[16px]">
-                <img src="./assets/image.png" class="rounded-t-[16px] w-[220px] h-[120px] object-cover" alt="Slide Image">
-                <div class="bg-[#FFFFFF] flex flex-col items-center p-3">
-                  <h1 class="font-manrope font-bold text-lg leading-[23px] text-[#013366]">Paracetamol</h1>
-                  <div class="flex items-center mt-1 mb-3 gap-2">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">10 tablet</span>
-                    <img src="./assets/Ellipse 10.svg" alt="">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">20 mg</span>
+        <div class="h-[380px] lg:w-[1290px]">
+          <h1
+            class="text-[#013366] text-center font-manrope font-extrabold text-[40px] p-0"
+          >
+            Popular Medicines
+          </h1>
+          <!-- SLIDER  -->
+          <div class="flex items-center flex-col justify-center relative mt-8">
+            <div class="swiper1 mySwiper1">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                >
+                  <img
+                    src="./assets/image.png"
+                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                    alt="Slide Image"
+                  />
+                  <div class="flex flex-col items-center p-3">
+                    <h1
+                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
+                    >
+                      Paracetamol
+                    </h1>
+                    <div class="flex items-center mt-1 mb-3 gap-2">
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >10 tablet</span
+                      >
+                      <img src="./assets/Ellipse 10.svg" alt="" />
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >20 mg</span
+                      >
+                    </div>
+                    <h2
+                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
+                    >
+                      $10
+                    </h2>
                   </div>
-                  <h2 class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]">$10 </h2>
+                </div>
+                <div
+                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                >
+                  <img
+                    src="./assets/image (1).png"
+                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                    alt="Slide Image"
+                  />
+                  <div class="flex flex-col items-center p-3">
+                    <h1
+                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
+                    >
+                      Invokana
+                    </h1>
+                    <div class="flex items-center mt-1 mb-3 gap-2">
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >10 tablet</span
+                      >
+                      <img src="./assets/Ellipse 10.svg" alt="" />
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >20 mg</span
+                      >
+                    </div>
+                    <h2
+                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
+                    >
+                      $10
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                >
+                  <img
+                    src="./assets/image (2).png"
+                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                    alt="Slide Image"
+                  />
+                  <div class="flex flex-col items-center p-3">
+                    <h1
+                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
+                    >
+                      Canagliflozin
+                    </h1>
+                    <div class="flex items-center mt-1 mb-3 gap-2">
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >10 tablet</span
+                      >
+                      <img src="./assets/Ellipse 10.svg" alt="" />
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >20 mg</span
+                      >
+                    </div>
+                    <h2
+                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
+                    >
+                      $10
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                >
+                  <img
+                    src="./assets/image (3).png"
+                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                    alt="Slide Image"
+                  />
+                  <div class="flex flex-col items-center p-3">
+                    <h1
+                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
+                    >
+                      Paracetamol
+                    </h1>
+                    <div class="flex items-center mt-1 mb-3 gap-2">
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >10 tablet</span
+                      >
+                      <img src="./assets/Ellipse 10.svg" alt="" />
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >20 mg</span
+                      >
+                    </div>
+                    <h2
+                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
+                    >
+                      $10
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                >
+                  <img
+                    src="./assets/image (5).png"
+                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                    alt="Slide Image"
+                  />
+                  <div class="flex flex-col items-center p-3">
+                    <h1
+                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
+                    >
+                      Abiraterone Acetate
+                    </h1>
+                    <div class="flex items-center mt-1 mb-3 gap-2">
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >10 tablet</span
+                      >
+                      <img src="./assets/Ellipse 10.svg" alt="" />
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >20 mg</span
+                      >
+                    </div>
+                    <h2
+                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
+                    >
+                      $10
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                >
+                  <img
+                    src="./assets/image.png"
+                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                    alt="Slide Image"
+                  />
+                  <div class="flex flex-col items-center p-3">
+                    <h1
+                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
+                    >
+                      Acetate
+                    </h1>
+                    <div class="flex items-center mt-1 mb-3 gap-2">
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >10 tablet</span
+                      >
+                      <img src="./assets/Ellipse 10.svg" alt="" />
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >20 mg</span
+                      >
+                    </div>
+                    <h2
+                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
+                    >
+                      $10
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                >
+                  <img
+                    src="./assets/image (5).png"
+                    class="w-[220px] h-[120px] object-cover"
+                    alt="Slide Image"
+                  />
+                  <div class="flex flex-col items-center p-3">
+                    <h1
+                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
+                    >
+                      Paracetamol
+                    </h1>
+                    <div class="flex items-center mt-1 mb-3 gap-2">
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >10 tablet</span
+                      >
+                      <img src="./assets/Ellipse 10.svg" alt="" />
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >20 mg</span
+                      >
+                    </div>
+                    <h2
+                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
+                    >
+                      $10
+                    </h2>
+                  </div>
+
+                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col
+                  items-center justify-center" >
+                  <img
+                    src="./assets/image.png"
+                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                    alt="Slide Image"
+                  />
+                  <div class="flex flex-col items-center p-3">
+                    <h1
+                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
+                    >
+                      Paracetamol
+                    </h1>
+                    <div class="flex items-center mt-1 mb-3 gap-2">
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >10 tablet</span
+                      >
+                      <img src="./assets/Ellipse 10.svg" alt="" />
+                      <span
+                        class="font-medium text-sm leading-[16px] text-[#334C66]"
+                        >20 mg</span
+                      >
+                    </div>
+                    <h2
+                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
+                    >
+                      $10
+                    </h2>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide  bg-[#FFFFFF]  rounded-[16px]">
-                <img src="./assets/image (1).png" class="rounded-t-[16px] w-[220px] h-[120px] object-cover" alt="Slide Image">
-                <div class="bg-[#FFFFFF] flex flex-col items-center p-3">
-                  <h1 class="font-manrope font-bold text-lg leading-[23px] text-[#013366]">Invokana</h1>
-                  <div class="flex items-center mt-1 mb-3 gap-2">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">10 tablet</span>
-                    <img src="./assets/Ellipse 10.svg" alt="">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">20 mg</span>
-                  </div>
-                  <h2 class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]">$10 </h2>
-                </div>
-              </div>
-              <div class="swiper-slide  bg-[#FFFFFF]  rounded-[16px]">
-                <img src="./assets/image (2).png" class="rounded-t-[16px] w-[220px] h-[120px] object-cover" alt="Slide Image">
-                <div class="bg-[#FFFFFF] flex flex-col items-center p-3">
-                  <h1 class="font-manrope font-bold text-lg leading-[23px] text-[#013366]">Canagliflozin</h1>
-                  <div class="flex items-center mt-1 mb-3 gap-2">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">10 tablet</span>
-                    <img src="./assets/Ellipse 10.svg" alt="">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">20 mg</span>
-                  </div>
-                  <h2 class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]">$10 </h2>
-                </div>
-              </div>
-              <div class="swiper-slide bg-[#FFFFFF] rounded-[16px]">
-                <img src="./assets/image (3).png" class="rounded-t-[16px] w-[220px] h-[120px] object-cover" alt="Slide Image">
-                <div class="bg-[#FFFFFF] flex flex-col items-center p-3">
-                  <h1 class="font-manrope font-bold text-lg leading-[23px] text-[#013366]">Abiraterone Acetate</h1>
-                  <div class="flex items-center mt-1 mb-3 gap-2">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">10 tablet</span>
-                    <img src="./assets/Ellipse 10.svg" alt="">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">20 mg</span>
-                  </div>
-                  <h2 class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]">$10 </h2>
-                </div>
-              </div>
-              <div class="swiper-slide bg-[#FFFFFF] rounded-[16px]">
-                <img src="./assets/image (5).png" class="rounded-t-[16px] w-[220px] h-[120px] object-cover" alt="Slide Image">
-                <div class="bg-[#FFFFFF] flex flex-col items-center p-3">
-                  <h1 class="font-manrope font-bold text-lg leading-[23px] text-[#013366]">Acetate</h1>
-                  <div class="flex items-center mt-1 mb-3 gap-2">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">10 tablet</span>
-                    <img src="./assets/Ellipse 10.svg" alt="">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">20 mg</span>
-                  </div>
-                  <h2 class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]">$10 </h2>
-                </div>
-              </div>
-              <div class="swiper-slide  bg-[#FFFFFF] rounded-[16px]">
-                <img src="./assets/image (5).png" class="w-[220px] h-[120px]  object-cover" alt="Slide Image">
-                <div class="bg-[#FFFFFF] flex flex-col items-center p-3">
-                  <h1 class="font-manrope font-bold text-lg leading-[23px] text-[#013366]">Abiraterone Acetate</h1>
-                  <div class="flex items-center mt-1 mb-3 gap-2">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">10 tablet</span>
-                    <img src="./assets/Ellipse 10.svg" alt="">
-                    <span class="font-medium text-sm leading-[16px] text-[#334C66]">20 mg</span>
-                  </div>
-                  <h2 class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]">$10 </h2>
-                </div>
-              </div>
+              <button
+                class="custom-next-one absolute right-0 top-[123px] transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5]"
+              >
+                <img src="./assets/Frame (5).svg" alt="" />
+              </button>
+              <button
+                class="custom-prev-one absolute left-0 top-[123px] transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center"
+              >
+                <img src="./assets/Frame (4).svg" alt="" />
+              </button>
             </div>
-         
-            <button class="custom-next-one absolute right-0 top-[55%] transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5] ">
-              <img src="./assets/Frame (5).svg" alt="" />
-              
+            <button
+              class="mt-10 py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px]"
+            >
+              View all medicines
             </button>
-            <button class="custom-prev-one absolute left-0 top-[55%] transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center">
-              <img src="./assets/Frame (4).svg" alt="" />
-            </button>
           </div>
-        
         </div>
-        <button class="mt-10 py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px]">View all medicines</button>
-      </div>
-      <!-- EFFORTLESS -->
-      <div
-        class="w-[1188px] h-[387px] absolute bottom-[120px] left-[126px] z-50"
-      >
-      <div>
-        <h1
-          class="text-center text-[#013366] font-manrope font-extrabold text-[40px] leading-[46px]"
-        >
-          It simply works, effortless.
-        </h1>
-        <div class="flex items-center justify-center gap-4 mt-12 z-50">
-          <div
-            class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
-          >
-            <div class="relative w-[180px] h-[180px]">
-              <img src="./assets/Group 19.svg" alt="" />
-              <img
-                class="absolute top-[42px] left-[42px]"
-                src="./assets/12891941.svg"
-                alt=""
-              />
-            </div>
+        <!-- EFFORTLESS  CONTAINER -->
+        <div class="w-[1180px] h-[387px]">
+          <div>
             <h1
-              class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
+              class="text-center text-[#013366] font-manrope font-extrabold text-[40px] leading-[46px]"
             >
-              1. Order your medicine
+              It simply works, effortless.
             </h1>
-            <p
-              class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
-            >
-              Visit our website to browse medications and place your order.
-            </p>
-          </div>
-          <div
-            class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
-          >
-            <div class="relative w-[180px] h-[180px]">
-              <img src="./assets/Group 20.svg" alt="" />
-              <img
-                class="absolute top-[42px] left-[42px]"
-                src="./assets/10476458.svg"
-                alt=""
-              />
+            <div class="flex items-center justify-center gap-4 mt-12 z-50">
+              <div
+                class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
+              >
+                <div class="relative w-[180px] h-[180px]">
+                  <img src="./assets/Group 19.svg" alt="" />
+                  <img
+                    class="absolute top-[42px] left-[42px]"
+                    src="./assets/12891941.svg"
+                    alt=""
+                  />
+                </div>
+                <h1
+                  class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
+                >
+                  1. Order your medicine
+                </h1>
+                <p
+                  class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
+                >
+                  Visit our website to browse medications and place your order.
+                </p>
+              </div>
+              <div
+                class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
+              >
+                <div class="relative w-[180px] h-[180px]">
+                  <img src="./assets/Group 20.svg" alt="" />
+                  <img
+                    class="absolute top-[42px] left-[42px]"
+                    src="./assets/10476458.svg"
+                    alt=""
+                  />
+                </div>
+                <h1
+                  class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
+                >
+                  2. Processing for approval
+                </h1>
+                <p
+                  class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
+                >
+                  One of our licensed prescribers will review your medical
+                  information.
+                </p>
+              </div>
+              <div
+                class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
+              >
+                <div class="relative w-[180px] h-[180px]">
+                  <img src="./assets/Group 21.svg" alt="" />
+                  <img
+                    class="absolute top-[42px] left-[42px]"
+                    src="./assets/2749687.svg"
+                    alt=""
+                  />
+                </div>
+                <h1
+                  class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
+                >
+                  3. Receive your medicine
+                </h1>
+                <p
+                  class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
+                >
+                  Get your essential medication delivered to your door by the
+                  next day
+                </p>
+              </div>
             </div>
-            <h1
-              class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
-            >
-              2. Processing for approval
-            </h1>
-            <p
-              class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
-            >
-              One of our licensed prescribers will review your medical
-              information.
-            </p>
-          </div>
-          <div
-            class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
-          >
-            <div class="relative w-[180px] h-[180px]">
-              <img src="./assets/Group 21.svg" alt="" />
-              <img
-                class="absolute top-[42px] left-[42px]"
-                src="./assets/2749687.svg"
-                alt=""
-              />
-            </div>
-            <h1
-              class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
-            >
-              3. Receive your medicine
-            </h1>
-            <p
-              class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
-            >
-              Get your essential medication delivered to your door by the next
-              day
-            </p>
           </div>
         </div>
       </div>
-        </h1>
-      </div>
+
+      <!-- SLIDER ONE  -->
     </section>
-   <!-- SLIDER TWO    -->
+
+    <!-- SLIDER TWO    -->
     <section>
       <div class="w-full h-[600px]">
         <div class="swiper mySwiper relative h-[600px]">
@@ -467,27 +653,34 @@
           <div
             class="custom-buttons absolute bottom-10 left-[51%] transform -translate-x-1/2 flex items-center space-x-4 z-50 w-[941px] justify-between"
           >
-          <div class="relative flex items-center justify-center mx-auto gap-8">
-            <button
-            class=" custom-prev transition duration-2000 delay-2000 transform hover:scale-110 w-10 h-10 bg-transparent rounded-full flex items-center justify-center border border-[#E5E5E5]"
-          >
-            <img src="./assets/Frame.svg" alt="" />
-          </button>
-          <button
-            class="custom-next transition duration-2000 delay-2000 transform hover:scale-110 w-10 h-10 bg-transparent rounded-full flex items-center justify-center border border-[#E5E5E5]"
-          >
-            <img src="./assets/Frame (1).svg" alt="" />
-          </button>
-          </div>
-         
+            <div
+              class="relative flex items-center justify-center mx-auto gap-8"
+            >
+              <button
+                class="custom-prev transition duration-2000 delay-2000 transform hover:scale-110 w-10 h-10 bg-transparent rounded-full flex items-center justify-center border border-[#E5E5E5]"
+              >
+                <img src="./assets/Frame.svg" alt="" />
+              </button>
+              <button
+                class="custom-next transition duration-2000 delay-2000 transform hover:scale-110 w-10 h-10 bg-transparent rounded-full flex items-center justify-center border border-[#E5E5E5]"
+              >
+                <img src="./assets/Frame (1).svg" alt="" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- AFFORDABLE MEDICINES  -->
     <section>
-      <div class="pt-[120px] flex flex-col items-center relative w-full h-[786px]">
-        <img src="./assets/Vector 1 (1).png" class="w-full absolute bottom-0 z-0" alt="">
+      <div
+        class="pt-[120px] flex flex-col items-center relative w-full h-[786px]"
+      >
+        <img
+          src="./assets/Vector 1 (1).png"
+          class="w-full absolute bottom-0 z-0"
+          alt=""
+        />
         <h1
           class="font-extrabold text-[40px] text-[#013366] leading-[46px] font-manrope"
         >
@@ -500,233 +693,476 @@
           dui scelerisque. Risus euismod placerat bibendum placerat commodo
           adipiscing.
         </p>
-<!-- SLIDER THREE  -->
-<div class=" w-[1290px] h-[360px] mt-8 flex flex-col items-center justify-center overflow-hidden">
-  <div class="swiper3 mySwiper3 ">
-    <div class="swiper-wrapper ">
-      <div class="swiper-slide   bg-[#FFFFFF] rounded-[16px] border border-black flex items-center justify-center">
-        <div class="flex flex-col items-center justify-center w-full h-full">
-          <img src="./assets/Vector.svg" alt="">
-          <h1 class="font-bold text-[22px]  leading-[25px] font-manrope text-[#013366] pt-8">Heart Disease</h1>
-          <small class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer">View all medicines</small>
-        </div>
-      </div>
-      <div class="swiper-slide  bg-[#FFFFFF]  rounded-[16px] border border-black">
-        <div class="flex flex-col items-center justify-center w-full h-full">
-          <img src="./assets/Vector (1).svg" alt="">
-          <h1 class="font-bold text-[22px]  leading-[25px] font-manrope text-[#013366] pt-8">Heart Disease</h1>
-          <small class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer">View all medicines</small>
-        </div>
-      </div>
-      <div class="swiper-slide  bg-[#FFFFFF]  rounded-[16px] border border-black">
-        <div class="flex flex-col items-center justify-center w-full h-full">
-          <img src="./assets/Vector (2).svg" alt="">
-          <h1 class="font-bold text-[22px]  leading-[25px] font-manrope text-[#013366] pt-8">Heart Disease</h1>
-          <small class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer">View all medicines</small>
-        </div>
-      </div>
-      <div class="swiper-slide bg-[#FFFFFF] rounded-[16px] border border-black">
-        <div class="flex flex-col items-center justify-center w-full h-full">
-          <img src="./assets/Vector (3).svg" alt="">
-          <h1 class="font-bold text-[22px]  leading-[25px] font-manrope text-[#013366] pt-8">Heart Disease</h1>
-          <small class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer">View all medicines</small>
-        </div>
-      </div>
-      <div class="swiper-slide bg-[#FFFFFF] rounded-[16px] border border-black">
-        <div class="flex flex-col items-center justify-center w-full h-full">
-          <img src="./assets/Vector (1).svg" alt="">
-          <h1 class="font-bold text-[22px]  leading-[25px] font-manrope text-[#013366] pt-8">Heart Disease</h1>
-          <small class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer">View all medicines</small>
-        </div>
-      </div>
-      <div class="swiper-slide  bg-[#FFFFFF] rounded-[16px] border border-black">
-      
-        <div class="flex flex-col items-center justify-center w-full h-full z-50">
-          <img src="./assets/Vector (1).svg" alt="">
-          <h1 class="font-bold text-[22px]  leading-[25px] font-manrope text-[#013366] pt-8">Heart Disease</h1>
-          <small class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer">View all medicines</small>
-        </div>
-      </div>
-    </div>
- 
-    <button class="custom-next-one absolute right-[75px] top-[55%] transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5] ">
-      <img src="./assets/Frame (5).svg" alt="" />
-      
-    </button>
-    <button class="custom-prev-one absolute left-[75px] top-[55%] transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center">
-      <img src="./assets/Frame (4).svg" alt="" />
-    </button>
-  </div>
+        <!-- SLIDER THREE  -->
+        <div
+          class="w-[1290px] h-[360px] mt-8 flex flex-col items-center justify-center overflow-hidden"
+        >
+          <div class="swiper3 mySwiper3">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide bg-[#FFFFFF] rounded-[16px] border border-black flex items-center justify-center"
+              >
+                <div
+                  class="flex flex-col items-center justify-center w-full h-full"
+                >
+                  <img src="./assets/Vector.svg" alt="" />
+                  <h1
+                    class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
+                  >
+                    Heart Disease
+                  </h1>
+                  <small
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    >View all medicines</small
+                  >
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-[#FFFFFF] rounded-[16px] border border-black"
+              >
+                <div
+                  class="flex flex-col items-center justify-center w-full h-full"
+                >
+                  <img src="./assets/Vector (1).svg" alt="" />
+                  <h1
+                    class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
+                  >
+                    Heart Disease
+                  </h1>
+                  <small
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    >View all medicines</small
+                  >
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-[#FFFFFF] rounded-[16px] border border-black"
+              >
+                <div
+                  class="flex flex-col items-center justify-center w-full h-full"
+                >
+                  <img src="./assets/Vector (2).svg" alt="" />
+                  <h1
+                    class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
+                  >
+                    Heart Disease
+                  </h1>
+                  <small
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    >View all medicines</small
+                  >
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-[#FFFFFF] rounded-[16px] border border-black"
+              >
+                <div
+                  class="flex flex-col items-center justify-center w-full h-full"
+                >
+                  <img src="./assets/Vector (3).svg" alt="" />
+                  <h1
+                    class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
+                  >
+                    Heart Disease
+                  </h1>
+                  <small
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    >View all medicines</small
+                  >
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-[#FFFFFF] rounded-[16px] border border-black"
+              >
+                <div
+                  class="flex flex-col items-center justify-center w-full h-full"
+                >
+                  <img src="./assets/Vector (1).svg" alt="" />
+                  <h1
+                    class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
+                  >
+                    Heart Disease
+                  </h1>
+                  <small
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    >View all medicines</small
+                  >
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-[#FFFFFF] rounded-[16px] border border-black"
+              >
+                <div
+                  class="flex flex-col items-center justify-center w-full h-full z-50"
+                >
+                  <img src="./assets/Vector (1).svg" alt="" />
+                  <h1
+                    class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
+                  >
+                    Heart Disease
+                  </h1>
+                  <small
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    >View all medicines</small
+                  >
+                </div>
+              </div>
+            </div>
 
-</div>
-<button class=" py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px] cursor-pointer z-50">View all medicines</button>
-       
+            <button
+              class="custom-next-one absolute right-[75px] top-[55%] transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5]"
+            >
+              <img src="./assets/Frame (5).svg" alt="" />
+            </button>
+            <button
+              class="custom-prev-one absolute left-[75px] top-[55%] transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              <img src="./assets/Frame (4).svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <button
+          class="py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px] cursor-pointer z-50"
+        >
+          View all medicines
+        </button>
       </div>
     </section>
     <!-- OFFER SECTION  -->
-     <section>
-      <div class="bg-[#007CFA] w-full h-[605px] flex justify-center flex-col items-center ">
-<h1 class="text-center text-[40px] leading-[46px] font-extrabold font-manrope pt-[40px] pb-10 w-[870px] text-[#FFFFFF]">We offer safe, affordable medicines at the lowest possible price.</h1>
-<div class=" mb-[120px] flex gap-5">
-  <div class="bg-[#013366] w-[635px] h-[273px] rounded-[32px] relative overflow-hidden ">
-    <img src="./assets/Vector 3 2.png" class="absolute right-0 z-0 " alt="">
-   <div class="w-full h-full absolute z-50 p-12 flex flex-col justify-between">
- 
-    <div class="w-[400px] flex flex-col gap-4">
-      <h1 class="font-manrope font-bold text-[22px] leading-[25px] text-[#99CCFF]">Who We Are</h1>
-      <p class="font-manrope font-medium text-sm leading-[22px] text-[#99CCFF] pt-4 z-50 ">We are a dedicated team of healthcare professionals, technology innovators, and customer service experts working together to revolutionize the way you buy medicines.</p>
-   
-    </div>
-    <a href="" class="text-[#99CCFF] text-[15px] font-manrope font-semibold leading-[24px] underline cursor-pointer py-[7px]">About us</a>
-   </div>
-  </div>
-  <div class="bg-[#99CCFF] w-[635px] h-[273px] rounded-[32px] relative overflow-hidden ">
-    <img src="./assets/Vector 5 (2).png" class="absolute right-0 z-0 " alt="">
-   <div class="w-full h-full  absolute z-50 p-12 flex flex-col justify-between">
- 
-    <div class="w-[400px] flex flex-col gap-4">
-      <h1 class="font-manrope font-bold text-[22px] leading-[25px] text-[#013366]">Gets medecine at your fingertips</h1>
-      <p class="font-manrope font-medium text-sm leading-[22px] text-[#013366] pt-4 z-50 ">Discover a wide range of medications tailored to your health needs in our Medicine section. Whether you're looking for prescription drugs, over-the-counter remedies.</p>
-   
-    </div>
-    <a href="" class="text-[#013366] text-[15px] font-manrope font-semibold leading-[24px] underline cursor-pointer py-[7px]">View all medicines</a>
-   </div>
-  </div>
-
-</div>
-      </div>
-     </section>
-<!-- FAQ SECTION  -->
- <section>
-  <div class="w-full h-[866px] relative ">
-    <img class="absolute z-0" src="./assets/Vector 2.png" alt="">
-    <div class="my-[120px] mx-[295px] z-50 absolute w-[850px] flex items-center flex-col">
-      <h1 class="text-[#013366] font-manrope text-[40px] leading-[46px] font-extrabold">Frequently asked questions</h1>
-   <!-- TAB CONTAINER  -->
-    <div class=" w-full flex flex-col items-center">
-  <!-- TAB BUTTON  -->
-  <div class="flex gap-4 items-center mt-6">
-    <!-- ACTIVE TAB  -->
-    <button class="bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-bold">Common Questions</button>
-    <button class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium">How it works</button>
-    <button class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium">Orders</button>
-    <button class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium">Delivery</button>
-    <button class=" bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium">Returns</button>
-    </div>
-    <!-- TAB ONTENT  -->
-     <div class="flex gap-4 flex-col w-full mt-10">
-   
-    <div class="collapse collapse-arrow  py-[6px] px-9 bg-[#FFFFFF]">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]">Click to open this one and close others</div>
-      <div class="collapse-content">
-        <p class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]">Yes, you can! Once your prescription is approved by a licensed healthcare provider, you will have the option to download or print the prescription. You can then take it to your local pharmacy to get your medication filled.</p>
-      </div>
-    </div>
-    <div class="collapse collapse-arrow  py-[6px] px-9 bg-[#FFFFFF]">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]">Can I request a treatment on behalf of someone else?</div>
-      <div class="collapse-content">
-        <p class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]">Yes, you can! Once your prescription is approved by a licensed healthcare provider, you will have the option to download or print the prescription. You can then take it to your local pharmacy to get your medication filled.</p>
-      </div>
-    </div>
-    <div class="collapse collapse-arrow  py-[6px] px-9 bg-[#FFFFFF]">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]">How does it work?</div>
-      <div class="collapse-content">
-        <p class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]">Yes, you can! Once your prescription is approved by a licensed healthcare provider, you will have the option to download or print the prescription. You can then take it to your local pharmacy to get your medication filled.</p>
-      </div>
-    </div>
-    <div class="collapse collapse-arrow  py-[6px] px-9 bg-[#FFFFFF]">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]">Medicines are refundable?</div>
-      <div class="collapse-content">
-        <p class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]">Yes, you can! Once your prescription is approved by a licensed healthcare provider, you will have the option to download or print the prescription. You can then take it to your local pharmacy to get your medication filled.</p>
-      </div>
-    </div>
-    <div class="collapse collapse-arrow  py-[6px] px-9 bg-[#FFFFFF]">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]">Is this a legal way to get medication?</div>
-      <div class="collapse-content">
-        <p class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]">Yes, you can! Once your prescription is approved by a licensed healthcare provider, you will have the option to download or print the prescription. You can then take it to your local pharmacy to get your medication filled.</p>
-      </div>
-    </div>
-  
-     </div>
-   
-  
-
-     </div>
-    </div>
-   
-  </div>
- </section>
- <!-- FOOTER SECTION  -->
-  <footer>
-    <div class="bg-[#001933] w-full h-[555px] relative flex justify-between">
-      <img class="absolute bottom-0" src="./assets/Vector 4.png" alt="">
-      <div class="flex flex-col w-[517px] gap-[169px] pt-[80px] ml-[75px]">
-        <div class="flex flex-col gap-2 w-[321px]">
-          <div class="flex items-center gap-2">
+    <section>
+      <div
+        class="bg-[#007CFA] w-full h-[605px] flex justify-center flex-col items-center"
+      >
+        <h1
+          class="text-center text-[40px] leading-[46px] font-extrabold font-manrope pt-[40px] pb-10 w-[870px] text-[#FFFFFF]"
+        >
+          We offer safe, affordable medicines at the lowest possible price.
+        </h1>
+        <div class="mb-[120px] flex gap-5">
+          <div
+            class="bg-[#013366] w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
+          >
             <img
-            class="w-[22px] h-[22px] object-contain"
-            src="./assets/Group 1.svg"
-            alt=""
-          />
-          <h1 class="font-medium text-[28px] leading-[44px] font-oswald text-[#FFFFFF]">Find Med</h1>
-          </div>
-       
-        <h3 class="text-[40px] leading-[48px] font-manrope font-medium text-[#D8D8D8]">Your trusted medicine partner</h3>
-        </div>
-        <div class="flex gap-6 flex-col">
-          <p class="text-[#D8D8D8] font-medium font-manrope text-base leading-[25px]">We are a dedicated team of healthcare professionals, technology innovators, and customer service experts.</p>
-          <p class="text-[#D8D8D899] font-manrope font-medium text-sm leading-[22px]">All right reserved by the company 2024</p>
-        </div>
-       
-      </div>
-      <div class="mt-20 mr-[75px] w-[475px] h-[416px] flex flex-col justify-between ">
-        <div class="flex justify-between ">
-          <div class=" flex flex-col gap-4">
-            <h1 class="font-extrabold text-lg leading-7 font-manrope text-[#FFFFFF] ">Home</h1>
-            <div class="flex flex-col gap-3">
-              <small class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer">Home</small>
-            <small class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer">About us</small>
-            <small class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer">Medications</small>
-            <small class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer">Help</small>
-            </div>
-          </div>
-          <div class=" flex flex-col gap-12">
-            <div class="flex gap-4 flex-col">
-              <h1 class="font-extrabold text-lg leading-7 font-manrope text-[#FFFFFF]">Contact us</h1>
-              <div class="flex flex-col gap-3">
-                <small class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer">Northern hill, New york, USA</small>
-                <small class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer">+88 01723998977</small>
+              src="./assets/Vector 3 2.png"
+              class="absolute right-0 z-0"
+              alt=""
+            />
+            <div
+              class="w-full h-full absolute z-50 p-12 flex flex-col justify-between"
+            >
+              <div class="w-[400px] flex flex-col gap-4">
+                <h1
+                  class="font-manrope font-bold text-[22px] leading-[25px] text-[#99CCFF]"
+                >
+                  Who We Are
+                </h1>
+                <p
+                  class="font-manrope font-medium text-sm leading-[22px] text-[#99CCFF] pt-4 z-50"
+                >
+                  We are a dedicated team of healthcare professionals,
+                  technology innovators, and customer service experts working
+                  together to revolutionize the way you buy medicines.
+                </p>
               </div>
-       
-             
+              <a
+                href=""
+                class="text-[#99CCFF] text-[15px] font-manrope font-semibold leading-[24px] underline cursor-pointer py-[7px]"
+                >About us</a
+              >
             </div>
+          </div>
+          <div
+            class="bg-[#99CCFF] w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
+          >
+            <img
+              src="./assets/Vector 5 (2).png"
+              class="absolute right-0 z-0"
+              alt=""
+            />
+            <div
+              class="w-full h-full absolute z-50 p-12 flex flex-col justify-between"
+            >
+              <div class="w-[400px] flex flex-col gap-4">
+                <h1
+                  class="font-manrope font-bold text-[22px] leading-[25px] text-[#013366]"
+                >
+                  Gets medecine at your fingertips
+                </h1>
+                <p
+                  class="font-manrope font-medium text-sm leading-[22px] text-[#013366] pt-4 z-50"
+                >
+                  Discover a wide range of medications tailored to your health
+                  needs in our Medicine section. Whether you're looking for
+                  prescription drugs, over-the-counter remedies.
+                </p>
+              </div>
+              <a
+                href=""
+                class="text-[#013366] text-[15px] font-manrope font-semibold leading-[24px] underline cursor-pointer py-[7px]"
+                >View all medicines</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ SECTION  -->
+    <section>
+      <div class="w-full h-[866px] relative">
+        <img class="absolute z-0" src="./assets/Vector 2.png" alt="" />
+        <div
+          class="my-[120px] mx-[295px] z-50 absolute w-[850px] flex items-center flex-col"
+        >
+          <h1
+            class="text-[#013366] font-manrope text-[40px] leading-[46px] font-extrabold"
+          >
+            Frequently asked questions
+          </h1>
+          <!-- TAB CONTAINER  -->
+          <div class="w-full flex flex-col items-center">
+            <!-- TAB BUTTON  -->
+            <div class="flex gap-4 items-center mt-6">
+              <!-- ACTIVE TAB  -->
+              <button
+                class="bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-bold"
+              >
+                Common Questions
+              </button>
+              <button
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium"
+              >
+                How it works
+              </button>
+              <button
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium"
+              >
+                Orders
+              </button>
+              <button
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium"
+              >
+                Delivery
+              </button>
+              <button
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium"
+              >
+                Returns
+              </button>
+            </div>
+            <!-- TAB ONTENT  -->
+            <div class="flex gap-4 flex-col w-full mt-10">
+              <div class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]">
+                <input type="radio" name="my-accordion-2" />
+                <div
+                  class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                >
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p
+                    class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                  >
+                    Yes, you can! Once your prescription is approved by a
+                    licensed healthcare provider, you will have the option to
+                    download or print the prescription. You can then take it to
+                    your local pharmacy to get your medication filled.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]">
+                <input type="radio" name="my-accordion-2" />
+                <div
+                  class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                >
+                  Can I request a treatment on behalf of someone else?
+                </div>
+                <div class="collapse-content">
+                  <p
+                    class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                  >
+                    Yes, you can! Once your prescription is approved by a
+                    licensed healthcare provider, you will have the option to
+                    download or print the prescription. You can then take it to
+                    your local pharmacy to get your medication filled.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]">
+                <input type="radio" name="my-accordion-2" />
+                <div
+                  class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                >
+                  How does it work?
+                </div>
+                <div class="collapse-content">
+                  <p
+                    class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                  >
+                    Yes, you can! Once your prescription is approved by a
+                    licensed healthcare provider, you will have the option to
+                    download or print the prescription. You can then take it to
+                    your local pharmacy to get your medication filled.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]">
+                <input type="radio" name="my-accordion-2" />
+                <div
+                  class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                >
+                  Medicines are refundable?
+                </div>
+                <div class="collapse-content">
+                  <p
+                    class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                  >
+                    Yes, you can! Once your prescription is approved by a
+                    licensed healthcare provider, you will have the option to
+                    download or print the prescription. You can then take it to
+                    your local pharmacy to get your medication filled.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]">
+                <input type="radio" name="my-accordion-2" />
+                <div
+                  class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                >
+                  Is this a legal way to get medication?
+                </div>
+                <div class="collapse-content">
+                  <p
+                    class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                  >
+                    Yes, you can! Once your prescription is approved by a
+                    licensed healthcare provider, you will have the option to
+                    download or print the prescription. You can then take it to
+                    your local pharmacy to get your medication filled.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION  -->
+    <footer>
+      <div class="bg-[#001933] w-full h-[555px] relative flex justify-between">
+        <img class="absolute bottom-0" src="./assets/Vector 4.png" alt="" />
+        <div class="flex flex-col w-[517px] gap-[169px] pt-[80px] ml-[75px]">
+          <div class="flex flex-col gap-2 w-[321px]">
+            <div class="flex items-center gap-2">
+              <img
+                class="w-[22px] h-[22px] object-contain"
+                src="./assets/Group 1.svg"
+                alt=""
+              />
+              <h1
+                class="font-medium text-[28px] leading-[44px] font-oswald text-[#FFFFFF]"
+              >
+                Find Med
+              </h1>
+            </div>
+
+            <h3
+              class="text-[40px] leading-[48px] font-manrope font-medium text-[#D8D8D8]"
+            >
+              Your trusted medicine partner
+            </h3>
+          </div>
+          <div class="flex gap-6 flex-col">
+            <p
+              class="text-[#D8D8D8] font-medium font-manrope text-base leading-[25px]"
+            >
+              We are a dedicated team of healthcare professionals, technology
+              innovators, and customer service experts.
+            </p>
+            <p
+              class="text-[#D8D8D899] font-manrope font-medium text-sm leading-[22px]"
+            >
+              All right reserved by the company 2024
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-20 mr-[75px] w-[475px] h-[416px] flex flex-col justify-between"
+        >
+          <div class="flex justify-between">
             <div class="flex flex-col gap-4">
-              <h1 class="font-extrabold text-lg text-[#FFFFFF] leading-7 font-manrope">Find us on</h1>
-              <div class="flex gap-6">
-                <button><img src="./assets/Frame (7).svg" alt=""></button>
-               <button> <img src="./assets/Frame (8).svg" alt=""></button>
-                <button><img src="./assets/Frame (9).svg" alt="">
-                </button>
+              <h1
+                class="font-extrabold text-lg leading-7 font-manrope text-[#FFFFFF]"
+              >
+                Home
+              </h1>
+              <div class="flex flex-col gap-3">
+                <small
+                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >Home</small
+                >
+                <small
+                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >About us</small
+                >
+                <small
+                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >Medications</small
+                >
+                <small
+                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >Help</small
+                >
               </div>
             </div>
-
+            <div class="flex flex-col gap-12">
+              <div class="flex gap-4 flex-col">
+                <h1
+                  class="font-extrabold text-lg leading-7 font-manrope text-[#FFFFFF]"
+                >
+                  Contact us
+                </h1>
+                <div class="flex flex-col gap-3">
+                  <small
+                    class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                    >Northern hill, New york, USA</small
+                  >
+                  <small
+                    class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                    >+88 01723998977</small
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="font-extrabold text-lg text-[#FFFFFF] leading-7 font-manrope"
+                >
+                  Find us on
+                </h1>
+                <div class="flex gap-6">
+                  <button><img src="./assets/Frame (7).svg" alt="" /></button>
+                  <button><img src="./assets/Frame (8).svg" alt="" /></button>
+                  <button><img src="./assets/Frame (9).svg" alt="" /></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-12">
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              >Privacy policy</small
+            >
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              >T&C
+            </small>
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              >Cookie policy</small
+            >
           </div>
         </div>
-        <div class="flex gap-12">
-          <small class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]">Privacy policy</small>
-          <small class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]">T&C </small>
-          <small class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]">Cookie policy</small>
-
-        </div>
       </div>
-
-    </div>
-  </footer>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./index.js"></script>
