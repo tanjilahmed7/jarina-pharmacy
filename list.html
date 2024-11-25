@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION  -->
+    <header class="bg-[#FFFFFF80] w-full h-16">
+      <div class="flex justify-between items-center w-full h-full px-[75px]">
+        <a href="./index.html" class="flex items-center gap-2 h-[23px]">
+          <img
+            class="w-[22px] h-[22px] object-contain"
+            src="./assets/Group 1.svg"
+            alt=""
+          />
+
+          <h2 class="font-oswald font-medium text-[28.01px] leading-[44px]">
+            Find Med
+          </h2>
+        </a>
+
+        <div class="flex gap-[56px]">
+          <ul
+            class="flex items-center gap-10 font-manrope font-semibold text-[15px]"
+          >
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a>Medications</a>
+            <a>Help</a>
+          </ul>
+          <div class="flex gap-3">
+            <button
+              class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+            >
+              Log in
+            </button>
+            <button
+              class="bg-[#011575] text-[#FFFFFF] py-[7px] px-5 rounded-[80px] font-manrope font-semibold text-[15px]"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- PRODUCT LIST HERO SECTION  -->
+    <section>
+      <div class="relative flex flex-col items-center">
+        <div
+          class="w-full bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] h-[283px] rounded-t-[32px] flex items-end justify-center relative"
+        >
+          <img
+            src="./assets/list-banner2.png"
+            class="absolute right-0 top-[75px]"
+            alt=""
+          />
+          <div class="w-[1290px] h-[208px] relative">
+            <div
+              class="w-full h-full bg-[#C0D4F04D] backdrop-blur-[31px] rounded-[32px] absolute"
+            >
+              <img
+                src="./assets/list-banner.png"
+                class="absolute top-[15px] left-[58px]"
+                alt=""
+              />
+              <div
+                class="flex items-center justify-center mt-11 flex-col gap-8"
+              >
+                <h1
+                  class="text-center text-[#011575] text-[28px] font-extrabold leading-[32px] font-manrope"
+                >
+                  Find necessary Medications
+                </h1>
+                <div
+                  class="flex items-center justify-between w-[920px] h-[56px] rounded-[80px] bg-[#FFFF] pl-8 pr-1 py-1"
+                >
+                  <input
+                    type="text"
+                    class="font-manrope font-normal text-base bg-none w-full outline-none"
+                    placeholder="Search for medicine, brand name..."
+                  />
+                  <div class="bg-[#53DDFF] py-3 px-[12.05px] rounded-[80px]">
+                    <img
+                      class="w-6 h-6 object-contain"
+                      src="./assets/search-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-4 w-[1290px] h-[376px] my-10 p-8 shadow-md rounded-3xl"
+        >
+          <div class="grid grid-rows-8 gap-6 list-none">
+            <li
+              class="underline font-bold font-manrope text-base leading-[18px] text-[#011575] list-none"
+            >
+              All medication
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Acid Reflux
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Alcohol Dependence
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Angina
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              ALS
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Allergies Control
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Blood
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Bone Health
+            </li>
+          </div>
+          <div class="grid grid-rows-8 gap-6 list-none">
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Product List
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Chronic Dry Eye
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Colonoscopy Preparation
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Cough
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Crohn's Disease
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Dementia
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Dental Care
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Diabetes
+            </li>
+          </div>
+          <div class="grid grid-rows-8 gap-6 list-none">
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Diuretic
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Erectile Dysfunction
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Eye Health
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Fertility
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Gallstone
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Gastrointestinal
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Glaucoma
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Gout
+            </li>
+          </div>
+          <div class="grid grid-rows-8 gap-6 list-none">
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Hair & Skin Health
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Hemorrhage
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Hemorrhoids
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              High Blood Pressure
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              High Cholesterol
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              High Potassium
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              HIV
+            </li>
+            <li
+              class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
+            >
+              Hemorrhage
+            </li>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
