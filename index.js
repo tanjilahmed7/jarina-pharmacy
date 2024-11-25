@@ -1,15 +1,15 @@
 
-const mySwiperButton = new Swiper(".mySwiper", {
-    loop: true,
-  });
+// const mySwiperButton = new Swiper(".mySwiper", {
+//     loop: true,
+//   });
   
-  document.querySelector(".custom-prev").addEventListener("click", () => {
-    mySwiperButton.slidePrev();
-  });
+//   document.querySelector(".custom-prev").addEventListener("click", () => {
+//     mySwiperButton.slidePrev();
+//   });
   
-  document.querySelector(".custom-next").addEventListener("click", () => {
-    mySwiperButton.slideNext();
-  });
+//   document.querySelector(".custom-next").addEventListener("click", () => {
+//     mySwiperButton.slideNext();
+//   });
 // SLIDER ONE 
   var swiper = new Swiper('.mySwiper1', {
     slidesPerView: 5, 
@@ -37,6 +37,14 @@ const mySwiperButton = new Swiper(".mySwiper", {
       },
     },
   });
+  var swiper2 = new Swiper('.mySwiper2', {
+    slidesPerView: 1, 
+    loop: true, 
+    navigation: {
+      nextEl: '.custom2-next-one',
+      prevEl: '.custom2-prev-one',
+    },
+  });
   // SLIDER THREE 
   var swiper3 = new Swiper('.mySwiper3', {
     slidesPerView: 4, 
@@ -47,3 +55,4 @@ const mySwiperButton = new Swiper(".mySwiper", {
       prevEl: '.custom-prev-one',
     },
   });
+  
