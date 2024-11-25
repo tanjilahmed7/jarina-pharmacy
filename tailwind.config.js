@@ -6,7 +6,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         bgImageMedicinesSection: "url('/assets/Vector 1.png')",
-        bgImageSliderSection: "url('/assets/image (4).png')",
+        bgImageFaqSection: "url('/assets/Vector 2.png')",
+        bgAffordableSection:"url('/assets/Vector 1 (1).png')",
       },
       fontFamily: {
         oswald: ["Oswald"],

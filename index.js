@@ -51,8 +51,8 @@
     spaceBetween: 16, 
     loop: true, 
     navigation: {
-      nextEl: '.custom-next-one',
-      prevEl: '.custom-prev-one',
+      nextEl: '.custom3-next-one',
+      prevEl: '.custom3-prev-one',
     },
   });
   
