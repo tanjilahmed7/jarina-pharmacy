@@ -1,0 +1,13 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 19">
+<path id="Ellipse 13" d="M178.615 90C178.615 138.941 138.941 178.615 90 178.615C41.0591 178.615 1.38462 138.941 1.38462 90C1.38462 41.0591 41.0591 1.38462 90 1.38462C138.941 1.38462 178.615 41.0591 178.615 90Z" fill="#61C02E" fill-opacity="0.3" stroke="#EEFFE5" stroke-width="2.76923"/>
+<g id="Mask group">
+<mask id="mask0_219_192" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="180" height="180">
+<ellipse id="Ellipse 13_2" cx="90" cy="90" rx="90" ry="90" fill="white"/>
+</mask>
+<g mask="url(#mask0_219_192)">
+<path id="Vector 3" opacity="0.5" d="M-302.979 -45.4005C-256.12 0.357537 35.0086 195.384 92.164 37.3605C122.098 -45.4005 -47.4125 -78.5977 -31.9407 46.4927C-13.6687 194.223 -211.837 195.747 -193.556 188.08" stroke="#EEFFE6" stroke-width="27.6923"/>
+</g>
+</g>
+</g>
+</svg>

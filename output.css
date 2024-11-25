@@ -1566,6 +1566,10 @@ details.collapse summary::-webkit-details-marker {
   z-index: 999px;
 }
 
+.-z-50 {
+  z-index: -50;
+}
+
 .mx-\[295px\] {
   margin-left: 295px;
   margin-right: 295px;
@@ -1584,6 +1588,11 @@ details.collapse summary::-webkit-details-marker {
 .my-\[7px\] {
   margin-top: 7px;
   margin-bottom: 7px;
+}
+
+.mx-\[75px\] {
+  margin-left: 75px;
+  margin-right: 75px;
 }
 
 .mb-3 {
@@ -1634,8 +1643,20 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 2rem;
 }
 
+.mt-\[63px\] {
+  margin-top: 63px;
+}
+
+.mt-\[64px\] {
+  margin-top: 64px;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-10 {
@@ -1782,6 +1803,10 @@ details.collapse summary::-webkit-details-marker {
   height: 488px;
 }
 
+.h-\[799px\] {
+  height: 799px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1908,6 +1933,10 @@ details.collapse summary::-webkit-details-marker {
 
 .w-\[197px\] {
   width: 197px;
+}
+
+.w-\[633px\] {
+  width: 633px;
 }
 
 .-translate-x-1\/2 {
