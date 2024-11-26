@@ -42,3 +42,9 @@
 .content.active {
   display: block;
 }
+.btn {
+  padding: 7px 20px;
+  border: 1px solid crimson;
+  border-radius: 80px;
+  display: inline-flex;
+}
