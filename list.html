@@ -86,20 +86,83 @@
                 >
                   Find necessary Medications
                 </h1>
-                <div
-                  class="flex items-center justify-between w-[920px] h-[56px] rounded-[80px] bg-[#FFFF] pl-8 pr-1 py-1"
-                >
-                  <input
-                    type="text"
-                    class="font-manrope font-normal text-base bg-none w-full outline-none"
-                    placeholder="Search for medicine, brand name..."
-                  />
-                  <div class="bg-[#53DDFF] py-3 px-[12.05px] rounded-[80px]">
-                    <img
-                      class="w-6 h-6 object-contain"
-                      src="./assets/search-icon.svg"
-                      alt=""
+                <div class="w-[920px] h-[56px]">
+                  <!-- SEARCH BOX  -->
+                  <div
+                    class="flex items-center justify-between rounded-[80px] bg-[#FFFF] pl-8 pr-1 py-1"
+                  >
+                    <input
+                      id="medicine-search-box"
+                      type="text"
+                      class="font-manrope font-normal text-base bg-none w-full outline-none"
+                      placeholder="Search for medicine, brand name..."
+                      autocomplete="off"
                     />
+                    <div class="bg-[#53DDFF] py-3 px-[12.05px] rounded-[80px]">
+                      <img
+                        class="w-6 h-6 object-contain"
+                        src="./assets/search-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- RESULT BOX  -->
+                  <div
+                    class="bg-[#FFFFFF] shadow-custom rounded-[8px] pt-3 pb-[2px] px-6 border border-[#E2EAF6] result"
+                  >
+                    <h1
+                      class="text-sm text-[#011575] font-manrope font-medium leading-[22px]"
+                    >
+                      Medications
+                    </h1>
+                    <!-- <div class="h-[62px] py-[6px]">
+                      <h1
+                        class="font-manrope font-bold text-base text-[#011575] leading-[25px]"
+                      >
+                        Amiloride HCl
+                      </h1>
+                      <p
+                        class="text-[#334C66] text-sm font-manrope font-medium leading-[22px]"
+                      >
+                        Generic for Midamor
+                      </p>
+                    </div>
+                    <div class="h-[62px] py-[6px]">
+                      <h1
+                        class="font-manrope font-bold text-base text-[#011575] leading-[25px]"
+                      >
+                        Amiloride-Hydrochlorothiazide
+                      </h1>
+                      <p
+                        class="text-[#334C66] text-sm font-manrope font-medium leading-[22px]"
+                      >
+                        GGeneric for Midamor
+                      </p>
+                    </div>
+                    <div class="h-[62px] py-[6px]">
+                      <h1
+                        class="font-manrope font-bold text-base text-[#011575] leading-[25px]"
+                      >
+                        Amiloride HCl
+                      </h1>
+                      <p
+                        class="text-[#334C66] text-sm font-manrope font-medium leading-[22px]"
+                      >
+                        Generic for Moduretic
+                      </p>
+                    </div>
+                    <div class="h-[62px] py-[6px]">
+                      <h1
+                        class="font-manrope font-bold text-base text-[#011575] leading-[25px]"
+                      >
+                        Amiloride-Hydrochlorothiazide
+                      </h1>
+                      <p
+                        class="text-[#334C66] text-sm font-manrope font-medium leading-[22px]"
+                      >
+                        Generic for Moduretic
+                      </p>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -280,5 +343,6 @@
         </div>
       </div>
     </section>
+    <script src="./list.js"></script>
   </body>
 </html>

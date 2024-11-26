@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -574,7 +573,7 @@
             <div class="swiper-slide relative">
               <img
                 src="./assets/image (4).png"
-                class="w-full h-full absolute z-0 top-0"
+                class="w-full h-full absolute z-0 top-0 object-cover"
                 alt=""
               />
               <div
@@ -604,7 +603,7 @@
             <div class="swiper-slide relative">
               <img
                 src="./assets/image (4).png"
-                class="w-full h-full absolute z-0 top-0"
+                class="w-full h-full absolute z-0 top-0 object-cover"
                 alt=""
               />
               <div
@@ -634,7 +633,7 @@
             <div class="swiper-slide relative">
               <img
                 src="./assets/image (4).png"
-                class="w-full h-full absolute z-0 top-0"
+                class="w-full h-full absolute z-0 top-0 object-cover"
                 alt=""
               />
               <div
@@ -664,7 +663,7 @@
             <div class="swiper-slide relative">
               <img
                 src="./assets/image (4).png"
-                class="w-full h-full absolute z-0 top-0"
+                class="w-full h-full absolute z-0 top-0 object-cover"
                 alt=""
               />
               <div
@@ -953,125 +952,376 @@
           </h1>
           <!-- TAB CONTAINER  -->
           <div class="w-full flex flex-col items-center">
-            <!-- TAB BUTTON  -->
+            <!-- TAB BUTTONS -->
             <div class="flex gap-4 items-center mt-6">
-              <!-- ACTIVE TAB  -->
               <button
-                class="bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-bold"
+                class="bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-bold tab_btn"
               >
                 Common Questions
               </button>
               <button
-                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium"
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
               >
                 How it works
               </button>
               <button
-                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium"
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
               >
                 Orders
               </button>
               <button
-                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium"
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
               >
                 Delivery
               </button>
               <button
-                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium"
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
               >
                 Returns
               </button>
             </div>
-            <!-- TAB ONTENT  -->
-            <div class="flex gap-4 flex-col w-full mt-10">
-              <div class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]">
-                <input type="radio" name="my-accordion-2" checked="checked" />
-                <div
-                  class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
-                >
-                  Click to open this one and close others
-                </div>
-                <div class="collapse-content">
-                  <p
-                    class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+
+            <!-- TAB CONTENT CONTAINER -->
+            <div class="h-[468px] w-full tab_container">
+              <!-- TAB CONTENTS ONE -->
+              <div id="common-questions" class="content active">
+                <div class="flex gap-4 flex-col w-full mt-10">
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
                   >
-                    Yes, you can! Once your prescription is approved by a
-                    licensed healthcare provider, you will have the option to
-                    download or print the prescription. You can then take it to
-                    your local pharmacy to get your medication filled.
-                  </p>
+                    <input
+                      type="radio"
+                      name="my-accordion-2"
+                      checked="checked"
+                    />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      How does it work?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Medicines are refundable?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Is this a legal way to get medication?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]">
-                <input type="radio" name="my-accordion-2" />
-                <div
-                  class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
-                >
-                  Can I request a treatment on behalf of someone else?
-                </div>
-                <div class="collapse-content">
-                  <p
-                    class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+              <div id="how-it-works" class="content hidden">
+                <div class="flex gap-4 flex-col w-full mt-10">
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
                   >
-                    Yes, you can! Once your prescription is approved by a
-                    licensed healthcare provider, you will have the option to
-                    download or print the prescription. You can then take it to
-                    your local pharmacy to get your medication filled.
-                  </p>
+                    <input
+                      type="radio"
+                      name="my-accordion-2"
+                      checked="checked"
+                    />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      How does it work?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Medicines are refundable?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]">
-                <input type="radio" name="my-accordion-2" />
-                <div
-                  class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
-                >
-                  How does it work?
-                </div>
-                <div class="collapse-content">
-                  <p
-                    class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+              <div id="orders" class="content hidden">
+                <div class="flex gap-4 flex-col w-full mt-10">
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
                   >
-                    Yes, you can! Once your prescription is approved by a
-                    licensed healthcare provider, you will have the option to
-                    download or print the prescription. You can then take it to
-                    your local pharmacy to get your medication filled.
-                  </p>
+                    <input
+                      type="radio"
+                      name="my-accordion-2"
+                      checked="checked"
+                    />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      How does it work?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]">
-                <input type="radio" name="my-accordion-2" />
-                <div
-                  class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
-                >
-                  Medicines are refundable?
-                </div>
-                <div class="collapse-content">
-                  <p
-                    class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+              <div id="delivery" class="content hidden">
+                <div class="flex gap-4 flex-col w-full mt-10">
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
                   >
-                    Yes, you can! Once your prescription is approved by a
-                    licensed healthcare provider, you will have the option to
-                    download or print the prescription. You can then take it to
-                    your local pharmacy to get your medication filled.
-                  </p>
+                    <input
+                      type="radio"
+                      name="my-accordion-2"
+                      checked="checked"
+                    />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]">
-                <input type="radio" name="my-accordion-2" />
-                <div
-                  class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
-                >
-                  Is this a legal way to get medication?
-                </div>
-                <div class="collapse-content">
-                  <p
-                    class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+              <div id="returns" class="content hidden">
+                <div class="flex gap-4 flex-col w-full mt-10">
+                  <div
+                    class="collapse collapse-arrow py-[6px] px-9 bg-[#FFFFFF]"
                   >
-                    Yes, you can! Once your prescription is approved by a
-                    licensed healthcare provider, you will have the option to
-                    download or print the prescription. You can then take it to
-                    your local pharmacy to get your medication filled.
-                  </p>
+                    <input
+                      type="radio"
+                      name="my-accordion-2"
+                      checked="checked"
+                    />
+                    <div
+                      class="collapse-title font-bold font-manrope text-lg leading-5 text-[#013366]"
+                    >
+                      Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1198,6 +1448,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- <script src="./index.js"></script> -->
+    <script src="./list.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

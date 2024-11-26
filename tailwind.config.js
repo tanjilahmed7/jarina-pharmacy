@@ -9,6 +9,9 @@ module.exports = {
         bgImageFaqSection: "url('/assets/Vector 2.png')",
         bgAffordableSection:"url('/assets/Vector 1 (1).png')",
       },
+      boxShadow: {
+        custom: '0px 4px 20px 0px rgba(0, 0, 0, 0.1)',
+      },
       fontFamily: {
         oswald: ["Oswald"],
         manrope: ["Manrope"],

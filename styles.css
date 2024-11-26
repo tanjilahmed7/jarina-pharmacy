@@ -35,3 +35,10 @@
 .custom-prev-one:hover {
   background-color: #e5e5e5;
 }
+
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}
