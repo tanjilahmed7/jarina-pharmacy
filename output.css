@@ -1670,6 +1670,11 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 1.5rem;
 }
 
+.my-\[100px\] {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .my-\[120px\] {
   margin-top: 120px;
   margin-bottom: 120px;
@@ -1678,15 +1683,6 @@ details.collapse summary::-webkit-details-marker {
 .my-\[7px\] {
   margin-top: 7px;
   margin-bottom: 7px;
-}
-
-.my-\[100px\] {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .mb-3 {
@@ -1709,8 +1705,16 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 120px;
 }
 
+.ml-\[56px\] {
+  margin-left: 56px;
+}
+
 .ml-\[75px\] {
   margin-left: 75px;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
 }
 
 .mr-\[75px\] {
@@ -1737,6 +1741,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -1747,18 +1755,6 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-\[64px\] {
   margin-top: 64px;
-}
-
-.ml-\[56px\] {
-  margin-left: 56px;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mr-10 {
-  margin-right: 2.5rem;
 }
 
 .flex {
@@ -1861,6 +1857,10 @@ details.collapse summary::-webkit-details-marker {
   height: 328px;
 }
 
+.h-\[330px\] {
+  height: 330px;
+}
+
 .h-\[349px\] {
   height: 349px;
 }
@@ -1885,12 +1885,24 @@ details.collapse summary::-webkit-details-marker {
   height: 416px;
 }
 
+.h-\[430px\] {
+  height: 430px;
+}
+
 .h-\[468px\] {
   height: 468px;
 }
 
 .h-\[488px\] {
   height: 488px;
+}
+
+.h-\[48px\] {
+  height: 48px;
+}
+
+.h-\[510px\] {
+  height: 510px;
 }
 
 .h-\[555px\] {
@@ -1941,20 +1953,8 @@ details.collapse summary::-webkit-details-marker {
   height: 100%;
 }
 
-.h-\[510px\] {
-  height: 510px;
-}
-
-.h-\[48px\] {
-  height: 48px;
-}
-
-.h-\[330px\] {
-  height: 330px;
-}
-
-.h-\[430px\] {
-  height: 430px;
+.min-h-\[50px\] {
+  min-height: 50px;
 }
 
 .w-10 {
@@ -1995,6 +1995,10 @@ details.collapse summary::-webkit-details-marker {
 
 .w-\[197px\] {
   width: 197px;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .w-\[220px\] {
@@ -2041,6 +2045,14 @@ details.collapse summary::-webkit-details-marker {
   width: 535px;
 }
 
+.w-\[544px\] {
+  width: 544px;
+}
+
+.w-\[580px\] {
+  width: 580px;
+}
+
 .w-\[585px\] {
   width: 585px;
 }
@@ -2083,34 +2095,6 @@ details.collapse summary::-webkit-details-marker {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-\[270px\] {
-  width: 270px;
-}
-
-.w-\[420px\] {
-  width: 420px;
-}
-
-.w-\[1920px\] {
-  width: 1920px;
-}
-
-.w-\[1290\] {
-  width: 1290;
-}
-
-.w-\[544px\] {
-  width: 544px;
-}
-
-.w-\[580px\] {
-  width: 580px;
 }
 
 .-translate-x-1\/2 {
@@ -2337,14 +2321,14 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
 }
 
-.border-red-700 {
+.border-black {
   --tw-border-opacity: 1;
-  border-color: rgb(185 28 28 / var(--tw-border-opacity, 1));
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
-.border-e-red-600 {
+.border-e-red-700 {
   --tw-border-opacity: 1;
-  border-inline-end-color: rgb(220 38 38 / var(--tw-border-opacity, 1));
+  border-inline-end-color: rgb(185 28 28 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#001933\] {
@@ -2437,6 +2421,10 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-\[FFFFFF\] {
+  background-color: FFFFFF;
 }
 
 .bg-bgImageFaqSection {
@@ -2565,9 +2553,9 @@ details.collapse summary::-webkit-details-marker {
   padding-bottom: 7px;
 }
 
-.py-\[19px\] {
-  padding-top: 19px;
-  padding-bottom: 19px;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pb-10 {
@@ -2620,10 +2608,6 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-\[80px\] {
   padding-top: 80px;
-}
-
-.pl-\[56px\] {
-  padding-left: 56px;
 }
 
 .text-center {
@@ -2951,18 +2935,6 @@ details.collapse summary::-webkit-details-marker {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:w-\[200px\] {
-    width: 200px;
-  }
-
-  .\32xl\:w-\[270px\] {
-    width: 270px;
-  }
-
-  .\32xl\:w-\[420px\] {
-    width: 420px;
-  }
-
   .\32xl\:place-content-center {
     place-content: center;
   }

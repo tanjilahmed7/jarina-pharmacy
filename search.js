@@ -29,8 +29,8 @@ function displaySearchResult(result) {
     if (result.length > 0) {
       const resultItems = result.map((res) => {
         return `
-          <div class="h-[62px] py-[6px] bg-[#FFFFFF] px-6 rounded-[8px] cursor-pointer hover:bg-[#F5F7FA]">
-            <h1 class="font-manrope font-bold text-base text-[#011575] leading-[25px]">
+          <div class="py-[6px] bg-[#FFFFFF] px-6  cursor-pointer hover:bg-[#F5F7FA] h-[62px] flex gap-[2px] flex-col rounded-lg">
+            <h1 class="font-manrope font-bold text-base text-[#011575] leading-[25px] ">
               ${res.title}
             </h1>
             <p class="text-[#334C66] text-sm font-manrope font-medium leading-[22px]">
@@ -43,6 +43,6 @@ function displaySearchResult(result) {
       resultBox.innerHTML = resultItems.join(""); 
     } else {
       resultBox.innerHTML = `
-      <h1 class="text-sm text-[#011575] bg-[#FFFFFF] rounded-[8px]  font-manrope font-medium leading-[22px] px-6 py3">  Medications </h1> `;
+      <h1 class="text-sm text-[#011575] bg-[#FFFFFF] h-10 flex items-center px-6 rounded-lg font-manrope font-medium leading-[22px]">  Medications </h1> `;
     }
   }
