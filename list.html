@@ -89,7 +89,7 @@
                 <div class="w-[920px] h-[56px] rounded-[80px] bg-[#FFFFFF]">
                   <!-- SEARCH BOX  -->
                   <div
-                    class="flex items-center justify-between rounded-[80px] bg-[#FFFFFF] pl-8 pr-1 py-1 "
+                    class="flex items-center justify-between rounded-[80px] bg-[#FFFFFF] pl-8 pr-1 py-1"
                   >
                     <input
                       id="medicine-search-box"
@@ -107,19 +107,19 @@
                     </div>
                   </div>
                   <!-- RESULT BOX  -->
-                  <div
-                    class="shadow-custom rounded-lg  hover:bg-[#F5F7FA]"
-                  >
-                <div class="result rounded-lg bg-[#FFFFFF] "></div>
-                </div>
+                  <div class="shadow-custom rounded-lg hover:bg-[#F5F7FA]">
+                    <div class="result rounded-lg bg-[#FFFFFF]"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="my-10 px-20 w-full h-[376px]  flex items-center justify-center">
+        <div
+          class="my-10 px-20 w-full h-[376px] flex items-center justify-center"
+        >
           <div
-            class="grid grid-cols-4 w-[1290px] h-[376px] p-8 bg-[#FFFFFF] rounded-3xl "
+            class="grid grid-cols-4 w-[1290px] h-[376px] p-8 bg-[#FFFFFF] rounded-3xl"
           >
             <div
               class="grid grid-rows-8 gap-6 list-none 2xl:place-content-center"
@@ -299,291 +299,301 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- LIST TABLE  -->
+    <section>
+      <div class="flex flex-col items-center bg-[#FAFAFA]">
         <h1
-          class="text-center text-xl font-bold font-manrope text-[#011575] leading-[23px] mb-6"
-        >
-          All medication
-        </h1>
-        <div class="w-full px-[75px] flex items-center justify-center">
-          <div class="overflow-x-auto rounded-xl border border-[#DDE7F6]">
-            <table class="table w-[1290px]">
-              <!-- head -->
-              <thead class="h-[40px]">
-                <tr
-                  class="bg-[#DDE7F6] font-manrope font-bold text-base leading-[18px] text-[#12366C]"
-                >
-                  <th>Name</th>
-                  <th>Type</th>
-                  <th>Retail price</th>
-                  <th>Our price</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody
-                class="font-manrope font-medium text-base leading-[25px] tet-[#334C66] h-[60px]"
+        class="text-center text-xl font-bold font-manrope text-[#011575] leading-[23px] mb-6"
+      >
+        All medication
+      </h1>
+      <div class="w-full px-[75px] flex items-center justify-center">
+        <div class="overflow-x-auto rounded-xl border border-[#DDE7F6]">
+          <table class="table w-[1290px]">
+            <!-- head -->
+            <thead class="h-[40px]">
+              <tr
+                class="bg-[#DDE7F6] font-manrope font-bold text-base leading-[18px] text-[#12366C]"
               >
-                <tr class="border-t border-[#DDE7F6]">
-                  <td class="">Amiloride HCl (Generic for Midamor)</td>
-                  <td class="w-[200px]">Tablet</td>
-                  <td class="w-[200px]">$ 109.20</td>
-                  <td class="w-[200px]">$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td class="">
-                    Amiloride-Hydrochlorothiazide (Generic for Moduretic)
-                  </td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Candesartan Cilexetil (Generic for Atacand)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Captopril (Generic for Capoten)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >CaroSpir (Spironolactone)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td class="">
-                    Dapagliflozin Propanediol (Generic for Farxiga)
-                  </td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Enalapril Maleate (Generic for Epaned)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Eplerenone (Generic for Inspra)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td ">Fosinopril Sodium (Generic for Monopril)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Indapamide (Generic for Lozol)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Amiloride HCl (Generic for Midamor)</td>
-                  <td >Tablet</td>
-                  <td>$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >
-                    Isosorb Dinitrate-Hydralazine (Generic for BiDil)
-                  </td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Amiloride HCl (Generic for Midamor)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Lisinopril (Generic for Prinivil)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Losartan (Generic for Cozaar)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Metolazone (Generic for Zaroxolyn)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Amiloride HCl (Generic for Midamor)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td >Trandolapril (Generic for Mavik)</td>
-                  <td >Tablet</td>
-                  <td >$ 109.20</td>
-                  <td >$67.50</td>
-                  <td class="flex gap-6 items-center">
-                    <span>$save $42</span>
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Buy now
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Retail price</th>
+                <th>Our price</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody
+              class="font-manrope font-medium text-base leading-[25px] tet-[#334C66] h-[60px]"
+            >
+              <tr class="border-t border-[#DDE7F6]">
+                <td class="">Amiloride HCl (Generic for Midamor)</td>
+                <td class="w-[200px]">Tablet</td>
+                <td class="w-[200px]">$ 109.20</td>
+                <td class="w-[200px]">$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td class="">
+                  Amiloride-Hydrochlorothiazide (Generic for Moduretic)
+                </td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Candesartan Cilexetil (Generic for Atacand)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Captopril (Generic for Capoten)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >CaroSpir (Spironolactone)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td class="">
+                  Dapagliflozin Propanediol (Generic for Farxiga)
+                </td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Enalapril Maleate (Generic for Epaned)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Eplerenone (Generic for Inspra)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td ">Fosinopril Sodium (Generic for Monopril)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Indapamide (Generic for Lozol)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Amiloride HCl (Generic for Midamor)</td>
+                <td >Tablet</td>
+                <td>$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >
+                  Isosorb Dinitrate-Hydralazine (Generic for BiDil)
+                </td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Amiloride HCl (Generic for Midamor)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Lisinopril (Generic for Prinivil)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Losartan (Generic for Cozaar)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Metolazone (Generic for Zaroxolyn)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Amiloride HCl (Generic for Midamor)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+              <tr class="border-t border-[#DDE7F6]">
+                <td >Trandolapril (Generic for Mavik)</td>
+                <td >Tablet</td>
+                <td >$ 109.20</td>
+                <td >$67.50</td>
+                <td class="flex gap-6 items-center">
+                  <span>$save $42</span>
+                  <a
+                    class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                  >
+                    Buy now
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
+      </div>
+    </section>
+    <!-- DIDN'T GET YOUR MEDICINES SECTION -->
+     <section>
+      <div class=" flex items-center justify-center bg-[#FAFAFA]">
         <div class="w-[1290px] h-[510px] my-[100px] bg-[#53DDFF] rounded-[32px] flex items-center justify-between">
           <div class=" ml-[56px] w-[544px] h-[330px]">
             <h1 class="font-manrope font-extrabold text-[#011575] text-[40px] leading-[46px]">Didn’t get your medicine?</h1>
@@ -600,7 +610,7 @@
           </div>
         </div>
       </div>
-    </section>
+     </section>
     <!-- FOOTER SECTION  -->
     <footer>
       <div class="bg-[#001933] w-full h-[555px] relative flex justify-between">
