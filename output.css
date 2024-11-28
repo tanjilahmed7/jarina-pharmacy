@@ -3339,4 +3339,8 @@ details.collapse summary::-webkit-details-marker {
   .\32xl\:justify-center {
     justify-content: center;
   }
+
+  .\32xl\:justify-between {
+    justify-content: space-between;
+  }
 }
