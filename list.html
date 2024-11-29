@@ -69,7 +69,7 @@
             class="absolute right-0 top-[75px]"
             alt=""
           />
-          <div class="w-full mx-[75px] h-[208px] relative">
+          <div class="w-[1290px] h-[208px] relative">
             <div
               class="w-full h-full bg-[#C0D4F04D] rounded-[32px] absolute backdrop-blur-[31px]"
             >
@@ -79,17 +79,17 @@
                 alt=""
               />
               <div
-                class="flex items-center justify-center mt-11 flex-col gap-8"
+                class="flex items-center justify-center mt-11 flex-col gap-8 "
               >
                 <h1
                   class="text-center text-[#011575] text-[28px] font-extrabold leading-[32px] font-manrope"
                 >
                   Find necessary Medications
                 </h1>
-                <div class="w-[920px] h-[56px] rounded-[80px] bg-[#FFFFFF]">
+                <div class="w-[920px] h-[56px] rounded-[80px] bg-[#FFFFFF] ">
                   <!-- SEARCH BOX  -->
                   <div
-                    class="flex items-center justify-between rounded-[80px] bg-[#FFFFFF] pl-8 pr-1 py-1"
+                    class="flex items-center justify-between rounded-[80px] bg-[#FFFFFF] pl-8 pr-1 py-1 "
                   >
                     <input
                       id="medicine-search-box"
@@ -108,7 +108,7 @@
                   </div>
                   <!-- RESULT BOX  -->
                   <div class="shadow-custom rounded-lg hover:bg-[#F5F7FA]">
-                    <div class="result rounded-lg bg-[#FFFFFF]"></div>
+                    <div class="result rounded-lg bg-[#FFFFFF] border-2 border-black "></div>
                   </div>
                 </div>
               </div>
@@ -124,26 +124,30 @@
             <div
               class="grid grid-rows-8 gap-6 list-none 2xl:place-content-center"
             >
-              <li
+              <a
+              href="#all"
                 class="underline font-bold font-manrope text-base leading-[18px] text-[#011575] list-none"
               >
                 All medication
-              </li>
-              <li
+              </a>
+              <a
+              href="#"
                 class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
               >
                 Acid Reflux
-              </li>
-              <li
+              </a>
+              <a
+              href="#"
                 class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
               >
                 Alcohol Dependence
-              </li>
-              <li
+              </a>
+              <a
+              href="#"
                 class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
               >
                 Angina
-              </li>
+              </a>
               <li
                 class="font-manrope font-medium text-base leading-[18px] text-[#334C66]"
               >
@@ -302,13 +306,13 @@
       </div>
     </section>
     <!-- LIST TABLE  -->
-    <section>
+    <section id="all">
       <div class="flex flex-col items-center bg-[#FAFAFA]">
-        <h1
+        <h
         class="text-center text-xl font-bold font-manrope text-[#011575] leading-[23px] mb-6"
       >
         All medication
-      </h1>
+      </h>
       <div class="w-full px-[75px] flex items-center justify-center">
         <div class="overflow-x-auto rounded-xl border border-[#DDE7F6]">
           <table class="table w-[1290px]">
