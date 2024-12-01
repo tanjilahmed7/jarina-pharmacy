@@ -9,14 +9,14 @@ var swiper = new Swiper(".mySwiper1", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 2,
+      slidesPerView: 5,
     },
     640: {
-      slidesPerView: 2,
+      slidesPerView: 5,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 5,
       spaceBetween: 20,
     },
     1024: {
@@ -34,15 +34,65 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 // SLIDER THREE
+// var swiper3 = new Swiper(".mySwiper3", {
+//   slidesPerView: 4,
+//   spaceBetween: 16,
+//   loop: true,
+//   navigation: {
+//     nextEl: ".custom3-next-one",
+//     prevEl: ".custom3-prev-one",
+//   },
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1.7,
+//     },
+//     640: {
+//       slidesPerView: 2,
+//       spaceBetween: 20,
+//     },
+//     768: {
+//       slidesPerView: 3,
+//       spaceBetween: 20,
+//     },
+//     1024: {
+//       slidesPerView: 4,
+//       spaceBetween: 20,
+//     },
+//   },
+// });
+
 var swiper3 = new Swiper(".mySwiper3", {
-  slidesPerView: 4,
+  slidesPerView: 4, 
   spaceBetween: 16,
   loop: true,
   navigation: {
     nextEl: ".custom3-next-one",
     prevEl: ".custom3-prev-one",
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.5, 
+      spaceBetween: 16,  
+    },
+    375: {
+      slidesPerView: 1.5, 
+      spaceBetween: 16,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 16,
+    },
+  },
 });
+
 
 // TAB CONTENT 
 const tabButton = document.querySelectorAll(".tab_btn");

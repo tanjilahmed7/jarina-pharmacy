@@ -4,6 +4,7 @@
 
 .swiper1 {
   max-width: 1185px;
+  min-width: 375px;
   height: 100%;
   overflow: hidden;
 }
@@ -12,20 +13,21 @@
   height: 100%;
   overflow: hidden;
 }
-.swiper3 {
+/* .swiper3 {
   width: 1180px;
   height: 100%;
   overflow: hidden;
-}
+} */
+/* .mySwiper3 .swiper-slide {
+  width: 280px;
+  height: 280px;
+} */
+
 .mySwiper1 .swiper-slide {
   width: 220px;
   height: 222px;
 }
 
-.mySwiper3 .swiper-slide {
-  width: 280px;
-  height: 280px;
-}
 .custom-next-one,
 .custom-prev-one {
   cursor: point;
@@ -44,7 +46,44 @@
 }
 .btn {
   padding: 7px 20px;
-  border: 1px solid crimson;
   border-radius: 80px;
   display: inline-flex;
+}
+
+.img1 {
+  animation: img5 5s infinite;
+}
+.img2 {
+  animation: img6 5s infinite;
+}
+.img3 {
+  animation: img7 6s infinite;
+}
+@keyframes img5 {
+  0% {
+    transform: translateX(0) rotateX(0) rotateX(0);
+  }
+  25% {
+    transform: translateX(-10px) rotateX(5deg) rotateX(5deg);
+  }
+  50% {
+    transform: translateX(-15deg) rotateX(10deg) rotateX(-15deg);
+  }
+  75% {
+    transform: translateX(10px) rotateX(-5deg) rotateX(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotateX(0) rotateX(0);
+  }
+}
+
+@keyframes img6 {
+  50% {
+    opacity: 0.1;
+  }
+}
+@keyframes img7 {
+  50% {
+    transform: scale(1.1);
+  }
 }

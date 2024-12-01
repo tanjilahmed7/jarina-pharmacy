@@ -4,8 +4,10 @@ module.exports = {
   safelist: ["bg-[url('/assets/image\\ 11.png')]"],
   theme: {
     extend: {
+     
       backgroundImage: {
         bgImageMedicinesSection: "url('/assets/Vector 1.png')",
+        bgImageMedicinesSectionSmall:"url('./assets/Vector 1 3.png')",
         bgImageFaqSection: "url('/assets/Vector 2.png')",
         bgAffordableSection:"url('/assets/Vector 1 (1).png')",
       },
@@ -16,6 +18,7 @@ module.exports = {
         oswald: ["Oswald"],
         manrope: ["Manrope"],
       },
+      
     },
   },
   plugins: [require("daisyui")],
