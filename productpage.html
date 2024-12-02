@@ -21,7 +21,9 @@
   <body>
     <!-- HEADER SECTION  -->
     <header class="bg-[#FAFAFA] w-full h-16 sticky top-0 z-[99999]">
-      <div class="flex justify-between items-center w-full h-full px-[75px]">
+      <div
+        class="flex justify-between items-center w-full h-full lg:px-[75px] px-4"
+      >
         <a href="./index.html" class="flex items-center gap-2 h-[23px]">
           <img
             class="w-[22px] h-[22px] object-contain"
@@ -34,7 +36,7 @@
           </h2>
         </a>
 
-        <div class="flex gap-[56px]">
+        <div class="lg:flex gap-[56px] hidden">
           <ul
             class="flex items-center gap-10 font-manrope font-semibold text-[15px]"
           >
@@ -51,10 +53,104 @@
             </button>
             <button
               class="bg-[#011575] text-[#FFFFFF] py-[7px] px-5 rounded-[80px] font-manrope font-semibold text-[15px]"
+              onclick="my_modal_3.showModal()"
             >
               Sign up
             </button>
           </div>
+
+          <!-- <dialog
+            id="my_modal_3"
+            class="modal flex justify-center items-start mt-[120px]"
+          >
+            <div
+              class="modal-box h-[455px] p-[56px] flex flex-col items-start justify-center"
+            >
+              <h3
+                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
+              >
+                Create your account
+              </h3>
+              <p
+                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+              >
+                Already have an account?
+                <span class="font-bold underline cursor-pointer">Log in</span>
+              </p>
+              <form
+                method="dialog"
+                class="mt-6 w-full inline-flex flex-col gap-4"
+              >
+                <button
+                  class="btn btn-sm btn-circle btn-ghost absolute right-2 -top-10 z-[99999] border-2 border-red-600"
+                >
+                  <img src="./assets/Close.svg" alt="" />
+                </button>
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                />
+                <div class="flex items-center gap-2 mt-2">
+                  <input
+                    type="checkbox"
+                    class="border border-[#011575] w-5 h-5"
+                  />
+                  <p
+                    class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+                  >
+                    I agree to Find Med company’s terms & conditions, Privacy
+                    policy.
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+                >
+                  Create account
+                </button>
+              </form>
+            </div>
+          </dialog> -->
+        </div>
+        <div
+          class="flex-col items-center justify-center gap-[56px] absolute top-16 h-screen px-0 mx-0 w-0 overflow-x-hidden right-0 z-50 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] rounded-t-[32px] flex transition-all duration-500 myNav"
+        >
+          <ul
+            class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366]"
+          >
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./list.html">Medications</a>
+            <a href="./index.html">Help</a>
+          </ul>
+          <div class="flex flex-col-reverse gap-4 items-center justify-center">
+            <button
+              class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] w-[220px]"
+            >
+              Log in
+            </button>
+            <button
+              class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] w-[220px]"
+            >
+              Log in
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:hidden flex">
+          <button onclick="toggleFunc()" id="openMenuButton" class="block">
+            <img src="./assets/Frame 3.svg" alt="Menu Open" />
+          </button>
+
+          <button onclick="toggleFunc()" id="closeMenuButton" class="hidden">
+            <img src="./assets/menu.png" alt="Menu Close" />
+          </button>
         </div>
       </div>
     </header>
@@ -498,5 +594,6 @@
       </div>
     </footer>
     <script src="./search.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

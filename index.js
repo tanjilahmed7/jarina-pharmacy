@@ -34,33 +34,6 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 // SLIDER THREE
-// var swiper3 = new Swiper(".mySwiper3", {
-//   slidesPerView: 4,
-//   spaceBetween: 16,
-//   loop: true,
-//   navigation: {
-//     nextEl: ".custom3-next-one",
-//     prevEl: ".custom3-prev-one",
-//   },
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1.7,
-//     },
-//     640: {
-//       slidesPerView: 2,
-//       spaceBetween: 20,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 20,
-//     },
-//     1024: {
-//       slidesPerView: 4,
-//       spaceBetween: 20,
-//     },
-//   },
-// });
-
 var swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 4, 
   spaceBetween: 16,
@@ -119,3 +92,22 @@ tabButton.forEach((tab, idx) => {
     tabContent[idx].classList.remove("hidden");
   });
 });
+
+
+
+function toggleFunc() {
+  const nav = document.querySelector(".myNav");
+  const openButton = document.getElementById("openMenuButton");
+  const closeButton = document.getElementById("closeMenuButton");
+
+  if (nav.style.width === "100%") {
+    nav.style.width = "0";
+    openButton.classList.remove("hidden");
+    closeButton.classList.add("hidden");
+  } else {
+    nav.style.width = "100%";
+    openButton.classList.add("hidden");
+    closeButton.classList.remove("hidden");
+  }
+}
+

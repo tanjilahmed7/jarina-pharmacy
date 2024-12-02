@@ -44,10 +44,5 @@ function displaySearchResult(result) {
 
     resultBox.innerHTML = resultItems.join(""); 
   
-    // if (result.length > 0) {
    
-    // } else {
-    //   resultBox.innerHTML = `
-    //   <h1 class="text-sm text-[#011575] bg-[#FFFFFF] h-10 flex items-center px-6 rounded-lg font-manrope font-medium leading-[22px]">  Medications </h1> `;
-    // }
   }
