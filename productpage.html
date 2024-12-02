@@ -59,13 +59,19 @@
             </button>
           </div>
 
-          <!-- <dialog
-            id="my_modal_3"
-            class="modal flex justify-center items-start mt-[120px]"
-          >
-            <div
-              class="modal-box h-[455px] p-[56px] flex flex-col items-start justify-center"
-            >
+          <dialog id="my_modal_3" class="modal">
+            <div class="modal-box relative overflow-visible">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain absolute z-50"
+                    alt=""
+                  />
+                </button>
+              </form>
               <h3
                 class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
               >
@@ -81,21 +87,26 @@
                 method="dialog"
                 class="mt-6 w-full inline-flex flex-col gap-4"
               >
-                <button
-                  class="btn btn-sm btn-circle btn-ghost absolute right-2 -top-10 z-[99999] border-2 border-red-600"
-                >
-                  <img src="./assets/Close.svg" alt="" />
-                </button>
                 <input
                   type="email"
                   placeholder="Your email address"
                   class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
                 />
-                <input
-                  type="password"
-                  placeholder="Password"
-                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
-                />
+                <div
+                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+                >
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+                  />
+                  <img
+                    src="./assets/passeye.svg"
+                    class="absolute right-4 top-4"
+                    alt=""
+                  />
+                </div>
+
                 <div class="flex items-center gap-2 mt-2">
                   <input
                     type="checkbox"
@@ -104,8 +115,8 @@
                   <p
                     class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
                   >
-                    I agree to Find Med company’s terms & conditions, Privacy
-                    policy.
+                    I agree to Find Med company’s terms & conditions,<br />
+                    Privacy policy.
                   </p>
                 </div>
                 <button
@@ -116,7 +127,7 @@
                 </button>
               </form>
             </div>
-          </dialog> -->
+          </dialog>
         </div>
         <div
           class="flex-col items-center justify-center gap-[56px] absolute top-16 h-screen px-0 mx-0 w-0 overflow-x-hidden right-0 z-50 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] rounded-t-[32px] flex transition-all duration-500 myNav"

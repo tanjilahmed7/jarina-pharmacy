@@ -31,11 +31,11 @@ function displaySearchResult(result) {
     resultBox.innerHTML = "";
     const resultItems = result.map((res) => {
       return `
-        <div class="py-[6px] bg-[#FFFFFF] px-6 cursor-pointer hover:bg-[#F5F7FA] h-[62px] flex gap-[2px] flex-col rounded-lg ">
-          <h1 class="font-manrope font-bold text-base text-[#011575] leading-[25px] ">
+        <div class="py-[6px] bg-[#FFFFFF] cursor-pointer hover:bg-[#F5F7FA] h-[62px] flex gap-[2px] flex-col rounded-lg">
+          <h1 class="font-manrope font-bold text-base text-[#011575] leading-[25px] pl-6 pt-[6px]">
             ${res.title}
           </h1>
-          <p class="text-[#334C66] text-sm font-manrope font-medium leading-[22px]">
+          <p class="text-[#334C66] text-sm font-manrope font-medium leading-[22px] pl-6 ">
             ${res.subtitle}
           </p>
         </div>
