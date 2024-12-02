@@ -13,15 +13,21 @@
   height: 100%;
   overflow: hidden;
 }
-/* .swiper3 {
+.swiper3 {
   width: 1180px;
   height: 100%;
   overflow: hidden;
-} */
-/* .mySwiper3 .swiper-slide {
+}
+.mySwiper3 .swiper-slide {
   width: 280px;
   height: 280px;
-} */
+}
+@media (min-width: 375px) {
+  .mySwiper3 .swiper-slide {
+    width: 220px;
+    height: 220px;
+  }
+}
 
 .mySwiper1 .swiper-slide {
   width: 220px;
