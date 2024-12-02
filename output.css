@@ -2123,6 +2123,10 @@ details.collapse summary::-webkit-details-marker {
   top: 78px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .-z-50 {
   z-index: -50;
 }
@@ -3964,6 +3968,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pt-\[40px\] {
     padding-top: 40px;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
   }
 
   .lg\:text-\[15px\] {
