@@ -18,14 +18,15 @@
   height: 100%;
   overflow: hidden;
 }
-.mySwiper3 .swiper-slide {
-  width: 280px;
-  height: 280px;
+.swiper3 .swiper-slide {
+  width: 220px !important;
+  height: 220px !important;
 }
-@media (min-width: 375px) {
-  .mySwiper3 .swiper-slide {
-    width: 220px;
-    height: 220px;
+
+@media (min-width: 1024px) {
+  .swiper3 .swiper-slide {
+    width: 280px !important;
+    height: 280px !important;
   }
 }
 
