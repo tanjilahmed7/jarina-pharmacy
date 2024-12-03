@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   } else {
     console.error(
-      "One or more modal elements or links are not found in the DOM."
+      "Modal not found"
     );
   }
 });
