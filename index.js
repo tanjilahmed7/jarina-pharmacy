@@ -147,3 +147,31 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 });
+
+console.log("uploadPrescription")
+
+
+// const area = document.getElementById("area");
+// const inpBox = document.getElementById("input-file");
+// const imgView = document.getElementById("img");
+
+
+// inpBox.addEventListener("change", dragImage)
+// function dragImage() {
+//   console.log("okkk")
+  
+//   let imgLink = URL.createObjectURL(inpBox.files[0]);
+//   imgView.style.backgroundImage = `url(${imgLink})`
+//   imgLink.textContent = "";
+// }
+// area.addEventListener("dragover", function(e) {
+//   e.preventDefault();
+// })
+
+// area.addEventListener("drop", function(e) {
+//   e.preventDefault();
+//   inpBox.files = e.dataTransfer.files;
+//   dragImage();
+// })
+
+

@@ -2416,6 +2416,10 @@ details.collapse summary::-webkit-details-marker {
   height: 273px;
 }
 
+.h-\[277px\] {
+  height: 277px;
+}
+
 .h-\[283px\] {
   height: 283px;
 }
@@ -2592,6 +2596,10 @@ details.collapse summary::-webkit-details-marker {
   width: 151px;
 }
 
+.w-\[154px\] {
+  width: 154px;
+}
+
 .w-\[156px\] {
   width: 156px;
 }
@@ -2710,10 +2718,6 @@ details.collapse summary::-webkit-details-marker {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[154px\] {
-  width: 154px;
 }
 
 .min-w-\[342px\] {
@@ -2984,6 +2988,10 @@ details.collapse summary::-webkit-details-marker {
   border-top-width: 1px;
 }
 
+.border-dashed {
+  border-style: dashed;
+}
+
 .border-none {
   border-style: none;
 }
@@ -2991,6 +2999,10 @@ details.collapse summary::-webkit-details-marker {
 .border-\[\#011575\] {
   --tw-border-opacity: 1;
   border-color: rgb(1 21 117 / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#334C6633\] {
+  border-color: #334C6633;
 }
 
 .border-\[\#DDE7F6\] {
@@ -3023,9 +3035,14 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(220 38 38 / var(--tw-border-opacity, 1));
 }
 
-.border-red-500 {
+.border-red-700 {
   --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
+  border-color: rgb(185 28 28 / var(--tw-border-opacity, 1));
+}
+
+.border-yellow-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#001933\] {
@@ -3102,6 +3119,11 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(238 244 237 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#EFFFEA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 255 234 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#F0F4FA\] {
   --tw-bg-opacity: 1;
   background-color: rgb(240 244 250 / var(--tw-bg-opacity, 1));
@@ -3128,11 +3150,6 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-\[\#EFFFEA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 255 234 / var(--tw-bg-opacity, 1));
 }
 
 .bg-bgImageMedicinesSectionSmall {
@@ -3298,6 +3315,11 @@ details.collapse summary::-webkit-details-marker {
   padding-bottom: 9px;
 }
 
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -3368,6 +3390,10 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-\[80px\] {
   padding-top: 80px;
+}
+
+.pl-\[260px\] {
+  padding-left: 260px;
 }
 
 .text-center {
@@ -3560,6 +3586,11 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(18 54 108 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#1A7501\] {
+  --tw-text-opacity: 1;
+  color: rgb(26 117 1 / var(--tw-text-opacity, 1));
+}
+
 .text-\[\#334C66\] {
   --tw-text-opacity: 1;
   color: rgb(51 76 102 / var(--tw-text-opacity, 1));
@@ -3608,9 +3639,9 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-\[\#1A7501\] {
+.text-\[\#00BFFF\] {
   --tw-text-opacity: 1;
-  color: rgb(26 117 1 / var(--tw-text-opacity, 1));
+  color: rgb(0 191 255 / var(--tw-text-opacity, 1));
 }
 
 .underline {
