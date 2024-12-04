@@ -167,59 +167,342 @@
     <!-- BANNER SECTION  -->
     <section>
       <div
-        class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA]"
+        class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] pt-20 px-[75px] pb-[100px]"
       >
         <h1
-          class="text-[#011575] text-[40px] leading-[46px] font-extrabold font-manrope pt-20 pl-[75px]"
+          class="text-[#011575] text-[40px] leading-[46px] font-extrabold font-manrope"
         >
           Your cart
         </h1>
-        <div class="border-2 border-black w-full px-[75px] mt-6">
-          <div class="w-1/2">
-            <div class="overflow-x-auto">
-              <table class="table">
-                <!-- head -->
-                <thead>
-                  <tr>
-                    <th>Medicine</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="">
-                    <td
-                      class="flex gap-6 items-center text-[#334C66] text-base font-medium font-manrope leading-[25px]"
-                    >
-                      <img src="./assets/Frame 213 2.svg" alt="" /> Medicine
-                      name
-                    </td>
-                    <td
-                      class="text-[#334C66] text-base font-medium font-manrope leading-[25px]"
-                    >
-                      $7.50
-                    </td>
-                    <td class="flex h-[100px] items-center justify-center">
-                      <img src="./assets/Frame (2).svg" alt="" />
-                      1
-                      <img src="./assets/Frame (2).svg" alt="" />
-                    </td>
-                    <td
-                      class="text-[#334C66] text-base font-bold font-manrope leading-[25px]"
-                    >
-                      $7.50
-                    </td>
+        <div></div>
+        <!-- TABLE  -->
+        <div class="mt-6 flex gap-8">
+          <div
+            class="overflow-x-auto rounded-t-[12px] border border-[#DDE7F6] w-[880px]"
+          >
+            <table class="table w-full">
+              <!-- head -->
+              <thead class="h-[40px]">
+                <tr
+                  class="bg-[#DDE7F6] font-manrope font-bold text-base leading-[18px] text-[#12366C]"
+                >
+                  <th class="w-[400px]">Medicine</th>
+                  <th class="w-[133px] text-center">Price</th>
+                  <th class="w-[133px] text-center">Quantity</th>
+                  <th class="w-[133px] text-center">Delivered on</th>
+                  <th class="w-20"></th>
+                </tr>
+              </thead>
+              <tbody
+                class="font-manrope font-medium text-base leading-[25px] text-[#334C66]"
+              >
+                <tr class="border-t border-[#DDE7F6] h-[100px]">
+                  <td class="flex items-center gap-4 w-[400px]">
+                    <img src="./assets/Frame 213 2.svg" alt="" />
+                    Medicine name
+                  </td>
 
-                    <td><img src="./assets/Frame 4.svg" alt="" /></td>
-                  </tr>
-                </tbody>
-              </table>
+                  <td class="w-[133px] text-center">$7.50</td>
+
+                  <td class="w-[133px] text-center">
+                    <div class="flex items-center justify-center gap-4">
+                      <div
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      >
+                        <img
+                          class="w-4 h-4 cursor-pointer object-contain"
+                          src="./assets/Frame (2).svg"
+                          alt="Decrease Quantity"
+                        />
+                      </div>
+
+                      <span>1</span>
+                      <div
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      >
+                        <img
+                          class="w-4 h-4 cursor-pointer"
+                          src="./assets/Frame (1) 3.svg"
+                          alt="Increase Quantity"
+                        />
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="w-[133px] text-center">3 Dec 2024</td>
+
+                  <td>
+                    <img src="./assets/Frame 4.svg" alt="" />
+                  </td>
+                </tr>
+                <tr class="border-t border-[#DDE7F6] h-[100px]">
+                  <td class="flex items-center gap-4 w-[400px]">
+                    <img src="./assets/Frame 213 2.svg" alt="" />
+                    Medicine name
+                  </td>
+
+                  <td class="w-[133px] text-center">$7.50</td>
+
+                  <td class="w-[133px] text-center">
+                    <div class="flex items-center justify-center gap-4">
+                      <div
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      >
+                        <img
+                          class="w-4 h-4 cursor-pointer object-contain"
+                          src="./assets/Frame (2).svg"
+                          alt="Decrease Quantity"
+                        />
+                      </div>
+
+                      <span>1</span>
+                      <div
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      >
+                        <img
+                          class="w-4 h-4 cursor-pointer"
+                          src="./assets/Frame (1) 3.svg"
+                          alt="Increase Quantity"
+                        />
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="w-[133px] text-center">3 Dec 2024</td>
+
+                  <td>
+                    <img src="./assets/Frame 4.svg" alt="" />
+                  </td>
+                </tr>
+                <tr class="border-t border-[#DDE7F6] h-[100px]">
+                  <td class="flex items-center gap-4 w-[400px]">
+                    <img src="./assets/Frame 213 2.svg" alt="" />
+                    Medicine name
+                  </td>
+
+                  <td class="w-[133px] text-center">$7.50</td>
+
+                  <td class="w-[133px] text-center">
+                    <div class="flex items-center justify-center gap-4">
+                      <div
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      >
+                        <img
+                          class="w-4 h-4 cursor-pointer object-contain"
+                          src="./assets/Frame (2).svg"
+                          alt="Decrease Quantity"
+                        />
+                      </div>
+
+                      <span>1</span>
+                      <div
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      >
+                        <img
+                          class="w-4 h-4 cursor-pointer"
+                          src="./assets/Frame (1) 3.svg"
+                          alt="Increase Quantity"
+                        />
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="w-[133px] text-center">3 Dec 2024</td>
+
+                  <td>
+                    <img src="./assets/Frame 4.svg" alt="" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="flex flex-col gap-3 bg-[#FFFFFF] w-[378px] h-[276px] p-6 rounded-xl"
+          >
+            <h1
+              class="mb-3 font-bold text-[#011575] text-base font-manrope leading-[18px]"
+            >
+              Order summary
+            </h1>
+            <div class="flex justify-between">
+              <h4
+                class="font-medium font-manrope text-base leading-[25px] text-[#334C66]"
+              >
+                Subtotal
+              </h4>
+              <h4
+                class="text-base leading-[18px] font-bold font-manrope text-[#12366C]"
+              >
+                $7.50
+              </h4>
             </div>
+            <div class="flex justify-between">
+              <h4
+                class="font-medium font-manrope text-base leading-[25px] text-[#334C66]"
+              >
+                Shipping cost
+              </h4>
+              <h4
+                class="text-base leading-[18px] font-bold font-manrope text-[#12366C]"
+              >
+                $2.50
+              </h4>
+            </div>
+            <div class="flex justify-between">
+              <h4
+                class="font-bold font-manrope text-base leading-[25px] text-[#12366C]"
+              >
+                Total
+              </h4>
+              <h4
+                class="text-base leading-[18px] font-bold font-manrope text-[#12366C]"
+              >
+                $9.50
+              </h4>
+            </div>
+            <button
+              class="w-[330px] h-10 bg-[#011575] text-[#FFFFFF] font-manrope font-semibold text-[15px] leading-6 rounded-[80px] mt-8"
+            >
+              Checkout
+            </button>
           </div>
         </div>
       </div>
     </section>
+    <!-- FOOTER SECTION  -->
+    <footer>
+      <div
+        class="bg-[#001933] w-full lg:h-[555px] relative flex lg:flex-row flex-col justify-between px-4"
+      >
+        <img
+          class="absolute bottom-0 lg:block hidden left-0"
+          src="./assets/Vector 4.png"
+          alt="Vector"
+        />
+        <img
+          src="./assets/v6.png"
+          alt="Vector"
+          class="absolute bottom-0 left-0 lg:hidden block"
+        />
+        <div
+          class="flex flex-col lg:w-[517px] lg:gap-[169px] pt-[80px] lg:ml-[75px]"
+        >
+          <div class="flex flex-col gap-2 w-[321px]">
+            <div class="flex items-center gap-2">
+              <img
+                class="w-[22px] h-[22px] object-contain"
+                src="./assets/Group 1.svg"
+                alt=""
+              />
+              <h1
+                class="font-medium text-[28px] leading-[44px] font-oswald text-[#FFFFFF]"
+              >
+                Find Med
+              </h1>
+            </div>
+
+            <h3
+              class="text-[32px] lg:text-[40px] leading-[38px] lg:leading-[48px] font-manrope font-medium text-[#D8D8D8] mt-[39px]"
+            >
+              Your trusted medicine partner
+            </h3>
+          </div>
+          <div class="flex gap-6 flex-col lg:mt-0 mt-5">
+            <p
+              class="text-[#D8D8D8] font-medium font-manrope text-sm lg:text-base leading-[25px]"
+            >
+              We are a dedicated team of healthcare professionals, technology
+              innovators, and customer service experts.
+            </p>
+            <p
+              class="text-[#D8D8D899] font-manrope font-medium text-sm leading-[22px] hidden lg:block"
+            >
+              All right reserved by the company 2024
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-10 lg:mt-20 lg:mr-[75px] lg:w-[475px] lg:h-[416px] flex flex-col lg:justify-between justify-center"
+        >
+          <div class="flex justify-between h-[416px] lg:h-full">
+            <div class="flex flex-col gap-4">
+              <h1
+                class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"
+              >
+                Home
+              </h1>
+              <div class="flex flex-col gap-3">
+                <small
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >Home</small
+                >
+                <small
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >About us</small
+                >
+                <small
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >Medications</small
+                >
+                <small
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >Help</small
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-12">
+              <div class="flex gap-4 flex-col">
+                <h1
+                  class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"
+                >
+                  Contact us
+                </h1>
+                <div class="flex flex-col gap-3">
+                  <small
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                    >Northern hill, New york, USA</small
+                  >
+                  <small
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                    >+88 01723998977</small
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope"
+                >
+                  Find us on
+                </h1>
+                <div class="flex gap-6">
+                  <button><img src="./assets/Frame (7).svg" alt="" /></button>
+                  <button><img src="./assets/Frame (8).svg" alt="" /></button>
+                  <button><img src="./assets/Frame (9).svg" alt="" /></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-12 lg:pb-0 pb-10 items-center justify-center">
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              >Privacy policy</small
+            >
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              >T&C
+            </small>
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              >Cookie policy</small
+            >
+          </div>
+          <p
+            class="text-sm font-medium font-manrope leading-[22px] text-[#D8D8D899] text-center pb-10 lg:hidden block"
+          >
+            All right reserved by the company 2024
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
