@@ -48,6 +48,7 @@
           <div class="flex gap-3">
             <button
               class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+              onclick="my_modal_6.showModal()"
             >
               Log in
             </button>
@@ -59,64 +60,345 @@
             </button>
           </div>
 
-          <!-- <dialog
-              id="my_modal_3"
-              class="modal flex justify-center items-start mt-[120px]"
-            >
-              <div
-                class="modal-box h-[455px] p-[56px] flex flex-col items-start justify-center"
-              >
-                <h3
-                  class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
+          <!-- First Modal -->
+          <dialog id="my_modal_3" class="modal">
+            <div class="modal-box relative overflow-visible p-[56px]">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
                 >
-                  Create your account
-                </h3>
-                <p
-                  class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
-                >
-                  Already have an account?
-                  <span class="font-bold underline cursor-pointer">Log in</span>
-                </p>
-                <form
-                  method="dialog"
-                  class="mt-6 w-full inline-flex flex-col gap-4"
-                >
-                  <button
-                    class="btn btn-sm btn-circle btn-ghost absolute right-2 -top-10 z-[99999] border-2 border-red-600"
-                  >
-                    <img src="./assets/Close.svg" alt="" />
-                  </button>
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain absolute z-50"
+                    alt="Close"
                   />
+                </button>
+              </form>
+              <h3
+                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
+              >
+                Create your account
+              </h3>
+              <p
+                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+              >
+                Already have an account?
+                <a class="font-bold underline cursor-pointer" id="loginAcc"
+                  >Log in</a
+                >
+              </p>
+              <form
+                method="dialog"
+                class="mt-6 w-full inline-flex flex-col gap-4"
+              >
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                />
+                <div
+                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+                >
                   <input
                     type="password"
                     placeholder="Password"
-                    class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
                   />
-                  <div class="flex items-center gap-2 mt-2">
-                    <input
-                      type="checkbox"
-                      class="border border-[#011575] w-5 h-5"
-                    />
-                    <p
-                      class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
-                    >
-                      I agree to Find Med company’s terms & conditions, Privacy
-                      policy.
-                    </p>
-                  </div>
-                  <button
-                    type="submit"
-                    class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+                  <img
+                    src="./assets/passeye.svg"
+                    class="absolute right-4 top-4"
+                    alt="Show Password"
+                  />
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <input
+                    type="checkbox"
+                    class="border border-[#011575] w-5 h-5"
+                  />
+                  <p
+                    class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
                   >
-                    Create account
-                  </button>
-                </form>
-              </div>
-            </dialog> -->
+                    I agree to Find Med company’s terms & conditions, <br />
+                    Privacy policy.
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+                >
+                  Create account
+                </button>
+              </form>
+            </div>
+          </dialog>
+          <!-- Second Modal -->
+          <dialog id="my_modal_2" class="modal">
+            <div class="modal-box relative overflow-visible p-[56px]">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain absolute z-50"
+                    alt="Close"
+                  />
+                </button>
+              </form>
+              <h3
+                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
+              >
+                Log in
+              </h3>
+              <p
+                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+              >
+                Don’t have an account?
+                <a class="font-bold underline cursor-pointer" id="createAcc">
+                  Create account
+                </a>
+              </p>
+
+              <form
+                method="dialog"
+                class="mt-6 w-full inline-flex flex-col gap-4"
+              >
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                />
+                <div
+                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+                >
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+                  />
+                  <img
+                    src="./assets/passeye.svg"
+                    class="absolute right-4 top-4"
+                    alt="Show Password"
+                  />
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <input
+                    type="checkbox"
+                    class="border border-[#011575] w-5 h-5"
+                  />
+                  <p
+                    class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+                  >
+                    Remember me for this device.
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+                >
+                  Log in
+                </button>
+                <a
+                  href="#"
+                  id="forgetPass"
+                  class="font-semibold font-manrope text-[#011575] text-[15px] leading-[24px]"
+                  >Forgot password?</a
+                >
+              </form>
+            </div>
+          </dialog>
+          <!-- Third Modal -->
+          <dialog id="my_modal_4" class="modal">
+            <div class="modal-box relative overflow-visible p-[56px]">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain absolute z-50"
+                    alt="Close"
+                  />
+                </button>
+              </form>
+              <a class="flex gap-2 cursor-pointer" href="#" id="back">
+                <img src="./assets/Frame (4).svg" alt="" /> Back
+              </a>
+              <h3
+                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px] pt-6"
+              >
+                Reset your password
+              </h3>
+              <p
+                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+              >
+                Please enter your email address. We will send you an email to
+                reset your password.
+              </p>
+
+              <form
+                method="dialog"
+                class="mt-6 w-full inline-flex flex-col gap-6"
+              >
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                />
+
+                <button
+                  type="submit"
+                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px]"
+                >
+                  Send email
+                </button>
+              </form>
+            </div>
+          </dialog>
+          <!-- Fourth Modal -->
+          <dialog id="my_modal_5" class="modal">
+            <div class="modal-box relative overflow-visible p-[56px]">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain absolute z-50"
+                    alt="Close"
+                  />
+                </button>
+              </form>
+
+              <h3
+                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px] pt-6"
+              >
+                Change Your Password
+              </h3>
+              <p
+                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+              >
+                Create a new password below to change your password.
+              </p>
+
+              <form
+                method="dialog"
+                class="mt-6 w-full inline-flex flex-col gap-6"
+              >
+                <div
+                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+                >
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+                  />
+                  <img
+                    src="./assets/passeye.svg"
+                    class="absolute right-4 top-4"
+                    alt="Show Password"
+                  />
+                </div>
+                <div
+                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+                >
+                  <input
+                    type="password"
+                    placeholder="Confirm password"
+                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+                  />
+                  <img
+                    src="./assets/passeye.svg"
+                    class="absolute right-4 top-4"
+                    alt="Show Password"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px] w-[154px]"
+                >
+                  Reset password
+                </button>
+              </form>
+            </div>
+          </dialog>
+          <!-- Fifth -->
+          <dialog id="my_modal_6" class="modal">
+            <div class="modal-box relative overflow-visible p-[56px]">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain absolute z-50"
+                    alt="Close"
+                  />
+                </button>
+              </form>
+              <p
+                class="bg-[#EFFFEA] text-[#1A7501] text-sm font-manrope font-medium leading-[22px] px-4 py-[9px] mb-6 rounded-lg"
+              >
+                We’ve sent you a magic link to your email address
+              </p>
+              <h3
+                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
+              >
+                Create your account
+              </h3>
+              <p
+                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+              >
+                Already have an account?
+                <a class="font-bold underline cursor-pointer" id="loginAcc"
+                  >Log in</a
+                >
+              </p>
+              <form
+                method="dialog"
+                class="mt-6 w-full inline-flex flex-col gap-4"
+              >
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                />
+                <div
+                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+                >
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+                  />
+                  <img
+                    src="./assets/passeye.svg"
+                    class="absolute right-4 top-4"
+                    alt="Show Password"
+                  />
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <input
+                    type="checkbox"
+                    class="border border-[#011575] w-5 h-5"
+                  />
+                  <p
+                    class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+                  >
+                    I agree to Find Med company’s terms & conditions, <br />
+                    Privacy policy.
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+                >
+                  Create account
+                </button>
+              </form>
+            </div>
+          </dialog>
         </div>
         <div
           class="flex-col items-center justify-center gap-[56px] absolute top-16 h-screen px-0 mx-0 w-0 overflow-x-hidden right-0 z-50 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] rounded-t-[32px] flex transition-all duration-500 myNav"
@@ -131,14 +413,14 @@
           </ul>
           <div class="flex flex-col-reverse gap-4 items-center justify-center">
             <button
-              class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] w-[220px]"
+              class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
             >
               Log in
             </button>
             <button
-              class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] w-[220px]"
+              class="bg-[#011575] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#FFFFFF] font-manrope font-semibold text-[15px] w-[260px]"
             >
-              Log in
+              Sign up
             </button>
           </div>
         </div>
@@ -157,23 +439,27 @@
     <!-- ABOUT HERO SECTION  -->
     <section>
       <div
-        class="bg-gradient-to-b from-[#EAE3F7] to-[#FAFAFA] h-[488px] flex gap-[200px] items-center justify-center rounded-t-[32px]"
+        class="bg-gradient-to-b from-[#EAE3F7] to-[#FAFAFA] lg:h-[488px] h-[661px] flex lg:gap-[200px] items-center justify-center lg:flex-row flex-col rounded-t-[32px] px-2"
       >
-        <div class="w-[1290px] flex gap-[200px] items-center">
-          <div class="w-[630px] flex flex-col gap-6">
+        <div
+          class="lg:w-[1290px] flex gap-12 lg:gap-[200px] items-center lg:flex-row flex-col"
+        >
+          <div class="lg:w-[630px] w-full flex flex-col gap-6">
             <h1
-              class="text-[#011575] text-[40px] leading-[46px] font-extrabold font-manrope"
+              class="text-[#011575] lg:text-[40px] lg:leading-[46px] font-extrabold font-manrope text-[32px] leading-[36px] w-full"
             >
-              Empowering Affordable Healthcare for All
+              Empowering <br class="lg:hidden block" />
+              Affordable Healthcare <br class="lg:hidden block" />
+              for All
             </h1>
             <p
-              class="font-manrope font-medium text-lg text-[#334C66] leading-[28px]"
+              class="font-manrope font-medium text-sm lg:text-lg text-[#334C66] leading-[28px] min-w-[343px] lg:w-full"
             >
               Making essential medicines affordable, transparent, and accessible
               for everyone
             </p>
           </div>
-          <div class="h-[328px] relative w-[264px]">
+          <div class="h-[328px] relative min-w-[264px]">
             <img
               src="./assets/Group 14.svg"
               alt=""
@@ -188,23 +474,36 @@
     </section>
     <!-- MISSION AND VISION SECTION  -->
     <section>
-      <div class="bg-[#798DF2] h-[559px] w-full">
+      <div class="bg-[#798DF2] h-[840px] lg:h-[559px] w-full">
         <h1
-          class="text-[#FFFFFF] font-manrope font-extrabold text-[40px] leading-[46px] text-center pt-20"
+          class="text-[#FFFFFF] font-manrope font-extrabold text-[32px] lg:text-[40px] leading-[46px] text-center pt-20"
         >
           Company Mission & Vision
         </h1>
-        <div class="flex gap-5 items-center justify-center mt-10">
-          <div class="bg-[#065A82] w-[635px] h-[273px] relative rounded-[32px]">
-            <img src="./assets/Vector 3 (1).png" class="absolute z-0" alt="" />
-            <div class="p-12 absolute z-50 flex flex-col gap-4">
+        <div
+          class="flex gap-5 items-center justify-center mt-10 lg:flex-row flex-col mx-4 lg:mx-0"
+        >
+          <div
+            class="bg-[#065A82] w-full lg:w-[635px] h-[273px] relative rounded-[32px] overflow-hidden"
+          >
+            <img
+              src="./assets/Vector 3 (1).png"
+              class="absolute z-0 bottom-0 lg:block hidden"
+              alt=""
+            />
+            <img
+              src="./assets/smallV2.png"
+              class="absolute -bottom-8 right-0"
+              alt=""
+            />
+            <div class="lg:p-12 p-4 absolute z-50 flex flex-col gap-4">
               <h1
                 class="text-[#FFFFFF] font-manrope font-bold text-[22px] leading-[25px]"
               >
                 Purpose-Driven Commitment
               </h1>
               <p
-                class="w-[400px] text-[#FFFFFFB2] font-medium text-sm font-manrope leading-[22px]"
+                class="w-full lg:w-[400px] text-[#FFFFFFB2] font-medium text-sm font-manrope leading-[22px]"
               >
                 Our mission is to make healthcare accessible and affordable for
                 everyone, one prescription at a time. We believe that everyone
@@ -213,20 +512,27 @@
               </p>
             </div>
           </div>
-          <div class="bg-[#EEF4ED] w-[635px] h-[273px] relative rounded-[32px]">
+          <div
+            class="bg-[#EEF4ED] w-full lg:w-[635px] h-[273px] relative rounded-[32px]"
+          >
             <img
               src="./assets/Vector 6.png"
-              class="absolute z-0 right-0"
+              class="absolute z-0 right-0 lg:block hidden"
               alt=""
             />
-            <div class="p-12 absolute z-50 flex flex-col gap-4">
+            <img
+              src="./assets/smallV.png"
+              class="absolute bottom-0 right-0"
+              alt=""
+            />
+            <div class="p-4 lg:p-12 absolute z-50 flex flex-col gap-4">
               <h1
                 class="text-[#013366] font-manrope font-bold text-[22px] leading-[25px]"
               >
                 Vision Statement
               </h1>
               <p
-                class="w-[400px] text-[#013366] font-medium text-sm font-manrope leading-[22px]"
+                class="w-full lg:w-[400px] text-[#013366] font-medium text-sm font-manrope leading-[22px]"
               >
                 We envision a world where no one has to choose between their
                 health and their finances. Our goal is to revolutionize the
@@ -240,31 +546,40 @@
     </section>
     <!-- OUR PROMISE SECTION  -->
     <section>
-      <div class="h-[799px] relative">
+      <div class="h-[1238px] lg:h-[799px] relative">
         <img
           src="./assets/Vector 1 (2).png"
-          class="absolute bottom-0 -z-50 right-0"
+          class="absolute bottom-0 -z-50 right-0 lg:block hidden md:block"
           alt=""
         />
-        <div class="my-[120px] mx-[75px] flex flex-col items-center">
+        <img
+          src="./assets/small-V1.png"
+          class="absolute -z-50 -bottom-6 left-0 object-contain md:hidden lg:hidden block w-full"
+          alt=""
+        />
+        <div
+          class="py-20 lg:my-[120px] mx-4 lg:mx-[75px] flex flex-col items-center"
+        >
           <h1
-            class="font-manrope text-[40px] font-extrabold leading-[46px] text-center"
+            class="font-manrope text-[32px] lg:text-[40px] font-extrabold leading-[46px] text-center"
           >
             Our Promise
           </h1>
           <p
-            class="mt-6 font-manrope font-medium text-base leading-[25px] text-[#334C66] w-[633px] text-center"
+            class="mt-6 font-manrope font-medium text-sm lg:text-base leading-[14px] lg:leading-[25px] text-[#334C66] lg:w-[633px] text-center"
           >
             pLorem ipsum dolor sit amet consectetur. In mi non sem velit posuere
             dui scelerisque. Risus euismod placerat bibendum placerat commodo
             adipiscing.
           </p>
-          <div class="flex gap-4 mt-[64px]">
+          <div
+            class="flex lg:flex-row flex-col gap-10 lg:gap-4 mt-10 lg:mt-[64px]"
+          >
             <div
-              class="w-[364px] h-[293px] flex justify-center flex-col items-center"
+              class="w-[364px] h-[265px] lg:h-[293px] flex justify-center flex-col items-center"
             >
               <div
-                class="w-[180px] h-[180px] relative flex items-center justify-center"
+                class="lg:w-[180px] w-[160px] h-[160px] lg:h-[180px] relative flex items-center justify-center"
               >
                 <img class="absolute z-0" src="./assets/Group 19.svg" alt="" />
 
@@ -276,16 +591,16 @@
                 Affordability
               </h1>
               <p
-                class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
+                class="text-center font-manrope text-sm lg:text-base font-medium leading-[25px] w-[300px]"
               >
                 Bringing medications at the lowest possible prices
               </p>
             </div>
             <div
-              class="w-[364px] h-[293px] flex justify-center flex-col items-center"
+              class="w-[364px] h-[265px] lg:h-[293px] flex justify-center flex-col items-center"
             >
               <div
-                class="w-[180px] h-[180px] relative flex items-center justify-center"
+                class="lg:w-[180px] w-[160px] h-[160px] lg:h-[180px] relative flex items-center justify-center"
               >
                 <img class="absolute z-0" src="./assets/Group 20.svg" alt="" />
 
@@ -297,16 +612,16 @@
                 Transparency
               </h1>
               <p
-                class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
+                class="text-center font-manrope text-sm lg:text-base font-medium leading-[25px] w-[300px]"
               >
                 No hidden fees, ever
               </p>
             </div>
             <div
-              class="w-[364px] h-[293px] flex justify-center flex-col items-center"
+              class="w-[364px] h-[265px] lg:h-[293px] flex justify-center flex-col items-center"
             >
               <div
-                class="w-[180px] h-[180px] relative flex items-center justify-center"
+                class="lg:w-[180px] w-[160px] h-[160px] lg:h-[180px] relative flex items-center justify-center"
               >
                 <img class="absolute z-0" src="./assets/Group 21.svg" alt="" />
 
@@ -318,14 +633,14 @@
                 Accessibility
               </h1>
               <p
-                class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
+                class="text-center font-manrope text-sm lg:text-base font-medium leading-[25px] w-[300px]"
               >
                 Making medications available nationwide.
               </p>
             </div>
           </div>
           <button
-            class="mt-10 bg-[#011575] py-[7px] px-5 text-[15px] text-[#FFFFFF] font-manrope font-semibold leading-[24px] rounded-[80px]"
+            class="mt-10 bg-[#011575] py-[7px] px-5 text-[15px] text-[#FFFFFF] font-manrope font-semibold leading-[24px] rounded-[80px] w-[260px]"
           >
             View all medicines
           </button>
@@ -334,20 +649,38 @@
     </section>
     <!-- OUR IMPACT SECTION  -->
     <section>
-      <div class="relative h-[1220px] bg-[#FFFFFF]">
+      <div
+        class="relative min-w-[375px] lg:w-full h-[1857px] lg:h-[1220px] bg-[#FFFFFF]"
+      >
         <img
           src="./assets//Vector 1 2.png"
-          class="absolute top-[226px] z-0"
+          class="absolute top-[226px] z-0 lg:block hidden md:block"
+          alt=""
+        />
+        <img
+          src="./assets/small-V2.png"
+          class="absolute top-[516px] left-0 lg:hidden block md:hidden"
           alt=""
         />
         <div
-          class="absolute z-50 w-full h-full flex flex-col items-center gap-[120px] px-[75px] py-[120px]"
+          class="absolute z-50 w-full lg:w-full h-full lg:h-full flex flex-col items-center justify-center gap-[120px] lg:px-[75px] py-20 lg:py-[120px]"
         >
-          <div class="flex items-center justify-between w-[1290px]">
-            <img src="./assets/image 2.png" class="pr-[70px]" alt="" />
-            <div class="w-[585px]">
+          <div
+            class="flex lg:flex-row flex-col items-center justify-between w-full lg:w-[1290px] lg:gap-0 gap-6"
+          >
+            <img
+              src="./assets/image 2.png"
+              class="lg:pr-[70px] lg:block hidden md:block"
+              alt=""
+            />
+            <img
+              src="./assets/small-image.png"
+              class="lg:hover: block md:hidden"
+              alt=""
+            />
+            <div class="w-full lg:w-[585px] px-4">
               <h1
-                class="font-extrabold font-manrope text-[40px] leading-[46px] text-[#013366]"
+                class="font-extrabold font-manrope text-[32px] leading-[36px] lg:text-[40px] lg:leading-[46px] text-[#013366]"
               >
                 Where it all started
               </h1>
@@ -360,7 +693,7 @@
               </div>
 
               <p
-                class="text-[#334C66] text-base font-medium leading-[25px] font-manrope"
+                class="text-[#334C66] text-sm lg:text-base font-medium leading-[25px] font-manrope"
               >
                 Lorem ipsum dolor sit amet consectetur. Amet facilisi praesent
                 risus urna amet consequat ac ipsum sed. In molestie pulvinar
@@ -372,17 +705,26 @@
             </div>
           </div>
           <div
-            class="flex flex-row-reverse items-center justify-between w-[1290px]"
+            class="flex flex-col-reverse lg:flex-row-reverse items-center justify-between w-full lg:w-[1290px] px-4 gap-6"
           >
-            <img src="./assets/image (1) 2.png" class="pl-[70px]" alt="" />
-            <div class="w-[585px]">
+            <img
+              src="./assets/image (1) 2.png"
+              class="pl-[70px] lg:block hidden md:block"
+              alt=""
+            />
+            <img
+              src="./assets/small-image2.png"
+              class="lg:hidden block md:hidden"
+              alt=""
+            />
+            <div class="w-full lg:w-[585px]">
               <h1
-                class="font-extrabold font-manrope text-[40px] leading-[46px] text-[#013366]"
+                class="font-extrabold font-manrope text-[32px] lg:text-[40px] leading-[36px] lg:leading-[46px] text-[#013366]"
               >
                 Our Impact: Real Stories, Real Savings
               </h1>
               <p
-                class="text-[#334C66] text-base font-medium leading-[25px] font-manrope my-6"
+                class="text-[#334C66] text-sm lg:text-base font-medium leading-[25px] font-manrope my-6"
               >
                 Since our launch, we’ve helped thousands of customers save up to
                 80% on their prescription medications, without sacrificing
@@ -392,7 +734,7 @@
               </p>
               <div class="flex flex-col border-l-2 border-[#FFCE00] pl-6 gap-4">
                 <h4
-                  class="font-medium font-manrope text-lg leading-[20px] text-[#0068D0]"
+                  class="font-medium font-manrope text-base lg:text-lg leading-[20px] text-[#0068D0]"
                 >
                   “I was paying hundreds of dollars for my prescriptions each
                   month. Thanks to Find Med, I can finally afford my medication
@@ -411,9 +753,22 @@
     </section>
     <!-- FOOTER SECTION  -->
     <footer>
-      <div class="bg-[#001933] w-full h-[555px] relative flex justify-between">
-        <img class="absolute bottom-0" src="./assets/Vector 4.png" alt="" />
-        <div class="flex flex-col w-[517px] gap-[169px] pt-[80px] ml-[75px]">
+      <div
+        class="bg-[#001933] w-full lg:h-[555px] relative flex lg:flex-row flex-col justify-between px-4"
+      >
+        <img
+          class="absolute bottom-0 lg:block hidden left-0"
+          src="./assets/Vector 4.png"
+          alt="Vector"
+        />
+        <img
+          src="./assets/v6.png"
+          alt="Vector"
+          class="absolute bottom-0 left-0 lg:hidden block"
+        />
+        <div
+          class="flex flex-col lg:w-[517px] lg:gap-[169px] pt-[80px] lg:ml-[75px]"
+        >
           <div class="flex flex-col gap-2 w-[321px]">
             <div class="flex items-center gap-2">
               <img
@@ -429,50 +784,50 @@
             </div>
 
             <h3
-              class="text-[40px] leading-[48px] font-manrope font-medium text-[#D8D8D8]"
+              class="text-[32px] lg:text-[40px] leading-[38px] lg:leading-[48px] font-manrope font-medium text-[#D8D8D8] mt-[39px]"
             >
               Your trusted medicine partner
             </h3>
           </div>
-          <div class="flex gap-6 flex-col">
+          <div class="flex gap-6 flex-col lg:mt-0 mt-5">
             <p
-              class="text-[#D8D8D8] font-medium font-manrope text-base leading-[25px]"
+              class="text-[#D8D8D8] font-medium font-manrope text-sm lg:text-base leading-[25px]"
             >
               We are a dedicated team of healthcare professionals, technology
               innovators, and customer service experts.
             </p>
             <p
-              class="text-[#D8D8D899] font-manrope font-medium text-sm leading-[22px]"
+              class="text-[#D8D8D899] font-manrope font-medium text-sm leading-[22px] hidden lg:block"
             >
               All right reserved by the company 2024
             </p>
           </div>
         </div>
         <div
-          class="mt-20 mr-[75px] w-[475px] h-[416px] flex flex-col justify-between"
+          class="mt-10 lg:mt-20 lg:mr-[75px] lg:w-[475px] lg:h-[416px] flex flex-col lg:justify-between justify-center"
         >
-          <div class="flex justify-between">
+          <div class="flex justify-between h-[416px] lg:h-full">
             <div class="flex flex-col gap-4">
               <h1
-                class="font-extrabold text-lg leading-7 font-manrope text-[#FFFFFF]"
+                class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"
               >
                 Home
               </h1>
               <div class="flex flex-col gap-3">
                 <small
-                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                   >Home</small
                 >
                 <small
-                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                   >About us</small
                 >
                 <small
-                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                   >Medications</small
                 >
                 <small
-                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                   >Help</small
                 >
               </div>
@@ -480,24 +835,24 @@
             <div class="flex flex-col gap-12">
               <div class="flex gap-4 flex-col">
                 <h1
-                  class="font-extrabold text-lg leading-7 font-manrope text-[#FFFFFF]"
+                  class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"
                 >
                   Contact us
                 </h1>
                 <div class="flex flex-col gap-3">
                   <small
-                    class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                     >Northern hill, New york, USA</small
                   >
                   <small
-                    class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                     >+88 01723998977</small
                   >
                 </div>
               </div>
               <div class="flex flex-col gap-4">
                 <h1
-                  class="font-extrabold text-lg text-[#FFFFFF] leading-7 font-manrope"
+                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope"
                 >
                   Find us on
                 </h1>
@@ -509,7 +864,7 @@
               </div>
             </div>
           </div>
-          <div class="flex gap-12">
+          <div class="flex gap-12 lg:pb-0 pb-10 items-center justify-center">
             <small
               class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
               >Privacy policy</small
@@ -523,6 +878,11 @@
               >Cookie policy</small
             >
           </div>
+          <p
+            class="text-sm font-medium font-manrope leading-[22px] text-[#D8D8D899] text-center pb-10 lg:hidden block"
+          >
+            All right reserved by the company 2024
+          </p>
         </div>
       </div>
     </footer>
