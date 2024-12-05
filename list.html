@@ -173,27 +173,27 @@
         <div class="w-full h-[283px] flex items-end justify-center relative">
           <img
             src="./assets/list-banner2.png"
-            class="absolute right-0 top-[75px]"
+            class="absolute right-0 top-[75px] "
             alt=""
           />
-          <div class="w-[1290px] h-[208px] relative">
+          <div class="lg:w-full mx-4 lg:mx-[75px] w-full h-[208px] relative ">
             <div
-              class="w-full h-full bg-[#C0D4F04D] rounded-[32px] absolute backdrop-blur-[31px]"
+              class="w-full lg:w-full h-[204px] lg:h-full bg-[#C0D4F04D] rounded-[32px] absolute backdrop-blur-[31px] "
             >
               <img
                 src="./assets/list-banner.png"
-                class="absolute top-[15px] left-[58px]"
+                class="absolute top-[15px] -left-[59px] lg:top-[15px] lg:left-[58px] object-contain"
                 alt=""
               />
               <div
-                class="flex items-center justify-center mt-11 flex-col gap-8 "
+                class="flex items-center justify-center mt-11 flex-col  gap-6 lg:gap-8 mx-4 lg:mx-[185px]"
               >
                 <h1
-                  class="text-center text-[#011575] text-[28px] font-extrabold leading-[32px] font-manrope"
+                  class="text-center text-[#011575] text-[28px] font-extrabold leading-[32px] lg:leading-[32px] font-manrope"
                 >
                   Find necessary Medications
                 </h1>
-                <div class="w-[920px] h-[56px] rounded-[80px] bg-[#FFFFFF] ">
+                <div class="lg:w-full  w-full h-[56px] rounded-[80px] bg-[#FFFFFF] mb-4 lg:mb-0">
                   <!-- SEARCH BOX  -->
                   <div
                     class="flex items-center justify-between rounded-[80px] bg-[#FFFFFF] pl-8 pr-1 py-1 "
@@ -201,7 +201,7 @@
                     <input
                       id="medicine-search-box"
                       type="text"
-                      class="font-manrope font-normal text-base bg-none w-full outline-none bg-[#FFFFFF]"
+                      class="font-manrope font-normal text-sm lg:text-base bg-none w-full outline-none bg-[#FFFFFF] leading-[22px] lg:leading-[25px]"
                       placeholder="Search for medicine, brand name..."
                       autocomplete="off"
                     />
@@ -414,19 +414,19 @@
     </section>
     <!-- LIST TABLE  -->
     <section id="all">
-      <div class="flex flex-col items-center bg-[#FAFAFA]">
+      <div class="lg:flex flex-col items-center bg-[#FAFAFA]  ">
         <h
-        class="text-center text-xl font-bold font-manrope text-[#011575] leading-[23px] mb-6"
+        class="text-center text-xl font-bold font-manrope text-[#011575] leading-[23px] mb-6 "
       >
         All medication
       </h>
-      <div class="w-full px-[75px] flex items-center justify-center">
+      <div class="w-full px-4  lg:mx-[75px] flex items-center justify-center">
         <div class="overflow-x-auto rounded-xl border border-[#DDE7F6]">
-          <table class="table w-[1290px]">
+          <table class="table w-full lg:w-full">
             <!-- head -->
             <thead class="h-[40px]">
               <tr
-                class="bg-[#DDE7F6] font-manrope font-bold text-base leading-[18px] text-[#12366C]"
+                class="bg-[#DDE7F6] font-manrope font-bold text-sm lg:text-base leading-[18px] text-[#12366C]"
               >
                 <th>Name</th>
                 <th>Type</th>
@@ -436,13 +436,13 @@
               </tr>
             </thead>
             <tbody
-              class="font-manrope font-medium text-base leading-[25px] tet-[#334C66] h-[60px]"
+              class="font-manrope font-medium text-sm lg:text-base leading-[25px] tet-[#334C66] h-[60px]"
             >
               <tr class="border-t border-[#DDE7F6]">
-                <td class="">Amiloride HCl (Generic for Midamor)</td>
-                <td class="w-[200px]">Tablet</td>
-                <td class="w-[200px]">$ 109.20</td>
-                <td class="w-[200px]">$67.50</td>
+                <td class="lg:w-[420px] w-[220px] ">Amiloride HCl (Generic for Midamor)</td>
+                <td class="w-[73px] lg:w-[200px]">Tablet</td>
+                <td class="w-[73px] lg:w-[200px]">$ 109.20</td>
+                <td class="w-[73px] lg:w-[200px]">$67.50</td>
                 <td class="flex gap-6 items-center">
                   <span>$save $42</span>
                   <a
@@ -704,7 +704,7 @@
     </section>
     <!-- DIDN'T GET YOUR MEDICINES SECTION -->
      <section>
-      <div class=" flex items-center justify-center bg-[#FAFAFA]">
+      <div class=" flex items-center justify-center bg-[#FAFAFA] ">
         <div class="w-[1290px] h-[510px] my-[100px] bg-[#53DDFF] rounded-[32px] flex items-center justify-between">
           <div class=" ml-[56px] w-[544px] h-[330px]">
             <h1 class="font-manrope font-extrabold text-[#011575] text-[40px] leading-[46px]">Didn’t get your medicine?</h1>
