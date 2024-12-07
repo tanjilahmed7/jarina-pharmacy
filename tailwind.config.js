@@ -19,6 +19,7 @@ module.exports = {
         manrope: ["Manrope"],
       },
       
+      
     },
   },
   plugins: [require("daisyui")],
