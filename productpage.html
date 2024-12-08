@@ -142,14 +142,14 @@
           </ul>
           <div class="flex flex-col-reverse gap-4 items-center justify-center">
             <button
-              class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] w-[220px]"
+              class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
             >
               Log in
             </button>
             <button
-              class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] w-[220px]"
+              class="bg-[#011575] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#FFFFFF] font-manrope font-semibold text-[15px] w-[260px]"
             >
-              Log in
+              Sign up
             </button>
           </div>
         </div>
@@ -171,12 +171,12 @@
         class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA]"
       >
         <div
-          class="pt-12 px-[75px] flex flex-col gap-6 2xl:justify-between items-center"
+          class="pt-8 lg:pt-12 lg:px-[75px] flex flex-col gap-6 2xl:justify-between items-start lg:items-center"
         >
           <div
-            class="text-base font-medium font-manrope text-[#334C66] w-[1290px]"
+            class="text-base font-medium font-manrope text-[#334C66] lg:w-[1290px]"
           >
-            <ul class="flex items-center">
+            <ul class="flex items-center px-4 lg:px-0">
               <li class="text-[#011575] font-bold hover:underline">
                 <a href="#">Medications</a>
               </li>
@@ -192,27 +192,38 @@
               </li>
             </ul>
           </div>
-          <div class="flex gap-[75px] 2xl:justify-center">
-            <div class="h-[589px] w-[633px] flex flex-col gap-4">
+          <div
+            class="flex lg:flex-row flex-col gap-6 lg:gap-[75px] 2xl:justify-center w-[calc(100%-0px)]"
+          >
+            <div class="lg:h-[589px] lg:w-[633px] flex flex-col gap-4 mx-4">
               <div
-                class="bg-[#FFFFFF] border border-[#DDE7F6] w-full h-[493px] rounded-[24px] flex items-center justify-center"
+                class="bg-[#FFFFFF] border border-[#DDE7F6] w-full lg:w-full lg:h-[493px] h-[267px] rounded-[24px] flex items-center justify-center"
               >
-                <img src="./assets/Group 18.svg" alt="" />
+                <img
+                  src="./assets/Group 18.svg"
+                  alt="Product"
+                  class="lg:block hidden md:hidden"
+                />
+                <img
+                  src="./assets/Group 18 2.svg"
+                  class="lg:hidden md:block block object-contain"
+                  alt=""
+                />
               </div>
               <div>
                 <img src="./assets/Frame 213.svg" alt="" />
               </div>
             </div>
 
-            <div>
+            <div class="mx-4 lg:mx-0">
               <h1
                 class="font-manrope font-extrabold text-2xl leading-[27px] text-[#011575]"
               >
                 Alfuzosin HCl ER
               </h1>
-              <div class="mt-3 mb-6 w-[582px]">
+              <div class="mt-3 mb-6 min-w-[343px] lg:w-[582px]">
                 <p
-                  class="text-[#334C66] font-medium font-manrope text-sm leading-[22px]"
+                  class="text-[#334C66] font-medium font-manrope text-sm leading-[22px] text-wrap"
                 >
                   Product images are for illustrative purposes only. We can not
                   guarantee a specific manufacturer when you place an order.
@@ -288,33 +299,47 @@
                     </button>
                   </div>
                 </div>
-                <button
-                  class="py-[7px] px-5 bg-[#011575] rounded-[80px] text-[#FFFFFF] inline-flex font-semibold text-[15px] leading-[24px] max-w-max mt-[28px]"
-                >
-                  Buy now
-                </button>
+                <div class="flex gap-4 mt-10">
+                  <button
+                    class="py-[7px] px-5 bg-[#011575] rounded-[80px] text-[#FFFFFF] inline-flex font-semibold text-[15px] leading-[24px]"
+                  >
+                    Buy now
+                  </button>
+                  <button
+                    class="py-[7px] px-5 bg-[#FFFFFF] rounded-[80px] text-[#334C66] inline-flex font-semibold text-[15px] leading-[24px] border border-[#E5E5E5]"
+                  >
+                    Add to cart
+                  </button>
+                </div>
               </form>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ---------->
+    <!-- SECTION ---------->
     <section>
       <div
-        class="flex items-center justify-center w-full bg-[#FAFAFA] pt-[56px] pb-[100px]"
+        class="flex items-center justify-center w-full bg-[#FAFAFA] pt-[56px] pb-6 lg:pb-[100px]"
       >
-        <div class="flex justify-between w-[1290px] mx-[75px]">
+        <div
+          class="flex lg:flex-row flex-col justify-between lg:w-[1290px] w-full px-4 lg:mx-[75px] gap-4 lg:gap-0"
+        >
           <div
-            class="bg-[#EEF4ED] w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
+            class="bg-[#EEF4ED] w-full lg:w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
           >
             <img
               src="./assets/Vector 6 2.png"
-              class="absolute right-0 z-0"
+              class="absolute top-0 right-0 z-0 lg:block hidden"
+              alt=""
+            />
+            <img
+              src="./assets/samll-product-v.png"
+              class="absolute right-0 lg:hidden"
               alt=""
             />
             <div
-              class="w-full h-full absolute z-50 p-12 flex flex-col justify-between"
+              class="w-full h-full absolute z-50 p-4 lg:p-12 flex flex-col lg:justify-between"
             >
               <div class="flex flex-col gap-4">
                 <h1
@@ -323,7 +348,7 @@
                   Contact your doctor for a prescription
                 </h1>
                 <p
-                  class="font-manrope font-medium text-sm leading-[22px] text-[#013366] pt-4 z-50 w-[405px]"
+                  class="font-manrope font-medium text-sm leading-[22px] text-[#013366] lg:pt-4 z-50 w-full lg:w-[405px]"
                 >
                   Create an account, and receive an email once we receive your
                   prescription. Don’t see the quantity you need? We will fill
@@ -332,23 +357,23 @@
               </div>
               <a
                 href=""
-                class="text-[#011575] text-[15px] font-manrope font-semibold leading-[24px] underline cursor-pointer py-[7px]"
+                class="text-[#011575] text-[15px] font-manrope font-semibold leading-[24px] underline cursor-pointer py-[7px] mt-2 lg:mt-0"
                 >Get started</a
               >
             </div>
           </div>
-          <div class="bg-[#FFFFFF] rounded-[24px] w-[582px]">
-            <div class="collapse p-6">
+          <div class="bg-[#FFFFFF] rounded-[24px] w-full lg:w-[582px]">
+            <div class="collapse p-4 lg:p-6">
               <input type="radio" name="my-accordion-2" checked="checked" />
               <div
-                class="collapse-title flex justify-between px-0 text-[#011575] font-extrabold font-manrope text-lg leading-5 border-b border-[#F0F4FA]"
+                class="collapse-title flex justify-between px-0 text-[#011575] font-extrabold font-manrope text-lg leading-5 border-b border-[#F0F4FA] w-full lg:w-full"
               >
                 Transparent Pricing
                 <img src="./assets/Frame (6).svg" alt="" />
               </div>
-              <div class="collapse-content pt-6 px-0">
+              <div class="collapse-content pt-6 px-0 w-full lg:w-full">
                 <p
-                  class="text-[#334C66] text-base font-manrope font-medium leading-[25px] text-center"
+                  class="text-[#334C66] text-sm lg:text-base font-manrope font-medium leading-[25px] text-center"
                 >
                   We think you should know how much your medications cost and
                   why. A
@@ -358,7 +383,7 @@
                   will cost:
                 </p>
                 <div
-                  class="border-4 border-[#DDE7F6] p-6 rounded-2xl flex flex-col gap-6 h-[172px] w-[534px] relative my-6"
+                  class="border-4 border-[#DDE7F6] p-6 rounded-2xl flex flex-col gap-6 h-[172px] lg:w-[534px] relative my-6 overflow-visible"
                 >
                   <div class="flex justify-between">
                     <h1
@@ -385,25 +410,27 @@
                     </h3>
                   </div>
                   <button
-                    class="bg-[#0070E3] w-[558px] h-10 absolute bottom-6 -left-4 rounded-lg text-[#FFFFFF] font-extrabold font-manrope text-base leading-[18px]"
+                    class="bg-[#0070E3] w-[343px] lg:w-[558px] h-10 absolute bottom-2 lg:bottom-6 -left-5 lg:-left-4 rounded-lg text-[#FFFFFF] font-extrabold font-manrope text-base leading-[18px]"
                   >
                     You save $669.00 on your medication
                   </button>
                 </div>
               </div>
               <h6
-                class="text-[#334C66] font-medium font-manrope text-sm leading-[22px] text-center"
+                class="text-[#334C66] font-medium font-manrope text-sm leading-[22px] text-center w-[311px] lg:w-full"
               >
                 Your final cost will include shipping and taxes, which vary by
                 location.
               </h6>
-              <div class="flex flex-col items-center gap-8 mt-12">
+              <div class="flex flex-col items-center gap-8 mt-12 min-w-[311px]">
                 <h1
-                  class="font-semibold font-manrope text-[#011575] text-base leading-[18px]"
+                  class="font-semibold font-manrope text-[#011575] text-base leading-[18px] text-center"
                 >
                   Cost breakdown
                 </h1>
-                <div class="flex gap-5 px-0 w-full">
+                <div
+                  class="flex lg:flex-row flex-col items-center justify-center gap-5 px-0 w-full"
+                >
                   <div
                     class="flex flex-col items-center justify-center text-center w-[119px]"
                   >
@@ -489,9 +516,22 @@
     </section>
     <!-- FOOTER SECTION  -->
     <footer>
-      <div class="bg-[#001933] w-full h-[555px] relative flex justify-between">
-        <img class="absolute bottom-0" src="./assets/Vector 4.png" alt="" />
-        <div class="flex flex-col w-[517px] gap-[169px] pt-[80px] ml-[75px]">
+      <div
+        class="bg-[#001933] w-full lg:h-[555px] relative flex lg:flex-row flex-col justify-between px-4"
+      >
+        <img
+          class="absolute bottom-0 lg:block hidden left-0"
+          src="./assets/Vector 4.png"
+          alt="Vector"
+        />
+        <img
+          src="./assets/v6.png"
+          alt="Vector"
+          class="absolute bottom-0 left-0 lg:hidden block"
+        />
+        <div
+          class="flex flex-col lg:w-[517px] lg:gap-[169px] pt-[80px] lg:ml-[75px]"
+        >
           <div class="flex flex-col gap-2 w-[321px]">
             <div class="flex items-center gap-2">
               <img
@@ -507,50 +547,50 @@
             </div>
 
             <h3
-              class="text-[40px] leading-[48px] font-manrope font-medium text-[#D8D8D8]"
+              class="text-[32px] lg:text-[40px] leading-[38px] lg:leading-[48px] font-manrope font-medium text-[#D8D8D8] mt-[39px]"
             >
               Your trusted medicine partner
             </h3>
           </div>
-          <div class="flex gap-6 flex-col">
+          <div class="flex gap-6 flex-col lg:mt-0 mt-5">
             <p
-              class="text-[#D8D8D8] font-medium font-manrope text-base leading-[25px]"
+              class="text-[#D8D8D8] font-medium font-manrope text-sm lg:text-base leading-[25px]"
             >
               We are a dedicated team of healthcare professionals, technology
               innovators, and customer service experts.
             </p>
             <p
-              class="text-[#D8D8D899] font-manrope font-medium text-sm leading-[22px]"
+              class="text-[#D8D8D899] font-manrope font-medium text-sm leading-[22px] hidden lg:block"
             >
               All right reserved by the company 2024
             </p>
           </div>
         </div>
         <div
-          class="mt-20 mr-[75px] w-[475px] h-[416px] flex flex-col justify-between"
+          class="mt-10 lg:mt-20 lg:mr-[75px] lg:w-[475px] lg:h-[416px] flex flex-col lg:justify-between justify-center"
         >
-          <div class="flex justify-between">
+          <div class="flex justify-between h-[416px] lg:h-full">
             <div class="flex flex-col gap-4">
               <h1
-                class="font-extrabold text-lg leading-7 font-manrope text-[#FFFFFF]"
+                class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"
               >
                 Home
               </h1>
               <div class="flex flex-col gap-3">
                 <small
-                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                   >Home</small
                 >
                 <small
-                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                   >About us</small
                 >
                 <small
-                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                   >Medications</small
                 >
                 <small
-                  class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                   >Help</small
                 >
               </div>
@@ -558,24 +598,24 @@
             <div class="flex flex-col gap-12">
               <div class="flex gap-4 flex-col">
                 <h1
-                  class="font-extrabold text-lg leading-7 font-manrope text-[#FFFFFF]"
+                  class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"
                 >
                   Contact us
                 </h1>
                 <div class="flex flex-col gap-3">
                   <small
-                    class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                     >Northern hill, New york, USA</small
                   >
                   <small
-                    class="font-manrope text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                     >+88 01723998977</small
                   >
                 </div>
               </div>
               <div class="flex flex-col gap-4">
                 <h1
-                  class="font-extrabold text-lg text-[#FFFFFF] leading-7 font-manrope"
+                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope"
                 >
                   Find us on
                 </h1>
@@ -587,7 +627,7 @@
               </div>
             </div>
           </div>
-          <div class="flex gap-12">
+          <div class="flex gap-12 lg:pb-0 pb-10 items-center justify-center">
             <small
               class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
               >Privacy policy</small
@@ -601,6 +641,11 @@
               >Cookie policy</small
             >
           </div>
+          <p
+            class="text-sm font-medium font-manrope leading-[22px] text-[#D8D8D899] text-center pb-10 lg:hidden block"
+          >
+            All right reserved by the company 2024
+          </p>
         </div>
       </div>
     </footer>
