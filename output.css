@@ -4018,6 +4018,10 @@ input[type="number"] {
     margin-top: 1.5rem;
   }
 
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -4472,6 +4476,10 @@ input[type="number"] {
 
   .lg\:leading-\[28px\] {
     line-height: 28px;
+  }
+
+  .lg\:leading-\[18px\] {
+    line-height: 18px;
   }
 }
 
