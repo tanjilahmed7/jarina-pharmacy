@@ -61,7 +61,7 @@
           </div>
 
           <!-- First Modal -->
-          <dialog id="my_modal_3" class="modal">
+          <dialog id="my_modal_3" class="modal z-[999999]">
             <div class="modal-box relative overflow-visible p-[56px]">
               <form method="dialog">
                 <button
@@ -414,6 +414,7 @@
           <div class="flex flex-col-reverse gap-4 items-center justify-center">
             <button
               class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+              onclick="my_modal_3.showModal()"
             >
               Log in
             </button>
@@ -886,6 +887,7 @@
         </div>
       </div>
     </footer>
+    <script src="./modal.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

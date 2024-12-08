@@ -2119,6 +2119,14 @@ details.collapse summary::-webkit-details-marker {
   z-index: 99999;
 }
 
+.z-\[999999px\] {
+  z-index: 999999px;
+}
+
+.z-\[999999\] {
+  z-index: 999999;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -3463,6 +3471,11 @@ details.collapse summary::-webkit-details-marker {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -3561,6 +3574,10 @@ details.collapse summary::-webkit-details-marker {
 
 .leading-\[46px\] {
   line-height: 46px;
+}
+
+.leading-\[13px\] {
+  line-height: 13px;
 }
 
 .text-\[\#0068D0\] {
@@ -4416,6 +4433,11 @@ input[type="number"] {
   .lg\:py-\[6px\] {
     padding-top: 6px;
     padding-bottom: 6px;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .lg\:pb-0 {
