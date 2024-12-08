@@ -405,38 +405,19 @@
             </div>
           </dialog>
         </div>
-        <div
-          class="flex-col items-center justify-center gap-[56px] absolute top-16 h-screen px-0 mx-0 w-0 overflow-x-hidden right-0 z-50 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] rounded-t-[32px] flex transition-all duration-500 myNav"
-        >
-          <ul
-            class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366]"
+
+        <div class="lg:hidden flex gap-4">
+          <button
+            class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center"
+            onclick="my_modal_6.showModal()"
           >
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./list.html">Medications</a>
-            <a href="./index.html">Help</a>
-          </ul>
-          <div class="flex flex-col-reverse gap-4 items-center justify-center">
-            <button
-              class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] w-[220px]"
-            >
-              Log in
-            </button>
-            <button
-              class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] w-[220px]"
-            >
-              Sign up
-            </button>
-          </div>
-        </div>
-
-        <div class="lg:hidden flex">
-          <button onclick="toggleFunc()" id="openMenuButton" class="block">
-            <img src="./assets/Frame 3.svg" alt="Menu Open" />
+            <img class="w-5 h-5" src="./assets/Frame (1) 4.svg" alt="" />
           </button>
-
-          <button onclick="toggleFunc()" id="closeMenuButton" class="hidden">
-            <img src="./assets/menu.png" alt="Menu Close" />
+          <button
+            class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center"
+            onclick="my_modal_3.showModal()"
+          >
+            <img class="w-5 h-5" src="./assets/Frame 5.svg" alt="" />
           </button>
         </div>
       </div>
@@ -445,21 +426,21 @@
     <!-- FIND PREFERRED MEDICINE  -->
     <section>
       <div
-        class="rounded-t-[32px] bg-gradient-to-b from-[#E3F7EA] to-[#FAFAFA] flex items-center justify-center flex-col pt-20 pb-[100px]"
+        class="rounded-t-[32px] bg-gradient-to-b from-[#E3F7EA] to-[#FAFAFA] flex items-center justify-center flex-col pt-10 lg:pt-20 pb-10 lg:pb-[100px] px-4 lg:px-0"
       >
         <img src="./assets/3789177 1.svg" alt="" />
         <h1
-          class="font-extrabold font-manrope text-[40px] text-[#011575] leading-[46px] mt-8"
+          class="font-extrabold font-manrope text-[32px] lg:text-[40px] text-[#011575] leading-[36px] lg:leading-[46px] mt-8 text-center"
         >
           Find preferred medicine
         </h1>
         <p
-          class="font-medium text-lg text-[#334C66] leading-[18px] font-manrope text-center mt-6 mb-8"
+          class="font-medium text-sm lg:text-lg text-[#334C66] leading-[18px] font-manrope text-center mt-4 lg:mt-6 mb-8"
         >
           Search and find necessary Medications
         </p>
         <button
-          class="py-[7px] px-5 rounded-[80px] bg-[#011575] text-[#FFFFFF] text-[15px] font-manrope font-semibold leading-6"
+          class="py-[7px] px-5 rounded-[80px] bg-[#011575] text-[#FFFFFF] text-[15px] font-manrope font-semibold leading-6 lg:w-[162px] w-full"
           type="submit"
         >
           Find Medications

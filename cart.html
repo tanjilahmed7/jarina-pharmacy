@@ -184,11 +184,10 @@
         </h1>
 
         <!-- TABLE  -->
-        <div
-          class="mt-6 flex gap-8 border-2 border-red-700 lg:flex-row flex-col"
-        >
+        <div class="mt-6 flex gap-8 lg:flex-row flex-col">
+          <!-- LG TABLE  -->
           <div
-            class="overflow-x-auto rounded-t-[12px] border border-[#DDE7F6] lg:w-[880px]"
+            class="overflow-x-auto rounded-t-[12px] border border-[#DDE7F6] lg:w-[880px] lg:block hidden"
           >
             <table class="table w-full">
               <!-- head -->
@@ -326,8 +325,137 @@
               </tbody>
             </table>
           </div>
+          <!-- TABLE  -->
+          <div class="lg:hidden border border-[#DDE7F6] w-full">
+            <div class="border border-[#DDE7F6] py-[10px] px-4">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/small-cart.svg" alt="" />
+                  <p
+                    class="font-manrope font-medium tetx-[#334C66] text-base leading-[25px]"
+                  >
+                    Medicine name
+                  </p>
+                </div>
+                <p
+                  class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
+                >
+                  $7.50
+                </p>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex items-center justify-center gap-4 ml-[56px]">
+                  <div
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  >
+                    <img
+                      class="w-4 h-4 cursor-pointer object-contain"
+                      src="./assets/Frame (2).svg"
+                      alt="Decrease Quantity"
+                    />
+                  </div>
+
+                  <span>1</span>
+                  <div
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  >
+                    <img
+                      class="w-4 h-4 cursor-pointer"
+                      src="./assets/Frame (1) 3.svg"
+                      alt="Increase Quantity"
+                    />
+                  </div>
+                </div>
+                <img src="./assets/Frame 4.svg" alt="" />
+              </div>
+            </div>
+            <div class="border border-[#DDE7F6] py-[10px] px-4">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/small-cart.svg" alt="" />
+                  <p
+                    class="font-manrope font-medium tetx-[#334C66] text-base leading-[25px]"
+                  >
+                    Medicine name
+                  </p>
+                </div>
+                <p
+                  class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
+                >
+                  $7.50
+                </p>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex items-center justify-center gap-4 ml-[56px]">
+                  <div
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  >
+                    <img
+                      class="w-4 h-4 cursor-pointer object-contain"
+                      src="./assets/Frame (2).svg"
+                      alt="Decrease Quantity"
+                    />
+                  </div>
+
+                  <span>1</span>
+                  <div
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  >
+                    <img
+                      class="w-4 h-4 cursor-pointer"
+                      src="./assets/Frame (1) 3.svg"
+                      alt="Increase Quantity"
+                    />
+                  </div>
+                </div>
+                <img src="./assets/Frame 4.svg" alt="" />
+              </div>
+            </div>
+            <div class="border border-[#DDE7F6] py-[10px] px-4">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/small-cart.svg" alt="" />
+                  <p
+                    class="font-manrope font-medium tetx-[#334C66] text-base leading-[25px]"
+                  >
+                    Medicine name
+                  </p>
+                </div>
+                <p
+                  class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
+                >
+                  $7.50
+                </p>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex items-center justify-center gap-4 ml-[56px]">
+                  <div
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  >
+                    <img
+                      class="w-4 h-4 cursor-pointer object-contain"
+                      src="./assets/Frame (2).svg"
+                      alt="Decrease Quantity"
+                    />
+                  </div>
+
+                  <span>1</span>
+                  <div
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  >
+                    <img
+                      class="w-4 h-4 cursor-pointer"
+                      src="./assets/Frame (1) 3.svg"
+                      alt="Increase Quantity"
+                    />
+                  </div>
+                </div>
+                <img src="./assets/Frame 4.svg" alt="" />
+              </div>
+            </div>
+          </div>
           <div
-            class="flex flex-col gap-3 bg-[#FFFFFF] w-[378px] h-[276px] p-6 rounded-xl"
+            class="flex flex-col gap-3 bg-[#FFFFFF] w-full lg:w-[378px] h-[276px] p-6 rounded-xl"
           >
             <h1
               class="mb-3 font-bold text-[#011575] text-base font-manrope leading-[18px]"
@@ -371,7 +499,7 @@
               </h4>
             </div>
             <button
-              class="w-[330px] h-10 bg-[#011575] text-[#FFFFFF] font-manrope font-semibold text-[15px] leading-6 rounded-[80px] mt-8"
+              class="lg:w-[330px] h-10 bg-[#011575] text-[#FFFFFF] font-manrope font-semibold text-[15px] leading-6 rounded-[80px] mt-8"
             >
               Checkout
             </button>
@@ -514,5 +642,6 @@
         </div>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
