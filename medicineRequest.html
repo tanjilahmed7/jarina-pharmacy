@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="">
+      <div class="flex">
+        <!-- SIDBAR  -->
+        <div class="bg-[#237AFF] w-[280px] min-h-screen p-6">
+          <div class="flex gap-2 items-start">
+            <a href="./index.html" class="flex items-center gap-2 h-[23px]">
+              <img
+                class="w-[22px] h-[22px] object-contain"
+                src="./assets/dashboard-logo.svg"
+                alt=""
+              />
+
+              <h2
+                class="font-oswald font-medium text-[22.02px] leading-[36px] text-[#FFFFFF]"
+              >
+                Find Med
+              </h2>
+            </a>
+            <small
+              class="text-[#FFFFFF] font-manrope font-medium text-[10px] p-0 m-0 leading-4 mt-[9px]"
+              >Admin panel</small
+            >
+          </div>
+          <ul class="mt-8 flex flex-col gap-3 w-full">
+            <li
+              class="p-[10px] bg-[#1955B2] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
+            >
+              <a href="./dashboard.html">Dashboard</a>
+            </li>
+            <li
+              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
+            >
+              <a href="./medicineRequest.html">Medicine request</a>
+            </li>
+            <li
+              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
+            >
+              <a href="">Delivery</a>
+            </li>
+            <li
+              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
+            >
+              <a href="">Inventory</a>
+            </li>
+          </ul>
+        </div>
+        <!-- DIV  -->
+        <div class="w-full">
+          <!-- HEADER  -->
+          <div
+            class="w-full flex items-center justify-end gap-10 border-b border-[#E5E5E5]"
+          >
+            <div
+              class="w-[282px] h-10 px-4 flex items-center justify-between bg-[#F1F3F4] rounded-[35px] my-3"
+            >
+              <input
+                type="text"
+                class="font-manrope font-medium text-sm bg-transparent w-full outline-none leading-[22px] h-full"
+                placeholder="Search here"
+              />
+              <div class="">
+                <img
+                  class="w-6 h-6 object-contain"
+                  src="./assets/search-icon.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p
+              class="text-[#334C66] font-manrope text-sm leading-[22px] font-semibold mr-4"
+            >
+              Leslie Alexander
+            </p>
+          </div>
+          <div class="mx-6 flex flex-col gap-4">
+            <h1
+              class="text-[#334C66] text-xl font-manrope font-medium leading-[32px]"
+            >
+              Medecine request
+            </h1>
+            <div class="flex gap-4">
+              <div
+                class="bg-[#E0ECFF] p-4 flex flex-col rounded-lg gap-1 w-[259px]"
+              >
+                <h5
+                  class="font-medium font-manrope text-[#334C66] text-base leading-[25px]"
+                >
+                  New request
+                </h5>
+                <h2
+                  class="text-[#03051C] text-[28px] leading-[44px] font-bold font-manrope"
+                >
+                  34
+                </h2>
+              </div>
+              <div
+                class="bg-[#E0ECFF] p-4 flex flex-col rounded-lg gap-1 w-[259px]"
+              >
+                <h5
+                  class="font-medium font-manrope text-[#334C66] text-base leading-[25px]"
+                >
+                  Total request
+                </h5>
+                <h2
+                  class="text-[#03051C] text-[28px] leading-[44px] font-bold font-manrope"
+                >
+                  340
+                </h2>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-4">
+                <h1
+                  class="text-[#237AFF] text-sm leading-[20px] font-extrabold font-manrope"
+                >
+                  All Request
+                </h1>
+                <div
+                  class="w-[282px] h-10 px-4 flex items-center justify-between bg-[#F1F3F4] rounded-[35px] my-3"
+                >
+                  <input
+                    type="text"
+                    class="font-manrope font-medium text-sm bg-transparent w-full outline-none leading-[22px] h-full"
+                    placeholder="Search history"
+                  />
+                  <div class="">
+                    <img
+                      class="w-6 h-6 object-contain"
+                      src="./assets/search-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-4 items-center">
+                <h5>1 - 50 of 223</h5>
+                <div class="flex gap-[14px]">
+                  <button class="p-[10px]">
+                    <img src="./assets/dashboard-arrow.svg" alt="" />
+                  </button>
+                  <button class="p-[10px]">
+                    <img src="./assets/dashboard-arrow-2.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-6">
+            <div class="overflow-x-auto border border-[#DDE7F6] w-full">
+              <table class="table w-full lg:w-full">
+                <!-- head -->
+                <thead class="h-[40px]">
+                  <tr
+                    class="bg-[#DDE7F6] font-manrope font-semibold text-sm leading-[20px] text-[#0F1B27]"
+                  >
+                    <th class="lg:w-[120px] p-[10px]">Name</th>
+                    <th class="lg:w-[195px] p-[10px]">Mail</th>
+                    <th class="lg:w-[110px] p-[10px]">Medicine</th>
+                    <th class="w-[439px] p-[10px]">Medicine name</th>
+                    <th class="lg:w-[100px] p-[10px]">Total cost</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody
+                  class="font-manrope font-normal text-[12px] leading-[20px] text-[#0F1B27] h-[60px]"
+                >
+                  <tr class="border-t border-[#DDE7F6] h-[56px]">
+                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
+                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
+                    <td class="lg:w-[110px] p-[10px]">3</td>
+                    <td class="w-[439px] p-[10px]">
+                      Name here, name here, name here
+                    </td>
+                    <td class="w-[100px] p-[10px]">$7.5</td>
+                    <td>View medicines</td>
+                  </tr>
+                  <tr class="border-t border-[#DDE7F6] h-[56px]">
+                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
+                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
+                    <td class="lg:w-[110px] p-[10px]">3</td>
+                    <td class="w-[439px] p-[10px]">
+                      Name here, name here, name here
+                    </td>
+                    <td class="w-[100px] p-[10px]">$7.5</td>
+                    <td>View medicines</td>
+                  </tr>
+                  <tr class="border-t border-[#DDE7F6] h-[56px]">
+                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
+                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
+                    <td class="lg:w-[110px] p-[10px]">3</td>
+                    <td class="w-[439px] p-[10px]">
+                      Name here, name here, name here
+                    </td>
+                    <td class="w-[100px] p-[10px]">$7.5</td>
+                    <td>View medicines</td>
+                  </tr>
+                  <tr class="border-t border-[#DDE7F6] h-[56px]">
+                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
+                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
+                    <td class="lg:w-[110px] p-[10px]">3</td>
+                    <td class="w-[439px] p-[10px]">
+                      Name here, name here, name here
+                    </td>
+                    <td class="w-[100px] p-[10px]">$7.5</td>
+                    <td>View medicines</td>
+                  </tr>
+                  <tr class="border-t border-[#DDE7F6] h-[56px]">
+                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
+                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
+                    <td class="lg:w-[110px] p-[10px]">3</td>
+                    <td class="w-[439px] p-[10px]">
+                      Name here, name here, name here
+                    </td>
+                    <td class="w-[100px] p-[10px]">$7.5</td>
+                    <td>View medicines</td>
+                  </tr>
+                  <tr class="border-t border-[#DDE7F6] h-[56px]">
+                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
+                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
+                    <td class="lg:w-[110px] p-[10px]">3</td>
+                    <td class="w-[439px] p-[10px]">
+                      Name here, name here, name here
+                    </td>
+                    <td class="w-[100px] p-[10px]">$7.5</td>
+                    <td>View medicines</td>
+                  </tr>
+                  <tr class="border-t border-[#DDE7F6] h-[56px]">
+                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
+                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
+                    <td class="lg:w-[110px] p-[10px]">3</td>
+                    <td class="w-[439px] p-[10px]">
+                      Name here, name here, name here
+                    </td>
+                    <td class="w-[100px] p-[10px]">$7.5</td>
+                    <td>View medicines</td>
+                  </tr>
+                  <tr class="border-t border-[#DDE7F6] h-[56px]">
+                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
+                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
+                    <td class="lg:w-[110px] p-[10px]">3</td>
+                    <td class="w-[439px] p-[10px]">
+                      Name here, name here, name here
+                    </td>
+                    <td class="w-[100px] p-[10px]">$7.5</td>
+                    <td>View medicines</td>
+                  </tr>
+                  <tr class="border-t border-[#DDE7F6] h-[56px]">
+                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
+                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
+                    <td class="lg:w-[110px] p-[10px]">3</td>
+                    <td class="w-[439px] p-[10px]">
+                      Name here, name here, name here
+                    </td>
+                    <td class="w-[100px] p-[10px]">$7.5</td>
+                    <td>View medicines</td>
+                  </tr>
+                  <tr class="border-t border-[#DDE7F6] h-[56px]">
+                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
+                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
+                    <td class="lg:w-[110px] p-[10px]">3</td>
+                    <td class="w-[439px] p-[10px]">
+                      Name here, name here, name here
+                    </td>
+                    <td class="w-[100px] p-[10px]">$7.5</td>
+                    <td>View medicines</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
