@@ -155,11 +155,15 @@
         </div>
 
         <div class="lg:hidden flex">
-          <button onclick="toggleFunc()" id="openMenuButton" class="block">
+          <button onclick="toggleFuncMenu()" id="openMenuButton" class="block">
             <img src="./assets/Frame 3.svg" alt="Menu Open" />
           </button>
 
-          <button onclick="toggleFunc()" id="closeMenuButton" class="hidden">
+          <button
+            onclick="toggleFuncMenu()"
+            id="closeMenuButton"
+            class="hidden"
+          >
             <img src="./assets/menu.png" alt="Menu Close" />
           </button>
         </div>
@@ -301,12 +305,12 @@
                 </div>
                 <div class="flex gap-4 mt-10">
                   <button
-                    class="py-[7px] px-5 bg-[#011575] rounded-[80px] text-[#FFFFFF] inline-flex font-semibold text-[15px] leading-[24px]"
+                    class="py-[7px] bg-[#011575] rounded-[80px] text-[#FFFFFF] font-semibold text-[15px] leading-[24px] w-[163.5px] lg:w-[121px] text-center"
                   >
                     Buy now
                   </button>
                   <button
-                    class="py-[7px] px-5 bg-[#FFFFFF] rounded-[80px] text-[#334C66] inline-flex font-semibold text-[15px] leading-[24px] border border-[#E5E5E5]"
+                    class="py-[7px] bg-[#FFFFFF] rounded-[80px] text-[#334C66] w-[163.5px] lg:w-[121px] font-semibold text-[15px] leading-[24px] border border-[#E5E5E5]"
                   >
                     Add to cart
                   </button>
@@ -373,33 +377,35 @@
               </div>
               <div class="collapse-content pt-6 px-0 w-full lg:w-full">
                 <p
-                  class="text-[#334C66] text-sm lg:text-base font-manrope font-medium leading-[25px] text-center"
+                  class="text-[#334C66] text-sm lg:text-base font-manrope font-medium leading-[22px] lg:leading-[25px] text-center"
                 >
                   We think you should know how much your medications cost and
-                  why. A
+                  why. <br class="lg:hidden block" />
+                  A
                   <spa class="font-bold text-[#011575]"
                     >60 count supply of 300mg Alfuzosin HCl ER </spa
                   >
                   will cost:
                 </p>
+
                 <div
-                  class="border-4 border-[#DDE7F6] p-6 rounded-2xl flex flex-col gap-6 h-[172px] lg:w-[534px] relative my-6 overflow-visible"
+                  class="border-4 border-[#DDE7F6] py-6 px-4 lg:p-6 rounded-2xl flex flex-col gap-6 h-[172px] min-w-[311px] lg:w-[534px] relative my-6 overflow-visible"
                 >
                   <div class="flex justify-between">
                     <h1
-                      class="font-extrabold font-manrope text-[#334C66] text-base leading-[18px]"
+                      class="font-extrabold font-manrope text-[#334C66] text-sm lg:text-base lg:leading-[18px] leading-none"
                     >
                       Retail price at other pharmacies
                     </h1>
                     <h3
-                      class="text-[#0070E3] font-extrabold font-manrope text-base leading-[18px]"
+                      class="text-[#0070E3] font-extrabold font-manrope text-sm lg:text-base leading-4 lg:leading-[18px]"
                     >
                       $676.5
                     </h3>
                   </div>
                   <div class="flex justify-between">
                     <h1
-                      class="font-extrabold font-manrope text-[#334C66] text-base leading-[18px]"
+                      class="font-extrabold font-manrope text-[#334C66] text-sm lg:text-base leading-[18px]"
                     >
                       Your drug cost with us
                     </h1>
@@ -410,14 +416,14 @@
                     </h3>
                   </div>
                   <button
-                    class="bg-[#0070E3] w-[343px] lg:w-[558px] h-10 absolute bottom-2 lg:bottom-6 -left-5 lg:-left-4 rounded-lg text-[#FFFFFF] font-extrabold font-manrope text-base leading-[18px]"
+                    class="bg-[#0070E3] w-[calc(100%+24px)] max-w-[558px] h-10 absolute bottom-2 lg:bottom-6 left-1/2 transform -translate-x-1/2 rounded-lg text-[#FFFFFF] font-extrabold font-manrope text-sm lg:text-base leading-4 lg:leading-[18px]"
                   >
-                    You save $669.00 on your medication
+                    You save $669.00 on your medication
                   </button>
                 </div>
               </div>
               <h6
-                class="text-[#334C66] font-medium font-manrope text-sm leading-[22px] text-center w-[311px] lg:w-full"
+                class="text-[#334C66] font-medium font-manrope text-[12px] lg:text-sm leading-[19px] lg:leading-[22px] text-center w-full lg:w-full"
               >
                 Your final cost will include shipping and taxes, which vary by
                 location.
