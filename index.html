@@ -65,10 +65,8 @@
             </div>
           </div>
 
-          <dialog id="my_modal_3" class="modal border-2 border-black">
-            <div
-              class="modal-box relative overflow-visible border-2 border-red-600"
-            >
+          <dialog id="my_modal_3" class="modal">
+            <div class="modal-box relative overflow-visible">
               <form method="dialog">
                 <button
                   class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
@@ -164,11 +162,15 @@
         </div>
 
         <div class="lg:hidden flex">
-          <button onclick="toggleFunc()" id="openMenuButton" class="block">
+          <button onclick="toggleFuncMenu()" id="openMenuButton" class="block">
             <img src="./assets/Frame 3.svg" alt="Menu Open" />
           </button>
 
-          <button onclick="toggleFunc()" id="closeMenuButton" class="hidden">
+          <button
+            onclick="toggleFuncMenu()"
+            id="closeMenuButton"
+            class="hidden"
+          >
             <img src="./assets/menu.png" alt="Menu Close" />
           </button>
         </div>
