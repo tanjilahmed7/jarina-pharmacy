@@ -94,7 +94,7 @@ tabButton.forEach((tab, idx) => {
 });
 
 
-
+// MENU 
 function toggleFuncMenu() {
   const nav = document.querySelector(".myNav");
   const openButton = document.getElementById("openMenuButton");
@@ -141,18 +141,3 @@ function toggleFuncMenu() {
 // })
 
 
-function showModal() {
-  const modal = document.getElementById('my_modal_3');
-  if (modal) {
-    modal.showModal();
-  }
-}
-
-// Function to close modal
-function toggleFunc() {
- 
-  const modal = document.getElementById('my_modal_3');
-  if (modal) {
-    modal.close();
-  }
-}

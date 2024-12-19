@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  console.log('rijvi')
     const firstModal = document.getElementById("my_modal_3");
     const secondModal = document.getElementById("my_modal_2");
     const thirdModal = document.getElementById("my_modal_4");
@@ -34,4 +35,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  console.log("uploadPrescription")
+  function showModal() {
+  const modal = document.getElementById('my_modal_3');
+  if (modal) {
+    modal.showModal();
+  }
+}
+function toggleFunc() {
+ 
+  const modal = document.getElementById('my_modal_3');
+  if (modal) {
+    modal.close();
+  }
+}
