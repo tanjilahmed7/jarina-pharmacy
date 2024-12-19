@@ -4349,6 +4349,10 @@ input[type="number"] {
     right: 40%;
   }
 
+  .md\:m-8 {
+    margin: 2rem;
+  }
+
   .md\:ml-0 {
     margin-left: 0px;
   }
@@ -4825,6 +4829,18 @@ input[type="number"] {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[140px\] {
+    width: 140px;
+  }
+
+  .lg\:w-\[129px\] {
+    width: 129px;
+  }
+
+  .lg\:min-w-\[140px\] {
+    min-width: 140px;
   }
 
   .lg\:grid-cols-4 {
