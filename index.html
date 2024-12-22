@@ -36,7 +36,7 @@
         </a>
 
         <!-- Desktop Menu -->
-        <div class="lg:flex gap-[56px] hidden">
+        <div class="laptop:flex gap-[56px] hidden">
           <ul
             class="flex items-center gap-10 font-manrope font-semibold text-[15px]"
           >
@@ -69,7 +69,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="lg:hidden flex">
+        <div class="laptop:hidden flex">
           <button onclick="toggleFuncMenu()" id="openMenuButton" class="block">
             <img src="./assets/Frame 3.svg" alt="Menu Open" />
           </button>
@@ -484,16 +484,15 @@
         </form>
       </div>
     </dialog>
-
     <!-- BANNER SECTION  -->
     <section>
       <div
-        class="bg-[#E3EFF7] h-[586px] relative flex items-center justify-center flex-col rounded-t-[32px] min-w-[375px] lg:w-full overflow-hidden"
+        class="bg-[#E3EFF7] h-[586px] relative flex items-center justify-center flex-col rounded-t-[32px] min-w-[360px] lg:w-full overflow-hidden"
       >
         <!-- CENTER ITEM  -->
         <div class="flex flex-col items-center justify-center">
           <h1
-            class="text-[#011575] text-[40px] lg:text-[56px] font-extrabold font-manrope lg:leading-[64px] leading-[46px] text-center"
+            class="text-[#011575] text-[40px] lg:text-[56px] font-extrabold font-manrope lg:leading-[64px] leading-[46px] text-center z-50"
           >
             Affordable medications, <br />
             transparent pricing
@@ -522,7 +521,7 @@
         </div>
         <!-- CENTER ITEM  -->
         <div
-          class="absolute lg:top-[37px] lg:left-[247px] bottom-[19px] -left-[69px] md:left-0 w-[126px] h-[75px] img2"
+          class="absolute laptop:top-[37px] laptop:left-[247px] bottom-[19px] -left-[69px] md:left-0 w-[126px] h-[75px] img2"
         >
           <img src="./assets/list-banner.png" alt="" />
         </div>
@@ -539,7 +538,7 @@
           />
         </div>
         <div
-          class="absolute w-[277px] h-[349px] lg:top-[132px] lg:right-[73px] top-2 -right-[199px] md:-right-[100px] img1"
+          class="absolute w-[277px] h-[349px] laptop:top-[132px] laptop:right-[73px] top-2 -right-[199px] md:-right-[100px] img1"
         >
           <img
             class="absolute lg:right-0 right-[10px]"
@@ -632,7 +631,7 @@
     </section>
     <!-- POPULAR MEDICINES SECTION  -->
     <section
-      class="relative lg:w-full min-w-[375px] lg:h-[1127px] h-full bg-[#FAFAFA] lg:bg-bgImageMedicinesSection bg-bgImageMedicinesSectionSmall bg-no-repeat bg-contain"
+      class="relative lg:w-full min-w-[360px] lg:h-[1127px] h-full bg-[#FAFAFA] lg:bg-bgImageMedicinesSection bg-bgImageMedicinesSectionSmall bg-no-repeat bg-contain"
     >
       <img
         src="./assets/Vector 4 (1).png"
@@ -643,7 +642,7 @@
         class="w-full h-full flex flex-col items-center py-20 lg:py-[120px] overflow-hidden gap-[120px]"
       >
         <!-- SLIDER ONE  -->
-        <div class="h-[380px] lg:w-[1290px]">
+        <div class="laptop:h-[380px] tablet:h-[380px] laptop:w-[1290px]">
           <h1
             class="text-[#013366] text-center font-manrope font-extrabold text-[32px] lg:text-[40px] p-0"
           >
@@ -911,18 +910,18 @@
               </div>
 
               <button
-                class="custom-next-one absolute lg:right-0 lg:top-[123px] bottom-10 -mr-16 lg:-mr-0 transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5]"
+                class="custom-next-one absolute desktop:right-0 desktop:top-[123px] tablet:bottom-10 laptop:bottom-10 bottom-10 -mr-16 laptop:-mr-16 desktop:mr-0 transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5]"
               >
                 <img src="./assets/Frame (5).svg" alt="" />
               </button>
               <button
-                class="custom-prev-one absolute lg:left-0 lg:top-[123px] bottom-10 -ml-16 lg:-ml-0 transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center"
+                class="custom-prev-one absolute desktop:left-0 desktop:top-[123px] tablet:bottom-10 laptop:bottom-10 bottom-10 -ml-16 desktop:-ml-0 transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center"
               >
                 <img src="./assets/Frame (4).svg" alt="" />
               </button>
             </div>
             <button
-              class="lg:mt-10 mt-[104px] py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px]"
+              class="desktop:mt-10 mt-[104px] tablet:mt-[104px] laptop:mt-[104px] py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px]"
             >
               View all medicines
             </button>
@@ -1017,18 +1016,18 @@
     </section>
     <!-- SLIDER TWO    -->
     <section>
-      <div class="w-full h-[600px] lg:h-[600px]">
+      <div class="w-full h-[600px] lg:h-[600px] tablet:mt-20 mt-20">
         <div class="swiper2 mySwiper2 relative">
           <div class="swiper-wrapper">
             <div class="swiper-slide relative">
               <img
                 src="./assets/image (4).png"
-                class="w-full h-full absolute z-0 top-0 object-cover lg:block hidden md:block"
+                class="w-full h-full absolute z-0 top-0 object-cover desktop:block laptop:block hidden tablet:block"
                 alt=""
               />
               <img
                 src="./assets/image 4.png"
-                class="w-full h-full absolute z-0 top-0 lg:hidden md:hidden block object-cover"
+                class="w-full h-full absolute z-0 top-0 laptop:hidden desktop:hidden tablet:hidden block object-cover"
                 alt=""
               />
               <div
@@ -1050,25 +1049,25 @@
                 </h3>
               </div>
               <img
-                class="absolute right-0 bottom-0 lg:block md:block hidden"
+                class="absolute right-0 bottom-0 desktop:block laptop:block tablet:block hidden"
                 src="./assets/Vector 5.png"
                 alt=""
               />
               <img
                 src="./assets/Vector 5 (1).png"
-                class="absolute bottom-0 object-cover md:hidden lg:hidden block w-full"
+                class="absolute bottom-0 object-contain tablet:hidden desktop:hidden laptop:hidden block w-full"
                 alt=""
               />
             </div>
             <div class="swiper-slide relative">
               <img
                 src="./assets/image (4).png"
-                class="w-full h-full absolute z-0 top-0 object-cover lg:block hidden md:block"
+                class="w-full h-full absolute z-0 top-0 object-cover desktop:block laptop:block hidden tablet:block"
                 alt=""
               />
               <img
                 src="./assets/image 4.png"
-                class="w-full h-full absolute z-0 top-0 lg:hidden md:hidden block object-cover"
+                class="w-full h-full absolute z-0 top-0 laptop:hidden desktop:hidden tablet:hidden block object-cover"
                 alt=""
               />
               <div
@@ -1090,25 +1089,25 @@
                 </h3>
               </div>
               <img
-                class="absolute right-0 bottom-0 lg:block md:block hidden"
+                class="absolute right-0 bottom-0 desktop:block laptop:block tablet:block hidden"
                 src="./assets/Vector 5.png"
                 alt=""
               />
               <img
                 src="./assets/Vector 5 (1).png"
-                class="absolute bottom-0 object-cover md:hidden lg:hidden block w-full"
+                class="absolute bottom-0 object-contain tablet:hidden desktop:hidden laptop:hidden block w-full"
                 alt=""
               />
             </div>
             <div class="swiper-slide relative">
               <img
                 src="./assets/image (4).png"
-                class="w-full h-full absolute z-0 top-0 object-cover lg:block hidden md:block"
+                class="w-full h-full absolute z-0 top-0 object-cover desktop:block laptop:block hidden tablet:block"
                 alt=""
               />
               <img
                 src="./assets/image 4.png"
-                class="w-full h-full absolute z-0 top-0 lg:hidden md:hidden block object-cover"
+                class="w-full h-full absolute z-0 top-0 laptop:hidden desktop:hidden tablet:hidden block object-cover"
                 alt=""
               />
               <div
@@ -1130,13 +1129,13 @@
                 </h3>
               </div>
               <img
-                class="absolute right-0 bottom-0 lg:block md:block hidden"
+                class="absolute right-0 bottom-0 desktop:block laptop:block tablet:block hidden"
                 src="./assets/Vector 5.png"
                 alt=""
               />
               <img
                 src="./assets/Vector 5 (1).png"
-                class="absolute bottom-0 object-cover md:hidden lg:hidden block w-full"
+                class="absolute bottom-0 object-contain tablet:hidden desktop:hidden laptop:hidden block w-full"
                 alt=""
               />
             </div>
@@ -1165,11 +1164,11 @@
     <!-- AFFORDABLE MEDICINES  -->
     <section>
       <div
-        class="py-20 lg:py-[120px] flex flex-col items-center min-w-[375px] lg:w-full lg:h-[786px] h-[728px] bg-[#FAFAFA] relative justify-center"
+        class="desktop:py-[120px] flex flex-col items-center min-w-[360px] overflow-hidden desktop:w-full desktop:h-[786px] min-h-[728px] bg-[#FAFAFA] relative justify-center pt-20"
       >
         <img
           src="./assets/Vector 1 (1).png"
-          class="w-full absolute bottom-0 z-0 lg:object-cover object-cover lg:block hidden"
+          class="w-full absolute bottom-0 -z-50 lg:object-cover object-cover lg:block hidden"
           alt=""
         />
         <img
@@ -1178,12 +1177,12 @@
           alt=""
         />
         <h1
-          class="font-extrabold text-[32px] lg:text-[40px] text-[#013366] leading-[46px] font-manrope text-center px-4"
+          class="font-extrabold text-[32px] desktop:text-[40px] laptop:text-[40px] text-[#013366] leading-[46px] font-manrope text-center px-4"
         >
           Affordable medicines are just a click away
         </h1>
         <p
-          class="lg:w-[931px] min-w-[343px] text-center font-manrope font-medium lg:text-base text-sm text-[#334C66] mt-6 px-4"
+          class="desktop:w-[931px] min-w-[343px] text-center font-manrope font-medium lg:text-base text-sm text-[#334C66] mt-6 px-4 pb-10"
         >
           Lorem ipsum dolor sit amet consectetur. In mi non sem velit posuere
           dui scelerisque. Risus euismod placerat bibendum placerat commodo
@@ -1191,11 +1190,13 @@
         </p>
 
         <div
-          class="w-full h-[384px] lg:h-[280px] mt-10 lg:mt-[64px] relative flex items-center justify-center ml-4 lg:ml-0"
+          class="w-full h-[292px] desktop:h-[384px] laptop:h-[352px] tablet:h-[352px] relative flex items-center justify-center ml-4 lg:ml-0"
         >
           <div class="swiper3 mySwiper3 flex items-center justify-center">
             <div class="swiper-wrapper lg:ml-0 ml-4 md:ml-0">
-              <div class="swiper-slide bg-[#FFFFFF] rounded-[16px]">
+              <div
+                class="swiper-slide tablet:h-[220px] bg-[#FFFFFF] rounded-[16px]"
+              >
                 <div
                   class="flex flex-col items-center justify-center w-full h-full"
                 >
@@ -1211,7 +1212,9 @@
                   >
                 </div>
               </div>
-              <div class="swiper-slide bg-[#FFFFFF] rounded-[16px]">
+              <div
+                class="swiper-slide tablet:h-[220px] bg-[#FFFFFF] rounded-[16px]"
+              >
                 <div
                   class="flex flex-col items-center justify-center w-full h-full"
                 >
@@ -1227,7 +1230,9 @@
                   >
                 </div>
               </div>
-              <div class="swiper-slide bg-[#FFFFFF] rounded-[16px]">
+              <div
+                class="swiper-slide tablet:h-[220px] bg-[#FFFFFF] rounded-[16px]"
+              >
                 <div
                   class="flex flex-col items-center justify-center w-full h-full"
                 >
@@ -1243,7 +1248,9 @@
                   >
                 </div>
               </div>
-              <div class="swiper-slide bg-[#FFFFFF] rounded-[16px]">
+              <div
+                class="swiper-slide tablet:h-[220px] bg-[#FFFFFF] rounded-[16px]"
+              >
                 <div
                   class="flex flex-col items-center justify-center w-full h-full"
                 >
@@ -1259,7 +1266,9 @@
                   >
                 </div>
               </div>
-              <div class="swiper-slide bg-[#FFFFFF] rounded-[16px]">
+              <div
+                class="swiper-slide tablet:h-[220px] bg-[#FFFFFF] rounded-[16px]"
+              >
                 <div
                   class="flex flex-col items-center justify-center w-full h-full"
                 >
@@ -1275,7 +1284,9 @@
                   >
                 </div>
               </div>
-              <div class="swiper-slide bg-[#FFFFFF] rounded-[16px]">
+              <div
+                class="swiper-slide tablet:h-[220px] bg-[#FFFFFF] rounded-[16px]"
+              >
                 <div
                   class="flex flex-col items-center justify-center w-full h-full z-50"
                 >
@@ -1294,20 +1305,19 @@
             </div>
 
             <button
-              class="custom1-next-one absolute lg:top-[120px] lg:right-[75px] transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5] -bottom-10 right-[35%] md:right-[40%] z-50"
+              class="custom-next-one absolute desktop:right-[75px] desktop:top-[123px] tablet:-bottom-5 laptop:-bottom-0 -bottom-5 -mr-16 laptop:-mr-16 desktop:mr-0 transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5]"
             >
               <img src="./assets/Frame (5).svg" alt="" />
             </button>
             <button
-              class="custom1-prev-one absolute lg:top-[120px] z-50 lg:left-[75px] transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center -bottom-10 left-[35%] md:left-[40%]"
+              class="custom-prev-one absolute desktop:left-[75px] desktop:top-[123px] tablet:-bottom-5 laptop:bottom-0 -bottom-5 -ml-16 desktop:-ml-0 transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center"
             >
               <img src="./assets/Frame (4).svg" alt="" />
             </button>
           </div>
         </div>
-
         <button
-          class="py-[7px] px-5 mt-10 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px] cursor-pointer z-50"
+          class="desktop:mb-10 mb-10 mt-10 tablet:mb-[104px] laptop:mb-[104px] py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px] z-50"
         >
           View all medicines
         </button>
@@ -1324,19 +1334,19 @@
           We offer safe, affordable medicines at the lowest possible price.
         </h1>
         <div
-          class="lg:mb-[120px] pb-20 flex gap-5 lg:flex-row flex-col items-center justify-center w-full"
+          class="lg:mb-[120px] pb-20 flex gap-5 lg:flex-row flex-col items-center justify-center w-full tablet:px-5"
         >
           <div
             class="bg-[#013366] w-full lg:w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
           >
             <img
               src="./assets/Vector 3 2.png"
-              class="absolute right-0 z-0 hidden lg:block"
+              class="absolute right-0 z-0 hidden desktop:block laptop:block tablet:block"
               alt=""
             />
             <img
               src="./assets/V1.png"
-              class="absolute lg:hidden right-0 bottom-0 block"
+              class="absolute desktop:hidden laptop:hidden tablet:hidden right-0 bottom-0 block"
               alt=""
             />
             <div
@@ -1349,7 +1359,7 @@
                   Who We Are
                 </h1>
                 <p
-                  class="font-manrope font-medium text-sm leading-[22px] text-[#99CCFF] pt-4 z-50 lg:w-full w-[311px]"
+                  class="font-manrope font-medium text-sm leading-[22px] text-[#99CCFF] pt-4 z-50 desktop:w-[400px] laptop:w-[400px] w-[311px] tablet:w-[400px]"
                 >
                   We are a dedicated team of healthcare professionals,
                   technology innovators, and customer service experts working
@@ -1368,12 +1378,12 @@
           >
             <img
               src="./assets/Vector 5 (2).png"
-              class="absolute right-0 z-0 lg:block hidden object-cover"
+              class="absolute right-0 z-0 desktop:block laptop:block tablet:block hidden object-cover"
               alt=""
             />
             <img
               src="./assets/V2.png"
-              class="absolute bottom-0 right-0 object-cover lg:hidden block"
+              class="absolute -bottom-4 tablet:bottom-0 -right-10 object-cover laptop:hidden tablet:hidden desktop:hidden block"
               alt=""
             />
             <div
@@ -1387,7 +1397,7 @@
                   fingertips
                 </h1>
                 <p
-                  class="font-manrope font-medium text-sm leading-[22px] text-[#013366] pt-4 z-50 lg:w-full w-[311px]"
+                  class="font-manrope font-medium text-sm leading-[22px] text-[#013366] pt-4 z-50 desktop:w-[400px] laptop:w-[400px] w-[311px] tablet:w-[400px]"
                 >
                   Discover a wide range of medications tailored to your health
                   needs in our Medicine section. Whether you're looking for
@@ -1407,10 +1417,10 @@
     <!-- FAQ SECTION  -->
     <section>
       <div
-        class="w-full lg:h-[866px] h-[864px] lg:bg-bgImageFaqSection bg-no-repeat bg-cover lg:flex items-center justify-center flex-col min-w-[375px]"
+        class="w-full desktop:h-[866px] laptop:h-[866px] h-[864px] lg:bg-bgImageFaqSection bg-no-repeat bg-cover flex items-center justify-center flex-col min-w-[375px]"
       >
         <div
-          class="py-20 lg:py-[120px] lg:mx-[295px] min-w-full lg:w-[850px] flex items-center justify-center flex-col lg:h-full h-full"
+          class="py-20 desktop:py-[120px] laptop:py-[120px] desktop:mx-[295px] laptop:mx-[295px] min-w-full desktop:w-[850px] laptop:w-[850px] flex items-center justify-center flex-col desktop:h-full h-full"
         >
           <h1
             class="text-[#013366] font-manrope text-[32px] lg:text-[40px] leading-[46px] font-extrabold text-center"
@@ -1418,9 +1428,13 @@
             Frequently asked questions
           </h1>
           <!-- TAB CONTAINER  -->
-          <div class="lg:w-[850px] w-full flex flex-col items-center">
+          <div
+            class="desktop:w-[850px] laptop:w-[850px] tablet:w-full w-full flex flex-col items-center"
+          >
             <!-- TAB BUTTONS -->
-            <div class="flex flex-wrap justify-center gap-4 items-center mt-6">
+            <div
+              class="flex flex-wrap justify-center desktop:gap-4 laptop:gap-4 tablet:gap-4 gap-2 items-center mt-6"
+            >
               <button
                 class="bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-bold tab_btn"
               >
@@ -1869,9 +1883,11 @@
           </div>
         </div>
         <div
-          class="mt-10 lg:mt-20 lg:mr-[75px] lg:w-[475px] lg:h-[416px] flex flex-col lg:justify-between justify-center"
+          class="mt-10 desktop::mt-20 laptop:mt-20 desktop:mr-[75px] laptop:mr-[75px] desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center"
         >
-          <div class="flex justify-between h-[416px] lg:h-full">
+          <div
+            class="flex justify-between tablet:justify-center tablet:gap-[200px] h-[416px] lg:h-full"
+          >
             <div class="flex flex-col gap-4">
               <h1
                 class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"

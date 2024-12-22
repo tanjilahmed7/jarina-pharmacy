@@ -39,24 +39,24 @@ var swiper3 = new Swiper(".mySwiper3", {
   spaceBetween: 16,
   loop: true,
   navigation: {
-    nextEl: ".custom3-next-one",
-    prevEl: ".custom3-prev-one",
+    nextEl: ".custom1-next-one1",
+    prevEl: ".custom1-prev-one1",
   },
   breakpoints: {
     0: {
-      slidesPerView: 1, 
-      spaceBetween: 16,  
+      slidesPerView: 1.2,
+      spaceBetween: 16,
     },
     375: {
-      slidesPerView: 1.2, 
+      slidesPerView: 1.2,
       spaceBetween: 16,
     },
     640: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 16,
     },
-    768: {
-      slidesPerView: 3,
+    700: {
+      slidesPerView: 4,
       spaceBetween: 16,
     },
     1024: {
@@ -64,6 +64,7 @@ var swiper3 = new Swiper(".mySwiper3", {
       spaceBetween: 16,
     },
   },
+  
 });
 
 

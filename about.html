@@ -489,10 +489,10 @@
     <!-- ABOUT HERO SECTION  -->
     <section>
       <div
-        class="bg-gradient-to-b from-[#EAE3F7] to-[#FAFAFA] lg:h-[488px] h-[661px] flex lg:gap-[200px] items-center justify-center lg:flex-row flex-col rounded-t-[32px] px-2"
+        class="bg-gradient-to-b from-[#EAE3F7] to-[#FAFAFA] laptop:h-[488px] desktop:h-[488px] h-[661px] flex desktop:gap-[200px] items-center justify-center lg:flex-row flex-col rounded-t-[32px] px-2 desktop:w-full laptop:w-full tablet:w-full"
       >
         <div
-          class="lg:w-[1290px] flex gap-12 lg:gap-[200px] items-center lg:flex-row flex-col"
+          class="lg:w-[1290px] flex gap-12 laptop:justify-between tablet:justify-between desktop:gap-[200px] items-center desktop:flex-row tablet:flex-row flex-col"
         >
           <div class="lg:w-[630px] w-full flex flex-col gap-6">
             <h1
@@ -531,7 +531,7 @@
           Company Mission & Vision
         </h1>
         <div
-          class="flex gap-5 items-center justify-center mt-10 lg:flex-row flex-col mx-4 lg:mx-0"
+          class="flex gap-5 items-center justify-center mt-10 lg:flex-row flex-col mx-4 desktop:mx-0 tablet:mx-5"
         >
           <div
             class="bg-[#065A82] w-full lg:w-[635px] h-[273px] relative rounded-[32px] overflow-hidden"
@@ -596,7 +596,9 @@
     </section>
     <!-- OUR PROMISE SECTION  -->
     <section>
-      <div class="h-[1238px] lg:h-[799px] relative">
+      <div
+        class="h-[1238px] laptop:h-full tablet:h-full desktop:h-[799px] relative"
+      >
         <img
           src="./assets/Vector 1 (2).png"
           class="absolute bottom-0 -z-50 right-0 lg:block hidden md:block"
@@ -608,7 +610,7 @@
           alt=""
         />
         <div
-          class="py-20 lg:my-[120px] mx-4 lg:mx-[75px] flex flex-col items-center"
+          class="py-20 desktop:py-0 laptop:py-0 desktop:my-[120px] laptop:my-[120px] mx-4 laptop:mx-[75px] desktop:mx-[75px] flex flex-col tablet:flex-wrap items-center"
         >
           <h1
             class="font-manrope text-[32px] lg:text-[40px] font-extrabold leading-[46px] text-center"
@@ -623,7 +625,7 @@
             adipiscing.
           </p>
           <div
-            class="flex lg:flex-row flex-col gap-10 lg:gap-4 mt-10 lg:mt-[64px]"
+            class="flex desktop:flex-row tablet:flex-wrap flex-wrap justify-center gap-10 desktop:gap-4 mt-10 desktop:mt-[64px] desktop:w-full laptop:w-full tablet:w-full"
           >
             <div
               class="w-[364px] h-[265px] lg:h-[293px] flex justify-center flex-col items-center"
@@ -700,7 +702,7 @@
     <!-- OUR IMPACT SECTION  -->
     <section>
       <div
-        class="relative min-w-[375px] lg:w-full h-[1857px] lg:h-[1220px] bg-[#FFFFFF]"
+        class="relative min-w-[360px] desktop:w-full h-[1857px] desktop:h-[1220px] laptop:h-[1220px] bg-[#FFFFFF]"
       >
         <img
           src="./assets//Vector 1 2.png"
@@ -713,14 +715,14 @@
           alt=""
         />
         <div
-          class="absolute z-50 w-full lg:w-full h-full lg:h-full flex flex-col items-center justify-center gap-[120px] lg:px-[75px] py-20 lg:py-[120px]"
+          class="absolute z-50 w-full desktop:w-full h-full tablet:h-full tablet:w-full desktop:h-full laptop:h-full flex laptop:flex-col flex-col items-center justify-center gap-[120px] desktop:py-[120px] laptop:px-5"
         >
           <div
-            class="flex lg:flex-row flex-col items-center justify-between w-full lg:w-[1290px] lg:gap-0 gap-6"
+            class="flex desktop:flex-row flex-col laptop:flex-row tablet:flex-col items-center justify-between w-full desktop:w-[1290px] desktop:gap-0 laptop:gap-5 gap-6"
           >
             <img
               src="./assets/image 2.png"
-              class="lg:pr-[70px] lg:block hidden md:block"
+              class="desktop:pr-[70px] lg:block hidden md:block"
               alt=""
             />
             <img
@@ -728,7 +730,7 @@
               class="lg:hover: block md:hidden"
               alt=""
             />
-            <div class="w-full lg:w-[585px] px-4">
+            <div class="w-full desktop:w-[585px] tablet:w-[580px] px-4">
               <h1
                 class="font-extrabold font-manrope text-[32px] leading-[36px] lg:text-[40px] lg:leading-[46px] text-[#013366]"
               >
@@ -755,11 +757,11 @@
             </div>
           </div>
           <div
-            class="flex flex-col-reverse lg:flex-row-reverse items-center justify-between w-full lg:w-[1290px] px-4 gap-6"
+            class="flex desktop:flex-row-reverse flex-col-reverse laptop:flex-row-reverse tablet:flex-col-reverse items-center justify-between w-full desktop:w-[1290px] desktop:gap-0 laptop:gap-5 gap-6"
           >
             <img
               src="./assets/image (1) 2.png"
-              class="pl-[70px] lg:block hidden md:block"
+              class="desktop:pl-[70px] lg:block hidden md:block"
               alt=""
             />
             <img
@@ -767,7 +769,7 @@
               class="lg:hidden block md:hidden"
               alt=""
             />
-            <div class="w-full lg:w-[585px]">
+            <div class="w-full desktop:w-[585px] tablet:w-[580px] px-4">
               <h1
                 class="font-extrabold font-manrope text-[32px] lg:text-[40px] leading-[36px] lg:leading-[46px] text-[#013366]"
               >
@@ -854,9 +856,11 @@
           </div>
         </div>
         <div
-          class="mt-10 lg:mt-20 lg:mr-[75px] lg:w-[475px] lg:h-[416px] flex flex-col lg:justify-between justify-center"
+          class="mt-10 desktop::mt-20 laptop:mt-20 desktop:mr-[75px] laptop:mr-[75px] desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center"
         >
-          <div class="flex justify-between h-[416px] lg:h-full">
+          <div
+            class="flex justify-between tablet:justify-center tablet:gap-[200px] h-[416px] lg:h-full"
+          >
             <div class="flex flex-col gap-4">
               <h1
                 class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"

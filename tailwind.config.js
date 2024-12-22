@@ -4,7 +4,11 @@ module.exports = {
   safelist: ["bg-[url('/assets/image\\ 11.png')]"],
   theme: {
     extend: {
-     
+      screens: {
+        'tablet': '700px',
+        'laptop': '1200px',
+        'desktop': '1440px',
+      },
       backgroundImage: {
         bgImageMedicinesSection: "url('/assets/Vector 1.png')",
         bgImageMedicinesSectionSmall:"url('./assets/Vector 1 3.png')",
