@@ -4356,6 +4356,13 @@ input[type="number"] {
   outline-offset: 2px;
 }
 
+@media not all and (min-width: 1024px) {
+  .max-lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @media (min-width: 700px) {
   .tablet\:-bottom-5 {
     bottom: -1.25rem;
@@ -4458,6 +4465,10 @@ input[type="number"] {
     max-width: 100%;
   }
 
+  .tablet\:max-w-\[920px\] {
+    max-width: 920px;
+  }
+
   .tablet\:flex-row {
     flex-direction: row;
   }
@@ -4540,6 +4551,10 @@ input[type="number"] {
 
   .tablet\:pl-\[75px\] {
     padding-left: 75px;
+  }
+
+  .tablet\:pl-\[100px\] {
+    padding-left: 100px;
   }
 
   .tablet\:text-center {
@@ -5008,6 +5023,10 @@ input[type="number"] {
     gap: 75px;
   }
 
+  .lg\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .lg\:bg-bgImageFaqSection {
     background-image: url('/assets/Vector 2.png');
   }
@@ -5125,6 +5144,14 @@ input[type="number"] {
 
   .lg\:pt-\[40px\] {
     padding-top: 40px;
+  }
+
+  .lg\:pl-\[160px\] {
+    padding-left: 160px;
+  }
+
+  .lg\:pl-\[100px\] {
+    padding-left: 100px;
   }
 
   .lg\:text-start {
@@ -5363,6 +5390,14 @@ input[type="number"] {
     max-width: 633px;
   }
 
+  .laptop\:max-w-\[920px\] {
+    max-width: 920px;
+  }
+
+  .laptop\:max-w-\[1180px\] {
+    max-width: 1180px;
+  }
+
   .laptop\:flex-row {
     flex-direction: row;
   }
@@ -5455,6 +5490,10 @@ input[type="number"] {
 
   .laptop\:pl-\[75px\] {
     padding-left: 75px;
+  }
+
+  .laptop\:pl-\[260px\] {
+    padding-left: 260px;
   }
 
   .laptop\:text-center {
@@ -5611,6 +5650,10 @@ input[type="number"] {
     height: 589px;
   }
 
+  .desktop\:h-\[387px\] {
+    height: 387px;
+  }
+
   .desktop\:w-\[1290px\] {
     width: 1290px;
   }
@@ -5673,6 +5716,14 @@ input[type="number"] {
 
   .desktop\:max-w-\[1290px\] {
     max-width: 1290px;
+  }
+
+  .desktop\:max-w-\[920px\] {
+    max-width: 920px;
+  }
+
+  .desktop\:max-w-\[1180px\] {
+    max-width: 1180px;
   }
 
   .desktop\:flex-row {
@@ -5790,6 +5841,10 @@ input[type="number"] {
 
   .desktop\:pl-0 {
     padding-left: 0px;
+  }
+
+  .desktop\:pl-\[260px\] {
+    padding-left: 260px;
   }
 
   .desktop\:text-center {
