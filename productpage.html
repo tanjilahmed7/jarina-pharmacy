@@ -18,7 +18,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <body>
+  <body
+    class="overflow-x-hidden desktop:overflow-x-hidden laptop:overflow-x-hidden tablet:overflow-x-hidden"
+  >
     <!-- HEADER SECTION  -->
     <header class="bg-[#FAFAFA] w-full h-16 sticky top-0 z-[99999]">
       <div
@@ -490,10 +492,10 @@
         class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA]"
       >
         <div
-          class="pt-8 lg:pt-12 lg:px-[75px] flex flex-col gap-6 2xl:justify-between items-start lg:items-center"
+          class="flex flex-col gap-6 desktop:gap-6 laptop:items-center laptop:justify-center desktop:justify-center desktop:items-center"
         >
           <div
-            class="text-base font-medium font-manrope text-[#334C66] lg:w-[1290px]"
+            class="text-base font-medium font-manrope text-[#334C66] desktop:max-w-[1290px] laptop:items-center laptop:w-full laptop:pl-[75px] tablet:pl-[75px] tablet:pt-12 pt-8 laptop:pt-12 desktop:pl-0"
           >
             <ul class="flex items-center px-4 lg:px-0">
               <li class="text-[#011575] font-bold hover:underline">
@@ -512,20 +514,22 @@
             </ul>
           </div>
           <div
-            class="flex lg:flex-row flex-col gap-6 lg:gap-[75px] 2xl:justify-center w-[calc(100%-0px)]"
+            class="flex flex-col tablet:flex-col laptop:flex-row desktop:flex-row gap-6 desktop:gap-[75px] 2xl:justify-center w-[calc(100%-0px)] tablet:justify-center tablet:items-center laptop:items-start desktop:justify-center laptop:justify-center"
           >
-            <div class="lg:h-[589px] lg:w-[633px] flex flex-col gap-4 mx-4">
+            <div
+              class="desktop:h-[589px] tablet:h-[331px] desktop:w-[633px] laptop:w-[633px] tablet:w-[633px] flex flex-col gap-4 mx-4"
+            >
               <div
-                class="bg-[#FFFFFF] border border-[#DDE7F6] w-full lg:w-full lg:h-[493px] h-[267px] rounded-[24px] flex items-center justify-center"
+                class="bg-[#FFFFFF] border border-[#DDE7F6] w-full lg:w-full desktop:h-[493px] h-[267px] rounded-[24px] flex items-center justify-center"
               >
                 <img
                   src="./assets/Group 18.svg"
                   alt="Product"
-                  class="lg:block hidden md:hidden"
+                  class="desktop:block hidden tablet:hidden laptop:block"
                 />
                 <img
                   src="./assets/Group 18 2.svg"
-                  class="lg:hidden md:block block object-contain"
+                  class="desktop:hidden laptop:hidden tablet:block block object-contain"
                   alt=""
                 />
               </div>
@@ -534,21 +538,25 @@
               </div>
             </div>
 
-            <div class="mx-4 lg:mx-0">
+            <div
+              class="desktop:mx-0 desktop:max-w-[582px] laptop:max-w-[582px] tablet:max-w-[582px] w-full px-3"
+            >
               <h1
                 class="font-manrope font-extrabold text-2xl leading-[27px] text-[#011575]"
               >
                 Alfuzosin HCl ER
               </h1>
-              <div class="mt-3 mb-6 min-w-[343px] lg:w-[582px]">
+              <div
+                class="mt-3 mb-6 min-w-[343px] desktop:w-full laptop:w-full tablet:w-full min-w-[343px]"
+              >
                 <p
-                  class="text-[#334C66] font-medium font-manrope text-sm leading-[22px] text-wrap"
+                  class="text-[#334C66] font-medium font-manrope text-sm leading-[22px] mt-2 w-full text-wrap"
                 >
                   Product images are for illustrative purposes only. We can not
                   guarantee a specific manufacturer when you place an order.
                 </p>
                 <p
-                  class="text-[#334C66] font-medium font-manrope text-sm leading-[22px] mt-2"
+                  class="text-[#334C66] font-medium font-manrope text-sm leading-[22px] mt-2 w-full text-wrap"
                 >
                   The medication you receive may look different but the drug,
                   strength, and ingredients are the same.
@@ -560,7 +568,9 @@
               >
                 $7.5
               </h1>
-              <div class="bg-[#E0F3FF] py-[11px] px-4 flex gap-2 rounded-[8px]">
+              <div
+                class="bg-[#E0F3FF] py-[11px] px-4 flex desktop:gap-2 laptop:gap-2 tablet:gap-2 gap-2 rounded-[8px]"
+              >
                 <img src="./assets/Frame (1) 2.svg" alt="" />
                 <p
                   class="text-[#011575] font-manrope font-semibold text-base leading-[25px]"
@@ -618,9 +628,11 @@
                     </button>
                   </div>
                 </div>
-                <div class="flex gap-4 mt-10">
+                <div
+                  class="flex justify-between lg:justify-normal desktop:gap-4 mt-10 w-[343px] desktop:w-full"
+                >
                   <button
-                    class="py-[7px] bg-[#011575] rounded-[80px] text-[#FFFFFF] font-semibold text-[15px] leading-[24px] w-[163.5px] lg:w-[121px] text-center"
+                    class="py-[7px] bg-[#011575] rounded-[80px] text-[#FFFFFF] font-semibold text-[15px] leading-[24px] w-[163px] lg:w-[121px] text-center"
                   >
                     Buy now
                   </button>
@@ -642,10 +654,10 @@
         class="flex items-center justify-center w-full bg-[#FAFAFA] pt-[56px] pb-6 lg:pb-[100px]"
       >
         <div
-          class="flex lg:flex-row flex-col justify-between lg:w-[1290px] w-full px-4 lg:mx-[75px] gap-4 lg:gap-0"
+          class="flex laptop:flex-col tablet:flex-col desktop:flex-row justify-between lg:w-[1290px] laptop:items-center desktop:items-start tablet:items-center flex-col items-center w-full px-4 lg:mx-[75px] gap-4 lg:gap-0 tablet:gap-4 laptop:gap-4"
         >
           <div
-            class="bg-[#EEF4ED] w-full lg:w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
+            class="bg-[#EEF4ED] w-full desktop:w-[635px] tablet:w-[635px] laptop:w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
           >
             <img
               src="./assets/Vector 6 2.png"
@@ -681,18 +693,24 @@
               >
             </div>
           </div>
-          <div class="bg-[#FFFFFF] rounded-[24px] w-full lg:w-[582px]">
-            <div class="collapse p-4 lg:p-6">
+          <div
+            class="bg-[#FFFFFF] rounded-[24px] w-full desktop:max-w-[582px] laptop:max-w-[582px] tablet:max-w-[582px]"
+          >
+            <div
+              class="collapse desktop:p-6 desktop:w-full laptop:w-full tablet:w-full tablet:text-center laptop:text-center desktop:text-center"
+            >
               <input type="radio" name="my-accordion-2" checked="checked" />
               <div
-                class="collapse-title flex justify-between px-0 text-[#011575] font-extrabold font-manrope text-lg leading-5 border-b border-[#F0F4FA] w-full lg:w-full"
+                class="collapse-title flex desktop:justify-between justify-between text-[#011575] font-extrabold font-manrope text-lg leading-5 border-b border-[#F0F4FA] px-4 min-w-[311px]"
               >
                 Transparent Pricing
                 <img src="./assets/Frame (6).svg" alt="" />
               </div>
-              <div class="collapse-content pt-6 px-0 w-full lg:w-full">
+              <div
+                class="collapse-content pt-6 px-0 min-w-[311px] desktop:max-w[534px] tablet:max-w-full"
+              >
                 <p
-                  class="text-[#334C66] text-sm lg:text-base font-manrope font-medium leading-[22px] lg:leading-[25px] text-center"
+                  class="text-[#334C66] text-sm lg:text-base font-manrope font-medium leading-[22px] lg:leading-[25px] text-center tablet:text-center"
                 >
                   We think you should know how much your medications cost and
                   why. <br class="lg:hidden block" />
@@ -704,7 +722,7 @@
                 </p>
 
                 <div
-                  class="border-4 border-[#DDE7F6] py-6 px-4 lg:p-6 rounded-2xl flex flex-col gap-6 h-[172px] min-w-[311px] lg:w-[534px] relative my-6 overflow-visible"
+                  class="border-4 border-[#DDE7F6] py-6 px-4 lg:p-6 rounded-2xl flex flex-col gap-6 h-[172px] w-[calc(90%-24px)] desktop:max-w-[534px] laptop:max-w-[534px] tablet:max-w-[534px] relative my-6 overflow-visible tablet:px-4 mx-auto items-center"
                 >
                   <div class="flex justify-between">
                     <h1
@@ -738,14 +756,16 @@
                 </div>
               </div>
               <h6
-                class="text-[#334C66] font-medium font-manrope text-[12px] lg:text-sm leading-[19px] lg:leading-[22px] text-center w-full lg:w-full"
+                class="text-[#334C66] font-medium font-manrope text-[12px] lg:text-sm leading-[19px] lg:leading-[22px] text-center w-full lg:w-full px-4 desktop:px-0 tablet:px-0"
               >
                 Your final cost will include shipping and taxes, which vary by
                 location.
               </h6>
-              <div class="flex flex-col items-center gap-8 mt-12 min-w-[311px]">
+              <div
+                class="flex flex-col items-center gap-8 mt-12 min-w-[311px] w-full desktop:pb-0 pb-4 tablet:pb-4"
+              >
                 <h1
-                  class="font-semibold font-manrope text-[#011575] text-base leading-[18px] text-center"
+                  class="font-semibold font-manrope text-[#011575] text-base leading-[18px] t"
                 >
                   Cost breakdown
                 </h1>
