@@ -38,13 +38,14 @@
         </a>
 
         <!-- Desktop Menu -->
-        <div class="lg:flex gap-[56px] hidden">
+        <div class="laptop:flex gap-[56px] hidden">
           <ul
             class="flex items-center gap-10 font-manrope font-semibold text-[15px]"
           >
             <a href="./index.html">Home</a>
             <a href="./about.html">About</a>
             <a href="./list.html">Medications</a>
+            <a href="./contactDoctor.html">Contact doctor</a>
             <a href="./index.html">Help</a>
           </ul>
 
@@ -71,7 +72,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="lg:hidden flex">
+        <div class="laptop:hidden flex">
           <button onclick="toggleFuncMenu()" id="openMenuButton" class="block">
             <img src="./assets/Frame 3.svg" alt="Menu Open" />
           </button>
@@ -98,7 +99,6 @@
         </ul>
       </div>
     </header>
-
     <!-- Mobile Navigation -->
     <div
       class="myNav absolute top-16 right-0 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] w-0 overflow-x-hidden h-auto transition-all duration-500 mt-[64px] rounded-t-[32px]"
