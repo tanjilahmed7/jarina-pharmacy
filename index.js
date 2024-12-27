@@ -35,7 +35,7 @@ var swiper2 = new Swiper(".mySwiper2", {
 });
 // SLIDER THREE
 var swiper3 = new Swiper(".mySwiper3", {
-  slidesPerView: 4, 
+  slidesPerView: 4,
   spaceBetween: 16,
   loop: true,
   navigation: {
@@ -64,11 +64,9 @@ var swiper3 = new Swiper(".mySwiper3", {
       spaceBetween: 16,
     },
   },
-  
 });
 
-
-// TAB CONTENT 
+// TAB CONTENT
 const tabButton = document.querySelectorAll(".tab_btn");
 const tabContent = document.querySelectorAll(".content");
 
@@ -94,8 +92,7 @@ tabButton.forEach((tab, idx) => {
   });
 });
 
-
-// MENU 
+// MENU
 function toggleFuncMenu() {
   const nav = document.querySelector(".myNav");
   const openButton = document.getElementById("openMenuButton");
@@ -111,34 +108,5 @@ function toggleFuncMenu() {
     closeButton.classList.remove("hidden");
   }
 }
-
-
-
-
-
-
-
-// const area = document.getElementById("area");
-// const inpBox = document.getElementById("input-file");
-// const imgView = document.getElementById("img");
-
-
-// inpBox.addEventListener("change", dragImage)
-// function dragImage() {
-//   console.log("okkk")
-  
-//   let imgLink = URL.createObjectURL(inpBox.files[0]);
-//   imgView.style.backgroundImage = `url(${imgLink})`
-//   imgLink.textContent = "";
-// }
-// area.addEventListener("dragover", function(e) {
-//   e.preventDefault();
-// })
-
-// area.addEventListener("drop", function(e) {
-//   e.preventDefault();
-//   inpBox.files = e.dataTransfer.files;
-//   dragImage();
-// })
 
 

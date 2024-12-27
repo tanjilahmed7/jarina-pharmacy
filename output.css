@@ -1192,6 +1192,18 @@ html {
   scrollbar-gutter: stable;
 }
 
+.progress {
+  position: relative;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  overflow: hidden;
+  height: 0.5rem;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+}
+
 .radio {
   flex-shrink: 0;
   --chkbg: var(--bc);
@@ -1799,6 +1811,51 @@ details.collapse summary::-webkit-details-marker {
   }
 }
 
+.progress::-moz-progress-bar {
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+}
+
+.progress:indeterminate {
+  --progress-color: var(--fallback-bc,oklch(var(--bc)/1));
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
+}
+
+.progress::-webkit-progress-bar {
+  border-radius: var(--rounded-box, 1rem);
+  background-color: transparent;
+}
+
+.progress::-webkit-progress-value {
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+}
+
+.progress:indeterminate::-moz-progress-bar {
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
+}
+
 @keyframes progress-loading {
   50% {
     background-position-x: -115%;
@@ -2098,6 +2155,11 @@ details.collapse summary::-webkit-details-marker {
   position: sticky;
 }
 
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
 .-bottom-4 {
   bottom: -1rem;
 }
@@ -2278,6 +2340,42 @@ details.collapse summary::-webkit-details-marker {
   top: 100%;
 }
 
+.top-\[180px\] {
+  top: 180px;
+}
+
+.left-\[257px\] {
+  left: 257px;
+}
+
+.top-\[190px\] {
+  top: 190px;
+}
+
+.top-\[40px\] {
+  top: 40px;
+}
+
+.top-\[0px\] {
+  top: 0px;
+}
+
+.left-\[237px\] {
+  left: 237px;
+}
+
+.left-\[200px\] {
+  left: 200px;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
 .-z-50 {
   z-index: -50;
 }
@@ -2353,6 +2451,11 @@ details.collapse summary::-webkit-details-marker {
 .my-\[7px\] {
   margin-top: 7px;
   margin-bottom: 7px;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .-ml-16 {
@@ -2983,6 +3086,10 @@ details.collapse summary::-webkit-details-marker {
   width: 343px;
 }
 
+.w-\[330px\] {
+  width: 330px;
+}
+
 .min-w-\[200px\] {
   min-width: 200px;
 }
@@ -3034,6 +3141,14 @@ details.collapse summary::-webkit-details-marker {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.max-w-\[140px\] {
+  max-width: 140px;
+}
+
+.max-w-\[330px\] {
+  max-width: 330px;
 }
 
 .-translate-x-1\/2 {
@@ -3367,6 +3482,11 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
 }
 
+.border-\[\#D3E9F0\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(211 233 240 / var(--tw-border-opacity, 1));
+}
+
 .border-b-teal-400 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(45 212 191 / var(--tw-border-opacity, 1));
@@ -3517,6 +3637,21 @@ details.collapse summary::-webkit-details-marker {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#9AFFA7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(154 255 167 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#FFFF9A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 154 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#FFC69A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 198 154 / var(--tw-bg-opacity, 1));
 }
 
 .bg-bgImageMedicinesSectionSmall {
@@ -3718,6 +3853,16 @@ details.collapse summary::-webkit-details-marker {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-10 {
@@ -4088,6 +4233,10 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#334C6680\] {
+  color: #334C6680;
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -4376,6 +4525,14 @@ input[type="number"] {
     bottom: 2.5rem;
   }
 
+  .tablet\:left-\[100px\] {
+    left: 100px;
+  }
+
+  .tablet\:left-\[200px\] {
+    left: 200px;
+  }
+
   .tablet\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -4467,6 +4624,10 @@ input[type="number"] {
 
   .tablet\:max-w-\[920px\] {
     max-width: 920px;
+  }
+
+  .tablet\:max-w-\[140px\] {
+    max-width: 140px;
   }
 
   .tablet\:flex-row {
@@ -4967,6 +5128,10 @@ input[type="number"] {
     width: 100%;
   }
 
+  .lg\:max-w-\[140px\] {
+    max-width: 140px;
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -5259,6 +5424,10 @@ input[type="number"] {
     top: 37px;
   }
 
+  .laptop\:left-\[200px\] {
+    left: 200px;
+  }
+
   .laptop\:mx-\[295px\] {
     margin-left: 295px;
     margin-right: 295px;
@@ -5528,6 +5697,10 @@ input[type="number"] {
 
   .desktop\:top-\[123px\] {
     top: 123px;
+  }
+
+  .desktop\:left-\[200px\] {
+    left: 200px;
   }
 
   .desktop\:mx-0 {

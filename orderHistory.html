@@ -432,11 +432,46 @@
         >
           Order history
         </h1>
-        <p
-          class="text-[#12366C] text-base font-bold font-manrope leading-[18px] mt-6 mb-4"
-        >
-          Ordered on: 23 Dec 2024
-        </p>
+        <div class="flex items-center gap-4 justify-center mt-6 mb-4 relative">
+          <p
+            class="text-[#12366C] text-base font-bold font-manrope leading-[18px]"
+          >
+            View ordered medicine
+          </p>
+          <!-- FILTER BUTTON  -->
+          <button
+            id="filterButton"
+            class="bg-[#FFFFFF] w-10 h-10 flex items-center justify-center rounded-[80px] border border-[#E5E5E5]"
+          >
+            <img src="./assets/filter.svg" alt="" />
+          </button>
+          <!-- SEARCH BOX  -->
+          <div
+            id="searchBox"
+            class="absolute top-[40px] laptop:left-[200px] tablet:left-[200px] left-0 desktop:left-[200px] rounded-lg bg-[#FFFFFF] p-6 z-50 w-[330px] hidden"
+          >
+            <h1 class="text-[#12366C] text-base font-manrope font-bold">
+              Search by medicine name
+            </h1>
+            <div
+              class="flex border border-[#D3E9F0] rounded-[80px] py-[10px] pl-4 pr-1 gap-2 my-4"
+            >
+              <img src="./assets/filtersearch.svg" alt="" />
+              <input
+                type="search"
+                class="outline-none border-none text-[12px] font-normal font-manrope text-[#334C6680] w-full"
+                placeholder="Search for medicine, brand name..."
+              />
+            </div>
+            <button
+              class="bg-[#011575] rounded-[80px] py-[7px] px-5 text-[#FFFFFF] text-[15px] font-manrope font-semibold"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <!-- FILTER SEARCH BAR  -->
+
         <!-- LG TABLE  -->
         <div class="w-full lg:block hidden">
           <div class="overflow-x-auto rounded-t-[12px] border border-[#DDE7F6]">
@@ -447,9 +482,9 @@
                   class="bg-[#DDE7F6] font-manrope font-bold text-base leading-[18px] text-[#12366C] w-full"
                 >
                   <th class="w-[400px]">Medicine</th>
+                  <th class="w-[243px] text-center">Status</th>
                   <th class="w-[243px] text-center">Price</th>
                   <th class="w-[243px] text-center">Quantity</th>
-                  <th class="w-[243px] text-center">Delivered on</th>
                   <th></th>
                 </tr>
               </thead>
@@ -461,9 +496,15 @@
                     <img src="./assets/Frame 213 2.svg" alt="" />
                     Medicine name
                   </td>
+                  <td class="w-[243px] text-center">
+                    <button
+                      class="bg-[#9AFFA7] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+                    >
+                      Delivered
+                    </button>
+                  </td>
                   <td class="w-[243px] text-center">$7.50</td>
                   <td class="w-[243px] text-center">1</td>
-                  <td class="w-[243px] text-center">3 Dec 2024</td>
                   <td class="">
                     <a
                       class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
@@ -477,9 +518,15 @@
                     <img src="./assets/Frame 213 2.svg" alt="" />
                     Medicine name
                   </td>
-                  <td class="w-[243px] text-center text-[#334C66]">$7.50</td>
+                  <td class="w-[243px] text-center text-[#334C66]">
+                    <button
+                      class="bg-[#FFFF9A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+                    >
+                      In progress
+                    </button>
+                  </td>
+                  <td class="w-[243px] text-center">$7.50</td>
                   <td class="w-[243px] text-center">1</td>
-                  <td class="w-[243px] text-center">3 Dec 2024</td>
                   <td class="">
                     <a
                       class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
@@ -493,9 +540,15 @@
                     <img src="./assets/Frame 213 2.svg" alt="" />
                     Medicine name
                   </td>
-                  <td class="w-[243px] text-center text-[#334C66]">$7.50</td>
+                  <td class="w-[243px] text-center text-[#334C66]">
+                    <button
+                      class="bg-[#FFC69A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+                    >
+                      Canceled
+                    </button>
+                  </td>
+                  <td class="w-[243px] text-center">$7.50</td>
                   <td class="w-[243px] text-center">1</td>
-                  <td class="w-[243px] text-center">3 Dec 2024</td>
                   <td class="">
                     <a
                       class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
@@ -521,9 +574,14 @@
                 </p>
               </div>
               <div
-                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px]"
+                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px] flex items-center gap-4"
               >
-                Q: 1, Delivered on: 3 Dec
+                <button
+                  class="bg-[#9AFFA7] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+                >
+                  Delivered
+                </button>
+                Q: 1
               </div>
             </div>
             <div class="flex flex-col gap-3 py-0 items-end">
@@ -552,9 +610,14 @@
                 </p>
               </div>
               <div
-                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px]"
+                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px] flex gap-4 items-center"
               >
-                Q: 1, Delivered on: 3 Dec
+                <button
+                  class="bg-[#FFFF9A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+                >
+                  In progress
+                </button>
+                Q: 1
               </div>
             </div>
             <div class="flex flex-col gap-3 py-0 items-end">
@@ -583,180 +646,14 @@
                 </p>
               </div>
               <div
-                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px]"
+                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px] flex items-center gap-4"
               >
-                Q: 1, Delivered on: 3 Dec
-              </div>
-            </div>
-            <div class="flex flex-col gap-3 py-0 items-end">
-              <p
-                class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
-              >
-                $7.50
-              </p>
-              <button
-                class="px-4 py-[7px] bg-[#FFE680] rounded-[80px] text-sm font-manrope font-semibold leading-[22px] text-[#013366]"
-              >
-                Reorder
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <p
-          class="text-[#12366C] text-base font-bold font-manrope leading-[18px] mt-6 mb-4"
-        >
-          Ordered on: 23 Dec 2024
-        </p>
-        <!-- TABLE  -->
-        <div class="w-full lg:block hidden">
-          <div class="overflow-x-auto rounded-t-[12px] border border-[#DDE7F6]">
-            <table class="table w-full">
-              <!-- head -->
-              <thead class="h-[40px]">
-                <tr
-                  class="bg-[#DDE7F6] font-manrope font-bold text-base leading-[18px] text-[#12366C] w-full"
+                <button
+                  class="bg-[#FFC69A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
                 >
-                  <th class="w-[400px]">Medicine</th>
-                  <th class="w-[243px] text-center">Price</th>
-                  <th class="w-[243px] text-center">Quantity</th>
-                  <th class="w-[243px] text-center">Delivered on</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody
-                class="font-manrope font-medium text-base leading-[25px] tet-[#334C66] h-[100px]"
-              >
-                <tr class="border-t border-[#DDE7F6]">
-                  <td class="flex items-center gap-4 w-[400px]">
-                    <img src="./assets/Frame 213 2.svg" alt="" />
-                    Medicine name
-                  </td>
-                  <td class="w-[243px] text-center">$7.50</td>
-                  <td class="w-[243px] text-center">1</td>
-                  <td class="w-[243px] text-center">3 Dec 2024</td>
-                  <td class="">
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Reorder
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td class="flex items-center gap-4 w-[400px]">
-                    <img src="./assets/Frame 213 2.svg" alt="" />
-                    Medicine name
-                  </td>
-                  <td class="w-[243px] text-center text-[#334C66]">$7.50</td>
-                  <td class="w-[243px] text-center">1</td>
-                  <td class="w-[243px] text-center">3 Dec 2024</td>
-                  <td class="">
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Reorder
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td class="flex items-center gap-4 w-[400px]">
-                    <img src="./assets/Frame 213 2.svg" alt="" />
-                    Medicine name
-                  </td>
-                  <td class="w-[243px] text-center text-[#334C66]">$7.50</td>
-                  <td class="w-[243px] text-center">1</td>
-                  <td class="w-[243px] text-center">3 Dec 2024</td>
-                  <td class="">
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                    >
-                      Reorder
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <!-- SM TABLE  -->
-        <div class="lg:hidden border border-[#DDE7F6] w-full">
-          <div class="py-[10px] px-4 flex justify-between">
-            <div class="flex flex-col gap-1">
-              <div class="flex items-center gap-4">
-                <img src="./assets/small-cart.svg" alt="" />
-                <p
-                  class="font-manrope font-medium text-[#334C66] text-base leading-[25px]"
-                >
-                  Medicine name
-                </p>
-              </div>
-              <div
-                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px]"
-              >
-                Q: 1, Delivered on: 3 Dec
-              </div>
-            </div>
-            <div class="flex flex-col gap-3 py-0 items-end">
-              <p
-                class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
-              >
-                $7.50
-              </p>
-              <button
-                class="px-4 py-[7px] bg-[#FFE680] rounded-[80px] text-sm font-manrope font-semibold leading-[22px] text-[#013366]"
-              >
-                Reorder
-              </button>
-            </div>
-          </div>
-          <div
-            class="border-t border-[#DDE7F6] py-[10px] px-4 flex justify-between"
-          >
-            <div class="flex flex-col gap-1">
-              <div class="flex items-center gap-4">
-                <img src="./assets/small-cart.svg" alt="" />
-                <p
-                  class="font-manrope font-medium text-[#334C66] text-base leading-[25px]"
-                >
-                  Medicine name
-                </p>
-              </div>
-              <div
-                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px]"
-              >
-                Q: 1, Delivered on: 3 Dec
-              </div>
-            </div>
-            <div class="flex flex-col gap-3 py-0 items-end">
-              <p
-                class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
-              >
-                $7.50
-              </p>
-              <button
-                class="px-4 py-[7px] bg-[#FFE680] rounded-[80px] text-sm font-manrope font-semibold leading-[22px] text-[#013366]"
-              >
-                Reorder
-              </button>
-            </div>
-          </div>
-          <div
-            class="border-t border-[#DDE7F6] py-[10px] px-4 flex justify-between"
-          >
-            <div class="flex flex-col gap-1">
-              <div class="flex items-center gap-4">
-                <img src="./assets/small-cart.svg" alt="" />
-                <p
-                  class="font-manrope font-medium text-[#334C66] text-base leading-[25px]"
-                >
-                  Medicine name
-                </p>
-              </div>
-              <div
-                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px]"
-              >
-                Q: 1, Delivered on: 3 Dec
+                  Canceled
+                </button>
+                Q: 1
               </div>
             </div>
             <div class="flex flex-col gap-3 py-0 items-end">
@@ -828,9 +725,11 @@
           </div>
         </div>
         <div
-          class="mt-10 lg:mt-20 lg:mr-[75px] lg:w-[475px] lg:h-[416px] flex flex-col lg:justify-between justify-center"
+          class="mt-10 desktop::mt-20 laptop:mt-20 desktop:mr-[75px] laptop:mr-[75px] desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center"
         >
-          <div class="flex justify-between h-[416px] lg:h-full">
+          <div
+            class="flex justify-between tablet:justify-center tablet:gap-[200px] h-[416px] lg:h-full"
+          >
             <div class="flex flex-col gap-4">
               <h1
                 class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"
@@ -910,5 +809,6 @@
         </div>
       </div>
     </footer>
+    <script src="./modal.js"></script>
   </body>
 </html>
