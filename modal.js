@@ -62,16 +62,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterButton = document.getElementById('filterButton');
   const searchBox = document.getElementById('searchBox');
 
-  // Toggle the searchBox visibility on filterButton click
   filterButton.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevent click from propagating to the document
-    searchBox.classList.toggle('hidden'); // Toggle the 'hidden' class
+    event.stopPropagation(); 
+    searchBox.classList.toggle('hidden'); 
   });
 
-  // Hide the searchBox when clicking outside of it
   document.addEventListener('click', (event) => {
     if (!searchBox.contains(event.target) && event.target !== filterButton) {
-      searchBox.classList.add('hidden'); // Add the 'hidden' class to hide the box
+      searchBox.classList.add('hidden'); 
     }
   });
 });
