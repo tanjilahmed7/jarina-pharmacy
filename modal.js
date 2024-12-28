@@ -57,8 +57,14 @@ function toggleFunc() {
 
 
 
+function showModalInventory() {
+  const modal = document.getElementById('my_modal_inventory');
+  if (modal) {
+    modal.showModal();
+  }
+}
 function showModalDashboard() {
-  const modal = document.getElementById('my_modal_dashboard');
+  const modal = document.getElementById('my_modal_prescription');
   if (modal) {
     modal.showModal();
   }

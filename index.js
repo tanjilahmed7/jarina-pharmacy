@@ -25,6 +25,32 @@ const swiper = new Swiper(".mySwiper1", {
     },
   },
 });
+const swiper7 = new Swiper(".mySwiper7", {
+  slidesPerView: 2,
+  spaceBetween: 16,
+  loop: true,
+  navigation: {
+    nextEl: ".custom-next-one7",
+    prevEl: ".custom-prev-one7",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+  },
+});
 const swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,
   loop: true,
