@@ -1,5 +1,5 @@
 // SLIDER ONE
-var swiper = new Swiper(".mySwiper1", {
+const swiper = new Swiper(".mySwiper1", {
   slidesPerView: 5,
   spaceBetween: 20,
   loop: true,
@@ -25,7 +25,7 @@ var swiper = new Swiper(".mySwiper1", {
     },
   },
 });
-var swiper2 = new Swiper(".mySwiper2", {
+const swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,
   loop: true,
   navigation: {
@@ -34,7 +34,7 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 // SLIDER THREE
-var swiper3 = new Swiper(".mySwiper3", {
+const swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 4,
   spaceBetween: 16,
   loop: true,
@@ -91,6 +91,9 @@ tabButton.forEach((tab, idx) => {
     tabContent[idx].classList.remove("hidden");
   });
 });
+
+
+
 
 // MENU
 function toggleFuncMenu() {

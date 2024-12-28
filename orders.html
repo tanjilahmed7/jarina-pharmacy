@@ -11,14 +11,19 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <section>
-      <div class="flex bg-[bg-[#F5F8FA]]">
+      <div class="flex bg-[#F5F8FA]">
         <!-- SIDBAR  -->
         <div class="bg-[#237AFF] w-[280px] min-h-screen p-6 fixed">
           <div class="flex gap-2 items-start">
-            <a href="./index.html" class="flex items-center gap-2 h-[23px]">
+            <a href="./dashboard.html" class="flex items-center gap-2 h-[23px]">
               <img
                 class="w-[22px] h-[22px] object-contain"
                 src="./assets/dashboard-logo.svg"
@@ -36,9 +41,10 @@
               >Admin panel</small
             >
           </div>
+
           <ul class="mt-8 flex flex-col gap-3 w-full">
             <li
-              class="p-[10px] bg-[#1955B2] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
+              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
             >
               <a href="./dashboard.html">Dashboard</a>
             </li>
@@ -47,21 +53,16 @@
             >
               <a href="./orders.html">Orders</a>
             </li>
+
             <li
               class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
             >
-              <a href="">Delivery</a>
-            </li>
-            <li
-              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
-            >
-              <a href="">Inventory</a>
+              <a href="./inventory.html">Inventory</a>
             </li>
           </ul>
         </div>
         <!-- DIV  -->
         <div class="w-full ml-[280px] relative pb-5">
-          <!-- HEADER  -->
           <!-- NOTIFICATION BUTTON -->
           <div
             class="w-full flex items-center justify-end gap-10 border-b border-[#E5E5E5] py-3"
@@ -231,7 +232,7 @@
                 </h2>
               </div>
             </div>
-            <div class="flex justify-between items-center py-4 relative">
+            <div class="flex justify-between items-center pb-4 relative">
               <div class="flex items-center gap-4">
                 <h1
                   class="text-[#237AFF] text-sm leading-[20px] font-extrabold font-manrope"
@@ -283,55 +284,506 @@
               </div>
             </div>
           </div>
-
+          <!-- TABLE  -->
           <div class="mx-6">
-            <div class="overflow-x-auto border border-[#DDE7F6] w-full">
-              <table class="table w-full lg:w-full">
-                <!-- head -->
-                <thead class="h-[40px]">
-                  <tr
-                    class="bg-[#DDE7F6] font-manrope font-semibold text-sm leading-[20px] text-[#0F1B27]"
-                  >
-                    <th class="lg:w-[50px] p-[10px]">ID</th>
-                    <th class="lg:w-[120px] p-[10px]">Name</th>
-                    <th class="lg:w-[195px] p-[10px]">Mail</th>
-                    <th class="w-[240px] p-[10px]">Medicine name</th>
-                    <th class="lg:w-[110px] p-[10px]">Requested Medicines</th>
-                    <th class="lg:w-[100px] p-[10px]">Total cost</th>
-                    <th class="lg:w-[100px] p-[10px]">Status</th>
-                    <th class="lg:w-[148px] p-[10px]"></th>
-                    <th></th>
+            <div class="overflow-x-auto border border-[#DDE7F6]">
+              <table class="table-fixed w-full border-collapse">
+                <thead class="h-[60px] bg-[#DDE7F6]">
+                  <tr class="font-manrope font-semibold text-sm text-[#0F1B27]">
+                    <th class="lg:w-[50px] w-[50px] p-[10px] text-start">ID</th>
+                    <th class="lg:w-[120px] w-[120px] p-[10px] text-start">
+                      Name
+                    </th>
+                    <th class="lg:w-[195px] w-[195px] p-[10px] text-start">
+                      Mail
+                    </th>
+                    <th
+                      class="lg:w-[110px] w-[110px] h-[60px] p-[10px] truncate text-start"
+                    >
+                      Requested <br />
+                      Medicines
+                    </th>
+                    <th class="lg:w-[240px] w-[240px] p-[10px] text-start">
+                      Medicine Name
+                    </th>
+                    <th class="lg:w-[100px] w-[100px] p-[10px] text-start">
+                      Total Cost
+                    </th>
+                    <th class="lg:w-[100px] w-[100px] p-[10px] text-start">
+                      Status
+                    </th>
+                    <th class="lg:w-[148px] w-[148px] p-[10px]"></th>
+                    <th class="w-auto p-[10px]"></th>
                   </tr>
                 </thead>
-                <tbody
-                  class="font-manrope font-normal text-[12px] leading-[20px] text-[#0F1B27] h-[60px]"
-                >
-                  <tr class="border-t border-[#DDE7F6] h-[56px]">
-                    <td class="lg:w-[50px] p-[10px]">112</td>
-                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
-                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
-                    <td class="lg:w-[240px] p-[10px]">
+                <tbody>
+                  <tr
+                    class="font-normal text-[#0F1B27] text-[12px] border-b border-[#DDE7F6]"
+                  >
+                    <td class="p-[10px] text-start">112</td>
+                    <td class="p-[10px] text-start">Hasib Ovi</td>
+                    <td class="p-[10px] text-start flex flex-col gap-1">
+                      <small class="text-[12px] font-normal"
+                        >john.doe@example.com</small
+                      >
+                      <small class="text-[12px] font-normal"
+                        >+8983989982562</small
+                      >
+                    </td>
+                    <td class="p-[10px] truncate text-start">3</td>
+                    <td class="p-[10px] text-start">
                       Name here, name here, name here
                     </td>
-                    <td class="lg:w-[110px] p-[10px] border border-black">3</td>
-                    <td class="lg:w-[110px]">$7.5</td>
-                    <td class="w-[100px] p-[10px]">
+                    <td class="p-[10px] text-start">$7.5</td>
+                    <td class="p-[10px] text-start">
                       <button
-                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px]"
+                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px] flex items-center gap-1 justify-center"
                       >
                         Pending
+                        <img
+                          src="./assets/pending.svg"
+                          class="object-contain"
+                          alt=""
+                        />
                       </button>
                     </td>
-                    <td>View medicines</td>
-                    <td>G</td>
+                    <td class="p-[10px] text-start underline">
+                      <button onclick="showModalDashboard()">
+                        View medicines
+                      </button>
+                    </td>
+                    <td class="p-[10px]">
+                      <img src="./assets/dot.svg" alt="" />
+                    </td>
+                  </tr>
+                  <tr
+                    class="font-normal text-[#0F1B27] text-[12px] border-b border-[#DDE7F6]"
+                  >
+                    <td class="p-[10px] text-start">112</td>
+                    <td class="p-[10px] text-start">Hasib Ovi</td>
+                    <td class="p-[10px] text-start flex flex-col gap-1">
+                      <small class="text-[12px] font-normal"
+                        >john.doe@example.com</small
+                      >
+                      <small class="text-[12px] font-normal"
+                        >+8983989982562</small
+                      >
+                    </td>
+                    <td class="p-[10px] truncate text-start">3</td>
+                    <td class="p-[10px] text-start">
+                      Name here, name here, name here
+                    </td>
+                    <td class="p-[10px] text-start">$7.5</td>
+                    <td class="p-[10px] text-start">
+                      <button
+                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px] flex items-center gap-1 justify-center"
+                      >
+                        Pending
+                        <img
+                          src="./assets/pending.svg"
+                          class="object-contain"
+                          alt=""
+                        />
+                      </button>
+                    </td>
+                    <td class="p-[10px] text-start underline">
+                      <a href="">View medicines</a>
+                    </td>
+                    <td class="p-[10px]">
+                      <img src="./assets/dot.svg" alt="" />
+                    </td>
+                  </tr>
+                  <tr
+                    class="font-normal text-[#0F1B27] text-[12px] border-b border-[#DDE7F6]"
+                  >
+                    <td class="p-[10px] text-start">112</td>
+                    <td class="p-[10px] text-start">Hasib Ovi</td>
+                    <td class="p-[10px] text-start flex flex-col gap-1">
+                      <small class="text-[12px] font-normal"
+                        >john.doe@example.com</small
+                      >
+                      <small class="text-[12px] font-normal"
+                        >+8983989982562</small
+                      >
+                    </td>
+                    <td class="p-[10px] truncate text-start">3</td>
+                    <td class="p-[10px] text-start">
+                      Name here, name here, name here
+                    </td>
+                    <td class="p-[10px] text-start">$7.5</td>
+                    <td class="p-[10px] text-start">
+                      <button
+                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px] flex items-center gap-1 justify-center"
+                      >
+                        Pending
+                        <img
+                          src="./assets/pending.svg"
+                          class="object-contain"
+                          alt=""
+                        />
+                      </button>
+                    </td>
+                    <td class="p-[10px] text-start underline">
+                      <a href="">View medicines</a>
+                    </td>
+                    <td class="p-[10px]">
+                      <img src="./assets/dot.svg" alt="" />
+                    </td>
+                  </tr>
+                  <tr
+                    class="font-normal text-[#0F1B27] text-[12px] border-b border-[#DDE7F6]"
+                  >
+                    <td class="p-[10px] text-start">112</td>
+                    <td class="p-[10px] text-start">Hasib Ovi</td>
+                    <td class="p-[10px] text-start flex flex-col gap-1">
+                      <small class="text-[12px] font-normal"
+                        >john.doe@example.com</small
+                      >
+                      <small class="text-[12px] font-normal"
+                        >+8983989982562</small
+                      >
+                    </td>
+                    <td class="p-[10px] truncate text-start">3</td>
+                    <td class="p-[10px] text-start">
+                      Name here, name here, name here
+                    </td>
+                    <td class="p-[10px] text-start">$7.5</td>
+                    <td class="p-[10px] text-start">
+                      <button
+                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px] flex items-center gap-1 justify-center"
+                      >
+                        Pending
+                        <img
+                          src="./assets/pending.svg"
+                          class="object-contain"
+                          alt=""
+                        />
+                      </button>
+                    </td>
+                    <td class="p-[10px] text-start underline">
+                      <a href="">View medicines</a>
+                    </td>
+                    <td class="p-[10px]">
+                      <img src="./assets/dot.svg" alt="" />
+                    </td>
+                  </tr>
+                  <tr
+                    class="font-normal text-[#0F1B27] text-[12px] border-b border-[#DDE7F6]"
+                  >
+                    <td class="p-[10px] text-start">112</td>
+                    <td class="p-[10px] text-start">Hasib Ovi</td>
+                    <td class="p-[10px] text-start flex flex-col gap-1">
+                      <small class="text-[12px] font-normal"
+                        >john.doe@example.com</small
+                      >
+                      <small class="text-[12px] font-normal"
+                        >+8983989982562</small
+                      >
+                    </td>
+                    <td class="p-[10px] truncate text-start">3</td>
+                    <td class="p-[10px] text-start">
+                      Name here, name here, name here
+                    </td>
+                    <td class="p-[10px] text-start">$7.5</td>
+                    <td class="p-[10px] text-start">
+                      <button
+                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px] flex items-center gap-1 justify-center"
+                      >
+                        Pending
+                        <img
+                          src="./assets/pending.svg"
+                          class="object-contain"
+                          alt=""
+                        />
+                      </button>
+                    </td>
+                    <td class="p-[10px] text-start underline">
+                      <a href="">View medicines</a>
+                    </td>
+                    <td class="p-[10px]">
+                      <img src="./assets/dot.svg" alt="" />
+                    </td>
+                  </tr>
+                  <tr
+                    class="font-normal text-[#0F1B27] text-[12px] border-b border-[#DDE7F6]"
+                  >
+                    <td class="p-[10px] text-start">112</td>
+                    <td class="p-[10px] text-start">Hasib Ovi</td>
+                    <td class="p-[10px] text-start flex flex-col gap-1">
+                      <small class="text-[12px] font-normal"
+                        >john.doe@example.com</small
+                      >
+                      <small class="text-[12px] font-normal"
+                        >+8983989982562</small
+                      >
+                    </td>
+                    <td class="p-[10px] truncate text-start">3</td>
+                    <td class="p-[10px] text-start">
+                      Name here, name here, name here
+                    </td>
+                    <td class="p-[10px] text-start">$7.5</td>
+                    <td class="p-[10px] text-start">
+                      <button
+                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px] flex items-center gap-1 justify-center"
+                      >
+                        Pending
+                        <img
+                          src="./assets/pending.svg"
+                          class="object-contain"
+                          alt=""
+                        />
+                      </button>
+                    </td>
+                    <td class="p-[10px] text-start underline">
+                      <a href="">View medicines</a>
+                    </td>
+                    <td class="p-[10px]">
+                      <img src="./assets/dot.svg" alt="" />
+                    </td>
+                  </tr>
+                  <tr
+                    class="font-normal text-[#0F1B27] text-[12px] border-b border-[#DDE7F6]"
+                  >
+                    <td class="p-[10px] text-start">112</td>
+                    <td class="p-[10px] text-start">Hasib Ovi</td>
+                    <td class="p-[10px] text-start flex flex-col gap-1">
+                      <small class="text-[12px] font-normal"
+                        >john.doe@example.com</small
+                      >
+                      <small class="text-[12px] font-normal"
+                        >+8983989982562</small
+                      >
+                    </td>
+                    <td class="p-[10px] truncate text-start">3</td>
+                    <td class="p-[10px] text-start">
+                      Name here, name here, name here
+                    </td>
+                    <td class="p-[10px] text-start">$7.5</td>
+                    <td class="p-[10px] text-start">
+                      <button
+                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px] flex items-center gap-1 justify-center"
+                      >
+                        Pending
+                        <img
+                          src="./assets/pending.svg"
+                          class="object-contain"
+                          alt=""
+                        />
+                      </button>
+                    </td>
+                    <td class="p-[10px] text-start underline">
+                      <a href="">View medicines</a>
+                    </td>
+                    <td class="p-[10px]">
+                      <img src="./assets/dot.svg" alt="" />
+                    </td>
+                  </tr>
+                  <tr
+                    class="font-normal text-[#0F1B27] text-[12px] border-b border-[#DDE7F6]"
+                  >
+                    <td class="p-[10px] text-start">112</td>
+                    <td class="p-[10px] text-start">Hasib Ovi</td>
+                    <td class="p-[10px] text-start flex flex-col gap-1">
+                      <small class="text-[12px] font-normal"
+                        >john.doe@example.com</small
+                      >
+                      <small class="text-[12px] font-normal"
+                        >+8983989982562</small
+                      >
+                    </td>
+                    <td class="p-[10px] truncate text-start">3</td>
+                    <td class="p-[10px] text-start">
+                      Name here, name here, name here
+                    </td>
+                    <td class="p-[10px] text-start">$7.5</td>
+                    <td class="p-[10px] text-start">
+                      <button
+                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px] flex items-center gap-1 justify-center"
+                      >
+                        Pending
+                        <img
+                          src="./assets/pending.svg"
+                          class="object-contain"
+                          alt=""
+                        />
+                      </button>
+                    </td>
+                    <td class="p-[10px] text-start underline">
+                      <a href="">View medicines</a>
+                    </td>
+                    <td class="p-[10px]">
+                      <img src="./assets/dot.svg" alt="" />
+                    </td>
+                  </tr>
+                  <tr
+                    class="font-normal text-[#0F1B27] text-[12px] border-b border-[#DDE7F6]"
+                  >
+                    <td class="p-[10px] text-start">112</td>
+                    <td class="p-[10px] text-start">Hasib Ovi</td>
+                    <td class="p-[10px] text-start flex flex-col gap-1">
+                      <small class="text-[12px] font-normal"
+                        >john.doe@example.com</small
+                      >
+                      <small class="text-[12px] font-normal"
+                        >+8983989982562</small
+                      >
+                    </td>
+                    <td class="p-[10px] truncate text-start">3</td>
+                    <td class="p-[10px] text-start">
+                      Name here, name here, name here
+                    </td>
+                    <td class="p-[10px] text-start">$7.5</td>
+                    <td class="p-[10px] text-start">
+                      <button
+                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px] flex items-center gap-1 justify-center"
+                      >
+                        Pending
+                        <img
+                          src="./assets/pending.svg"
+                          class="object-contain"
+                          alt=""
+                        />
+                      </button>
+                    </td>
+                    <td class="p-[10px] text-start underline">
+                      <a href="">View medicines</a>
+                    </td>
+                    <td class="p-[10px]">
+                      <img src="./assets/dot.svg" alt="" />
+                    </td>
+                  </tr>
+                  <tr
+                    class="font-normal text-[#0F1B27] text-[12px] border-b border-[#DDE7F6]"
+                  >
+                    <td class="p-[10px] text-start">112</td>
+                    <td class="p-[10px] text-start">Hasib Ovi</td>
+                    <td class="p-[10px] text-start flex flex-col gap-1">
+                      <small class="text-[12px] font-normal"
+                        >john.doe@example.com</small
+                      >
+                      <small class="text-[12px] font-normal"
+                        >+8983989982562</small
+                      >
+                    </td>
+                    <td class="p-[10px] truncate text-start">3</td>
+                    <td class="p-[10px] text-start">
+                      Name here, name here, name here
+                    </td>
+                    <td class="p-[10px] text-start">$7.5</td>
+                    <td class="p-[10px] text-start">
+                      <button
+                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px] flex items-center gap-1 justify-center"
+                      >
+                        Pending
+                        <img
+                          src="./assets/pending.svg"
+                          class="object-contain"
+                          alt=""
+                        />
+                      </button>
+                    </td>
+                    <td class="p-[10px] text-start underline">
+                      <a href="">View medicines</a>
+                    </td>
+                    <td class="p-[10px]">
+                      <img src="./assets/dot.svg" alt="" />
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
+
+        <!-- MODAL  -->
+
+        <dialog id="my_modal_dashboard" class="modal">
+          <div
+            class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]"
+          >
+            <form method="dialog">
+              <button
+                class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+              >
+                <img
+                  src="./assets/Close.svg"
+                  class="w-6 h-6 object-contain"
+                  alt="Close"
+                />
+              </button>
+              <button
+                class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+              >
+                <img
+                  src="./assets/Close.svg"
+                  class="w-6 h-6 object-contain absolute z-50"
+                  alt="Close"
+                />
+              </button>
+            </form>
+            <h3
+              class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px]"
+            >
+              Create your account
+            </h3>
+            <p
+              class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+            >
+              Already have an account?
+              <span class="font-bold underline cursor-pointer" id="loginAcc"
+                >Log in</span
+              >
+            </p>
+            <form
+              method="dialog"
+              class="mt-6 w-full inline-flex flex-col gap-4"
+            >
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+              />
+              <div
+                class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+              >
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+                />
+                <img
+                  src="./assets/passeye.svg"
+                  class="absolute right-4 top-4"
+                  alt=""
+                />
+              </div>
+
+              <div class="flex items-center gap-2 mt-2">
+                <input
+                  type="checkbox"
+                  class="border border-[#011575] w-5 h-5"
+                />
+                <p
+                  class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+                >
+                  I agree to Find Med company’s terms & conditions, Privacy
+                  policy.
+                </p>
+              </div>
+              <button
+                type="submit"
+                class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+              >
+                Create account
+              </button>
+            </form>
+          </div>
+        </dialog>
       </div>
     </section>
   </body>
   <script src="./filter.js"></script>
+  <script src="./notification.js"></script>
+  <script src="./modal.js"></script>
+  <script src="./index.js"></script>
 </html>

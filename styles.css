@@ -145,6 +145,7 @@ input[type="number"] {
     z-index: 50;
   }
 }
+
 .myNav {
   width: 0;
   position: fixed;

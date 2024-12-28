@@ -40,57 +40,161 @@
               >Admin panel</small
             >
           </div>
+
           <ul class="mt-8 flex flex-col gap-3 w-full">
             <li
-              class="p-[10px] bg-[#1955B2] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
+              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
             >
               <a href="./dashboard.html">Dashboard</a>
             </li>
             <li
               class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
             >
-              <a href="./medicineRequest.html">Medicine request</a>
+              <a href="./orders.html">Orders</a>
             </li>
+
             <li
               class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
             >
-              <a href="">Delivery</a>
-            </li>
-            <li
-              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
-            >
-              <a href="">Inventory</a>
+              <a href="./inventory.html">Inventory</a>
             </li>
           </ul>
         </div>
         <!-- DIV  -->
-        <div class="w-full ml-[280px] pb-[49px]">
-          <!-- HEADER  -->
+        <div class="w-full ml-[280px] pb-[49px] overflow-x-hidden">
+          <!-- HEADER & NOTIFICATION BUTTON -->
           <div
-            class="w-full flex items-center justify-end gap-10 border-b border-[#E5E5E5]"
+            class="w-full flex items-center justify-end gap-10 border-b border-[#E5E5E5] py-3"
           >
-            <div
-              class="w-[282px] h-10 px-4 flex items-center justify-between bg-[#F1F3F4] rounded-[35px] my-3"
+            <button
+              id="notiButton"
+              class="w-10 h-10 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
             >
-              <input
-                type="text"
-                class="font-manrope font-medium text-sm bg-transparent w-full outline-none leading-[22px] h-full"
-                placeholder="Search here"
-              />
-              <div class="">
-                <img
-                  class="w-6 h-6 object-contain"
-                  src="./assets/search-icon.svg"
-                  alt=""
-                />
-              </div>
-            </div>
+              <img src="./assets//mdcnicon.svg" alt="" />
+            </button>
             <p
               class="text-[#334C66] font-manrope text-sm leading-[22px] font-semibold mr-4"
             >
               Leslie Alexander
             </p>
           </div>
+          <!-- NOTIFICATION BOX -->
+          <div
+            id="notiBox"
+            class="bg-[#FFFFFF] w-[450px] h-auto max-h-[350px] absolute rounded-lg right-6 p-4 z-50 flex flex-col gap-4 overflow-y-auto hidden"
+          >
+            <div class="flex justify-between">
+              <h1 class="text-[#12366C] text-lg font-manrope font-bold">
+                Notifications
+              </h1>
+              <button class="text-base text-[#12366C] font-manrope font-bold">
+                Mark all as read
+              </button>
+            </div>
+            <div class="flex flex-col gap-3">
+              <!-- NOTIFICATION ITEM -->
+              <div
+                class="flex gap-2 items-center justify-center border-b border-[#F0F0F0] pb-3"
+              >
+                <div class="flex gap-3 items-center w-full">
+                  <button
+                    class="w-8 h-8 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/mdcnicon.svg"
+                      class="w-[19px] h-[19px] object-contain"
+                      alt=""
+                    />
+                  </button>
+                  <div class="w-[205px]">
+                    <h1
+                      class="font-semibold font-manrope text-[#011575] text-base"
+                    >
+                      Critical stock!
+                    </h1>
+                    <p
+                      class="text-[#011575] text-[12px] font-manrope font-normal mb-2"
+                    >
+                      Omuk medicine stock is running low.
+                    </p>
+                    <p
+                      class="font-medium text-[12px] font-manrope text-[#011575]"
+                    >
+                      8:30 PM, 26 Dec 2024
+                    </p>
+                  </div>
+                </div>
+                <small class="bg-[#237AFFCC] w-2 h-2 rounded-full"></small>
+              </div>
+              <div
+                class="flex gap-2 items-center justify-center border-b border-[#F0F0F0] pb-3"
+              >
+                <div class="flex gap-3 items-center w-full">
+                  <button
+                    class="w-8 h-8 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/mdcnicon.svg"
+                      class="w-[19px] h-[19px] object-contain"
+                      alt=""
+                    />
+                  </button>
+                  <div class="w-[205px]">
+                    <h1
+                      class="font-semibold font-manrope text-[#011575] text-base"
+                    >
+                      Critical stock!
+                    </h1>
+                    <p
+                      class="text-[#011575] text-[12px] font-manrope font-normal mb-2"
+                    >
+                      Omuk medicine stock is running low.
+                    </p>
+                    <p
+                      class="font-medium text-[12px] font-manrope text-[#011575]"
+                    >
+                      8:30 PM, 26 Dec 2024
+                    </p>
+                  </div>
+                </div>
+                <!-- <small class="bg-[#237AFFCC] w-2 h-2 rounded-full"></small> -->
+              </div>
+              <div
+                class="flex gap-2 items-center justify-center border-b border-[#F0F0F0] pb-3"
+              >
+                <div class="flex gap-3 items-center w-full">
+                  <button
+                    class="w-8 h-8 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/mdcnicon.svg"
+                      class="w-[19px] h-[19px] object-contain"
+                      alt=""
+                    />
+                  </button>
+                  <div class="w-[205px]">
+                    <h1
+                      class="font-semibold font-manrope text-[#011575] text-base"
+                    >
+                      Critical stock!
+                    </h1>
+                    <p
+                      class="text-[#011575] text-[12px] font-manrope font-normal mb-2"
+                    >
+                      Omuk medicine stock is running low.
+                    </p>
+                    <p
+                      class="font-medium text-[12px] font-manrope text-[#011575]"
+                    >
+                      8:30 PM, 26 Dec 2024
+                    </p>
+                  </div>
+                </div>
+                <!-- <small class="bg-[#237AFFCC] w-2 h-2 rounded-full"></small> -->
+              </div>
+            </div>
+          </div>
+
           <div class="mx-6 mt-6 flex mb-4 justify-between">
             <h1
               class="text-[#334C66] text-xl font-manrope font-medium leading-[32px]"
@@ -161,7 +265,7 @@
               </p>
             </div>
           </div>
-          <div class="mx-6 mb-4 flex gap-4">
+          <div class="mx-6 mb-4 flex gap-4 relative">
             <button
               class="text-[#237AFF] text-sm font-manrope font-extrabold leading-5 cursor-pointer"
             >
@@ -177,6 +281,37 @@
             >
               Out of stock
             </button>
+            <!-- FILTER BUTTON  -->
+            <button
+              id="filterButton"
+              class="bg-[#FFFFFF] w-10 h-10 flex items-center justify-center rounded-[80px] border border-[#E5E5E5]"
+            >
+              <img src="./assets/filter.svg" alt="" />
+            </button>
+            <!-- SEARCH BOX  -->
+            <div
+              id="searchBox"
+              class="absolute top-[40px] laptop:left-[100px] tablet:left-[100px] left-0 desktop:left-[100px] rounded-lg bg-[#FFFFFF] p-6 z-50 w-[330px] hidden"
+            >
+              <h1 class="text-[#12366C] text-base font-manrope font-bold">
+                Search request
+              </h1>
+              <div
+                class="flex border border-[#D3E9F0] rounded-[80px] py-[10px] pl-4 pr-1 gap-2 my-4"
+              >
+                <img src="./assets/filtersearch.svg" alt="" />
+                <input
+                  type="search"
+                  class="outline-none border-none text-[12px] font-normal font-manrope text-[#334C6680] w-full"
+                  placeholder="Search by name/email address..."
+                />
+              </div>
+              <button
+                class="bg-[#011575] rounded-[80px] py-[7px] px-5 text-[#FFFFFF] text-[15px] font-manrope font-semibold"
+              >
+                Search
+              </button>
+            </div>
           </div>
           <!-- TABLE  -->
           <div class="mx-6">
@@ -367,7 +502,9 @@
         </div>
       </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/simple-datatable/dist/js/simple-datatable.min.js"></script>
-    <script src="./dataTable.js"></script>
+    <script src="./filter.js"></script>
+    <script src="./notification.js"></script>
+    <script src="./modal.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

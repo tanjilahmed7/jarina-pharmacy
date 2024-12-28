@@ -18,7 +18,7 @@
         <!-- SIDBAR  -->
         <div class="bg-[#237AFF] min-w-[280px] min-h-screen p-6">
           <div class="flex gap-2 items-start">
-            <a href="./index.html" class="flex items-center gap-2 h-[23px]">
+            <a href="./dashboard.html" class="flex items-center gap-2 h-[23px]">
               <img
                 class="w-[22px] h-[22px] object-contain"
                 src="./assets/dashboard-logo.svg"
@@ -38,7 +38,7 @@
           </div>
           <ul class="mt-8 flex flex-col gap-3 w-full">
             <li
-              class="p-[10px] bg-[#1955B2] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
+              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
             >
               <a href="./dashboard.html">Dashboard</a>
             </li>
@@ -47,21 +47,18 @@
             >
               <a href="./orders.html">Orders</a>
             </li>
+
             <li
               class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
             >
-              <a href="">Delivery</a>
-            </li>
-            <li
-              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
-            >
-              <a href="">Inventory</a>
+              <a href="./inventory.html">Inventory</a>
             </li>
           </ul>
         </div>
         <!-- DIV  -->
         <div class="w-full h-full mx-4">
           <!-- HEADER  -->
+          <!-- NOTIFICATION BUTTON -->
           <div
             class="w-full flex items-center justify-end gap-10 border-b border-[#E5E5E5] py-3"
           >
@@ -76,6 +73,122 @@
             >
               Leslie Alexander
             </p>
+          </div>
+          <!-- NOTIFICATION  -->
+          <div
+            id="notiBox"
+            class="bg-[#FFFFFF] w-[450px] h-auto max-h-[350px] absolute rounded-lg right-6 p-4 z-50 flex flex-col gap-4 overflow-y-auto hidden"
+          >
+            <div class="flex justify-between">
+              <h1 class="text-[#12366C] text-lg font-manrope font-bold">
+                Notifications
+              </h1>
+              <button class="text-base text-[#12366C] font-manrope font-bold">
+                Mark all as read
+              </button>
+            </div>
+            <div class="flex flex-col gap-3">
+              <!-- NOTIFICATION ITEM -->
+              <div
+                class="flex gap-2 items-center justify-center border-b border-[#F0F0F0] pb-3"
+              >
+                <div class="flex gap-3 items-center w-full">
+                  <button
+                    class="w-8 h-8 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/mdcnicon.svg"
+                      class="w-[19px] h-[19px] object-contain"
+                      alt=""
+                    />
+                  </button>
+                  <div class="w-[205px]">
+                    <h1
+                      class="font-semibold font-manrope text-[#011575] text-base"
+                    >
+                      Critical stock!
+                    </h1>
+                    <p
+                      class="text-[#011575] text-[12px] font-manrope font-normal mb-2"
+                    >
+                      Omuk medicine stock is running low.
+                    </p>
+                    <p
+                      class="font-medium text-[12px] font-manrope text-[#011575]"
+                    >
+                      8:30 PM, 26 Dec 2024
+                    </p>
+                  </div>
+                </div>
+                <small class="bg-[#237AFFCC] w-2 h-2 rounded-full"></small>
+              </div>
+              <div
+                class="flex gap-2 items-center justify-center border-b border-[#F0F0F0] pb-3"
+              >
+                <div class="flex gap-3 items-center w-full">
+                  <button
+                    class="w-8 h-8 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/mdcnicon.svg"
+                      class="w-[19px] h-[19px] object-contain"
+                      alt=""
+                    />
+                  </button>
+                  <div class="w-[205px]">
+                    <h1
+                      class="font-semibold font-manrope text-[#011575] text-base"
+                    >
+                      Critical stock!
+                    </h1>
+                    <p
+                      class="text-[#011575] text-[12px] font-manrope font-normal mb-2"
+                    >
+                      Omuk medicine stock is running low.
+                    </p>
+                    <p
+                      class="font-medium text-[12px] font-manrope text-[#011575]"
+                    >
+                      8:30 PM, 26 Dec 2024
+                    </p>
+                  </div>
+                </div>
+                <!-- <small class="bg-[#237AFFCC] w-2 h-2 rounded-full"></small> -->
+              </div>
+              <div
+                class="flex gap-2 items-center justify-center border-b border-[#F0F0F0] pb-3"
+              >
+                <div class="flex gap-3 items-center w-full">
+                  <button
+                    class="w-8 h-8 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/mdcnicon.svg"
+                      class="w-[19px] h-[19px] object-contain"
+                      alt=""
+                    />
+                  </button>
+                  <div class="w-[205px]">
+                    <h1
+                      class="font-semibold font-manrope text-[#011575] text-base"
+                    >
+                      Critical stock!
+                    </h1>
+                    <p
+                      class="text-[#011575] text-[12px] font-manrope font-normal mb-2"
+                    >
+                      Omuk medicine stock is running low.
+                    </p>
+                    <p
+                      class="font-medium text-[12px] font-manrope text-[#011575]"
+                    >
+                      8:30 PM, 26 Dec 2024
+                    </p>
+                  </div>
+                </div>
+                <!-- <small class="bg-[#237AFFCC] w-2 h-2 rounded-full"></small> -->
+              </div>
+            </div>
           </div>
           <div class="mx-6 mt-6 flex flex-col gap-4">
             <div class="flex gap-4">
@@ -158,5 +271,5 @@
       </div>
     </section>
   </body>
-  <script src="./filter.js"></script>
+  <script src="./notification.js"></script>
 </html>
