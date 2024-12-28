@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="flex bg-[bg-[#F5F8FA]]">
+        <!-- SIDBAR  -->
+        <div class="bg-[#237AFF] w-[280px] min-h-screen p-6 fixed">
+          <div class="flex gap-2 items-start">
+            <a href="./index.html" class="flex items-center gap-2 h-[23px]">
+              <img
+                class="w-[22px] h-[22px] object-contain"
+                src="./assets/dashboard-logo.svg"
+                alt=""
+              />
+
+              <h2
+                class="font-oswald font-medium text-[22.02px] leading-[36px] text-[#FFFFFF]"
+              >
+                Find Med
+              </h2>
+            </a>
+            <small
+              class="text-[#FFFFFF] font-manrope font-medium text-[10px] p-0 m-0 leading-4 mt-[9px]"
+              >Admin panel</small
+            >
+          </div>
+          <ul class="mt-8 flex flex-col gap-3 w-full">
+            <li
+              class="p-[10px] bg-[#1955B2] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
+            >
+              <a href="./dashboard.html">Dashboard</a>
+            </li>
+            <li
+              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
+            >
+              <a href="./orders.html">Orders</a>
+            </li>
+            <li
+              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
+            >
+              <a href="">Delivery</a>
+            </li>
+            <li
+              class="p-[10px] text-sm font-manrope font-semibold leading-[22px] text-[#FFFFFF] rounded"
+            >
+              <a href="">Inventory</a>
+            </li>
+          </ul>
+        </div>
+        <!-- DIV  -->
+        <div class="w-full ml-[280px] relative pb-5">
+          <!-- HEADER  -->
+          <!-- NOTIFICATION BUTTON -->
+          <div
+            class="w-full flex items-center justify-end gap-10 border-b border-[#E5E5E5] py-3"
+          >
+            <button
+              id="notiButton"
+              class="w-10 h-10 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
+            >
+              <img src="./assets//mdcnicon.svg" alt="" />
+            </button>
+            <p
+              class="text-[#334C66] font-manrope text-sm leading-[22px] font-semibold mr-4"
+            >
+              Leslie Alexander
+            </p>
+          </div>
+          <!-- NOTIFICATION  -->
+          <div
+            id="notiBox"
+            class="bg-[#FFFFFF] w-[450px] h-auto max-h-[350px] absolute rounded-lg right-6 p-4 z-50 flex flex-col gap-4 overflow-y-auto hidden"
+          >
+            <div class="flex justify-between">
+              <h1 class="text-[#12366C] text-lg font-manrope font-bold">
+                Notifications
+              </h1>
+              <button class="text-base text-[#12366C] font-manrope font-bold">
+                Mark all as read
+              </button>
+            </div>
+            <div class="flex flex-col gap-3">
+              <!-- NOTIFICATION ITEM -->
+              <div
+                class="flex gap-2 items-center justify-center border-b border-[#F0F0F0] pb-3"
+              >
+                <div class="flex gap-3 items-center w-full">
+                  <button
+                    class="w-8 h-8 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/mdcnicon.svg"
+                      class="w-[19px] h-[19px] object-contain"
+                      alt=""
+                    />
+                  </button>
+                  <div class="w-[205px]">
+                    <h1
+                      class="font-semibold font-manrope text-[#011575] text-base"
+                    >
+                      Critical stock!
+                    </h1>
+                    <p
+                      class="text-[#011575] text-[12px] font-manrope font-normal mb-2"
+                    >
+                      Omuk medicine stock is running low.
+                    </p>
+                    <p
+                      class="font-medium text-[12px] font-manrope text-[#011575]"
+                    >
+                      8:30 PM, 26 Dec 2024
+                    </p>
+                  </div>
+                </div>
+                <small class="bg-[#237AFFCC] w-2 h-2 rounded-full"></small>
+              </div>
+              <div
+                class="flex gap-2 items-center justify-center border-b border-[#F0F0F0] pb-3"
+              >
+                <div class="flex gap-3 items-center w-full">
+                  <button
+                    class="w-8 h-8 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/mdcnicon.svg"
+                      class="w-[19px] h-[19px] object-contain"
+                      alt=""
+                    />
+                  </button>
+                  <div class="w-[205px]">
+                    <h1
+                      class="font-semibold font-manrope text-[#011575] text-base"
+                    >
+                      Critical stock!
+                    </h1>
+                    <p
+                      class="text-[#011575] text-[12px] font-manrope font-normal mb-2"
+                    >
+                      Omuk medicine stock is running low.
+                    </p>
+                    <p
+                      class="font-medium text-[12px] font-manrope text-[#011575]"
+                    >
+                      8:30 PM, 26 Dec 2024
+                    </p>
+                  </div>
+                </div>
+                <!-- <small class="bg-[#237AFFCC] w-2 h-2 rounded-full"></small> -->
+              </div>
+              <div
+                class="flex gap-2 items-center justify-center border-b border-[#F0F0F0] pb-3"
+              >
+                <div class="flex gap-3 items-center w-full">
+                  <button
+                    class="w-8 h-8 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/mdcnicon.svg"
+                      class="w-[19px] h-[19px] object-contain"
+                      alt=""
+                    />
+                  </button>
+                  <div class="w-[205px]">
+                    <h1
+                      class="font-semibold font-manrope text-[#011575] text-base"
+                    >
+                      Critical stock!
+                    </h1>
+                    <p
+                      class="text-[#011575] text-[12px] font-manrope font-normal mb-2"
+                    >
+                      Omuk medicine stock is running low.
+                    </p>
+                    <p
+                      class="font-medium text-[12px] font-manrope text-[#011575]"
+                    >
+                      8:30 PM, 26 Dec 2024
+                    </p>
+                  </div>
+                </div>
+                <!-- <small class="bg-[#237AFFCC] w-2 h-2 rounded-full"></small> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-6 mt-6 flex flex-col gap-4">
+            <h1
+              class="text-[#334C66] text-xl font-manrope font-medium leading-[32px]"
+            >
+              Medecine request
+            </h1>
+            <div class="flex gap-4">
+              <div
+                class="bg-[#E0ECFF] p-4 flex flex-col rounded-lg gap-1 w-[259px]"
+              >
+                <h5
+                  class="font-medium font-manrope text-[#334C66] text-base leading-[25px]"
+                >
+                  New request
+                </h5>
+                <h2
+                  class="text-[#03051C] text-[28px] leading-[44px] font-bold font-manrope"
+                >
+                  34
+                </h2>
+              </div>
+              <div
+                class="bg-[#E0ECFF] p-4 flex flex-col rounded-lg gap-1 w-[259px]"
+              >
+                <h5
+                  class="font-medium font-manrope text-[#334C66] text-base leading-[25px]"
+                >
+                  Total request
+                </h5>
+                <h2
+                  class="text-[#03051C] text-[28px] leading-[44px] font-bold font-manrope"
+                >
+                  340
+                </h2>
+              </div>
+            </div>
+            <div class="flex justify-between items-center py-4 relative">
+              <div class="flex items-center gap-4">
+                <h1
+                  class="text-[#237AFF] text-sm leading-[20px] font-extrabold font-manrope"
+                >
+                  All Request
+                </h1>
+                <!-- FILTER BUTTON  -->
+                <button
+                  id="filterButton"
+                  class="bg-[#FFFFFF] w-10 h-10 flex items-center justify-center rounded-[80px] border border-[#E5E5E5]"
+                >
+                  <img src="./assets/filter.svg" alt="" />
+                </button>
+                <!-- SEARCH BOX  -->
+                <div
+                  id="searchBox"
+                  class="absolute top-[60px] laptop:left-[100px] tablet:left-[100px] left-0 desktop:left-[100px] rounded-lg bg-[#FFFFFF] p-6 z-50 w-[330px] hidden"
+                >
+                  <h1 class="text-[#12366C] text-base font-manrope font-bold">
+                    Search request
+                  </h1>
+                  <div
+                    class="flex border border-[#D3E9F0] rounded-[80px] py-[10px] pl-4 pr-1 gap-2 my-4"
+                  >
+                    <img src="./assets/filtersearch.svg" alt="" />
+                    <input
+                      type="search"
+                      class="outline-none border-none text-[12px] font-normal font-manrope text-[#334C6680] w-full"
+                      placeholder="Search by name/email address..."
+                    />
+                  </div>
+                  <button
+                    class="bg-[#011575] rounded-[80px] py-[7px] px-5 text-[#FFFFFF] text-[15px] font-manrope font-semibold"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-4 items-center">
+                <h5>1 - 50 of 223</h5>
+                <div class="flex gap-[14px]">
+                  <button class="p-[10px]">
+                    <img src="./assets/dashboard-arrow.svg" alt="" />
+                  </button>
+                  <button class="p-[10px]">
+                    <img src="./assets/dashboard-arrow-2.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-6">
+            <div class="overflow-x-auto border border-[#DDE7F6] w-full">
+              <table class="table w-full lg:w-full">
+                <!-- head -->
+                <thead class="h-[40px]">
+                  <tr
+                    class="bg-[#DDE7F6] font-manrope font-semibold text-sm leading-[20px] text-[#0F1B27]"
+                  >
+                    <th class="lg:w-[50px] p-[10px]">ID</th>
+                    <th class="lg:w-[120px] p-[10px]">Name</th>
+                    <th class="lg:w-[195px] p-[10px]">Mail</th>
+                    <th class="w-[240px] p-[10px]">Medicine name</th>
+                    <th class="lg:w-[110px] p-[10px]">Requested Medicines</th>
+                    <th class="lg:w-[100px] p-[10px]">Total cost</th>
+                    <th class="lg:w-[100px] p-[10px]">Status</th>
+                    <th class="lg:w-[148px] p-[10px]"></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody
+                  class="font-manrope font-normal text-[12px] leading-[20px] text-[#0F1B27] h-[60px]"
+                >
+                  <tr class="border-t border-[#DDE7F6] h-[56px]">
+                    <td class="lg:w-[50px] p-[10px]">112</td>
+                    <td class="lg:w-[120px] p-[10px]">Hasib Ovi</td>
+                    <td class="lg:w-[195px] p-[10px]">hasibovi@gmail.com</td>
+                    <td class="lg:w-[240px] p-[10px]">
+                      Name here, name here, name here
+                    </td>
+                    <td class="lg:w-[110px] p-[10px] border border-black">3</td>
+                    <td class="lg:w-[110px]">$7.5</td>
+                    <td class="w-[100px] p-[10px]">
+                      <button
+                        class="bg-[#D3FF86] py-2 px-[10px] rounded-[90px]"
+                      >
+                        Pending
+                      </button>
+                    </td>
+                    <td>View medicines</td>
+                    <td>G</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./filter.js"></script>
+</html>

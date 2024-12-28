@@ -19,14 +19,13 @@
   </head>
   <body class="bg-[#FAFAFA]">
     <!-- HEADER SECTION  -->
-
     <header class="bg-[#FAFAFA] w-full h-16 sticky top-0 z-[99999]">
       <div
         class="flex justify-between items-center w-full h-full lg:px-[75px] px-4"
       >
-        <a href="./index.html" class="flex items-center gap-2 h-[23px]">
+        <a href="./index.html" class="flex items-center gap-2 h-[23px] group">
           <img
-            class="w-[22px] h-[22px] object-contain"
+            class="w-[22px] h-[22px] object-contain group-hover:filter group-hover:invert group-hover:sepia-0 group-hover:saturate-100 group-hover:hue-rotate-[340deg]"
             src="./assets/Group 1.svg"
             alt=""
           />
@@ -53,7 +52,7 @@
             >
               <img src="./assets/cart.svg" alt="" />
             </div>
-            <div class="flex gap-3">
+            <!-- <div class="flex gap-3">
               <button
                 class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
               >
@@ -64,6 +63,32 @@
                 onclick="showModal()"
               >
                 Sign up
+              </button>
+            </div> -->
+
+            <div class="flex items-center justify-center gap-3">
+              <button
+                class="relative bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] overflow-hidden transition group"
+              >
+                <span
+                  class="relative z-10 transition-colors duration-700 group-hover:text-[#FFFFFF]"
+                  >Log in</span
+                >
+                <span
+                  class="absolute left-1/2 bottom-0 w-0 h-0 transform -translate-x-1/2 translate-y-1/2 rounded-full bg-[#011575] transition-all duration-700 ease-in-out group-hover:w-[300px] group-hover:h-[300px] group-hover:bottom-1/2"
+                ></span>
+              </button>
+              <button
+                class="relative bg-[#011575] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#FFFFFF] font-manrope font-semibold text-[15px] overflow-hidden transition group"
+                onclick="showModal()"
+              >
+                <span
+                  class="relative z-10 transition-colors duration-700 group-hover:text-[#334C66]"
+                  >Sign up</span
+                >
+                <span
+                  class="absolute left-1/2 bottom-0 w-0 h-0 transform -translate-x-1/2 translate-y-1/2 rounded-full bg-white transition-all duration-700 ease-in-out group-hover:w-[300px] group-hover:h-[300px] group-hover:bottom-1/2"
+                ></span>
               </button>
             </div>
           </div>
@@ -97,7 +122,6 @@
         </ul>
       </div>
     </header>
-
     <!-- Mobile Navigation -->
     <div
       class="myNav absolute top-16 right-0 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] w-0 overflow-x-hidden h-auto transition-all duration-500 mt-[64px] rounded-t-[32px]"
