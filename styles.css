@@ -66,6 +66,7 @@
 .img3 {
   animation: img7 6s infinite;
 }
+
 @keyframes img5 {
   0% {
     transform: translateX(0) rotateX(0) rotateX(0);
@@ -170,4 +171,16 @@ input[type="number"] {
 
 .hidden {
   display: none;
+}
+
+@keyframes spin360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  animation: spin360 5s linear infinite;
 }

@@ -36,30 +36,38 @@
 
         <!-- Desktop Menu -->
         <div class="laptop:flex gap-[56px] hidden">
-          <ul
-            class="flex items-center gap-10 font-manrope font-semibold text-[15px]"
-          >
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./list.html">Medications</a>
-            <a href="./contactDoctor.html">Contact doctor</a>
-            <a href="./index.html">Help</a>
+          <ul class="flex items-center gap-10">
+            <li class="font-manrope font-semibold text-[15px] text-[#334C66]">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="font-manrope font-semibold text-[15px] text-[#334C66]">
+              <a href="./about.html">About</a>
+            </li>
+            <li class="font-manrope font-semibold text-[15px] text-[#334C66]">
+              <a href="./list.html">Medications</a>
+            </li>
+            <li class="font-manrope font-semibold text-[15px] text-[#334C66]">
+              <a href="./contactDoctor.html">Contact doctor</a>
+            </li>
+            <li class="font-manrope font-semibold text-[15px] text-[#334C66]">
+              <a href="#">Help</a>
+            </li>
           </ul>
 
           <div class="flex gap-5">
             <div
-              class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer"
+              class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer hover:bg-[#E5E5E5] delay-200"
             >
               <img src="./assets/cart.svg" alt="" />
             </div>
             <div class="flex gap-3">
               <button
-                class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+                class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] hover:border-[#011575] delay-100"
               >
                 Log in
               </button>
               <button
-                class="bg-[#011575] text-[#FFFFFF] py-[7px] px-5 rounded-[80px] font-manrope font-semibold text-[15px]"
+                class="bg-[#011575] text-[#FFFFFF] py-[7px] px-5 rounded-[80px] font-manrope font-semibold text-[15px] hover:text-[#00BFFF]"
                 onclick="showModal()"
               >
                 Sign up
@@ -910,18 +918,18 @@
               </div>
 
               <button
-                class="custom-next-one absolute desktop:right-0 desktop:top-[123px] tablet:bottom-10 laptop:bottom-10 bottom-10 -mr-16 laptop:-mr-16 desktop:mr-0 transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5]"
+                class="custom-next-one absolute desktop:right-0 desktop:top-[123px] tablet:bottom-10 laptop:bottom-10 bottom-10 -mr-16 laptop:-mr-16 desktop:mr-0 transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5] delay-2000"
               >
                 <img src="./assets/Frame (5).svg" alt="" />
               </button>
               <button
-                class="custom-prev-one absolute desktop:left-0 desktop:top-[123px] tablet:bottom-10 laptop:bottom-10 bottom-10 -ml-16 desktop:-ml-0 transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center"
+                class="custom-prev-one absolute desktop:left-0 desktop:top-[123px] tablet:bottom-10 laptop:bottom-10 bottom-10 -ml-16 desktop:-ml-0 transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center delay-2000"
               >
                 <img src="./assets/Frame (4).svg" alt="" />
               </button>
             </div>
             <button
-              class="desktop:mt-10 mt-[104px] tablet:mt-[104px] laptop:mt-[104px] py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px]"
+              class="desktop:mt-10 mt-[104px] tablet:mt-[104px] laptop:mt-[104px] py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px] hover:text-[#00BFFF] delay-100"
             >
               View all medicines
             </button>
@@ -945,7 +953,7 @@
                 class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
               >
                 <div class="relative w-[180px] h-[180px]">
-                  <img src="./assets/Group 19.svg" alt="" />
+                  <img src="./assets/Group 19.svg" alt="" class="rotating" />
                   <img
                     class="absolute top-[42px] left-[42px]"
                     src="./assets/12891941.svg"
@@ -967,7 +975,7 @@
                 class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
               >
                 <div class="relative w-[180px] h-[180px]">
-                  <img src="./assets/Group 20.svg" alt="" />
+                  <img src="./assets/Group 20.svg" alt="" class="rotating" />
                   <img
                     class="absolute top-[42px] left-[42px]"
                     src="./assets/10476458.svg"
@@ -990,7 +998,7 @@
                 class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
               >
                 <div class="relative w-[180px] h-[180px]">
-                  <img src="./assets/Group 21.svg" alt="" />
+                  <img src="./assets/Group 21.svg" alt="" class="rotating" />
                   <img
                     class="absolute top-[42px] left-[42px]"
                     src="./assets/2749687.svg"
@@ -1200,14 +1208,14 @@
                 <div
                   class="flex flex-col items-center justify-center w-full h-full"
                 >
-                  <img src="./assets/Vector.svg" alt="" />
+                  <img src="./assets/Vector.svg" alt="" class="rotating" />
                   <h1
                     class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
                   >
                     Heart Disease
                   </h1>
                   <small
-                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer hover:text-[#00BFFF] delay-100"
                     >View all medicines</small
                   >
                 </div>
@@ -1218,14 +1226,14 @@
                 <div
                   class="flex flex-col items-center justify-center w-full h-full"
                 >
-                  <img src="./assets/Vector (1).svg" alt="" />
+                  <img src="./assets/Vector (1).svg" alt="" class="rotating" />
                   <h1
                     class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
                   >
                     Heart Disease
                   </h1>
                   <small
-                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer hover:text-[#00BFFF] delay-100"
                     >View all medicines</small
                   >
                 </div>
@@ -1236,14 +1244,14 @@
                 <div
                   class="flex flex-col items-center justify-center w-full h-full"
                 >
-                  <img src="./assets/Vector (2).svg" alt="" />
+                  <img src="./assets/Vector (2).svg" alt="" class="rotating" />
                   <h1
                     class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
                   >
                     Heart Disease
                   </h1>
                   <small
-                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer hover:text-[#00BFFF] delay-100"
                     >View all medicines</small
                   >
                 </div>
@@ -1254,14 +1262,14 @@
                 <div
                   class="flex flex-col items-center justify-center w-full h-full"
                 >
-                  <img src="./assets/Vector (3).svg" alt="" />
+                  <img src="./assets/Vector (3).svg" alt="" class="rotating" />
                   <h1
                     class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
                   >
                     Heart Disease
                   </h1>
                   <small
-                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer hover:text-[#00BFFF] delay-100"
                     >View all medicines</small
                   >
                 </div>
@@ -1272,14 +1280,14 @@
                 <div
                   class="flex flex-col items-center justify-center w-full h-full"
                 >
-                  <img src="./assets/Vector (1).svg" alt="" />
+                  <img src="./assets/Vector (1).svg" alt="" class="rotating" />
                   <h1
                     class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
                   >
                     Heart Disease
                   </h1>
                   <small
-                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer hover:text-[#00BFFF] delay-100"
                     >View all medicines</small
                   >
                 </div>
@@ -1290,14 +1298,14 @@
                 <div
                   class="flex flex-col items-center justify-center w-full h-full z-50"
                 >
-                  <img src="./assets/Vector (1).svg" alt="" />
+                  <img src="./assets/Vector (1).svg" alt="" class="rotating" />
                   <h1
                     class="font-bold text-[22px] leading-[25px] font-manrope text-[#013366] pt-8"
                   >
                     Heart Disease
                   </h1>
                   <small
-                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer"
+                    class="font-semibold text-[15px] leading-[24px] font-manrope text-[#013366] my-[7px] underline cursor-pointer hover:text-[#00BFFF] delay-100"
                     >View all medicines</small
                   >
                 </div>
@@ -1317,7 +1325,7 @@
           </div>
         </div>
         <button
-          class="desktop:mb-10 mb-10 mt-10 tablet:mb-[104px] laptop:mb-[104px] py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px] z-50"
+          class="desktop:mb-10 mb-10 mt-10 tablet:mb-[104px] laptop:mb-[104px] py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px] z-50 hover:text-[#00BFFF] delay-100"
         >
           View all medicines
         </button>
@@ -1368,7 +1376,7 @@
               </div>
               <a
                 href=""
-                class="text-[#99CCFF] text-[15px] font-manrope font-semibold leading-[24px] underline cursor-pointer py-[7px]"
+                class="text-[#99CCFF] text-[15px] font-manrope font-semibold leading-[24px] underline cursor-pointer py-[7px] hover:text-[#00BFFF] delay-100"
                 >About us</a
               >
             </div>
@@ -1406,7 +1414,7 @@
               </div>
               <a
                 href=""
-                class="text-[#013366] text-[15px] font-manrope font-semibold leading-[24px] underline cursor-pointer py-[7px]"
+                class="text-[#013366] text-[15px] font-manrope font-semibold leading-[24px] underline cursor-pointer py-[7px] hover:text-[#00BFFF] delay-100"
                 >View all medicines</a
               >
             </div>
