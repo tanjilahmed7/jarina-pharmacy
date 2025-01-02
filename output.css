@@ -4469,16 +4469,8 @@ details.collapse summary::-webkit-details-marker {
   transition-duration: 150ms;
 }
 
-.delay-500 {
-  transition-delay: 500ms;
-}
-
 .delay-100 {
   transition-delay: 100ms;
-}
-
-.delay-1000 {
-  transition-delay: 1000ms;
 }
 
 .delay-200 {
@@ -4773,6 +4765,11 @@ input[type="number"] {
   border-color: rgb(1 21 117 / var(--tw-border-opacity, 1));
 }
 
+.hover\:bg-\[\#E5E5E5\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-\[\#F5F7FA\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(245 247 250 / var(--tw-bg-opacity, 1));
@@ -4782,23 +4779,9 @@ input[type="number"] {
   background-color: transparent;
 }
 
-.hover\:bg-\[\#E5E5E5\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:font-extrabold:hover {
-  font-weight: 800;
-}
-
 .hover\:text-\[\#00BFFF\]:hover {
   --tw-text-opacity: 1;
   color: rgb(0 191 255 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-\[\#013366\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(1 51 102 / var(--tw-text-opacity, 1));
 }
 
 .hover\:underline:hover {
