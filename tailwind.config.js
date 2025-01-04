@@ -10,8 +10,8 @@ module.exports = {
         'desktop': '1440px',
       },
       backgroundImage: {
-        bgImageMedicinesSection: "url('/assets/Vector 1.png')",
-        bgImageMedicinesSectionSmall:"url('./assets/Vector 1 3.png')",
+        bgImageMedicinesSection: "url('/assets/vector1.png')",
+        bgImageMedicinesSectionSmall:"url('./assets/vector13.png')",
         bgImageFaqSection: "url('/assets/Vector 2.png')",
         bgAffordableSection:"url('/assets/Vector 1 (1).png')",
       },
