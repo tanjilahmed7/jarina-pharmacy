@@ -573,15 +573,15 @@
           <img src="./assets/image 12.png" class="lg:block hidden" alt="" />
         </div>
       </div>
-      <!-- NEED TO FIX THE RESPONSIVENESS ISSUE  -->
+
       <div
-        class="lg:h-[142px] bg-[#0070E3] rounded-b-[32px] flex items-center justify-center h-[298px]"
+        class="desktop:h-[142px] bg-[#0070E3] rounded-b-[32px] flex items-center justify-center h-[298px]"
       >
         <div
           class="flex flex-col lg:flex-row items-center justify-center lg:w-[984px] w-[375px]"
         >
           <div
-            class="grid lg:grid-cols-4 lg:grid-rows-1 grid-rows-2 grid-cols-2 lg:gap-[72px] lg:py-0 py-10"
+            class="grid lg:grid-cols-4 lg:grid-rows-1 grid-rows-2 grid-cols-2 desktop:gap-[72px] tablet:gap-10 lg:py-0 py-10"
           >
             <div class="flex flex-col gap-2 items-center justify-center">
               <div
@@ -621,7 +621,9 @@
                 Quick Prescription Access
               </h3>
             </div>
-            <div class="flex flex-col gap-2 items-center justify-center">
+            <div
+              class="flex flex-col gap-2 items-center desktop:justify-center laptop:justify-center tablet:justify-normal justify-normal"
+            >
               <div
                 class="w-12 h-12 bg-[#FFE680] flex items-center justify-center rounded-full"
               >
@@ -647,7 +649,7 @@
         alt=""
       />
       <div
-        class="w-full h-full flex flex-col items-center py-20 lg:py-[120px] overflow-hidden gap-[120px]"
+        class="w-full h-full flex flex-col items-center py-10 lg:py-[120px] overflow-hidden gap-[120px]"
       >
         <!-- SLIDER ONE  -->
         <div class="laptop:h-[380px] tablet:h-[380px] laptop:w-[1290px]">
@@ -929,7 +931,7 @@
               </button>
             </div>
             <button
-              class="desktop:mt-10 mt-[104px] tablet:mt-[104px] laptop:mt-[104px] py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px] hover:text-[#00BFFF] delay-100"
+              class="desktop:mt-10 mt-[104px] tablet:mt-[104px] laptop:mt-[104px] py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px] hover:text-[#00BFFF] delay-100 desktop:w-[170px] laptop:w-[170px] w-[260px] tablet:w-[260px]"
             >
               View all medicines
             </button>
@@ -1051,7 +1053,7 @@
                 </p>
 
                 <h3
-                  class="pt-4 pb-8 font-medium font-manrope text-base leading-[25px] text-[#FFFFFF]"
+                  class="pt-4 pb-8 desktop:pl-6 tablet:pl-4 laptop:pl-6 font-medium font-manrope text-base leading-[25px] text-[#FFFFFF]"
                 >
                   - John Doe, XP
                 </h3>
@@ -1059,11 +1061,6 @@
               <img
                 class="absolute right-0 bottom-0 desktop:block laptop:block tablet:block hidden"
                 src="./assets/Vector 5.png"
-                alt=""
-              />
-              <img
-                src="./assets/Vector 5 (1).png"
-                class="absolute bottom-0 object-contain tablet:hidden desktop:hidden laptop:hidden block w-full"
                 alt=""
               />
             </div>
@@ -1091,7 +1088,7 @@
                 </p>
 
                 <h3
-                  class="pt-4 pb-8 font-medium font-manrope text-base leading-[25px] text-[#FFFFFF]"
+                  class="pt-4 pb-8 desktop:pl-6 tablet:pl-4 laptop:pl-6 font-medium font-manrope text-base leading-[25px] text-[#FFFFFF]"
                 >
                   - John Doe, XP
                 </h3>
@@ -1099,51 +1096,6 @@
               <img
                 class="absolute right-0 bottom-0 desktop:block laptop:block tablet:block hidden"
                 src="./assets/Vector 5.png"
-                alt=""
-              />
-              <img
-                src="./assets/Vector 5 (1).png"
-                class="absolute bottom-0 object-contain tablet:hidden desktop:hidden laptop:hidden block w-full"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide relative">
-              <img
-                src="./assets/image (4).png"
-                class="w-full h-full absolute z-0 top-0 object-cover desktop:block laptop:block hidden tablet:block"
-                alt=""
-              />
-              <img
-                src="./assets/image 4.png"
-                class="w-full h-full absolute z-0 top-0 laptop:hidden desktop:hidden tablet:hidden block object-cover"
-                alt=""
-              />
-              <div
-                class="absolute lg:top-[298px] top-[220px] left-1/2 transform -translate-x-1/2 z-50 text-center"
-              >
-                <p
-                  class="lg:w-[785px] w-[365px] font-manrope text-2xl lg:text-[28px] font-medium leading-[31px] lg:leading-[36px] text-[#E0FEE6] text-center"
-                >
-                  “Ordering was simple, and the delivery was fast and
-                  hassle-free. I appreciate the affordable pricing and
-                  transparency they provide, making it much easier to access the
-                  medicines.”
-                </p>
-
-                <h3
-                  class="pt-4 pb-8 font-medium font-manrope text-base leading-[25px] text-[#FFFFFF]"
-                >
-                  - John Doe, XP
-                </h3>
-              </div>
-              <img
-                class="absolute right-0 bottom-0 desktop:block laptop:block tablet:block hidden"
-                src="./assets/Vector 5.png"
-                alt=""
-              />
-              <img
-                src="./assets/Vector 5 (1).png"
-                class="absolute bottom-0 object-contain tablet:hidden desktop:hidden laptop:hidden block w-full"
                 alt=""
               />
             </div>
@@ -1313,12 +1265,12 @@
             </div>
 
             <button
-              class="custom1-next-one1 absolute desktop:right-[0px] desktop:top-[123px] tablet:-bottom-5 laptop:-bottom-5 -bottom-5 -mr-16 laptop:-mr-16 desktop:mr-0 transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5]"
+              class="custom1-next-one1 absolute desktop:right-[0px] desktop:top-[123px] tablet:-bottom-5 laptop:-bottom-5 -bottom-5 -mr-16 laptop:-mr-16 desktop:mr-0 transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5] hover:bg-[#E5E5E5] delay-200 cursor-pointer"
             >
               <img src="./assets/Frame (5).svg" alt="" />
             </button>
             <button
-              class="custom1-prev-one1 absolute desktop:left-[0px] desktop:top-[123px] tablet:-bottom-5 laptop:-bottom-5 -bottom-5 -ml-16 desktop:-ml-0 transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center"
+              class="custom1-prev-one1 absolute desktop:left-[0px] desktop:top-[123px] tablet:-bottom-5 laptop:-bottom-5 -bottom-5 -ml-16 desktop:-ml-0 transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#E5E5E5] delay-200 cursor-pointer"
             >
               <img src="./assets/Frame (4).svg" alt="" />
             </button>
@@ -1342,10 +1294,10 @@
           We offer safe, affordable medicines at the lowest possible price.
         </h1>
         <div
-          class="lg:mb-[120px] pb-20 flex gap-5 lg:flex-row flex-col items-center justify-center w-full tablet:px-5"
+          class="lg:mb-[120px] pb-20 flex gap-5 lg:flex-row flex-col items-center justify-center w-full tablet:px-5 tablet:flex-col desktop:flex-row laptop:flex-row"
         >
           <div
-            class="bg-[#013366] w-full lg:w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
+            class="bg-[#013366] w-full desktop:max-w-[635px] laptop:max-w-[635px] tablet:max-w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
           >
             <img
               src="./assets/Vector 3 2.png"
@@ -1358,7 +1310,7 @@
               alt=""
             />
             <div
-              class="w-full h-full absolute z-50 p-4 lg:p-12 flex flex-col lg:justify-between"
+              class="w-full h-full absolute z-50 p-4 desktop:p-12 tablet:p-6 laptop:p-12 flex flex-col lg:justify-between"
             >
               <div class="w-[400px] flex flex-col lg:gap-4">
                 <h1
@@ -1367,7 +1319,7 @@
                   Who We Are
                 </h1>
                 <p
-                  class="font-manrope font-medium text-sm leading-[22px] text-[#99CCFF] pt-4 z-50 desktop:w-[400px] laptop:w-[400px] w-[311px] tablet:w-[400px]"
+                  class="font-manrope font-medium text-sm leading-[22px] text-[#99CCFF] pt-4 z-50 desktop:w-[400px] laptop:w-[400px] w-[311px] tablet:max-w-[400px]"
                 >
                   We are a dedicated team of healthcare professionals,
                   technology innovators, and customer service experts working
@@ -1382,7 +1334,7 @@
             </div>
           </div>
           <div
-            class="bg-[#99CCFF] w-full lg:w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
+            class="bg-[#99CCFF] w-full desktop:max-w-[635px] laptop:max-w-[635px] tablet:max-w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
           >
             <img
               src="./assets/Vector 5 (2).png"
@@ -1395,7 +1347,7 @@
               alt=""
             />
             <div
-              class="w-full h-full absolute z-50 p-4 lg:p-12 flex flex-col lg:justify-between"
+              class="w-full h-full absolute z-50 p-4 desktop:p-12 tablet:p-6 laptop:p-12 flex flex-col lg:justify-between"
             >
               <div class="w-[400px] flex flex-col lg:gap-4">
                 <h1
@@ -1405,7 +1357,7 @@
                   fingertips
                 </h1>
                 <p
-                  class="font-manrope font-medium text-sm leading-[22px] text-[#013366] pt-4 z-50 desktop:w-[400px] laptop:w-[400px] w-[311px] tablet:w-[400px]"
+                  class="font-manrope font-medium text-sm leading-[22px] text-[#013366] pt-4 z-50 desktop:w-[400px] laptop:w-[400px] w-[311px] tablet:max-w-[400px]"
                 >
                   Discover a wide range of medications tailored to your health
                   needs in our Medicine section. Whether you're looking for
@@ -1444,27 +1396,27 @@
               class="flex flex-wrap justify-center desktop:gap-4 laptop:gap-4 tablet:gap-4 gap-2 items-center mt-6"
             >
               <button
-                class="bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-bold tab_btn"
+                class="bg-[#FFE680] hover:bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-bold tab_btn"
               >
                 Common Questions
               </button>
               <button
-                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
+                class="bg-[#E6E6E6] hover:bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
               >
                 How it works
               </button>
               <button
-                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
+                class="bg-[#E6E6E6] hover:bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
               >
                 Orders
               </button>
               <button
-                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
+                class="bg-[#E6E6E6] hover:bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
               >
                 Delivery
               </button>
               <button
-                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
+                class="bg-[#E6E6E6] hover:bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
               >
                 Returns
               </button>
@@ -1856,8 +1808,8 @@
         <div
           class="flex flex-col lg:w-[517px] lg:gap-[169px] pt-[80px] lg:ml-[75px]"
         >
-          <div class="flex flex-col gap-2 w-[321px]">
-            <div class="flex items-center gap-2">
+          <div class="inline-flex flex-col gap-2 w-[321px]">
+            <a href="./index.html" class="flex items-center gap-2">
               <img
                 class="w-[22px] h-[22px] object-contain"
                 src="./assets/Group 1.svg"
@@ -1868,7 +1820,7 @@
               >
                 Find Med
               </h1>
-            </div>
+            </a>
 
             <h3
               class="text-[32px] lg:text-[40px] leading-[38px] lg:leading-[48px] font-manrope font-medium text-[#D8D8D8] mt-[39px]"
@@ -1904,19 +1856,19 @@
               </h1>
               <div class="flex flex-col gap-3">
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >Home</small
                 >
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >About us</small
                 >
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >Medications</small
                 >
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >Help</small
                 >
               </div>
@@ -1933,10 +1885,13 @@
                     class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                     >Northern hill, New york, USA</small
                   >
-                  <small
-                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
-                    >+88 01723998977</small
-                  >
+                  <a href="tel:+8801723998977">
+                    <small
+                      class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
+                    >
+                      +88 01723998977
+                    </small>
+                  </a>
                 </div>
               </div>
               <div class="flex flex-col gap-4">
@@ -1946,14 +1901,18 @@
                   Find us on
                 </h1>
                 <div class="flex gap-6">
-                  <button><img src="./assets/Frame (7).svg" alt="" /></button>
+                  <button>
+                    <img src="./assets/Frame (7).svg" alt="" />
+                  </button>
                   <button><img src="./assets/Frame (8).svg" alt="" /></button>
                   <button><img src="./assets/Frame (9).svg" alt="" /></button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex gap-12 lg:pb-0 pb-10 items-center justify-center">
+          <div
+            class="flex gap-12 desktop:pb-0 laptop:pb-0 tablet:pb-10 pb-10 items-center justify-center"
+          >
             <small
               class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
               >Privacy policy</small
