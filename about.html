@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
+    <link rel="icon" type="image/png" href="./assets/Group 1.svg" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,21 +38,26 @@
 
         <!-- Desktop Menu -->
         <div class="laptop:flex gap-[56px] hidden">
-          <ul class="flex items-center gap-10">
-            <li class="font-manrope font-semibold text-[15px] text-[#334C66]">
+          <ul class="flex items-center gap-10" id="nav-list">
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
               <a href="./index.html">Home</a>
             </li>
-            <li class="font-manrope font-semibold text-[15px] text-[#334C66]">
-              <a href="./about.html">About</a>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./about.html">About us</a>
             </li>
-            <li class="font-manrope font-semibold text-[15px] text-[#334C66]">
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
               <a href="./list.html">Medications</a>
             </li>
-            <li class="font-manrope font-semibold text-[15px] text-[#334C66]">
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
               <a href="./contactDoctor.html">Contact doctor</a>
-            </li>
-            <li class="font-manrope font-semibold text-[15px] text-[#334C66]">
-              <a href="#">Help</a>
             </li>
           </ul>
 
@@ -91,32 +97,18 @@
           </button>
         </div>
       </div>
-
-      <!-- Mobile menu content -->
-      <div
-        id="mobileMenu"
-        class="menu hidden lg:hidden fixed top-0 left-0 right-0 bottom-0 bg-white overflow-y-auto z-[9999]"
-      >
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./list.html">Medications</a></li>
-          <li><a href="./index.html">Help</a></li>
-        </ul>
-      </div>
     </header>
     <!-- Mobile Navigation -->
     <div
       class="myNav absolute top-16 right-0 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] w-0 overflow-x-hidden h-auto transition-all duration-500 mt-[64px] rounded-t-[32px]"
     >
       <ul
-        class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-[200px]"
+        class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-10"
       >
         <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
+        <a href="./about.html">About us</a>
         <a href="./list.html">Medications</a>
         <a href="./contactDoctor.html">Contact doctor</a>
-        <a href="./index.html">Help</a>
       </ul>
 
       <div

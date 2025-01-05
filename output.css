@@ -3646,6 +3646,11 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(255 206 0 / var(--tw-border-opacity, 1));
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+}
+
 .border-red-600 {
   --tw-border-opacity: 1;
   border-color: rgb(220 38 38 / var(--tw-border-opacity, 1));
@@ -4692,6 +4697,11 @@ input[type="number"] {
   animation: spin360 5s linear infinite;
 }
 
+.active {
+  font-weight: 800;
+  color: #013366 !important;
+}
+
 @media (min-width: 1024px) {
   @media (hover:hover) {
     .table tr.lg\:hover:hover,
@@ -4733,6 +4743,11 @@ input[type="number"] {
 .group:hover .group-hover\:text-\[\#FFFFFF\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.group:hover .group-hover\:brightness-0 {
+  --tw-brightness: brightness(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .group:hover .group-hover\:hue-rotate-\[340deg\] {

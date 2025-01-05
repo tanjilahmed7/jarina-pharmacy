@@ -184,3 +184,8 @@ input[type="number"] {
 .rotating {
   animation: spin360 5s linear infinite;
 }
+
+.active {
+  font-weight: 800;
+  color: #013366 !important;
+}
