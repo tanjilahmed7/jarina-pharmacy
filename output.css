@@ -3827,10 +3827,6 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-bgImageMedicinesSectionSmall {
-  background-image: url('./assets/vector13.png');
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -5437,14 +5433,6 @@ input[type="number"] {
 
   .lg\:gap-\[169px\] {
     gap: 169px;
-  }
-
-  .lg\:bg-bgImageFaqSection {
-    background-image: url('/assets/Vector 2.png');
-  }
-
-  .lg\:bg-bgImageMedicinesSection {
-    background-image: url('/assets/vector1.png');
   }
 
   .lg\:object-cover {
