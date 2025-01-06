@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact your doctor</title>
+    <link rel="icon" type="image/png" href="./assets/Group 1.svg" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- HEADER SECTION  -->
+    <header class="bg-[#FAFAFA] w-full h-16 sticky top-0 z-[99999]">
+      <div
+        class="flex justify-between items-center w-full h-full lg:px-[75px] px-4"
+      >
+        <a href="./index.html" class="flex items-center gap-2 h-[23px] group">
+          <img
+            class="w-[22px] h-[22px] object-contain group-hover:filter group-hover:invert group-hover:sepia-0 group-hover:saturate-100 group-hover:hue-rotate-[340deg]"
+            src="./assets/Group 1.svg"
+            alt=""
+          />
+          <h2 class="font-oswald font-medium text-[28.01px] leading-[44px]">
+            Find Med
+          </h2>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="laptop:flex gap-[56px] hidden">
+          <ul class="flex items-center gap-10" id="nav-list">
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./about.html">About us</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./list.html">Medications</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./contactDoctor.html">Contact doctor</a>
+            </li>
+          </ul>
+
+          <div class="flex gap-5">
+            <div
+              class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer hover:bg-[#E5E5E5] delay-200"
+            >
+              <img src="./assets/cart.svg" alt="" />
+            </div>
+            <div class="flex gap-3">
+              <button
+                class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] hover:border-[#011575] delay-100"
+              >
+                Log in
+              </button>
+              <button
+                class="bg-[#011575] text-[#FFFFFF] py-[7px] px-5 rounded-[80px] font-manrope font-semibold text-[15px] hover:text-[#00BFFF]"
+                onclick="showModal()"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="laptop:hidden flex">
+          <button onclick="toggleFuncMenu()" id="openMenuButton" class="block">
+            <img src="./assets/Frame 3.svg" alt="Menu Open" />
+          </button>
+          <button
+            onclick="toggleFuncMenu()"
+            id="closeMenuButton"
+            class="hidden"
+          >
+            <img src="./assets/menu.png" alt="Menu Close" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile Navigation -->
+    <div
+      class="myNav absolute top-16 right-0 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] w-0 overflow-x-hidden h-auto transition-all duration-500 mt-[64px] rounded-t-[32px]"
+    >
+      <ul
+        class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-10"
+      >
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About us</a>
+        <a href="./list.html">Medications</a>
+        <a href="./contactDoctor.html">Contact doctor</a>
+      </ul>
+
+      <div
+        class="flex flex-col-reverse gap-4 items-center justify-center mt-10"
+      >
+        <button
+          class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+        >
+          Log in
+        </button>
+        <button
+          class="bg-[#011575] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#FFFFFF] font-manrope font-semibold text-[15px] w-[260px]"
+          onclick="showModal()"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
+    <!-- First Modal -->
+    <dialog id="my_modal_3" class="modal">
+      <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
+        <form method="dialog">
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain"
+              alt="Close"
+            />
+          </button>
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain absolute z-50"
+              alt="Close"
+            />
+          </button>
+        </form>
+        <h3
+          class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px]"
+        >
+          Create your account
+        </h3>
+        <p
+          class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+        >
+          Already have an account?
+          <span class="font-bold underline cursor-pointer" id="loginAcc"
+            >Log in</span
+          >
+        </p>
+        <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+          />
+          <div
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+          >
+            <input
+              type="password"
+              placeholder="Password"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+            />
+            <img
+              src="./assets/passeye.svg"
+              class="absolute right-4 top-4"
+              alt=""
+            />
+          </div>
+
+          <div class="flex items-center gap-2 mt-2">
+            <input type="checkbox" class="border border-[#011575] w-5 h-5" />
+            <p
+              class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+            >
+              I agree to Find Med company’s terms & conditions, Privacy policy.
+            </p>
+          </div>
+          <button
+            type="submit"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+          >
+            Create account
+          </button>
+        </form>
+      </div>
+    </dialog>
+    <!-- Second Modal -->
+    <dialog id="my_modal_2" class="modal">
+      <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
+        <form method="dialog">
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain"
+              alt="Close"
+            />
+          </button>
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain absolute z-50"
+              alt="Close"
+            />
+          </button>
+        </form>
+        <h3
+          class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px]"
+        >
+          Log in
+        </h3>
+        <p
+          class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+        >
+          Don’t have an account?
+          <a class="font-bold underline cursor-pointer" id="createAcc">
+            Create account
+          </a>
+        </p>
+
+        <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+          />
+          <div
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+          >
+            <input
+              type="password"
+              placeholder="Password"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+            />
+            <img
+              src="./assets/passeye.svg"
+              class="absolute right-4 top-4"
+              alt="Show Password"
+            />
+          </div>
+          <div class="flex items-center gap-2 mt-2">
+            <input type="checkbox" class="border border-[#011575] w-5 h-5" />
+            <p
+              class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+            >
+              Remember me for this device.
+            </p>
+          </div>
+          <button
+            type="submit"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+          >
+            Log in
+          </button>
+          <a
+            href="#"
+            id="forgetPass"
+            class="font-semibold font-manrope text-[#011575] text-[15px] leading-[24px] lg:text-start text-center"
+            >Forgot password?</a
+          >
+        </form>
+      </div>
+    </dialog>
+    <!-- Third Modal -->
+    <dialog id="my_modal_4" class="modal">
+      <div class="modal-box relative overflow-visible py-6 px-4 lg:p-[56px]">
+        <form method="dialog">
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain"
+              alt="Close"
+            />
+          </button>
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain absolute z-50"
+              alt="Close"
+            />
+          </button>
+        </form>
+        <a class="flex gap-2 cursor-pointer" href="#" id="back">
+          <img src="./assets/Frame (4).svg" alt="" /> Back
+        </a>
+        <h3
+          class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px] lg:pt-6"
+        >
+          Reset your password
+        </h3>
+        <p
+          class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+        >
+          Please enter your email address. We will send you an email to reset
+          your password.
+        </p>
+
+        <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-6">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+          />
+
+          <button
+            type="submit"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px]"
+          >
+            Send email
+          </button>
+        </form>
+      </div>
+    </dialog>
+    <!-- Fourth Modal -->
+    <dialog id="my_modal_5" class="modal">
+      <div class="modal-box relative overflow-visible p-[56px]">
+        <form method="dialog">
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain"
+              alt="Close"
+            />
+          </button>
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain absolute z-50"
+              alt="Close"
+            />
+          </button>
+        </form>
+
+        <h3
+          class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px] pt-6"
+        >
+          Change Your Password
+        </h3>
+        <p
+          class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+        >
+          Create a new password below to change your password.
+        </p>
+
+        <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-6">
+          <div
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+          >
+            <input
+              type="password"
+              placeholder="Password"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+            />
+            <img
+              src="./assets/passeye.svg"
+              class="absolute right-4 top-4"
+              alt="Show Password"
+            />
+          </div>
+          <div
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+          >
+            <input
+              type="password"
+              placeholder="Confirm password"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+            />
+            <img
+              src="./assets/passeye.svg"
+              class="absolute right-4 top-4"
+              alt="Show Password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px] w-[154px]"
+          >
+            Reset password
+          </button>
+        </form>
+      </div>
+    </dialog>
+    <!-- Fifth -->
+    <dialog id="my_modal_6" class="modal">
+      <div class="modal-box relative overflow-visible p-[56px]">
+        <form method="dialog">
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain"
+              alt="Close"
+            />
+          </button>
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain absolute z-50"
+              alt="Close"
+            />
+          </button>
+        </form>
+        <p
+          class="bg-[#EFFFEA] text-[#1A7501] text-sm font-manrope font-medium leading-[22px] px-4 py-[9px] mb-6 rounded-lg"
+        >
+          We’ve sent you a magic link to your email address
+        </p>
+        <h3
+          class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
+        >
+          Create your account
+        </h3>
+        <p
+          class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+        >
+          Already have an account?
+          <a class="font-bold underline cursor-pointer" id="loginAcc">Log in</a>
+        </p>
+        <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+          />
+          <div
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+          >
+            <input
+              type="password"
+              placeholder="Password"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+            />
+            <img
+              src="./assets/passeye.svg"
+              class="absolute right-4 top-4"
+              alt="Show Password"
+            />
+          </div>
+          <div class="flex items-center gap-2 mt-2">
+            <input type="checkbox" class="border border-[#011575] w-5 h-5" />
+            <p
+              class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+            >
+              I agree to Find Med company’s terms & conditions, <br />
+              Privacy policy.
+            </p>
+          </div>
+          <button
+            type="submit"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+          >
+            Create account
+          </button>
+        </form>
+      </div>
+    </dialog>
+    <!-- Contact Doctor HERO SECTION  -->
+    <section>
+      <div
+        class="bg-gradient-to-b from-[#E4ECF7] to-[#FAFAFA] laptop:h-[488px] desktop:h-[488px] h-[661px] flex desktop:gap-[200px] items-center justify-center lg:flex-row flex-col rounded-t-[32px] px-2 desktop:w-full laptop:w-full tablet:w-full"
+      >
+        <div
+          class="lg:w-[1290px] flex gap-12 laptop:justify-between tablet:justify-between desktop:gap-[200px] items-center desktop:flex-row tablet:flex-row flex-col"
+        >
+          <div class="lg:w-[630px] w-full flex flex-col gap-6">
+            <h1
+              class="text-[#011575] lg:text-[40px] lg:leading-[46px] font-extrabold font-manrope text-[32px] leading-[36px] w-full"
+            >
+              Contact your doctor
+            </h1>
+            <p
+              class="font-manrope font-medium text-sm lg:text-lg text-[#334C66] leading-[28px] min-w-[343px] lg:w-full"
+            >
+              Making essential medicines affordable, transparent, and accessible
+              for everyone
+            </p>
+          </div>
+          <div class="h-[328px] relative min-w-[264px]">
+            <img
+              src="./assets/Group 14.svg"
+              alt=""
+              class="absolute top-0 w-[264px] h-[229px] img3"
+            />
+            <div class="w-[197px] h-[249px] absolute right-0 top-[78px] img3">
+              <img src="./assets/Group 7.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MISSION AND VISION SECTION  -->
+    <section>
+      <div class="bg-[#798DF2] h-[652px] lg:h-[559px] w-full tablet:px-4 px-4">
+        <h1
+          class="text-[#FFFFFF] font-manrope font-extrabold text-[32px] lg:text-[40px] leading-[46px] text-center pt-20"
+        >
+          Talk to your doctor about Zarina pharmacy
+        </h1>
+        <p
+          class="text-center font-medium font-manrope text-base text-[#FFFFFF] desktop:mt-6 laptop:mt-6 tablet:mt-6 mt-6"
+        >
+          Download & provide this prescriber cover letter to your doctor
+        </p>
+        <div class="flex items-center justify-center mt-10">
+          <div
+            class="bg-[#EEF4ED] w-full desktop:w-[635px] laptop:w-[635px] tablet:w-[635px] h-[273px] relative rounded-[32px]"
+          >
+            <img
+              src="./assets/Vector 6.png"
+              class="absolute z-0 right-0 desktop:block laptop:block tablet:block hidden"
+              alt=""
+            />
+            <img
+              src="./assets/smallV.png"
+              class="absolute bottom-0 right-0 block laptop:hidden desktop:hidden tablet:hidden"
+              alt=""
+            />
+            <div
+              class="p-4 desktop:p-12 tablet:p-12 absolute z-50 flex flex-col gap-4 w-full h-full ic justify-center"
+            >
+              <h1
+                class="text-[#013366] font-manrope font-bold text-[22px] leading-[25px]"
+              >
+                Download prescription form
+              </h1>
+              <p
+                class="w-full text-[#013366] font-medium text-sm font-manrope leading-[22px]"
+              >
+                Download & provide this prescriber cover letter to your doctor
+              </p>
+              <button
+                class="text-[15px] text-[#FFFFFF] font-manrope font-semibold bg-[#011575] px-5 py-[7px] w-[148px] rounded-[80px]"
+              >
+                Download form
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ SECTION  -->
+    <section>
+      <div
+        class="w-full desktop:h-[866px] laptop:h-[866px] h-[864px] lg:bg-bgImageFaqSection bg-no-repeat bg-cover flex items-center justify-center flex-col min-w-[375px]"
+      >
+        <div
+          class="py-20 desktop:py-[120px] laptop:py-[120px] desktop:mx-[295px] laptop:mx-[295px] min-w-full desktop:w-[850px] laptop:w-[850px] flex items-center justify-center flex-col desktop:h-full h-full"
+        >
+          <h1
+            class="text-[#013366] font-manrope text-[32px] lg:text-[40px] leading-[46px] font-extrabold text-center"
+          >
+            Frequently asked questions
+          </h1>
+          <!-- TAB CONTAINER  -->
+          <div
+            class="desktop:w-[850px] laptop:w-[850px] tablet:w-full w-full flex flex-col items-center"
+          >
+            <!-- TAB BUTTONS -->
+            <div
+              class="flex flex-wrap justify-center desktop:gap-4 laptop:gap-4 tablet:gap-4 gap-2 items-center mt-6"
+            >
+              <button
+                class="bg-[#FFE680] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-bold tab_btn"
+              >
+                Common Questions
+              </button>
+              <button
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
+              >
+                How it works
+              </button>
+              <button
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
+              >
+                Orders
+              </button>
+              <button
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
+              >
+                Delivery
+              </button>
+              <button
+                class="bg-[#E6E6E6] py-[5px] px-2 rounded-[10px] text-[#013366] text-sm font-manrope leading-[22px] font-medium tab_btn"
+              >
+                Returns
+              </button>
+            </div>
+
+            <!-- TAB CONTENT CONTAINER -->
+            <div class="lg:h-[468px] w-full tab_container px-4">
+              <!-- TAB CONTENTS ONE -->
+              <div id="common-questions" class="content active">
+                <div class="flex gap-2 lg:gap-4 flex-col w-full mt-10">
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion" checked="checked" />
+                    <div
+                      class="collapse-title font-bold font-manrope text-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion" />
+                    <div
+                      class="collapse-title font-bold font-manrope ext-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion" />
+                    <div
+                      class="collapse-title font-bold font-manrope ext-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      How does it work?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion" />
+                    <div
+                      class="collapse-title font-bold font-manrope ext-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Medicines are refundable?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion" />
+                    <div
+                      class="collapse-title font-bold font-manrope ext-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Is this a legal way to get medication?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TAB CONTENTS TWO -->
+              <div id="how-it-works" class="content hidden">
+                <div class="flex gap-2 lg:gap-4 flex-col w-full mt-10">
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input
+                      type="radio"
+                      name="my-accordion-2"
+                      checked="checked"
+                    />
+                    <div
+                      class="collapse-title font-bold font-manrope text-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope ext-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope ext-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-2" />
+                    <div
+                      class="collapse-title font-bold font-manrope ext-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TAB CONTENTS THREE -->
+              <div id="orders" class="content hidden">
+                <div class="flex gap-2 lg:gap-4 flex-col w-full mt-10">
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input
+                      type="radio"
+                      name="my-accordion-3"
+                      checked="checked"
+                    />
+                    <div
+                      class="collapse-title font-bold font-manrope text-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-3" />
+                    <div
+                      class="collapse-title font-bold font-manrope ext-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-3" />
+                    <div
+                      class="collapse-title font-bold font-manrope ext-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TAB CONTENTS FOUR -->
+              <div id="delivery" class="content hidden">
+                <div class="flex gap-2 lg:gap-4 flex-col w-full mt-10">
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input
+                      type="radio"
+                      name="my-accordion-4"
+                      checked="checked"
+                    />
+                    <div
+                      class="collapse-title font-bold font-manrope text-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-4" />
+                    <div
+                      class="collapse-title font-bold font-manrope ext-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TAB CONTENTS FIVE -->
+              <div id="returns" class="content hidden">
+                <div class="flex gap-2 lg:gap-4 flex-col w-full mt-10">
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input
+                      type="radio"
+                      name="my-accordion-5"
+                      checked="checked"
+                    />
+                    <div
+                      class="collapse-title font-bold font-manrope text-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="collapse collapse-arrow lg:py-[6px] lg:px-9 bg-[#FFFFFF]"
+                  >
+                    <input type="radio" name="my-accordion-5" />
+                    <div
+                      class="collapse-title font-bold font-manrope ext-base lg:text-lg leading-5 text-[#013366]"
+                    >
+                      Can I request a treatment on behalf of someone else?
+                    </div>
+                    <div class="collapse-content">
+                      <p
+                        class="text-[#334C66] text-sm font-medium font-manrope leading-[22px]"
+                      >
+                        Yes, you can! Once your prescription is approved by a
+                        licensed healthcare provider, you will have the option
+                        to download or print the prescription. You can then take
+                        it to your local pharmacy to get your medication filled.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION  -->
+    <footer>
+      <div
+        class="bg-[#001933] w-full lg:h-[555px] relative flex lg:flex-row flex-col justify-between px-4"
+      >
+        <img
+          class="absolute bottom-0 lg:block hidden left-0"
+          src="./assets/Vector 4.png"
+          alt="Vector"
+        />
+        <img
+          src="./assets/v6.png"
+          alt="Vector"
+          class="absolute bottom-0 left-0 lg:hidden block"
+        />
+        <div
+          class="flex flex-col lg:w-[517px] lg:gap-[169px] pt-[80px] lg:ml-[75px]"
+        >
+          <div class="flex flex-col gap-2 w-[321px]">
+            <div class="flex items-center gap-2">
+              <img
+                class="w-[22px] h-[22px] object-contain"
+                src="./assets/Group 1.svg"
+                alt=""
+              />
+              <h1
+                class="font-medium text-[28px] leading-[44px] font-oswald text-[#FFFFFF]"
+              >
+                Find Med
+              </h1>
+            </div>
+
+            <h3
+              class="text-[32px] lg:text-[40px] leading-[38px] lg:leading-[48px] font-manrope font-medium text-[#D8D8D8] mt-[39px]"
+            >
+              Your trusted medicine partner
+            </h3>
+          </div>
+          <div class="flex gap-6 flex-col lg:mt-0 mt-5">
+            <p
+              class="text-[#D8D8D8] font-medium font-manrope text-sm lg:text-base leading-[25px]"
+            >
+              We are a dedicated team of healthcare professionals, technology
+              innovators, and customer service experts.
+            </p>
+            <p
+              class="text-[#D8D8D899] font-manrope font-medium text-sm leading-[22px] hidden lg:block"
+            >
+              All right reserved by the company 2024
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-10 desktop::mt-20 laptop:mt-20 desktop:mr-[75px] laptop:mr-[75px] desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center"
+        >
+          <div
+            class="flex justify-between tablet:justify-center tablet:gap-[200px] h-[416px] lg:h-full"
+          >
+            <div class="flex flex-col gap-4">
+              <h1
+                class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"
+              >
+                Home
+              </h1>
+              <div class="flex flex-col gap-3">
+                <small
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >Home</small
+                >
+                <small
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >About us</small
+                >
+                <small
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >Medications</small
+                >
+                <small
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  >Help</small
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-12">
+              <div class="flex gap-4 flex-col">
+                <h1
+                  class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"
+                >
+                  Contact us
+                </h1>
+                <div class="flex flex-col gap-3">
+                  <small
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                    >Northern hill, New york, USA</small
+                  >
+                  <small
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                    >+88 01723998977</small
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope"
+                >
+                  Find us on
+                </h1>
+                <div class="flex gap-6">
+                  <button><img src="./assets/Frame (7).svg" alt="" /></button>
+                  <button><img src="./assets/Frame (8).svg" alt="" /></button>
+                  <button><img src="./assets/Frame (9).svg" alt="" /></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-12 lg:pb-0 pb-10 items-center justify-center">
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              >Privacy policy</small
+            >
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              >T&C
+            </small>
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              >Cookie policy</small
+            >
+          </div>
+          <p
+            class="text-sm font-medium font-manrope leading-[22px] text-[#D8D8D899] text-center pb-10 lg:hidden block"
+          >
+            All right reserved by the company 2024
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
