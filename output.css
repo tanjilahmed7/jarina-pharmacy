@@ -2929,6 +2929,10 @@ details.collapse summary::-webkit-details-marker {
   max-height: 350px;
 }
 
+.max-h-\[1238px\] {
+  max-height: 1238px;
+}
+
 .min-h-\[343px\] {
   min-height: 343px;
 }
@@ -2943,6 +2947,10 @@ details.collapse summary::-webkit-details-marker {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[1238px\] {
+  min-height: 1238px;
 }
 
 .w-0 {
@@ -3304,6 +3312,14 @@ details.collapse summary::-webkit-details-marker {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.max-w-\[497px\] {
+  max-width: 497px;
+}
+
+.max-w-\[633px\] {
+  max-width: 633px;
 }
 
 .flex-1 {
@@ -5574,6 +5590,10 @@ input[type="number"] {
     max-width: 300px;
   }
 
+  .lg\:max-w-\[633px\] {
+    max-width: 633px;
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -6116,6 +6136,11 @@ input[type="number"] {
     padding-bottom: 120px;
   }
 
+  .laptop\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .laptop\:pb-0 {
     padding-bottom: 0px;
   }
@@ -6321,6 +6346,10 @@ input[type="number"] {
 
   .desktop\:h-full {
     height: 100%;
+  }
+
+  .desktop\:max-h-\[799px\] {
+    max-height: 799px;
   }
 
   .desktop\:w-\[1290px\] {
