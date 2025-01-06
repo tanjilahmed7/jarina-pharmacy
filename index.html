@@ -1859,7 +1859,7 @@
           class="mt-10 desktop::mt-20 laptop:mt-20 desktop:mr-[75px] laptop:mr-[75px] desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center"
         >
           <div
-            class="flex justify-between tablet:justify-center tablet:gap-[200px] h-[416px] lg:h-full"
+            class="flex justify-between tablet:justify-center tablet:gap-[200px] tablet:h-[216px] h-[416px] lg:h-full"
           >
             <div class="flex flex-col gap-4">
               <h1
@@ -1907,9 +1907,11 @@
                   </a>
                 </div>
               </div>
-              <div class="flex flex-col gap-4">
+              <div
+                class="flex flex-col gap-4 tablet:hidden desktop:block laptop:block lg:block"
+              >
                 <h1
-                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope"
+                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope lg:pb-4"
                 >
                   Find us on
                 </h1>
@@ -1938,6 +1940,39 @@
                   </button>
                 </div>
               </div>
+            </div>
+          </div>
+          <div
+            class="inline-flex w-[150px] mx-auto flex-col gap-4 tablet:block mb-10 items-center justify-center my-8 hidden laptop:hidden desktop:hidden lg:hidden"
+          >
+            <h1
+              class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope text-center pb-4"
+            >
+              Find us on
+            </h1>
+            <div class="flex gap-6 items-center justify-center">
+              <button class="group">
+                <img
+                  src="./assets/Frame (7).svg"
+                  alt=""
+                  class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                />
+              </button>
+
+              <button class="group">
+                <img
+                  src="./assets/Frame (8).svg"
+                  alt=""
+                  class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                />
+              </button>
+              <button class="group">
+                <img
+                  src="./assets/Frame (9).svg"
+                  alt=""
+                  class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                />
+              </button>
             </div>
           </div>
           <div

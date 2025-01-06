@@ -617,7 +617,7 @@
           alt=""
         />
         <div
-          class="py-20 desktop:py-0 laptop:py-0 desktop:my-[120px] laptop:my-[120px] mx-4 laptop:mx-[75px] desktop:mx-[75px] flex flex-col tablet:flex-wrap items-center"
+          class="py-20 desktop:py-0 laptop:py-0 laptop:my-[120px] mx-4 laptop:mx-[75px] desktop:mx-[75px] flex flex-col tablet:flex-wrap items-center"
         >
           <h1
             class="font-manrope text-[32px] lg:text-[40px] font-extrabold leading-[46px] text-center"
@@ -709,7 +709,7 @@
     <!-- OUR IMPACT SECTION  -->
     <section>
       <div
-        class="relative min-w-[360px] desktop:w-full h-[1757px] desktop:h-[1220px] laptop:h-[1220px] bg-[#FFFFFF] desktop:mb-0 laptop:mb-0 tablet:mb-0 mb-10"
+        class="relative min-w-[360px] desktop:w-full h-[1757px] desktop:h-[1220px] laptop:h-[1220px] bg-[#FFFFFF] desktop:my-0 laptop:my-0 tablet:my-0 my-10"
       >
         <img
           src="./assets//Vector 1 2.png"
@@ -866,7 +866,7 @@
           class="mt-10 desktop::mt-20 laptop:mt-20 desktop:mr-[75px] laptop:mr-[75px] desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center"
         >
           <div
-            class="flex justify-between tablet:justify-center tablet:gap-[200px] h-[416px] lg:h-full"
+            class="flex justify-between tablet:justify-center tablet:gap-[200px] tablet:h-[216px] h-[416px] lg:h-full"
           >
             <div class="flex flex-col gap-4">
               <h1
@@ -914,9 +914,11 @@
                   </a>
                 </div>
               </div>
-              <div class="flex flex-col gap-4">
+              <div
+                class="flex flex-col gap-4 tablet:hidden desktop:block laptop:block lg:block"
+              >
                 <h1
-                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope"
+                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope lg:pb-4"
                 >
                   Find us on
                 </h1>
@@ -945,6 +947,39 @@
                   </button>
                 </div>
               </div>
+            </div>
+          </div>
+          <div
+            class="inline-flex w-[150px] mx-auto flex-col gap-4 tablet:block mb-10 items-center justify-center my-8 hidden laptop:hidden desktop:hidden lg:hidden"
+          >
+            <h1
+              class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope text-center pb-4"
+            >
+              Find us on
+            </h1>
+            <div class="flex gap-6 items-center justify-center">
+              <button class="group">
+                <img
+                  src="./assets/Frame (7).svg"
+                  alt=""
+                  class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                />
+              </button>
+
+              <button class="group">
+                <img
+                  src="./assets/Frame (8).svg"
+                  alt=""
+                  class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                />
+              </button>
+              <button class="group">
+                <img
+                  src="./assets/Frame (9).svg"
+                  alt=""
+                  class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                />
+              </button>
             </div>
           </div>
           <div

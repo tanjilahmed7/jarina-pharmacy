@@ -2479,6 +2479,16 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 7px;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .-ml-16 {
   margin-left: -4rem;
 }
@@ -2903,6 +2913,14 @@ details.collapse summary::-webkit-details-marker {
   height: 100%;
 }
 
+.h-\[316px\] {
+  height: 316px;
+}
+
+.h-\[216px\] {
+  height: 216px;
+}
+
 .max-h-\[250px\] {
   max-height: 250px;
 }
@@ -3213,6 +3231,14 @@ details.collapse summary::-webkit-details-marker {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[150px\] {
+  width: 150px;
 }
 
 .min-w-\[200px\] {
@@ -3658,6 +3684,16 @@ details.collapse summary::-webkit-details-marker {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
+.border-blue-50 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 246 255 / var(--tw-border-opacity, 1));
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#001933\] {
@@ -4932,6 +4968,11 @@ input[type="number"] {
     margin-right: auto;
   }
 
+  .tablet\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .tablet\:mb-0 {
     margin-bottom: 0px;
   }
@@ -4990,6 +5031,10 @@ input[type="number"] {
 
   .tablet\:h-full {
     height: 100%;
+  }
+
+  .tablet\:h-\[216px\] {
+    height: 216px;
   }
 
   .tablet\:w-\[260px\] {
@@ -5153,6 +5198,10 @@ input[type="number"] {
 
   .tablet\:pt-12 {
     padding-top: 3rem;
+  }
+
+  .tablet\:pl-10 {
+    padding-left: 2.5rem;
   }
 
   .tablet\:text-center {
@@ -5688,6 +5737,14 @@ input[type="number"] {
     padding-top: 40px;
   }
 
+  .lg\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .lg\:pl-20 {
+    padding-left: 5rem;
+  }
+
   .lg\:text-start {
     text-align: start;
   }
@@ -5810,6 +5867,11 @@ input[type="number"] {
   .laptop\:my-\[120px\] {
     margin-top: 120px;
     margin-bottom: 120px;
+  }
+
+  .laptop\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .laptop\:-mr-16 {
@@ -6074,6 +6136,10 @@ input[type="number"] {
     padding-top: 3rem;
   }
 
+  .laptop\:pl-20 {
+    padding-left: 5rem;
+  }
+
   .laptop\:text-center {
     text-align: center;
   }
@@ -6134,6 +6200,11 @@ input[type="number"] {
   .desktop\:my-\[120px\] {
     margin-top: 120px;
     margin-bottom: 120px;
+  }
+
+  .desktop\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .desktop\:-ml-0 {
@@ -6454,6 +6525,10 @@ input[type="number"] {
 
   .desktop\:pr-\[70px\] {
     padding-right: 70px;
+  }
+
+  .desktop\:pl-20 {
+    padding-left: 5rem;
   }
 
   .desktop\:text-center {
