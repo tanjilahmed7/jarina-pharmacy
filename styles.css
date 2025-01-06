@@ -189,3 +189,25 @@ input[type="number"] {
   font-weight: 800;
   color: #013366 !important;
 }
+
+.scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #dde7f6;
+  border-radius: 80px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar {
+  scrollbar-color: #dde7f6 transparent;
+}
+
+.scrollbar {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scrollbar-width: thin;
+}

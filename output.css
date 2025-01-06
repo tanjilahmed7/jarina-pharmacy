@@ -3655,6 +3655,11 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
 .bg-\[\#001933\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 25 51 / var(--tw-bg-opacity, 1));
@@ -4081,10 +4086,6 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 1.5rem;
 }
 
-.pl-8 {
-  padding-left: 2rem;
-}
-
 .pr-1 {
   padding-right: 0.25rem;
 }
@@ -4498,6 +4499,56 @@ details.collapse summary::-webkit-details-marker {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.scrollbar::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+  border-radius: var(--scrollbar-track-radius);
+}
+
+.scrollbar::-webkit-scrollbar-track:hover {
+  background-color: var(--scrollbar-track-hover, var(--scrollbar-track));
+}
+
+.scrollbar::-webkit-scrollbar-track:active {
+  background-color: var(--scrollbar-track-active, var(--scrollbar-track-hover, var(--scrollbar-track)));
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: var(--scrollbar-thumb-radius);
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover, var(--scrollbar-thumb));
+}
+
+.scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: var(--scrollbar-thumb-active, var(--scrollbar-thumb-hover, var(--scrollbar-thumb)));
+}
+
+.scrollbar::-webkit-scrollbar-corner {
+  background-color: var(--scrollbar-corner);
+  border-radius: var(--scrollbar-corner-radius);
+}
+
+.scrollbar::-webkit-scrollbar-corner:hover {
+  background-color: var(--scrollbar-corner-hover, var(--scrollbar-corner));
+}
+
+.scrollbar::-webkit-scrollbar-corner:active {
+  background-color: var(--scrollbar-corner-active, var(--scrollbar-corner-hover, var(--scrollbar-corner)));
+}
+
+.scrollbar {
+  scrollbar-width: auto;
+  scrollbar-color: var(--scrollbar-thumb, initial) var(--scrollbar-track, initial);
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: block;
+  width: var(--scrollbar-width, 16px);
+  height: var(--scrollbar-height, 16px);
+}
+
 .swiper1 {
   max-width: 1185px;
   min-width: 375px;
@@ -4701,6 +4752,25 @@ input[type="number"] {
   color: #013366 !important;
 }
 
+.scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #dde7f6;
+  border-radius: 80px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar {
+  scrollbar-color: #dde7f6 transparent;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scrollbar-width: thin;
+}
+
 @media (min-width: 1024px) {
   @media (hover:hover) {
     .table tr.lg\:hover:hover,
@@ -4784,6 +4854,11 @@ input[type="number"] {
   border-color: rgb(1 21 117 / var(--tw-border-opacity, 1));
 }
 
+.hover\:bg-\[\#E0F3FF\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 243 255 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-\[\#E5E5E5\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
@@ -4843,9 +4918,18 @@ input[type="number"] {
     left: 200px;
   }
 
+  .tablet\:right-0 {
+    right: 0px;
+  }
+
   .tablet\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+  }
+
+  .tablet\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .tablet\:mb-0 {
@@ -4912,6 +4996,10 @@ input[type="number"] {
     width: 260px;
   }
 
+  .tablet\:w-\[440px\] {
+    width: 440px;
+  }
+
   .tablet\:w-\[496px\] {
     width: 496px;
   }
@@ -4930,50 +5018,6 @@ input[type="number"] {
 
   .tablet\:w-full {
     width: 100%;
-  }
-
-  .tablet\:w-\[630px\] {
-    width: 630px;
-  }
-
-  .tablet\:w-\[497px\] {
-    width: 497px;
-  }
-
-  .tablet\:w-\[400px\] {
-    width: 400px;
-  }
-
-  .tablet\:w-\[420px\] {
-    width: 420px;
-  }
-
-  .tablet\:w-\[450px\] {
-    width: 450px;
-  }
-
-  .tablet\:w-\[480px\] {
-    width: 480px;
-  }
-
-  .tablet\:w-\[430px\] {
-    width: 430px;
-  }
-
-  .tablet\:w-\[330px\] {
-    width: 330px;
-  }
-
-  .tablet\:w-\[380px\] {
-    width: 380px;
-  }
-
-  .tablet\:w-\[440px\] {
-    width: 440px;
-  }
-
-  .tablet\:min-w-\[497px\] {
-    min-width: 497px;
   }
 
   .tablet\:max-w-\[140px\] {
@@ -4996,10 +5040,6 @@ input[type="number"] {
     max-width: 582px;
   }
 
-  .tablet\:max-w-\[630px\] {
-    max-width: 630px;
-  }
-
   .tablet\:max-w-\[635px\] {
     max-width: 635px;
   }
@@ -5010,14 +5050,6 @@ input[type="number"] {
 
   .tablet\:max-w-full {
     max-width: 100%;
-  }
-
-  .tablet\:max-w-\[944px\] {
-    max-width: 944px;
-  }
-
-  .tablet\:max-w-\[830px\] {
-    max-width: 830px;
   }
 
   .tablet\:flex-row {
@@ -5056,6 +5088,10 @@ input[type="number"] {
     justify-content: space-between;
   }
 
+  .tablet\:gap-0 {
+    gap: 0px;
+  }
+
   .tablet\:gap-10 {
     gap: 2.5rem;
   }
@@ -5070,30 +5106,6 @@ input[type="number"] {
 
   .tablet\:gap-\[200px\] {
     gap: 200px;
-  }
-
-  .tablet\:gap-\[50px\] {
-    gap: 50px;
-  }
-
-  .tablet\:gap-\[10px\] {
-    gap: 10px;
-  }
-
-  .tablet\:gap-\[80px\] {
-    gap: 80px;
-  }
-
-  .tablet\:gap-\[20px\] {
-    gap: 20px;
-  }
-
-  .tablet\:gap-\[0px\] {
-    gap: 0px;
-  }
-
-  .tablet\:gap-0 {
-    gap: 0px;
   }
 
   .tablet\:overflow-x-hidden {
@@ -5150,10 +5162,6 @@ input[type="number"] {
   .tablet\:text-\[40px\] {
     font-size: 40px;
   }
-
-  .tablet\:leading-\[46px\] {
-    line-height: 46px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -5171,6 +5179,10 @@ input[type="number"] {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-\[800px\] {
+    width: 800px;
   }
 }
 
@@ -5449,6 +5461,10 @@ input[type="number"] {
     width: 475px;
   }
 
+  .lg\:w-\[497px\] {
+    width: 497px;
+  }
+
   .lg\:w-\[50px\] {
     width: 50px;
   }
@@ -5495,10 +5511,6 @@ input[type="number"] {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-\[497px\] {
-    width: 497px;
   }
 
   .lg\:max-w-\[1290px\] {
@@ -5576,6 +5588,10 @@ input[type="number"] {
 
   .lg\:p-6 {
     padding: 1.5rem;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
   }
 
   .lg\:p-\[56px\] {
@@ -5745,10 +5761,6 @@ input[type="number"] {
 
   .lg\:leading-\[64px\] {
     line-height: 64px;
-  }
-
-  .lg\:leading-\[40px\] {
-    line-height: 40px;
   }
 }
 
