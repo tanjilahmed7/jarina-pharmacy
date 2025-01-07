@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Page</title>
+    <link rel="icon" type="image/png" href="./assets/Group 1.svg" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -654,7 +655,7 @@
         class="flex items-center justify-center w-full bg-[#FAFAFA] pt-[56px] pb-6 lg:pb-[100px]"
       >
         <div
-          class="flex laptop:flex-col tablet:flex-col desktop:flex-row justify-between lg:w-[1290px] laptop:items-center desktop:items-start tablet:items-center flex-col items-center w-full px-4 lg:mx-[75px] gap-4 lg:gap-0 tablet:gap-4 laptop:gap-4"
+          class="flex laptop:flex-col tablet:flex-col desktop:flex-row justify-between lg:w-[1290px] laptop:items-center desktop:items-start tablet:items-center flex-col items-center w-full px-4 lg:mx-[75px] gap-4 tablet:gap-4 laptop:gap-4 lg:gap-4"
         >
           <div
             class="bg-[#EEF4ED] w-full desktop:w-[635px] tablet:w-[635px] laptop:w-[635px] h-[273px] rounded-[32px] relative overflow-hidden"
@@ -693,37 +694,44 @@
               >
             </div>
           </div>
+
           <div
             class="bg-[#FFFFFF] rounded-[24px] w-full desktop:max-w-[582px] laptop:max-w-[582px] tablet:max-w-[582px]"
           >
             <div
-              class="collapse desktop:p-6 desktop:w-full laptop:w-full tablet:w-full tablet:text-center laptop:text-center desktop:text-center"
+              id="accordion"
+              class="desktop:p-6 laptop:p-6 tablet:p-6 desktop:w-full laptop:w-full tablet:w-full tablet:text-center laptop:text-center desktop:text-center"
             >
-              <input type="radio" name="my-accordion-2" checked="checked" />
               <div
-                class="collapse-title flex desktop:justify-between justify-between text-[#011575] font-extrabold font-manrope text-lg leading-5 border-b border-[#F0F4FA] px-4 min-w-[311px]"
+                class="flex desktop:justify-between justify-between text-[#011575] font-extrabold font-manrope text-lg leading-5 border-b border-[#F0F4FA] px-4 min-w-[311px] cursor-pointer pb-6 pt-6 lg:pt-0 md:pt-0"
+                onclick="toggleAccordionContent()"
               >
                 Transparent Pricing
                 <img
                   src="./assets/Frame (6).svg"
-                  alt=""
-                  class="cursor-pointer border border-black"
+                  alt="Toggle Accordion"
+                  class="cursor-pointer"
                 />
               </div>
               <div
-                class="collapse-content pt-6 px-0 min-w-[311px] desktop:max-w[534px] tablet:max-w-full"
+                id="accordion-content"
+                class="pt-6 px-0 min-w-[311px] desktop:max-w-[534px] tablet:max-w-full flex flex-col items-center"
               >
-                <p
-                  class="text-[#334C66] text-sm lg:text-base font-manrope font-medium leading-[22px] lg:leading-[25px] text-center tablet:text-center"
+                <div
+                  class="text-[#334C66] text-sm lg:text-base font-manrope font-medium leading-[22px] lg:leading-[25px] text-center tablet:text-center min-w-[311px] laptop:w-[534px] tablet:w-[534px] desktop:w-[534px] flex flex-col gap-0 items-center"
                 >
-                  We think you should know how much your medications cost and
-                  why. <br class="lg:hidden block" />
-                  A
-                  <spa class="font-bold text-[#011575]"
-                    >60 count supply of 300mg Alfuzosin HCl ER </spa
-                  >
-                  will cost:
-                </p>
+                  <p>
+                    We think you should know how much your medications cost and
+                    why.
+                  </p>
+                  <p class="px-2">
+                    A
+                    <span class="font-bold text-[#011575]">
+                      60 count supply of 300mg Alfuzosin HCl ER
+                    </span>
+                    will cost:
+                  </p>
+                </div>
 
                 <div
                   class="border-4 border-[#DDE7F6] py-6 px-4 lg:p-6 rounded-2xl flex flex-col gap-6 h-[172px] w-[calc(90%-24px)] desktop:max-w-[534px] laptop:max-w-[534px] tablet:max-w-[534px] relative my-6 overflow-visible tablet:px-4 mx-auto items-center"
@@ -758,99 +766,99 @@
                     You save $669.00 on your medication
                   </button>
                 </div>
-              </div>
-              <h6
-                class="text-[#334C66] font-medium font-manrope text-[12px] lg:text-sm leading-[19px] lg:leading-[22px] text-center w-full lg:w-full px-4 desktop:px-0 tablet:px-0"
-              >
-                Your final cost will include shipping and taxes, which vary by
-                location.
-              </h6>
-              <div
-                class="flex flex-col items-center gap-8 mt-12 min-w-[311px] w-full desktop:pb-0 pb-4 tablet:pb-4"
-              >
-                <h1
-                  class="font-semibold font-manrope text-[#011575] text-base leading-[18px] t"
+                <h6
+                  class="text-[#334C66] font-medium font-manrope text-[12px] lg:text-sm leading-[19px] lg:leading-[22px] text-center w-full lg:w-full px-4 desktop:px-0 tablet:px-0"
                 >
-                  Cost breakdown
-                </h1>
+                  Your final cost will include shipping and taxes, which vary by
+                  location.
+                </h6>
                 <div
-                  class="flex lg:flex-row flex-col items-center justify-center gap-5 px-0 w-full"
+                  class="flex flex-col items-center gap-8 mt-12 min-w-[311px] w-full desktop:pb-0 pb-4 tablet:pb-4"
                 >
+                  <h1
+                    class="font-semibold font-manrope text-[#011575] text-base leading-[18px] t"
+                  >
+                    Cost breakdown
+                  </h1>
                   <div
-                    class="flex flex-col items-center justify-center text-center w-[119px]"
+                    class="flex lg:flex-row flex-col items-center justify-center gap-5 px-0 w-full"
                   >
                     <div
-                      class="w-12 h-12 bg-[#FFE680] rounded-full flex items-center justify-center"
+                      class="flex flex-col items-center justify-center text-center w-[119px]"
                     >
-                      <img src="./assets/3467231.svg" alt="" />
+                      <div
+                        class="w-12 h-12 bg-[#FFE680] rounded-full flex items-center justify-center"
+                      >
+                        <img src="./assets/3467231.svg" alt="" />
+                      </div>
+                      <h5
+                        class="text-sm text-[#334C66] font-semibold font-manrope leading-4 text-center mb-3 mt-4"
+                      >
+                        Manufacturing
+                      </h5>
+                      <h4
+                        class="font-semibold font-manrope text-base text-[#0070E3] leading-[18px]"
+                      >
+                        $14.42
+                      </h4>
                     </div>
-                    <h5
-                      class="text-sm text-[#334C66] font-semibold font-manrope leading-4 text-center mb-3 mt-4"
-                    >
-                      Manufacturing
-                    </h5>
-                    <h4
-                      class="font-semibold font-manrope text-base text-[#0070E3] leading-[18px]"
-                    >
-                      $14.42
-                    </h4>
-                  </div>
-                  <div
-                    class="flex flex-col items-center justify-center text-center w-[119px]"
-                  >
                     <div
-                      class="w-12 h-12 bg-[#FFE680] rounded-full flex items-center justify-center"
+                      class="flex flex-col items-center justify-center text-center w-[119px]"
                     >
-                      <h1>15%</h1>
+                      <div
+                        class="w-12 h-12 bg-[#FFE680] rounded-full flex items-center justify-center"
+                      >
+                        <h1>15%</h1>
+                      </div>
+                      <h5
+                        class="text-sm text-[#334C66] font-semibold font-manrope leading-4 text-center mb-3 mt-4"
+                      >
+                        15% Markup
+                      </h5>
+                      <h4
+                        class="font-semibold font-manrope text-base text-[#0070E3] leading-[18px]"
+                      >
+                        $2.16
+                      </h4>
                     </div>
-                    <h5
-                      class="text-sm text-[#334C66] font-semibold font-manrope leading-4 text-center mb-3 mt-4"
-                    >
-                      15% Markup
-                    </h5>
-                    <h4
-                      class="font-semibold font-manrope text-base text-[#0070E3] leading-[18px]"
-                    >
-                      $2.16
-                    </h4>
-                  </div>
-                  <div
-                    class="flex flex-col items-center justify-center text-center w-[119px]"
-                  >
                     <div
-                      class="w-12 h-12 bg-[#FFE680] rounded-full flex items-center justify-center"
+                      class="flex flex-col items-center justify-center text-center w-[119px]"
                     >
-                      <img src="./assets/511587.svg" alt="" />
+                      <div
+                        class="w-12 h-12 bg-[#FFE680] rounded-full flex items-center justify-center"
+                      >
+                        <img src="./assets/511587.svg" alt="" />
+                      </div>
+                      <h5
+                        class="text-sm text-[#334C66] font-semibold font-manrope leading-4 text-center mb-3 mt-4"
+                      >
+                        Pharmacy Labor
+                      </h5>
+                      <h4
+                        class="font-semibold font-manrope text-base text-[#0070E3] leading-[18px]"
+                      >
+                        $5.00
+                      </h4>
                     </div>
-                    <h5
-                      class="text-sm text-[#334C66] font-semibold font-manrope leading-4 text-center mb-3 mt-4"
-                    >
-                      Pharmacy Labor
-                    </h5>
-                    <h4
-                      class="font-semibold font-manrope text-base text-[#0070E3] leading-[18px]"
-                    >
-                      $5.00
-                    </h4>
-                  </div>
-                  <div
-                    class="flex flex-col items-center justify-center text-center"
-                  >
                     <div
-                      class="w-12 h-12 bg-[#FFE680] rounded-full flex items-center justify-center"
+                      class="flex flex-col items-center justify-center text-center"
                     >
-                      <img src="./assets/2900216.svg" alt="" />
+                      <div
+                        class="w-12 h-12 bg-[#FFE680] rounded-full flex items-center justify-center"
+                      >
+                        <img src="./assets/2900216.svg" alt="" />
+                      </div>
+                      <h5
+                        class="text-sm text-[#334C66] font-semibold font-manrope leading-4 text-center mb-3 mt-4"
+                      >
+                        Standard Shipping
+                      </h5>
+                      <h4
+                        class="font-semibold font-manrope text-base text-[#0070E3] leading-[18px]"
+                      >
+                        $5.00
+                      </h4>
                     </div>
-                    <h5
-                      class="text-sm text-[#334C66] font-semibold font-manrope leading-4 text-center mb-3 mt-4"
-                    >
-                      Standard Shipping
-                    </h5>
-                    <h4
-                      class="font-semibold font-manrope text-base text-[#0070E3] leading-[18px]"
-                    >
-                      $5.00
-                    </h4>
                   </div>
                 </div>
               </div>

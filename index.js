@@ -68,3 +68,11 @@ navLinks.forEach((link) => {
     link.parentElement.classList.add("active");
   }
 });
+
+
+
+
+function toggleAccordionContent() {
+  const content = document.getElementById("accordion-content");
+  content.classList.toggle("hidden");
+}
