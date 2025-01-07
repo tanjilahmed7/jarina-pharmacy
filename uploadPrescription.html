@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Upload prescription</title>
+    <link rel="icon" type="image/png" href="./assets/Group 1.svg" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,60 +32,42 @@
 
         <!-- Desktop Menu -->
         <div class="laptop:flex gap-[56px] hidden">
-          <ul
-            class="flex items-center gap-10 font-manrope font-semibold text-[15px]"
-          >
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./list.html">Medications</a>
-            <a href="./contactDoctor.html">Contact doctor</a>
-            <a href="./index.html">Help</a>
+          <ul class="flex items-center gap-10" id="nav-list">
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./about.html">About us</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./list.html">Medications</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./doctor.html">Contact doctor</a>
+            </li>
           </ul>
 
-          <div class="flex gap-5">
-            <div
-              class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer"
+          <div class="flex gap-3">
+            <button
+              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center"
+              onclick="my_modal_6.showModal()"
             >
-              <img src="./assets/cart.svg" alt="" />
-            </div>
-            <!-- <div class="flex gap-3">
-              <button
-                class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
-              >
-                Log in
-              </button>
-              <button
-                class="bg-[#011575] text-[#FFFFFF] py-[7px] px-5 rounded-[80px] font-manrope font-semibold text-[15px]"
-                onclick="showModal()"
-              >
-                Sign up
-              </button>
-            </div> -->
-
-            <div class="flex items-center justify-center gap-3">
-              <button
-                class="relative bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] overflow-hidden transition group"
-              >
-                <span
-                  class="relative z-10 transition-colors duration-700 group-hover:text-[#FFFFFF]"
-                  >Log in</span
-                >
-                <span
-                  class="absolute left-1/2 bottom-0 w-0 h-0 transform -translate-x-1/2 translate-y-1/2 rounded-full bg-[#011575] transition-all duration-700 ease-in-out group-hover:w-[300px] group-hover:h-[300px] group-hover:bottom-1/2"
-                ></span>
-              </button>
-              <button
-                class="relative bg-[#011575] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#FFFFFF] font-manrope font-semibold text-[15px] overflow-hidden transition group"
-              >
-                <span
-                  class="relative z-10 transition-colors duration-700 group-hover:text-[#334C66]"
-                  >Sign up</span
-                >
-                <span
-                  class="absolute left-1/2 bottom-0 w-0 h-0 transform -translate-x-1/2 translate-y-1/2 rounded-full bg-white transition-all duration-700 ease-in-out group-hover:w-[300px] group-hover:h-[300px] group-hover:bottom-1/2"
-                ></span>
-              </button>
-            </div>
+              <img class="w-5 h-5" src="./assets/Frame (1) 4.svg" alt="" />
+            </button>
+            <button
+              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center"
+              onclick="my_modal_3.showModal()"
+            >
+              <img class="w-5 h-5" src="./assets/Frame 5.svg" alt="" />
+            </button>
           </div>
         </div>
 
@@ -119,50 +102,67 @@
     <!-- UPLOAD PRESCRIPTION SECTION  -->
     <section>
       <div
-        class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] lg:pt-20 desktop:pl-[260px] laptop:pl-[260px] lg:px-4 pb-[100px] px-4 tablet:px-4 laptop:px-4 lg:pl-[100px]"
+        class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] lg:pt-20 tablet:pt-10 lg:px-4 pb-[100px] px-4 tablet:px-4 laptop:px-4 flex items-center justify-center"
       >
-        <h1
-          class="text-[32px] lg:text-[40px] leading-[46px] font-extrabold font-manrope text-[#011575] pt-10 lg:pt-0"
-        >
-          Upload prescription
-        </h1>
-        <p
-          class="font-medium font-manrope text-sm lg:text-lg leading-[22px] lg:leading-[28px] text-[#334C66] mt-4 lg:mt-6"
-        >
-          We’ll review your prescription, and if everything seems
-          <br class="lg:block hidden" />
-          fine, we’ll send the medicine to your address.
-        </p>
         <div
-          class="dragAndDrop flex items-center justify-center desktop:max-w-[920px] laptop:max-w-[920px] tablet:max-w-[920px] h-[277px] rounded-[32px] pt-6 pb-8 mt-8"
+          class="desktop:w-[920px] laptop:w-[920px] tablet:max-w-[920px] lg:w-[920px]"
         >
-          <label
-            for="input-file"
-            class="box w-full h-[277px] bg-transparent border-2 border-dashed border-[#334C6633]flex items-center justify-center flex-col cursor-pointer py-[60px] rounded-[32px]"
-            id="area"
+          <h1
+            class="text-[32px] lg:text-[40px] leading-[46px] font-extrabold font-manrope text-[#011575] pt-10 lg:pt-0"
           >
-            <input type="file" accept="image/*" id="input-file" hidden />
-            <div class="flex flex-col justify-center items-center">
-              <img src="./assets/16878840 1.svg" alt="" />
-              <div
-                class="mt-8 mb-4 font-extrabold font-manrope text-xl leading-[23px] text-[#011575]"
-                id="img"
+            Upload prescription
+          </h1>
+          <p
+            class="font-medium font-manrope text-sm lg:text-lg leading-[22px] lg:leading-[28px] text-[#334C66] mt-4 lg:mt-6"
+          >
+            We'll review your prescription, and if everything seems
+            <br class="lg:block hidden" />
+            fine, we'll send the medicine to your address.
+          </p>
+          <p class="font-medium font-manrope text-lg text-[#334C66] mt-6">
+            Don’t have prescription?
+            <br
+              class="block lg:hidden desktop:hidden tablet:hidden laptop:hidden"
+            />
+            <a
+              href="#"
+              class="underline text-[#013366] text-sm font-manrope font-bold"
+              >Download Prescription Form</a
+            >
+          </p>
+          <div
+            class="dragAndDrop flex items-center justify-center desktop:max-w-[920px] laptop:max-w-[920px] tablet:max-w-[920px] h-[277px] rounded-[32px] pt-6 pb-8 mt-8"
+          >
+            <label
+              for="input-file"
+              class="box w-full h-[277px] bg-transparent border-dashed border-[#334C6633] flex items-center justify-center flex-col cursor-pointer py-[60px] rounded-[32px] border-[1px]"
+              id="area"
+              style="border-width: 3px"
+            >
               >
-                Drop your file here or
-                <span class="text-[#00BFFF] underline">Browse</span>
+              <input type="file" accept="image/*" id="input-file" hidden />
+              <div class="flex flex-col justify-center items-center">
+                <img src="./assets/16878840 1.svg" alt="" />
+                <div
+                  class="mt-8 mb-4 font-extrabold font-manrope text-xl leading-[23px] text-[#011575]"
+                  id="img"
+                >
+                  Drop your file here or
+                  <span class="text-[#00BFFF] underline">Browse</span>
+                </div>
+                <small
+                  class="font-medium font-manrope text-sm text-[#011575] leading-[22px]"
+                  >Supports Jpg, PDF, PNG only</small
+                >
               </div>
-              <small
-                class="font-medium font-manrope text-sm text-[#011575] leading-[22px]"
-                >Supports Jpg, PDF, PNG only</small
-              >
-            </div>
-          </label>
+            </label>
+          </div>
+          <button
+            class="mt-8 px-5 py-[7px] rounded-[80px] bg-[#011575] text-[#FFFFFF] text-[15px] leading-[24px] font-semibold font-manrope lg:mx-0 lg:w-[220px] tablet:w-[220px] w-[220px]"
+          >
+            Provide shipping address
+          </button>
         </div>
-        <button
-          class="mt-8 px-5 py-[7px] rounded-[80px] bg-[#011575] text-[#FFFFFF] text-[15px] leading-[24px] font-semibold font-manrope lg:mx-0 w-full lg:w-[220px]"
-        >
-          Provide shipping address
-        </button>
       </div>
     </section>
     <!-- FOOTER SECTION  -->

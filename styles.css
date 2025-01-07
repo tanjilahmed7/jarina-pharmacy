@@ -211,3 +211,9 @@ input[type="number"] {
   -ms-overflow-style: -ms-autohiding-scrollbar;
   scrollbar-width: thin;
 }
+
+.large-slim-dashed {
+  border: 4px solid transparent; /* Adjust the thickness */
+  border-radius: 32px; /* Optional rounded corners */
+  color: #334c6633 40%;
+}
