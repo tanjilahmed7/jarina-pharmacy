@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="icon" type="image/png" href="./assets/Group 1.svg" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,27 +55,30 @@
                 class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
               >
                 <input
+                  id="passwordInput"
                   type="password"
                   placeholder="Password"
                   class="outline-none text-[#334C66] text-sm font-medium font-manrope"
                 />
                 <img
+                  id="eyeIcon"
                   src="./assets/passeye.svg"
-                  class="absolute right-4 top-4"
-                  alt=""
+                  class="absolute right-4 top-4 cursor-pointer"
+                  alt="Password Visibility"
+                  onclick="togglePasswordVisibility()"
                 />
               </div>
 
               <button
                 type="submit"
-                class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px]"
+                class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px] hover:text-[#00BFFF]"
               >
                 Get started
               </button>
             </form>
             <a
               href="./forgotPassword.html"
-              class="pt-6 text-[15px] text-[#011575] font-manrope font-semibold"
+              class="pt-6 text-[15px] text-[#011575] font-manrope font-semibold hover:text-[#00BFFF]"
               >Forgot password?</a
             >
           </div>
@@ -89,4 +93,5 @@
       </div>
     </section>
   </body>
+  <script src="./modal.js"></script>
 </html>

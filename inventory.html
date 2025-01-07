@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inventory</title>
+    <link rel="icon" type="image/png" href="./assets/Group 1.svg" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -199,10 +200,10 @@
             <h1
               class="text-[#334C66] text-xl font-manrope font-medium leading-[32px]"
             >
-              Approved delivery
+              Medicine inventory
             </h1>
             <button
-              class="bg-[#011575] text-[#FFFFFF] text-[15px] font-manrope font-semibold leading-[24px] w-[137px] rounded-[80px]"
+              class="bg-[#011575] text-[#FFFFFF] text-[15px] font-manrope font-semibold leading-[24px] w-[137px] rounded-[80px] hover:text-[#00BFFF]"
               onclick="showModalInventory()"
             >
               Add medicine
@@ -400,7 +401,7 @@
             <!-- FILTER BUTTON  -->
             <button
               id="filterButton"
-              class="bg-[#FFFFFF] w-10 h-10 flex items-center justify-center rounded-[80px] border border-[#E5E5E5]"
+              class="bg-[#FFFFFF] w-10 h-10 flex items-center justify-center rounded-[80px] border border-[#E5E5E5] hover:bg-[#E5E5E5]"
             >
               <img src="./assets/filter.svg" alt="" />
             </button>
@@ -473,21 +474,21 @@
                       </button>
                       <div
                         id="actionDiv"
-                        class="w-[161px] h-[112px] absolute right-0 bg-[#FFFFFF] rounded-lg px-4 py-[10px] hidden"
+                        class="w-[161px] h-[108px] absolute right-0 bg-[#FFFFFF] rounded-lg hidden"
                       >
-                        <ul class="flex gap-4 flex-col">
+                        <ul class="flex flex-col">
                           <li
-                            class="text-[#011575] text-sm font-manrope font-medium"
+                            class="text-[#011575] text-sm font-manrope font-medium hover:bg-[#E5E5E5] px-4 py-2 rounded-t-lg"
                           >
                             <a href="">Edit</a>
                           </li>
                           <li
-                            class="text-[#011575] text-sm font-manrope font-medium"
+                            class="text-[#011575] text-sm font-manrope font-medium hover:bg-[#E5E5E5] px-4 py-2"
                           >
                             <a href="">Inactive</a>
                           </li>
                           <li
-                            class="text-[#011575] text-sm font-manrope font-medium"
+                            class="text-[#011575] text-sm font-manrope font-medium hover:bg-[#E5E5E5] px-4 py-2 rounded-b-lg"
                           >
                             <a href="">Delete</a>
                           </li>

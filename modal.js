@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
   console.log('rijvi')
     const firstModal = document.getElementById("my_modal_3");
@@ -80,15 +82,3 @@ function showModalPrescription2() {
 }
 
 
-function togglePasswordVisibility() {
-  const passwordInput = document.getElementById('passwordInput');
-  const eyeIcon = document.getElementById('eyeIcon');
-
-  if (passwordInput.type === 'password') {
-    passwordInput.type = 'text'; 
-    eyeIcon.src = './assets/passeye.svg'; 
-  } else {
-    passwordInput.type = 'password'; 
-    eyeIcon.src = './assets/passeye.svg'; 
-  }
-}

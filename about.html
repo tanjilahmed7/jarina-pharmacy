@@ -825,7 +825,7 @@
     <!-- FOOTER SECTION  -->
     <footer>
       <div
-        class="bg-[#001933] w-full lg:h-[555px] relative flex lg:flex-row flex-col justify-between px-4"
+        class="bg-[#001933] w-full lg:min-h-[555px] relative flex lg:flex-row flex-col justify-between px-4 desktop:px-[75px] laptop:px-[75px] pt-20 pb-[50px]"
       >
         <img
           class="absolute bottom-0 lg:block hidden left-0"
@@ -837,11 +837,9 @@
           alt="Vector"
           class="absolute bottom-0 left-0 lg:hidden block"
         />
-        <div
-          class="flex flex-col lg:w-[517px] lg:gap-[169px] pt-[80px] lg:ml-[75px]"
-        >
-          <div class="inline-flex flex-col gap-2 w-[321px]">
-            <a href="./index.html" class="flex items-center gap-2">
+        <div class="flex flex-col lg:w-[517px] lg:justify-between lg:h-[425px]">
+          <div class="flex flex-col gap-2 w-[321px] lg:w-full">
+            <div class="flex items-center gap-2">
               <img
                 class="w-[22px] h-[22px] object-contain"
                 src="./assets/Group 1.svg"
@@ -852,17 +850,18 @@
               >
                 Find Med
               </h1>
-            </a>
+            </div>
 
             <h3
               class="text-[32px] lg:text-[40px] leading-[38px] lg:leading-[48px] font-manrope font-medium text-[#D8D8D8] mt-[39px]"
             >
-              Your trusted medicine partner
+              Your trusted <br />
+              medicine partner
             </h3>
           </div>
           <div class="flex gap-6 flex-col lg:mt-0 mt-5">
             <p
-              class="text-[#D8D8D8] font-medium font-manrope text-sm lg:text-base leading-[25px]"
+              class="text-[#D8D8D8] font-medium font-manrope text-sm lg:text-base leading-[25px] max-w-[517px]"
             >
               We are a dedicated team of healthcare professionals, technology
               innovators, and customer service experts.
@@ -875,10 +874,10 @@
           </div>
         </div>
         <div
-          class="mt-10 desktop::mt-20 laptop:mt-20 desktop:mr-[75px] laptop:mr-[75px] desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center"
+          class="desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center pb-3 lg:mt-0 mt-10"
         >
           <div
-            class="flex justify-between tablet:justify-center tablet:gap-[200px] tablet:h-[216px] h-[416px] lg:h-full"
+            class="flex justify-between tablet:justify-center tablet:gap-[200px] h-[416px] lg:h-full"
           >
             <div class="flex flex-col gap-4">
               <h1
@@ -917,18 +916,14 @@
                     class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                     >Northern hill, New york, USA</small
                   >
-                  <a href="tel:+8801723998977">
-                    <small
-                      class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
-                    >
-                      +88 01723998977
-                    </small>
-                  </a>
+                  <a
+                    href="tel:+8801723998977"
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
+                    >+88 01723998977</a
+                  >
                 </div>
               </div>
-              <div
-                class="flex flex-col gap-4 tablet:hidden desktop:block laptop:block lg:block"
-              >
+              <div class="flex flex-col gap-4">
                 <h1
                   class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope lg:pb-4"
                 >
@@ -961,57 +956,22 @@
               </div>
             </div>
           </div>
-          <div
-            class="inline-flex w-[150px] mx-auto flex-col gap-4 tablet:block mb-10 items-center justify-center my-8 hidden laptop:hidden desktop:hidden lg:hidden"
-          >
-            <h1
-              class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope text-center pb-4"
+          <div class="flex gap-12 lg:pb-0 pb-10 items-center justify-center">
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
+              >Privacy policy</small
             >
-              Find us on
-            </h1>
-            <div class="flex gap-6 items-center justify-center">
-              <button class="group">
-                <img
-                  src="./assets/Frame (7).svg"
-                  alt=""
-                  class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
-                />
-              </button>
-
-              <button class="group">
-                <img
-                  src="./assets/Frame (8).svg"
-                  alt=""
-                  class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
-                />
-              </button>
-              <button class="group">
-                <img
-                  src="./assets/Frame (9).svg"
-                  alt=""
-                  class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
-                />
-              </button>
-            </div>
-          </div>
-          <div
-            class="flex gap-12 desktop:pb-0 laptop:pb-0 tablet:pb-10 pb-10 items-center justify-center"
-          >
-            <a
-              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] cursor-pointer hover:text-[#1A6ED3]"
-              >Privacy policy</a
-            >
-            <a
-              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] cursor-pointer hover:text-[#1A6ED3]"
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
               >T&C
-            </a>
-            <a
-              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] cursor-pointer hover:text-[#1A6ED3]"
-              >Cookie policy</a
+            </small>
+            <small
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
+              >Cookie policy</small
             >
           </div>
           <p
-            class="text-sm font-medium font-manrope leading-[22px] text-[#D8D8D899] text-center pb-10 lg:hidden block"
+            class="text-sm font-medium font-manrope leading-[22px] text-[#D8D8D899] text-center pb-10 lg:hidden"
           >
             All right reserved by the company 2024
           </p>

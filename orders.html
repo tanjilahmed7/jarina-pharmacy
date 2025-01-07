@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orders</title>
+    <link rel="icon" type="image/png" href="./assets/Group 1.svg" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +20,7 @@
   </head>
   <body>
     <section>
-      <div class="flex bg-[#F5F8FA]">
+      <div class="flex bg-[#F5F8FA] ">
         <!-- SIDBAR  -->
         <div class="bg-[#237AFF] w-[280px] min-h-screen p-6 fixed">
           <div class="flex gap-2 items-start">
@@ -195,7 +196,7 @@
               </div>
             </div>
           </div>
-          <div class="mx-6 mt-6 flex flex-col gap-4">
+          <div class="mx-6 mt-6 flex flex-col gap-4  desktop:max-w-[1112px]">
             <h1
               class="text-[#334C66] text-xl font-manrope font-medium leading-[32px]"
             >
@@ -241,7 +242,7 @@
                 <!-- FILTER BUTTON  -->
                 <button
                   id="filterButton"
-                  class="bg-[#FFFFFF] w-10 h-10 flex items-center justify-center rounded-[80px] border border-[#E5E5E5]"
+                  class="bg-[#FFFFFF] w-10 h-10 flex items-center justify-center rounded-[80px] border border-[#E5E5E5] hover:bg-[#E5E5E5]"
                 >
                   <img src="./assets/filter.svg" alt="" />
                 </button>
@@ -284,10 +285,10 @@
             </div>
           </div>
           <!-- TABLE  -->
-          <div class="mx-6">
+          <div class="mx-6  desktop:max-w-[1112px] bg-[#F5F8FA]">
             <div class="overflow-x-auto border border-[#DDE7F6]">
               <table class="table-fixed w-full border-collapse">
-                <thead class="h-[60px] bg-[#DDE7F6]">
+                <thead class="h-[60px] bg-[#DDE7F6] ">
                   <tr class="font-manrope font-semibold text-sm text-[#0F1B27]">
                     <th class="lg:w-[50px] w-[50px] p-[10px] text-start">ID</th>
                     <th class="lg:w-[120px] w-[120px] p-[10px] text-start">
@@ -884,7 +885,7 @@
             <p class="mt-2 w-full text-end text-base font-medium text-[#334C66] font-manrope">Total price: <span class="font-bold"> $7.50</span></p>
             <div class="flex gap-3">
               <button class="text-[#FFFFFF] text-[15px] font-semibold font-manrope bg-[#011575] w-[100px] rounded-[80px] py-[7px]" onclick="showModalPrescription2()">Approve</button>
-              <button class="text-[#334C66] border border-[#E5E5E5] text-[15px] font-semibold font-manrope bg-[#FFFFFF] w-[100px] rounded-[80px] py-[7px]">Reject</button>
+              <button class="text-[#334C66] border border-[#E5E5E5] text-[15px] font-semibold font-manrope bg-[#FFFFFF] w-[100px] rounded-[80px] py-[7px]" onclick="showModalPrescription2()">Reject</button>
             </div>
           </div>
         </dialog>
@@ -1057,4 +1058,5 @@
   <script src="./notification.js"></script>
   <script src="./modal.js"></script>
   <script src="./index.js"></script>
+  <script src="./swiperSlider.js"></script>
 </html>
