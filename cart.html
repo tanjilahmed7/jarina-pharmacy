@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
+    <link rel="icon" type="image/png" href="./assets/Group 1.svg" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,19 +37,32 @@
 
         <!-- Desktop Menu -->
         <div class="laptop:flex gap-[56px] hidden">
-          <ul
-            class="flex items-center gap-10 font-manrope font-semibold text-[15px]"
-          >
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./list.html">Medications</a>
-            <a href="./contactDoctor.html">Contact doctor</a>
-            <a href="./index.html">Help</a>
+          <ul class="flex items-center gap-10" id="nav-list">
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./about.html">About us</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./list.html">Medications</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./doctor.html">Contact doctor</a>
+            </li>
           </ul>
 
           <div class="flex gap-5">
             <div
-              class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer"
+              class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer hover:bg-[#E5E5E5] delay-200"
             >
               <img src="./assets/cart.svg" alt="" />
             </div>
@@ -82,31 +96,18 @@
           </button>
         </div>
       </div>
-
-      <!-- Mobile menu content -->
-      <div
-        id="mobileMenu"
-        class="menu hidden lg:hidden fixed top-0 left-0 right-0 bottom-0 bg-white overflow-y-auto z-[9999]"
-      >
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./list.html">Medications</a></li>
-          <li><a href="./index.html">Help</a></li>
-        </ul>
-      </div>
     </header>
     <!-- Mobile Navigation -->
     <div
       class="myNav absolute top-16 right-0 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] w-0 overflow-x-hidden h-auto transition-all duration-500 mt-[64px] rounded-t-[32px]"
     >
       <ul
-        class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-[200px]"
+        class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-10"
       >
         <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
+        <a href="./about.html">About us</a>
         <a href="./list.html">Medications</a>
-        <a href="./index.html">Help</a>
+        <a href="./doctor.html">Contact doctor</a>
       </ul>
 
       <div
@@ -486,10 +487,10 @@
     <!-- BANNER SECTION  -->
     <section>
       <div
-        class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] lg:pt-20 pt-10 lg:px-[75px] px-4 pb-[100px]"
+        class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] lg:pt-20 pt-10 lg:px-[75px] px-4 pb-[100px] desktop:items-center desktop:justify-center flex flex-col"
       >
         <h1
-          class="text-[#011575] text-[32px] lg:text-[40px] leading-[46px] font-extrabold font-manrope"
+          class="text-[#011575] text-[32px] lg:text-[40px] leading-[46px] font-extrabold font-manrope desktop:text-start desktop:w-[1290px]"
         >
           Your cart
         </h1>
@@ -509,7 +510,7 @@
                   <th class="w-[400px]">Medicine</th>
                   <th class="w-[133px] text-center">Price</th>
                   <th class="w-[133px] text-center">Quantity</th>
-                  <th class="w-[133px] text-center">Delivered on</th>
+                  <th class="w-[133px] text-center">Total</th>
                   <th class="w-20"></th>
                 </tr>
               </thead>
@@ -526,33 +527,39 @@
 
                   <td class="w-[133px] text-center">
                     <div class="flex items-center justify-center gap-4">
-                      <div
-                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      <button
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                       >
                         <img
                           class="w-4 h-4 cursor-pointer object-contain"
                           src="./assets/Frame (2).svg"
                           alt="Decrease Quantity"
                         />
-                      </div>
+                      </button>
 
                       <span>1</span>
-                      <div
-                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      <button
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                       >
                         <img
                           class="w-4 h-4 cursor-pointer"
                           src="./assets/Frame (1) 3.svg"
                           alt="Increase Quantity"
                         />
-                      </div>
+                      </button>
                     </div>
                   </td>
 
-                  <td class="w-[133px] text-center">3 Dec 2024</td>
+                  <td
+                    class="w-[133px] text-center text-base font-bold font-manrope"
+                  >
+                    $7.50
+                  </td>
 
                   <td>
-                    <img src="./assets/Frame 4.svg" alt="" />
+                    <button class="cursor-pointer">
+                      <img src="./assets/Frame 4.svg" alt="Delete" />
+                    </button>
                   </td>
                 </tr>
                 <tr class="border-t border-[#DDE7F6] h-[100px]">
@@ -565,33 +572,39 @@
 
                   <td class="w-[133px] text-center">
                     <div class="flex items-center justify-center gap-4">
-                      <div
-                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      <button
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                       >
                         <img
                           class="w-4 h-4 cursor-pointer object-contain"
                           src="./assets/Frame (2).svg"
                           alt="Decrease Quantity"
                         />
-                      </div>
+                      </button>
 
                       <span>1</span>
-                      <div
-                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      <button
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                       >
                         <img
                           class="w-4 h-4 cursor-pointer"
                           src="./assets/Frame (1) 3.svg"
                           alt="Increase Quantity"
                         />
-                      </div>
+                      </button>
                     </div>
                   </td>
 
-                  <td class="w-[133px] text-center">3 Dec 2024</td>
+                  <td
+                    class="w-[133px] text-center text-base font-bold font-manrope"
+                  >
+                    $7.50
+                  </td>
 
                   <td>
-                    <img src="./assets/Frame 4.svg" alt="" />
+                    <button class="cursor-pointer">
+                      <img src="./assets/Frame 4.svg" alt="Delete" />
+                    </button>
                   </td>
                 </tr>
                 <tr class="border-t border-[#DDE7F6] h-[100px]">
@@ -604,39 +617,45 @@
 
                   <td class="w-[133px] text-center">
                     <div class="flex items-center justify-center gap-4">
-                      <div
-                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      <button
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                       >
                         <img
                           class="w-4 h-4 cursor-pointer object-contain"
                           src="./assets/Frame (2).svg"
                           alt="Decrease Quantity"
                         />
-                      </div>
+                      </button>
 
                       <span>1</span>
-                      <div
-                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                      <button
+                        class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                       >
                         <img
                           class="w-4 h-4 cursor-pointer"
                           src="./assets/Frame (1) 3.svg"
                           alt="Increase Quantity"
                         />
-                      </div>
+                      </button>
                     </div>
                   </td>
 
-                  <td class="w-[133px] text-center">3 Dec 2024</td>
+                  <td
+                    class="w-[133px] text-center text-base font-bold font-manrope"
+                  >
+                    $7.50
+                  </td>
 
                   <td>
-                    <img src="./assets/Frame 4.svg" alt="" />
+                    <button class="cursor-pointer">
+                      <img src="./assets/Frame 4.svg" alt="Delete" />
+                    </button>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <!-- TABLE  -->
+          <!-- TABLE SMALL  -->
           <div class="lg:hidden border border-[#DDE7F6] w-full">
             <div class="border border-[#DDE7F6] py-[10px] px-4">
               <div class="flex justify-between items-center">
@@ -656,28 +675,30 @@
               </div>
               <div class="flex justify-between">
                 <div class="flex items-center justify-center gap-4 ml-[56px]">
-                  <div
-                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  <button
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                   >
                     <img
                       class="w-4 h-4 cursor-pointer object-contain"
                       src="./assets/Frame (2).svg"
                       alt="Decrease Quantity"
                     />
-                  </div>
+                  </button>
 
                   <span>1</span>
-                  <div
-                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  <button
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                   >
                     <img
                       class="w-4 h-4 cursor-pointer"
                       src="./assets/Frame (1) 3.svg"
                       alt="Increase Quantity"
                     />
-                  </div>
+                  </button>
                 </div>
-                <img src="./assets/Frame 4.svg" alt="" />
+                <button>
+                  <img src="./assets/Frame 4.svg" alt="Delete" />
+                </button>
               </div>
             </div>
             <div class="border border-[#DDE7F6] py-[10px] px-4">
@@ -698,28 +719,30 @@
               </div>
               <div class="flex justify-between">
                 <div class="flex items-center justify-center gap-4 ml-[56px]">
-                  <div
-                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  <button
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                   >
                     <img
                       class="w-4 h-4 cursor-pointer object-contain"
                       src="./assets/Frame (2).svg"
                       alt="Decrease Quantity"
                     />
-                  </div>
+                  </button>
 
                   <span>1</span>
-                  <div
-                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  <button
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                   >
                     <img
                       class="w-4 h-4 cursor-pointer"
                       src="./assets/Frame (1) 3.svg"
                       alt="Increase Quantity"
                     />
-                  </div>
+                  </button>
                 </div>
-                <img src="./assets/Frame 4.svg" alt="" />
+                <button>
+                  <img src="./assets/Frame 4.svg" alt="Delete" />
+                </button>
               </div>
             </div>
             <div class="border border-[#DDE7F6] py-[10px] px-4">
@@ -740,28 +763,30 @@
               </div>
               <div class="flex justify-between">
                 <div class="flex items-center justify-center gap-4 ml-[56px]">
-                  <div
-                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  <button
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                   >
                     <img
                       class="w-4 h-4 cursor-pointer object-contain"
                       src="./assets/Frame (2).svg"
                       alt="Decrease Quantity"
                     />
-                  </div>
+                  </button>
 
                   <span>1</span>
-                  <div
-                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px]"
+                  <button
+                    class="w-8 h-8 border-2 border-[#E5E5E5] flex items-center justify-center rounded-[80px] hover:bg-[#E5E5E5]"
                   >
                     <img
                       class="w-4 h-4 cursor-pointer"
                       src="./assets/Frame (1) 3.svg"
                       alt="Increase Quantity"
                     />
-                  </div>
+                  </button>
                 </div>
-                <img src="./assets/Frame 4.svg" alt="" />
+                <button>
+                  <img src="./assets/Frame 4.svg" alt="Delete" />
+                </button>
               </div>
             </div>
           </div>
@@ -809,12 +834,14 @@
                 $9.50
               </h4>
             </div>
-            <button
-              class="lg:w-[330px] h-10 bg-[#011575] text-[#FFFFFF] font-manrope font-semibold text-[15px] leading-6 rounded-[80px] mt-8"
-              onclick="my_modal_3.showModal()"
-            >
-              Checkout
-            </button>
+            <div class="w-full flex items-center justify-center">
+              <button
+                class="lg:w-[330px] h-10 bg-[#011575] text-[#FFFFFF] font-manrope font-semibold text-[15px] leading-6 rounded-[80px] mt-8 hover:text-[#00BFFF] w-[330px]"
+                onclick="my_modal_3.showModal()"
+              >
+                Checkout
+              </button>
+            </div>
           </div>
         </div>
       </div>
