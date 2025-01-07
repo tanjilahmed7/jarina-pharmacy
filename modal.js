@@ -78,3 +78,17 @@ function showModalPrescription2() {
     modal.showModal();
   } 
 }
+
+
+function togglePasswordVisibility() {
+  const passwordInput = document.getElementById('passwordInput');
+  const eyeIcon = document.getElementById('eyeIcon');
+
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text'; 
+    eyeIcon.src = './assets/passeye.svg'; 
+  } else {
+    passwordInput.type = 'password'; 
+    eyeIcon.src = './assets/passeye.svg'; 
+  }
+}

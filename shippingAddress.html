@@ -23,9 +23,9 @@
       <div
         class="flex justify-between items-center w-full h-full lg:px-[75px] px-4"
       >
-        <a href="./index.html" class="flex items-center gap-2 h-[23px]">
+        <a href="./index.html" class="flex items-center gap-2 h-[23px] group">
           <img
-            class="w-[22px] h-[22px] object-contain"
+            class="w-[22px] h-[22px] object-contain group-hover:filter group-hover:invert group-hover:sepia-0 group-hover:saturate-100 group-hover:hue-rotate-[340deg]"
             src="./assets/Group 1.svg"
             alt=""
           />
@@ -36,35 +36,42 @@
 
         <!-- Desktop Menu -->
         <div class="laptop:flex gap-[56px] hidden">
-          <ul
-            class="flex items-center gap-10 font-manrope font-semibold text-[15px]"
-          >
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./list.html">Medications</a>
-            <a href="./contactDoctor.html">Contact doctor</a>
-            <a href="./index.html">Help</a>
+          <ul class="flex items-center gap-10" id="nav-list">
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./about.html">About us</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./list.html">Medications</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./doctor.html">Contact doctor</a>
+            </li>
           </ul>
 
-          <div class="flex gap-5">
-            <div
-              class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer"
+          <div class="flex gap-3">
+            <button
+              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center"
+              onclick="my_modal_6.showModal()"
             >
-              <img src="./assets/cart.svg" alt="" />
-            </div>
-            <div class="flex gap-3">
-              <button
-                class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
-              >
-                Log in
-              </button>
-              <button
-                class="bg-[#011575] text-[#FFFFFF] py-[7px] px-5 rounded-[80px] font-manrope font-semibold text-[15px]"
-                onclick="showModal()"
-              >
-                Sign up
-              </button>
-            </div>
+              <img class="w-5 h-5" src="./assets/Frame (1) 4.svg" alt="" />
+            </button>
+            <button
+              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center"
+              onclick="my_modal_3.showModal()"
+            >
+              <img class="w-5 h-5" src="./assets/Frame 5.svg" alt="" />
+            </button>
           </div>
         </div>
 
@@ -100,7 +107,7 @@
     <!-- SHIPPING ADDRESS SECTION  -->
     <section>
       <div
-        class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] flex items-center justify-center flex-col w-full h-full lg:h-screen"
+        class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] flex items-center justify-center flex-col w-full h-full lg:h-[701px]"
       >
         <div
           class="lg:w-[920px] lg:h-[521px] w-full h-full px-4 lg:px-0 lg:pt-0 pt-10"
@@ -132,34 +139,168 @@
               />
             </div>
             <div class="w-full flex lg:flex-row flex-col items-center gap-4">
-              <div
-                class="w-full lg:w-1/2 flex items-center py-[13px] px-4 border border-[#E5E5E5] rounded-lg bg-[#FFFFFF]"
-              >
-                <input
-                  type="text"
-                  placeholder="Country"
-                  class="w-full text-sm font-medium font-manrope leading-[22px] outline-none text-[#334C66] bg-[#FFFFFF]"
-                />
-                <img
-                  class="w-5 h- rotate-90"
-                  src="./assets/Frame 2.svg"
-                  alt=""
-                />
+              <!-- Country Dropdown -->
+              <div class="dropdown-container relative w-full lg:w-1/2">
+                <!-- Hidden Select Element -->
+                <select id="countrySelect" class="hidden">
+                  <option value="" disabled selected>Select Country</option>
+                  <option value="usa">USA</option>
+                  <option value="canada">Canada</option>
+                  <option value="mexico">Mexico</option>
+                  <option value="germany">Germany</option>
+                  <option value="france">France</option>
+                  <option value="italy">Italy</option>
+                  <option value="japan">Japan</option>
+                  <option value="china">China</option>
+                  <option value="india">India</option>
+                  <option value="australia">Australia</option>
+                </select>
+
+                <!-- Custom Dropdown -->
+                <div
+                  class="custom-dropdown w-full py-[13px] px-4 border border-[#E5E5E5] rounded-lg flex items-center bg-[#FFFFFF] text-sm text-[#334C66]"
+                >
+                  <span class="selected-option text-[#90a2b5]">Country</span>
+                  <img
+                    class="dropdown-arrow w-5 h-5 ml-auto cursor-pointer rotate-90"
+                    src="./assets/Frame 2.svg"
+                    alt="Dropdown Arrow"
+                  />
+                </div>
+
+                <!-- Dropdown List -->
+                <div
+                  class="dropdown-list hidden absolute bg-white border border-[#E5E5E5] rounded-lg w-full z-10 max-h-[150px] overflow-y-auto text-sm text-[#90a2b5]"
+                >
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer text-sm"
+                    data-value="usa"
+                  >
+                    USA
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="canada"
+                  >
+                    Canada
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="mexico"
+                  >
+                    Mexico
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="germany"
+                  >
+                    Germany
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="france"
+                  >
+                    France
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="italy"
+                  >
+                    Italy
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="japan"
+                  >
+                    Japan
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="china"
+                  >
+                    China
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="india"
+                  >
+                    India
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="australia"
+                  >
+                    Australia
+                  </div>
+                </div>
               </div>
 
-              <div
-                class="w-full lg:w-1/2 flex items-center py-[13px] px-4 border border-[#E5E5E5] rounded-lg bg-[#FFFFFF]"
-              >
-                <input
-                  type="text"
-                  placeholder="State"
-                  class="w-full text-sm font-medium font-manrope leading-[22px] outline-none text-[#334C66] bg-[#FFFFFF]"
-                />
-                <img
-                  class="w-5 h- rotate-90"
-                  src="./assets/Frame 2.svg"
-                  alt=""
-                />
+              <!-- State Dropdown  -->
+              <div class="dropdown-container relative w-full lg:w-1/2">
+                <!-- Hidden Select Element -->
+                <select id="stateSelect" class="hidden">
+                  <option value="" disabled selected>State</option>
+                  <option value="california">California</option>
+                  <option value="texas">Texas</option>
+                  <option value="florida">Florida</option>
+                  <option value="new-york">New York</option>
+                  <option value="nevada">Nevada</option>
+                  <option value="ohio">Ohio</option>
+                </select>
+
+                <!-- Custom Dropdown -->
+                <div
+                  class="custom-dropdown w-full py-[13px] px-4 border border-[#E5E5E5] rounded-lg flex items-center bg-[#FFFFFF] text-sm text-[#334C66]"
+                >
+                  <span class="selected-option text-[#90a2b5]">State</span>
+                  <img
+                    class="dropdown-arrow w-5 h-5 ml-auto cursor-pointer rotate-90"
+                    src="./assets/Frame 2.svg"
+                    alt="Dropdown Arrow"
+                  />
+                </div>
+
+                <!-- Dropdown List -->
+                <div
+                  class="dropdown-list hidden absolute mt-2 bg-white border border-[#E5E5E5] rounded-lg w-full z-10 max-h-[132px] overflow-y-auto text-sm text-[#90a2b5]"
+                >
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="california"
+                  >
+                    California
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="texas"
+                  >
+                    Texas
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="florida"
+                  >
+                    Florida
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="new-york"
+                  >
+                    New York
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="nevada"
+                  >
+                    Nevada
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="ohio"
+                  >
+                    Ohio
+                  </div>
+                </div>
               </div>
             </div>
             <input
@@ -428,4 +569,5 @@
       </div>
     </footer>
   </body>
+  <script src="./dropdown.js"></script>
 </html>
