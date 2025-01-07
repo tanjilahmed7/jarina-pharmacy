@@ -40,19 +40,32 @@
 
         <!-- Desktop Menu -->
         <div class="laptop:flex gap-[56px] hidden">
-          <ul
-            class="flex items-center gap-10 font-manrope font-semibold text-[15px]"
-          >
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./list.html">Medications</a>
-            <a href="./contactDoctor.html">Contact doctor</a>
-            <a href="./index.html">Help</a>
+          <ul class="flex items-center gap-10" id="nav-list">
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./about.html">About us</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./list.html">Medications</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./doctor.html">Contact doctor</a>
+            </li>
           </ul>
 
           <div class="flex gap-5">
             <div
-              class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer"
+              class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer hover:bg-[#E5E5E5] delay-200"
             >
               <img src="./assets/cart.svg" alt="" />
             </div>
@@ -85,19 +98,6 @@
             <img src="./assets/menu.png" alt="Menu Close" />
           </button>
         </div>
-      </div>
-
-      <!-- Mobile menu content -->
-      <div
-        id="mobileMenu"
-        class="menu hidden lg:hidden fixed top-0 left-0 right-0 bottom-0 bg-white overflow-y-auto z-[9999]"
-      >
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./list.html">Medications</a></li>
-          <li><a href="./index.html">Help</a></li>
-        </ul>
       </div>
     </header>
     <!-- Mobile Navigation -->
@@ -870,7 +870,7 @@
     <!-- FOOTER SECTION  -->
     <footer>
       <div
-        class="bg-[#001933] w-full lg:h-[555px] relative flex lg:flex-row flex-col justify-between px-4"
+        class="bg-[#001933] w-full lg:min-h-[555px] relative flex lg:flex-row flex-col justify-between px-4 desktop:px-[75px] laptop:px-[75px] pt-20 pb-[50px]"
       >
         <img
           class="absolute bottom-0 lg:block hidden left-0"
@@ -882,10 +882,8 @@
           alt="Vector"
           class="absolute bottom-0 left-0 lg:hidden block"
         />
-        <div
-          class="flex flex-col lg:w-[517px] lg:gap-[169px] pt-[80px] lg:ml-[75px]"
-        >
-          <div class="flex flex-col gap-2 w-[321px]">
+        <div class="flex flex-col lg:w-[517px] lg:justify-between lg:h-[425px]">
+          <div class="flex flex-col gap-2 w-[321px] lg:w-full">
             <div class="flex items-center gap-2">
               <img
                 class="w-[22px] h-[22px] object-contain"
@@ -902,12 +900,13 @@
             <h3
               class="text-[32px] lg:text-[40px] leading-[38px] lg:leading-[48px] font-manrope font-medium text-[#D8D8D8] mt-[39px]"
             >
-              Your trusted medicine partner
+              Your trusted <br />
+              medicine partner
             </h3>
           </div>
           <div class="flex gap-6 flex-col lg:mt-0 mt-5">
             <p
-              class="text-[#D8D8D8] font-medium font-manrope text-sm lg:text-base leading-[25px]"
+              class="text-[#D8D8D8] font-medium font-manrope text-sm lg:text-base leading-[25px] max-w-[517px]"
             >
               We are a dedicated team of healthcare professionals, technology
               innovators, and customer service experts.
@@ -920,7 +919,7 @@
           </div>
         </div>
         <div
-          class="mt-10 desktop::mt-20 laptop:mt-20 desktop:mr-[75px] laptop:mr-[75px] desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center"
+          class="desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center pb-3 lg:mt-0 mt-10"
         >
           <div
             class="flex justify-between tablet:justify-center tablet:gap-[200px] h-[416px] lg:h-full"
@@ -933,19 +932,19 @@
               </h1>
               <div class="flex flex-col gap-3">
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >Home</small
                 >
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >About us</small
                 >
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >Medications</small
                 >
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >Help</small
                 >
               </div>
@@ -962,50 +961,70 @@
                     class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                     >Northern hill, New york, USA</small
                   >
-                  <small
-                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
-                    >+88 01723998977</small
+                  <a
+                    href="tel:+8801723998977"
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
+                    >+88 01723998977</a
                   >
                 </div>
               </div>
               <div class="flex flex-col gap-4">
                 <h1
-                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope"
+                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope lg:pb-4"
                 >
                   Find us on
                 </h1>
                 <div class="flex gap-6">
-                  <button><img src="./assets/Frame (7).svg" alt="" /></button>
-                  <button><img src="./assets/Frame (8).svg" alt="" /></button>
-                  <button><img src="./assets/Frame (9).svg" alt="" /></button>
+                  <button class="group">
+                    <img
+                      src="./assets/Frame (7).svg"
+                      alt=""
+                      class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                    />
+                  </button>
+
+                  <button class="group">
+                    <img
+                      src="./assets/Frame (8).svg"
+                      alt=""
+                      class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                    />
+                  </button>
+                  <button class="group">
+                    <img
+                      src="./assets/Frame (9).svg"
+                      alt=""
+                      class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                    />
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <div class="flex gap-12 lg:pb-0 pb-10 items-center justify-center">
             <small
-              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
               >Privacy policy</small
             >
             <small
-              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
               >T&C
             </small>
             <small
-              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
               >Cookie policy</small
             >
           </div>
           <p
-            class="text-sm font-medium font-manrope leading-[22px] text-[#D8D8D899] text-center pb-10 lg:hidden block"
+            class="text-sm font-medium font-manrope leading-[22px] text-[#D8D8D899] text-center pb-10 lg:hidden"
           >
             All right reserved by the company 2024
           </p>
         </div>
       </div>
     </footer>
-    <script src="./search.js"></script>
-    <script src="./modal.js"></script>
-    <script src="./index.js"></script>
   </body>
+  <script src="./search.js"></script>
+  <script src="./modal.js"></script>
+  <script src="./index.js"></script>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Billing address</title>
+    <link rel="icon" type="image/png" href="./assets/Group 1.svg" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,9 +24,9 @@
       <div
         class="flex justify-between items-center w-full h-full lg:px-[75px] px-4"
       >
-        <a href="./index.html" class="flex items-center gap-2 h-[23px]">
+        <a href="./index.html" class="flex items-center gap-2 h-[23px] group">
           <img
-            class="w-[22px] h-[22px] object-contain"
+            class="w-[22px] h-[22px] object-contain group-hover:filter group-hover:invert group-hover:sepia-0 group-hover:saturate-100 group-hover:hue-rotate-[340deg]"
             src="./assets/Group 1.svg"
             alt=""
           />
@@ -36,35 +37,41 @@
 
         <!-- Desktop Menu -->
         <div class="laptop:flex gap-[56px] hidden">
-          <ul
-            class="flex items-center gap-10 font-manrope font-semibold text-[15px]"
-          >
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./list.html">Medications</a>
-            <a href="./contactDoctor.html">Contact doctor</a>
-            <a href="./index.html">Help</a>
+          <ul class="flex items-center gap-10" id="nav-list">
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./about.html">About us</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./list.html">Medications</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./doctor.html">Contact doctor</a>
+            </li>
           </ul>
 
-          <div class="flex gap-5">
-            <div
-              class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer"
+          <div class="flex gap-3">
+            <a
+              href="./cart.html"
+              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center hover:bg-[#E5E5E5]"
             >
-              <img src="./assets/cart.svg" alt="" />
-            </div>
-            <div class="flex gap-3">
-              <button
-                class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
-              >
-                Log in
-              </button>
-              <button
-                class="bg-[#011575] text-[#FFFFFF] py-[7px] px-5 rounded-[80px] font-manrope font-semibold text-[15px]"
-                onclick="showModal()"
-              >
-                Sign up
-              </button>
-            </div>
+              <img class="w-5 h-5" src="./assets/Frame (1) 4.svg" alt="" />
+            </a>
+            <button
+              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center hover:bg-[#E5E5E5]"
+            >
+              <img class="w-5 h-5" src="./assets/Frame 5.svg" alt="" />
+            </button>
           </div>
         </div>
 
@@ -131,34 +138,168 @@
               />
             </div>
             <div class="w-full flex lg:flex-row flex-col items-center gap-4">
-              <div
-                class="w-full lg:w-1/2 flex items-center py-[13px] px-4 border border-[#E5E5E5] rounded-lg bg-[#FFFFFF]"
-              >
-                <input
-                  type="text"
-                  placeholder="Country"
-                  class="w-full text-sm font-medium font-manrope leading-[22px] outline-none text-[#334C66] bg-[#FFFFFF]"
-                />
-                <img
-                  class="w-5 h- rotate-90"
-                  src="./assets/Frame 2.svg"
-                  alt=""
-                />
+              <!-- Country Dropdown -->
+              <div class="dropdown-container relative w-full lg:w-1/2">
+                <!-- Hidden Select Element -->
+                <select id="countrySelect" class="hidden">
+                  <option value="" disabled selected>Select Country</option>
+                  <option value="usa">USA</option>
+                  <option value="canada">Canada</option>
+                  <option value="mexico">Mexico</option>
+                  <option value="germany">Germany</option>
+                  <option value="france">France</option>
+                  <option value="italy">Italy</option>
+                  <option value="japan">Japan</option>
+                  <option value="china">China</option>
+                  <option value="india">India</option>
+                  <option value="australia">Australia</option>
+                </select>
+
+                <!-- Custom Dropdown -->
+                <div
+                  class="custom-dropdown w-full py-[13px] px-4 border border-[#E5E5E5] rounded-lg flex items-center bg-[#FFFFFF] text-sm text-[#334C66]"
+                >
+                  <span class="selected-option text-[#90a2b5]">Country</span>
+                  <img
+                    class="dropdown-arrow w-5 h-5 ml-auto cursor-pointer rotate-90"
+                    src="./assets/Frame 2.svg"
+                    alt="Dropdown Arrow"
+                  />
+                </div>
+
+                <!-- Dropdown List -->
+                <div
+                  class="dropdown-list hidden absolute bg-white border border-[#E5E5E5] rounded-lg w-full z-10 max-h-[150px] overflow-y-auto text-sm text-[#90a2b5]"
+                >
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer text-sm"
+                    data-value="usa"
+                  >
+                    USA
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="canada"
+                  >
+                    Canada
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="mexico"
+                  >
+                    Mexico
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="germany"
+                  >
+                    Germany
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="france"
+                  >
+                    France
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="italy"
+                  >
+                    Italy
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="japan"
+                  >
+                    Japan
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="china"
+                  >
+                    China
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="india"
+                  >
+                    India
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="australia"
+                  >
+                    Australia
+                  </div>
+                </div>
               </div>
 
-              <div
-                class="w-full lg:w-1/2 flex items-center py-[13px] px-4 border border-[#E5E5E5] rounded-lg bg-[#FFFFFF]"
-              >
-                <input
-                  type="text"
-                  placeholder="State"
-                  class="w-full text-sm font-medium font-manrope leading-[22px] outline-none text-[#334C66] bg-[#FFFFFF]"
-                />
-                <img
-                  class="w-5 h- rotate-90"
-                  src="./assets/Frame 2.svg"
-                  alt=""
-                />
+              <!-- State Dropdown  -->
+              <div class="dropdown-container relative w-full lg:w-1/2">
+                <!-- Hidden Select Element -->
+                <select id="stateSelect" class="hidden">
+                  <option value="" disabled selected>State</option>
+                  <option value="california">California</option>
+                  <option value="texas">Texas</option>
+                  <option value="florida">Florida</option>
+                  <option value="new-york">New York</option>
+                  <option value="nevada">Nevada</option>
+                  <option value="ohio">Ohio</option>
+                </select>
+
+                <!-- Custom Dropdown -->
+                <div
+                  class="custom-dropdown w-full py-[13px] px-4 border border-[#E5E5E5] rounded-lg flex items-center bg-[#FFFFFF] text-sm text-[#334C66]"
+                >
+                  <span class="selected-option text-[#90a2b5]">State</span>
+                  <img
+                    class="dropdown-arrow w-5 h-5 ml-auto cursor-pointer rotate-90"
+                    src="./assets/Frame 2.svg"
+                    alt="Dropdown Arrow"
+                  />
+                </div>
+
+                <!-- Dropdown List -->
+                <div
+                  class="dropdown-list hidden absolute mt-2 bg-white border border-[#E5E5E5] rounded-lg w-full z-10 max-h-[132px] overflow-y-auto text-sm text-[#90a2b5]"
+                >
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="california"
+                  >
+                    California
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="texas"
+                  >
+                    Texas
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="florida"
+                  >
+                    Florida
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="new-york"
+                  >
+                    New York
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="nevada"
+                  >
+                    Nevada
+                  </div>
+                  <div
+                    class="dropdown-option py-2 px-4 hover:bg-gray-200 cursor-pointer"
+                    data-value="ohio"
+                  >
+                    Ohio
+                  </div>
+                </div>
               </div>
             </div>
             <input
@@ -178,12 +319,14 @@
                 class="w-full lg:w-1/2 py-[13px] px-4 border border-[#E5E5E5] rounded-lg text-sm font-medium font-manrope leading-[22px] outline-none text-[#334C66]"
               />
             </div>
-            <div class="flex bg-[#DDE7F6] gap-2 px-4 py-[7px] rounded-lg">
+            <div
+              class="flex bg-[#DDE7F6] gap-2 px-4 py-[7px] rounded-lg cursor-pointer"
+            >
               <p>Billing address added</p>
               <img src="./assets/Frame 4.svg" alt="" />
             </div>
             <button
-              class="py-[7px] px-5 rounded-[80px] bg-[#011575] text-[#FFFFFF] text-[15px] font-manrope font-semibold leading-6 w-full lg:max-w-[140px] tablet:max-w-[140px] max-w-[140px]"
+              class="py-[7px] px-5 rounded-[80px] bg-[#011575] text-[#FFFFFF] text-[15px] font-manrope font-semibold leading-6 w-full lg:max-w-[140px] tablet:max-w-[140px] max-w-[140px] hover:text-[#00BFFF]"
               type="submit"
             >
               Confirm order
@@ -282,7 +425,7 @@
     <!-- FOOTER SECTION  -->
     <footer>
       <div
-        class="bg-[#001933] w-full lg:h-[555px] relative flex lg:flex-row flex-col justify-between px-4"
+        class="bg-[#001933] w-full lg:min-h-[555px] relative flex lg:flex-row flex-col justify-between px-4 desktop:px-[75px] laptop:px-[75px] pt-20 pb-[50px]"
       >
         <img
           class="absolute bottom-0 lg:block hidden left-0"
@@ -294,10 +437,8 @@
           alt="Vector"
           class="absolute bottom-0 left-0 lg:hidden block"
         />
-        <div
-          class="flex flex-col lg:w-[517px] lg:gap-[169px] pt-[80px] lg:ml-[75px]"
-        >
-          <div class="flex flex-col gap-2 w-[321px]">
+        <div class="flex flex-col lg:w-[517px] lg:justify-between lg:h-[425px]">
+          <div class="flex flex-col gap-2 w-[321px] lg:w-full">
             <div class="flex items-center gap-2">
               <img
                 class="w-[22px] h-[22px] object-contain"
@@ -314,12 +455,13 @@
             <h3
               class="text-[32px] lg:text-[40px] leading-[38px] lg:leading-[48px] font-manrope font-medium text-[#D8D8D8] mt-[39px]"
             >
-              Your trusted medicine partner
+              Your trusted <br />
+              medicine partner
             </h3>
           </div>
           <div class="flex gap-6 flex-col lg:mt-0 mt-5">
             <p
-              class="text-[#D8D8D8] font-medium font-manrope text-sm lg:text-base leading-[25px]"
+              class="text-[#D8D8D8] font-medium font-manrope text-sm lg:text-base leading-[25px] max-w-[517px]"
             >
               We are a dedicated team of healthcare professionals, technology
               innovators, and customer service experts.
@@ -332,7 +474,7 @@
           </div>
         </div>
         <div
-          class="mt-10 desktop::mt-20 laptop:mt-20 desktop:mr-[75px] laptop:mr-[75px] desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center"
+          class="desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center pb-3 lg:mt-0 mt-10"
         >
           <div
             class="flex justify-between tablet:justify-center tablet:gap-[200px] h-[416px] lg:h-full"
@@ -345,19 +487,19 @@
               </h1>
               <div class="flex flex-col gap-3">
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >Home</small
                 >
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >About us</small
                 >
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >Medications</small
                 >
                 <small
-                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                  class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
                   >Help</small
                 >
               </div>
@@ -374,42 +516,62 @@
                     class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
                     >Northern hill, New york, USA</small
                   >
-                  <small
-                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
-                    >+88 01723998977</small
+                  <a
+                    href="tel:+8801723998977"
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
+                    >+88 01723998977</a
                   >
                 </div>
               </div>
               <div class="flex flex-col gap-4">
                 <h1
-                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope"
+                  class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope lg:pb-4"
                 >
                   Find us on
                 </h1>
                 <div class="flex gap-6">
-                  <button><img src="./assets/Frame (7).svg" alt="" /></button>
-                  <button><img src="./assets/Frame (8).svg" alt="" /></button>
-                  <button><img src="./assets/Frame (9).svg" alt="" /></button>
+                  <button class="group">
+                    <img
+                      src="./assets/Frame (7).svg"
+                      alt=""
+                      class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                    />
+                  </button>
+
+                  <button class="group">
+                    <img
+                      src="./assets/Frame (8).svg"
+                      alt=""
+                      class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                    />
+                  </button>
+                  <button class="group">
+                    <img
+                      src="./assets/Frame (9).svg"
+                      alt=""
+                      class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                    />
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <div class="flex gap-12 lg:pb-0 pb-10 items-center justify-center">
             <small
-              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
               >Privacy policy</small
             >
             <small
-              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
               >T&C
             </small>
             <small
-              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px]"
+              class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
               >Cookie policy</small
             >
           </div>
           <p
-            class="text-sm font-medium font-manrope leading-[22px] text-[#D8D8D899] text-center pb-10 lg:hidden block"
+            class="text-sm font-medium font-manrope leading-[22px] text-[#D8D8D899] text-center pb-10 lg:hidden"
           >
             All right reserved by the company 2024
           </p>
@@ -417,4 +579,5 @@
       </div>
     </footer>
   </body>
+  <script src="./dropdown.js"></script>
 </html>
