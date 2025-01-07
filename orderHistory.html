@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order history</title>
+    <link rel="icon" type="image/png" href="./assets/Group 1.svg" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,655 +24,342 @@
       <div
         class="flex justify-between items-center w-full h-full lg:px-[75px] px-4"
       >
-        <a href="./index.html" class="flex items-center gap-2 h-[23px]">
+        <a href="./index.html" class="flex items-center gap-2 h-[23px] group">
           <img
-            class="w-[22px] h-[22px] object-contain"
+            class="w-[22px] h-[22px] object-contain group-hover:filter group-hover:invert group-hover:sepia-0 group-hover:saturate-100 group-hover:hue-rotate-[340deg]"
             src="./assets/Group 1.svg"
             alt=""
           />
-
           <h2 class="font-oswald font-medium text-[28.01px] leading-[44px]">
             Find Med
           </h2>
         </a>
 
-        <div class="lg:flex gap-[56px] hidden">
-          <ul
-            class="flex items-center gap-10 font-manrope font-semibold text-[15px]"
-          >
-            <li><a href="./index.html">Home</a></li>
-            <li>
-              <a href="./about.html">About</a>
+        <!-- Desktop Menu -->
+        <div class="laptop:flex gap-[56px] hidden">
+          <ul class="flex items-center gap-10" id="nav-list">
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./index.html">Home</a>
             </li>
-            <li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./about.html">About us</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
               <a href="./list.html">Medications</a>
             </li>
-            <li>
-              <a href="./index.html">Help</a>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./doctor.html">Contact doctor</a>
             </li>
           </ul>
+
           <div class="flex gap-3">
-            <button
-              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center"
-              onclick="my_modal_6.showModal()"
+            <a
+              href="./cart.html"
+              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center hover:bg-[#E5E5E5]"
             >
               <img class="w-5 h-5" src="./assets/Frame (1) 4.svg" alt="" />
-            </button>
+            </a>
             <button
-              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center"
-              onclick="my_modal_3.showModal()"
+              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center hover:bg-[#E5E5E5]"
             >
               <img class="w-5 h-5" src="./assets/Frame 5.svg" alt="" />
             </button>
           </div>
-
-          <!-- First Modal -->
-          <dialog id="my_modal_3" class="modal">
-            <div class="modal-box relative overflow-visible p-[56px]">
-              <form method="dialog">
-                <button
-                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
-                >
-                  <img
-                    src="./assets/Close.svg"
-                    class="w-6 h-6 object-contain absolute z-50"
-                    alt="Close"
-                  />
-                </button>
-              </form>
-              <h3
-                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
-              >
-                Create your account
-              </h3>
-              <p
-                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
-              >
-                Already have an account?
-                <a class="font-bold underline cursor-pointer" id="loginAcc"
-                  >Log in</a
-                >
-              </p>
-              <form
-                method="dialog"
-                class="mt-6 w-full inline-flex flex-col gap-4"
-              >
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
-                />
-                <div
-                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
-                >
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
-                  />
-                  <img
-                    src="./assets/passeye.svg"
-                    class="absolute right-4 top-4"
-                    alt="Show Password"
-                  />
-                </div>
-                <div class="flex items-center gap-2 mt-2">
-                  <input
-                    type="checkbox"
-                    class="border border-[#011575] w-5 h-5"
-                  />
-                  <p
-                    class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
-                  >
-                    I agree to Find Med company’s terms & conditions, <br />
-                    Privacy policy.
-                  </p>
-                </div>
-                <button
-                  type="submit"
-                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
-                >
-                  Create account
-                </button>
-              </form>
-            </div>
-          </dialog>
-          <!-- Second Modal -->
-          <dialog id="my_modal_2" class="modal">
-            <div class="modal-box relative overflow-visible p-[56px]">
-              <form method="dialog">
-                <button
-                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
-                >
-                  <img
-                    src="./assets/Close.svg"
-                    class="w-6 h-6 object-contain absolute z-50"
-                    alt="Close"
-                  />
-                </button>
-              </form>
-              <h3
-                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
-              >
-                Log in
-              </h3>
-              <p
-                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
-              >
-                Don’t have an account?
-                <a class="font-bold underline cursor-pointer" id="createAcc">
-                  Create account
-                </a>
-              </p>
-
-              <form
-                method="dialog"
-                class="mt-6 w-full inline-flex flex-col gap-4"
-              >
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
-                />
-                <div
-                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
-                >
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
-                  />
-                  <img
-                    src="./assets/passeye.svg"
-                    class="absolute right-4 top-4"
-                    alt="Show Password"
-                  />
-                </div>
-                <div class="flex items-center gap-2 mt-2">
-                  <input
-                    type="checkbox"
-                    class="border border-[#011575] w-5 h-5"
-                  />
-                  <p
-                    class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
-                  >
-                    Remember me for this device.
-                  </p>
-                </div>
-                <button
-                  type="submit"
-                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
-                >
-                  Log in
-                </button>
-                <a
-                  href="#"
-                  id="forgetPass"
-                  class="font-semibold font-manrope text-[#011575] text-[15px] leading-[24px]"
-                  >Forgot password?</a
-                >
-              </form>
-            </div>
-          </dialog>
-          <!-- Third Modal -->
-          <dialog id="my_modal_4" class="modal">
-            <div class="modal-box relative overflow-visible p-[56px]">
-              <form method="dialog">
-                <button
-                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
-                >
-                  <img
-                    src="./assets/Close.svg"
-                    class="w-6 h-6 object-contain absolute z-50"
-                    alt="Close"
-                  />
-                </button>
-              </form>
-              <a class="flex gap-2 cursor-pointer" href="#" id="back">
-                <img src="./assets/Frame (4).svg" alt="" /> Back
-              </a>
-              <h3
-                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px] pt-6"
-              >
-                Reset your password
-              </h3>
-              <p
-                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
-              >
-                Please enter your email address. We will send you an email to
-                reset your password.
-              </p>
-
-              <form
-                method="dialog"
-                class="mt-6 w-full inline-flex flex-col gap-6"
-              >
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
-                />
-
-                <button
-                  type="submit"
-                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px]"
-                >
-                  Send email
-                </button>
-              </form>
-            </div>
-          </dialog>
-          <!-- Fourth Modal -->
-          <dialog id="my_modal_5" class="modal">
-            <div class="modal-box relative overflow-visible p-[56px]">
-              <form method="dialog">
-                <button
-                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
-                >
-                  <img
-                    src="./assets/Close.svg"
-                    class="w-6 h-6 object-contain absolute z-50"
-                    alt="Close"
-                  />
-                </button>
-              </form>
-
-              <h3
-                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px] pt-6"
-              >
-                Change Your Password
-              </h3>
-              <p
-                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
-              >
-                Create a new password below to change your password.
-              </p>
-
-              <form
-                method="dialog"
-                class="mt-6 w-full inline-flex flex-col gap-6"
-              >
-                <div
-                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
-                >
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
-                  />
-                  <img
-                    src="./assets/passeye.svg"
-                    class="absolute right-4 top-4"
-                    alt="Show Password"
-                  />
-                </div>
-                <div
-                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
-                >
-                  <input
-                    type="password"
-                    placeholder="Confirm password"
-                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
-                  />
-                  <img
-                    src="./assets/passeye.svg"
-                    class="absolute right-4 top-4"
-                    alt="Show Password"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px] w-[154px]"
-                >
-                  Reset password
-                </button>
-              </form>
-            </div>
-          </dialog>
-          <!-- Fifth -->
-          <dialog id="my_modal_6" class="modal">
-            <div class="modal-box relative overflow-visible p-[56px]">
-              <form method="dialog">
-                <button
-                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-[-30px] top-[-30px] z-50"
-                >
-                  <img
-                    src="./assets/Close.svg"
-                    class="w-6 h-6 object-contain absolute z-50"
-                    alt="Close"
-                  />
-                </button>
-              </form>
-              <p
-                class="bg-[#EFFFEA] text-[#1A7501] text-sm font-manrope font-medium leading-[22px] px-4 py-[9px] mb-6 rounded-lg"
-              >
-                We’ve sent you a magic link to your email address
-              </p>
-              <h3
-                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
-              >
-                Create your account
-              </h3>
-              <p
-                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
-              >
-                Already have an account?
-                <a class="font-bold underline cursor-pointer" id="loginAcc"
-                  >Log in</a
-                >
-              </p>
-              <form
-                method="dialog"
-                class="mt-6 w-full inline-flex flex-col gap-4"
-              >
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
-                />
-                <div
-                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
-                >
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
-                  />
-                  <img
-                    src="./assets/passeye.svg"
-                    class="absolute right-4 top-4"
-                    alt="Show Password"
-                  />
-                </div>
-                <div class="flex items-center gap-2 mt-2">
-                  <input
-                    type="checkbox"
-                    class="border border-[#011575] w-5 h-5"
-                  />
-                  <p
-                    class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
-                  >
-                    I agree to Find Med company’s terms & conditions, <br />
-                    Privacy policy.
-                  </p>
-                </div>
-                <button
-                  type="submit"
-                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
-                >
-                  Create account
-                </button>
-              </form>
-            </div>
-          </dialog>
         </div>
 
-        <div class="lg:hidden flex gap-4">
-          <button
-            class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center"
-            onclick="my_modal_6.showModal()"
-          >
-            <img class="w-5 h-5" src="./assets/Frame (1) 4.svg" alt="" />
+        <!-- Mobile Menu -->
+        <div class="laptop:hidden flex">
+          <button onclick="toggleFuncMenu()" id="openMenuButton" class="block">
+            <img src="./assets/Frame 3.svg" alt="Menu Open" />
           </button>
           <button
-            class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center"
-            onclick="my_modal_3.showModal()"
+            onclick="toggleFuncMenu()"
+            id="closeMenuButton"
+            class="hidden"
           >
-            <img class="w-5 h-5" src="./assets/Frame 5.svg" alt="" />
+            <img src="./assets/menu.png" alt="Menu Close" />
           </button>
         </div>
+      </div>
+
+      <!-- Mobile menu content -->
+      <div
+        id="mobileMenu"
+        class="menu hidden lg:hidden fixed top-0 left-0 right-0 bottom-0 bg-white overflow-y-auto z-[9999]"
+      >
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./list.html">Medications</a></li>
+          <li><a href="./index.html">Help</a></li>
+        </ul>
       </div>
     </header>
     <!-- ORDER HISTORY SECTION  -->
     <section>
       <div
-        class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] flex items-start justify-center flex-col py-10 lg:py-20 lg:px-[75px] px-4"
+        class="rounded-t-[32px] bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] flex items-start justify-center flex-col py-10 lg:py-20 lg:px-[75px] px-4 desktop:items-center desktop:justify-center laptop:items-center laptop:justify-center tablet:items-center tablet:justify-center"
       >
-        <h1
-          class="text-[#011575] text-[40px] font-extrabold font-manrope leading-[46px]"
+        <div
+          class="tablet:w-full w-full desktop:max-w-[1290px] laptop:max-w-[1290px]"
         >
-          Order history
-        </h1>
-        <div class="flex items-center gap-4 justify-center mt-6 mb-4 relative">
-          <p
-            class="text-[#12366C] text-base font-bold font-manrope leading-[18px]"
+          <h1
+            class="text-[#011575] text-[40px] font-extrabold font-manrope leading-[46px]"
           >
-            View ordered medicine
-          </p>
-          <!-- FILTER BUTTON  -->
-          <button
-            id="filterButton"
-            class="bg-[#FFFFFF] w-10 h-10 flex items-center justify-center rounded-[80px] border border-[#E5E5E5]"
-          >
-            <img src="./assets/filter.svg" alt="" />
-          </button>
-          <!-- SEARCH BOX  -->
+            Order history
+          </h1>
           <div
-            id="searchBox"
-            class="absolute top-[40px] laptop:left-[200px] tablet:left-[200px] left-0 desktop:left-[200px] rounded-lg bg-[#FFFFFF] p-6 z-50 w-[330px] hidden"
+            class="flex items-center gap-4 justify-center mt-6 mb-4 relative max-w-[240px]"
           >
-            <h1 class="text-[#12366C] text-base font-manrope font-bold">
-              Search by medicine name
-            </h1>
-            <div
-              class="flex border border-[#D3E9F0] rounded-[80px] py-[10px] pl-4 pr-1 gap-2 my-4"
+            <p
+              class="text-[#12366C] text-base font-bold font-manrope leading-[18px]"
             >
-              <img src="./assets/filtersearch.svg" alt="" />
-              <input
-                type="search"
-                class="outline-none border-none text-[12px] font-normal font-manrope text-[#334C6680] w-full"
-                placeholder="Search for medicine, brand name..."
-              />
-            </div>
+              View ordered medicine
+            </p>
+            <!-- FILTER BUTTON  -->
             <button
-              class="bg-[#011575] rounded-[80px] py-[7px] px-5 text-[#FFFFFF] text-[15px] font-manrope font-semibold"
+              id="filterButton"
+              class="bg-[#FFFFFF] w-10 h-10 flex items-center justify-center rounded-[80px] border border-[#E5E5E5]"
             >
-              Search
+              <img src="./assets/filter.svg" alt="" />
             </button>
-          </div>
-        </div>
-
-        <!-- LG TABLE  -->
-        <div class="w-full lg:block hidden">
-          <div class="overflow-x-auto rounded-t-[12px] border border-[#DDE7F6]">
-            <table class="table w-full">
-              <!-- head -->
-              <thead class="h-[40px]">
-                <tr
-                  class="bg-[#DDE7F6] font-manrope font-bold text-base leading-[18px] text-[#12366C] w-full"
-                >
-                  <th class="w-[400px]">Medicine</th>
-                  <th class="w-[243px] text-center">Status</th>
-                  <th class="w-[243px] text-center">Price</th>
-                  <th class="w-[243px] text-center">Quantity</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody
-                class="font-manrope font-medium text-base leading-[25px] tet-[#334C66] h-[100px]"
-              >
-                <tr class="border-t border-[#DDE7F6]">
-                  <td class="flex items-center gap-4 w-[400px]">
-                    <img src="./assets/Frame 213 2.svg" alt="" />
-                    Medicine name
-                  </td>
-                  <td class="w-[243px] text-center">
-                    <button
-                      class="bg-[#9AFFA7] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
-                    >
-                      Delivered
-                    </button>
-                  </td>
-                  <td class="w-[243px] text-center">$7.50</td>
-                  <td class="w-[243px] text-center">1</td>
-                  <td class="">
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                      href="./cart.html"
-                    >
-                      Reorder
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td class="flex items-center gap-4 w-[400px]">
-                    <img src="./assets/Frame 213 2.svg" alt="" />
-                    Medicine name
-                  </td>
-                  <td class="w-[243px] text-center text-[#334C66]">
-                    <button
-                      class="bg-[#FFFF9A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
-                    >
-                      In progress
-                    </button>
-                  </td>
-                  <td class="w-[243px] text-center">$7.50</td>
-                  <td class="w-[243px] text-center">1</td>
-                  <td class="">
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                      href="./cart.html"
-                    >
-                      Reorder
-                    </a>
-                  </td>
-                </tr>
-                <tr class="border-t border-[#DDE7F6]">
-                  <td class="flex items-center gap-4 w-[400px]">
-                    <img src="./assets/Frame 213 2.svg" alt="" />
-                    Medicine name
-                  </td>
-                  <td class="w-[243px] text-center text-[#334C66]">
-                    <button
-                      class="bg-[#FFC69A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
-                    >
-                      Canceled
-                    </button>
-                  </td>
-                  <td class="w-[243px] text-center">$7.50</td>
-                  <td class="w-[243px] text-center">1</td>
-                  <td class="">
-                    <a
-                      class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
-                      href="./cart.html"
-                    >
-                      Reorder
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <!-- SM TABLE  -->
-        <div class="lg:hidden border border-[#DDE7F6] w-full">
-          <div class="py-[10px] px-4 flex justify-between">
-            <div class="flex flex-col gap-1">
-              <div class="flex items-center gap-4">
-                <img src="./assets/small-cart.svg" alt="" />
-                <p
-                  class="font-manrope font-medium text-[#334C66] text-base leading-[25px]"
-                >
-                  Medicine name
-                </p>
-              </div>
+            <!-- SEARCH BOX  -->
+            <div
+              id="searchBox"
+              class="absolute top-[40px] laptop:left-[200px] tablet:left-[200px] left-0 desktop:left-[200px] rounded-lg bg-[#FFFFFF] p-6 z-50 w-[330px] hidden"
+            >
+              <h1 class="text-[#12366C] text-base font-manrope font-bold">
+                Search by medicine name
+              </h1>
               <div
-                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px] flex items-center gap-4"
+                class="flex border border-[#D3E9F0] rounded-[80px] py-[10px] pl-4 pr-1 gap-2 my-4"
               >
-                <button
-                  class="bg-[#9AFFA7] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
-                >
-                  Delivered
-                </button>
-                Q: 1
+                <img src="./assets/filtersearch.svg" alt="" />
+                <input
+                  type="search"
+                  class="outline-none border-none text-[12px] font-normal font-manrope text-[#334C6680] w-full"
+                  placeholder="Search for medicine, brand name..."
+                />
               </div>
-            </div>
-            <div class="flex flex-col gap-3 py-0 items-end">
-              <p
-                class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
+              <button
+                class="bg-[#011575] rounded-[80px] py-[7px] px-5 text-[#FFFFFF] text-[15px] font-manrope font-semibold"
               >
-                $7.50
-              </p>
-              <a
-                class="px-4 py-[7px] bg-[#FFE680] rounded-[80px] text-sm font-manrope font-semibold leading-[22px] text-[#013366]"
-                href="./cart.html"
-              >
-                Reorder
-              </a>
+                Search
+              </button>
             </div>
           </div>
-          <div
-            class="border-t border-[#DDE7F6] py-[10px] px-4 flex justify-between"
-          >
-            <div class="flex flex-col gap-1">
-              <div class="flex items-center gap-4">
-                <img src="./assets/small-cart.svg" alt="" />
-                <p
-                  class="font-manrope font-medium text-[#334C66] text-base leading-[25px]"
+          <!-- LG TABLE  -->
+          <div class="desktop:max-w-[1290px] lg:block hidden">
+            <div
+              class="overflow-x-auto rounded-t-[12px] border border-[#DDE7F6]"
+            >
+              <table class="table w-full">
+                <!-- head -->
+                <thead class="h-[40px]">
+                  <tr
+                    class="bg-[#DDE7F6] font-manrope font-bold text-base leading-[18px] text-[#12366C] w-full"
+                  >
+                    <th class="w-[400px]">Medicine</th>
+                    <th class="w-[243px] text-center">Status</th>
+                    <th class="w-[243px] text-center">Price</th>
+                    <th class="w-[243px] text-center">Quantity</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody
+                  class="font-manrope font-medium text-base leading-[25px] tet-[#334C66] h-[100px]"
                 >
-                  Medicine name
-                </p>
-              </div>
-              <div
-                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px] flex gap-4 items-center"
-              >
-                <button
-                  class="bg-[#FFFF9A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
-                >
-                  In progress
-                </button>
-                Q: 1
-              </div>
-            </div>
-            <div class="flex flex-col gap-3 py-0 items-end">
-              <p
-                class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
-              >
-                $7.50
-              </p>
-              <a
-                class="px-4 py-[7px] bg-[#FFE680] rounded-[80px] text-sm font-manrope font-semibold leading-[22px] text-[#013366]"
-                href="./cart.html"
-              >
-                Reorder
-              </a>
+                  <tr class="border-t border-[#DDE7F6]">
+                    <td class="flex items-center gap-4 w-[400px]">
+                      <img src="./assets/Frame 213 2.svg" alt="" />
+                      Medicine name
+                    </td>
+                    <td class="w-[243px] text-center">
+                      <button
+                        class="bg-[#9AFFA7] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+                      >
+                        Delivered
+                      </button>
+                    </td>
+                    <td class="w-[243px] text-center">$7.50</td>
+                    <td class="w-[243px] text-center">1</td>
+                    <td class="">
+                      <a
+                        class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                        href="./cart.html"
+                      >
+                        Reorder
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="border-t border-[#DDE7F6]">
+                    <td class="flex items-center gap-4 w-[400px]">
+                      <img src="./assets/Frame 213 2.svg" alt="" />
+                      Medicine name
+                    </td>
+                    <td class="w-[243px] text-center text-[#334C66]">
+                      <button
+                        class="bg-[#FFFF9A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+                      >
+                        In progress
+                      </button>
+                    </td>
+                    <td class="w-[243px] text-center">$7.50</td>
+                    <td class="w-[243px] text-center">1</td>
+                    <td class="">
+                      <a
+                        class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                        href="./cart.html"
+                      >
+                        Reorder
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="border-t border-[#DDE7F6]">
+                    <td class="flex items-center gap-4 w-[400px]">
+                      <img src="./assets/Frame 213 2.svg" alt="" />
+                      Medicine name
+                    </td>
+                    <td class="w-[243px] text-center text-[#334C66]">
+                      <button
+                        class="bg-[#FFC69A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+                      >
+                        Canceled
+                      </button>
+                    </td>
+                    <td class="w-[243px] text-center">$7.50</td>
+                    <td class="w-[243px] text-center">1</td>
+                    <td class="">
+                      <a
+                        class="bg-[#FFE680] py-[7px] px-5 rounded-[80px] cursor-pointer"
+                        href="./cart.html"
+                      >
+                        Reorder
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          <div
-            class="border-t border-[#DDE7F6] py-[10px] px-4 flex justify-between"
-          >
-            <div class="flex flex-col gap-1">
-              <div class="flex items-center gap-4">
-                <img src="./assets/small-cart.svg" alt="" />
-                <p
-                  class="font-manrope font-medium text-[#334C66] text-base leading-[25px]"
+          <!-- SM TABLE  -->
+          <div class="lg:hidden border border-[#DDE7F6] w-full">
+            <div class="py-[10px] px-4 flex justify-between">
+              <div class="flex flex-col gap-1">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/small-cart.svg" alt="" />
+                  <p
+                    class="font-manrope font-medium text-[#334C66] text-base leading-[25px]"
+                  >
+                    Medicine name
+                  </p>
+                </div>
+                <div
+                  class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px] flex items-center gap-4"
                 >
-                  Medicine name
-                </p>
+                  <button
+                    class="bg-[#9AFFA7] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+                  >
+                    Delivered
+                  </button>
+                  Q: 1
+                </div>
               </div>
-              <div
-                class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px] flex items-center gap-4"
-              >
-                <button
-                  class="bg-[#FFC69A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+              <div class="flex flex-col gap-3 py-0 items-end">
+                <p
+                  class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
                 >
-                  Canceled
-                </button>
-                Q: 1
+                  $7.50
+                </p>
+                <a
+                  class="px-4 py-[7px] bg-[#FFE680] rounded-[80px] text-sm font-manrope font-semibold leading-[22px] text-[#013366]"
+                  href="./cart.html"
+                >
+                  Reorder
+                </a>
               </div>
             </div>
-            <div class="flex flex-col gap-3 py-0 items-end">
-              <p
-                class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
-              >
-                $7.50
-              </p>
-              <a
-                class="px-4 py-[7px] bg-[#FFE680] rounded-[80px] text-sm font-manrope font-semibold leading-[22px] text-[#013366]"
-                href="./cart.html"
-              >
-                Reorder
-              </a>
+            <div
+              class="border-t border-[#DDE7F6] py-[10px] px-4 flex justify-between"
+            >
+              <div class="flex flex-col gap-1">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/small-cart.svg" alt="" />
+                  <p
+                    class="font-manrope font-medium text-[#334C66] text-base leading-[25px]"
+                  >
+                    Medicine name
+                  </p>
+                </div>
+                <div
+                  class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px] flex gap-4 items-center"
+                >
+                  <button
+                    class="bg-[#FFFF9A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+                  >
+                    In progress
+                  </button>
+                  Q: 1
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 py-0 items-end">
+                <p
+                  class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
+                >
+                  $7.50
+                </p>
+                <a
+                  class="px-4 py-[7px] bg-[#FFE680] rounded-[80px] text-sm font-manrope font-semibold leading-[22px] text-[#013366]"
+                  href="./cart.html"
+                >
+                  Reorder
+                </a>
+              </div>
+            </div>
+            <div
+              class="border-t border-[#DDE7F6] py-[10px] px-4 flex justify-between"
+            >
+              <div class="flex flex-col gap-1">
+                <div class="flex items-center gap-4">
+                  <img src="./assets/small-cart.svg" alt="" />
+                  <p
+                    class="font-manrope font-medium text-[#334C66] text-base leading-[25px]"
+                  >
+                    Medicine name
+                  </p>
+                </div>
+                <div
+                  class="mt-1 text-[#12366C] font-manrope text-xs font-semibold leading-[13px] flex items-center gap-4"
+                >
+                  <button
+                    class="bg-[#FFC69A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
+                  >
+                    Canceled
+                  </button>
+                  Q: 1
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 py-0 items-end">
+                <p
+                  class="font-bold font-mono text-sm leading-[16px] text-[#12366C]"
+                >
+                  $7.50
+                </p>
+                <a
+                  class="px-4 py-[7px] bg-[#FFE680] rounded-[80px] text-sm font-manrope font-semibold leading-[22px] text-[#013366]"
+                  href="./cart.html"
+                >
+                  Reorder
+                </a>
+              </div>
             </div>
           </div>
         </div>
