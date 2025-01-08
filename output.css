@@ -3337,6 +3337,22 @@ details.collapse summary::-webkit-details-marker {
   width: 100%;
 }
 
+.w-\[118px\] {
+  width: 118px;
+}
+
+.w-\[130px\] {
+  width: 130px;
+}
+
+.w-\[125px\] {
+  width: 125px;
+}
+
+.w-\[128px\] {
+  width: 128px;
+}
+
 .min-w-\[200px\] {
   min-width: 200px;
 }
@@ -3377,6 +3393,14 @@ details.collapse summary::-webkit-details-marker {
   min-width: 100%;
 }
 
+.min-w-\[118px\] {
+  min-width: 118px;
+}
+
+.min-w-\[75px\] {
+  min-width: 75px;
+}
+
 .max-w-\[106px\] {
   max-width: 106px;
 }
@@ -3408,6 +3432,26 @@ details.collapse summary::-webkit-details-marker {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.max-w-\[191px\] {
+  max-width: 191px;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
+.max-w-\[210px\] {
+  max-width: 210px;
+}
+
+.max-w-\[69px\] {
+  max-width: 69px;
+}
+
+.max-w-\[75px\] {
+  max-width: 75px;
 }
 
 .flex-1 {
@@ -3461,6 +3505,16 @@ details.collapse summary::-webkit-details-marker {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-text {
+  cursor: text;
+}
+
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .resize-none {
@@ -3803,6 +3857,11 @@ details.collapse summary::-webkit-details-marker {
 .border-\[\#FFCE00\] {
   --tw-border-opacity: 1;
   border-color: rgb(255 206 0 / var(--tw-border-opacity, 1));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#001933\] {
@@ -4623,6 +4682,12 @@ details.collapse summary::-webkit-details-marker {
   transition-duration: 150ms;
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .delay-100 {
   transition-delay: 100ms;
 }
@@ -4927,6 +4992,11 @@ input[type="number"] {
 
 .group:hover .group-hover\:filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.peer:checked ~ .peer-checked\:bg-\[\#E0F3FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 243 255 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:scale-110:hover {

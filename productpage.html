@@ -581,52 +581,93 @@
               </div>
 
               <form class="inline-flex flex-col gap-3 mt-6">
-                <div class="inline-flex flex-col gap-1">
+                <div class="inline-flex flex-col gap-1 relative">
                   <label
                     class="font-manrope font-medium text-[#334C66] text-sm leading-[22px]"
                   >
                     Form
                   </label>
-                  <button
-                    class="py-[9px] border px-4 border-[#011575] rounded-lg bg-[#F0F4FA] inline-flex font-bold text-sm text-[#011575] leading-[22px] max-w-max hover:bg-[#E0F3FF]"
+                  <input
+                    type="checkbox"
+                    id="toggleButton"
+                    class="hidden peer"
+                  />
+
+                  <label
+                    for="toggleButton"
+                    class="py-[9px] px-4 border border-[#011575] rounded-lg bg-[#F0F4FA] font-bold text-sm text-[#011575] cursor-pointer transition-colors peer-checked:bg-[#E0F3FF] select-none max-w-[210px] hover:bg-[#E0F3FF]"
                   >
                     Extended Release Tablet
-                  </button>
+                  </label>
                 </div>
-                <div class="inline-flex flex-col gap-1">
+
+                <div class="inline-flex flex-col gap-1 relative">
                   <label
                     class="font-manrope font-medium text-[#334C66] text-sm leading-[22px]"
                   >
                     Strength
                   </label>
-                  <button
-                    class="py-[9px] border px-4 border-[#011575] rounded-lg bg-[#F0F4FA] inline-flex font-bold text-sm text-[#011575] leading-[22px] max-w-max hover:bg-[#E0F3FF]"
+                  <input
+                    type="checkbox"
+                    id="toggleButton2"
+                    class="hidden peer"
+                  />
+
+                  <label
+                    for="toggleButton2"
+                    class="py-[9px] px-4 border border-[#011575] rounded-lg bg-[#F0F4FA] font-bold text-sm text-[#011575] cursor-pointer transition-colors peer-checked:bg-[#E0F3FF] select-none max-w-[75px] hover:bg-[#E0F3FF]"
                   >
                     10mg
-                  </button>
-                </div>
-                <div class="inline-flex flex-col gap-1">
-                  <label
-                    class="font-manrope font-medium text-[#334C66] text-sm leading-[22px]"
-                  >
-                    Quantity
                   </label>
-                  <div class="inline-flex gap-2">
-                    <button
-                      class="py-[9px] border px-4 border-[#011575] rounded-lg bg-[#F0F4FA] inline-flex font-bold text-sm text-[#011575] leading-[22px] max-w-max hover:bg-[#E0F3FF]"
+                </div>
+                <div class="inline-flex gap-1">
+                  <div class="inline-flex flex-col gap-1 relative">
+                    <label
+                      class="font-manrope font-medium text-[#334C66] text-sm leading-[22px]"
                     >
-                      30 count
-                    </button>
-                    <button
-                      class="py-[9px] border px-4 border-[#011575] rounded-lg bg-[#F0F4FA] inline-flex font-bold text-sm text-[#011575] leading-[22px] max-w-max hover:bg-[#E0F3FF]"
-                    >
-                      60 count
-                    </button>
-                    <button
-                      class="py-[9px] border px-4 border-[#011575] rounded-lg bg-[#F0F4FA] inline-flex font-bold text-sm text-[#011575] leading-[22px] max-w-max hover:bg-[#E0F3FF]"
-                    >
-                      90 count
-                    </button>
+                      Strength
+                    </label>
+                    <div class="flex gap-2">
+                      <div class="mt-1 flex gap-2">
+                        <input
+                          type="checkbox"
+                          id="toggleButton3"
+                          class="hidden peer"
+                        />
+                        <label
+                          for="toggleButton3"
+                          class="py-[9px] px-4 border border-[#011575] rounded-lg bg-[#F0F4FA] font-bold text-sm text-[#011575] cursor-pointer transition-colors peer-checked:bg-[#E0F3FF] select-none min-w-[75px] hover:bg-[#E0F3FF]"
+                        >
+                          30 count
+                        </label>
+                      </div>
+                      <div class="mt-1 flex gap-2">
+                        <input
+                          type="checkbox"
+                          id="toggleButton9"
+                          class="hidden peer"
+                        />
+                        <label
+                          for="toggleButton9"
+                          class="py-[9px] px-4 border border-[#011575] rounded-lg bg-[#F0F4FA] font-bold text-sm text-[#011575] cursor-pointer transition-colors peer-checked:bg-[#E0F3FF] select-none min-w-[75px] hover:bg-[#E0F3FF]"
+                        >
+                          60 count
+                        </label>
+                      </div>
+                      <div class="mt-1 flex gap-2">
+                        <input
+                          type="checkbox"
+                          id="toggleButton8"
+                          class="hidden peer"
+                        />
+                        <label
+                          for="toggleButton8"
+                          class="py-[9px] px-4 border border-[#011575] rounded-lg bg-[#F0F4FA] font-bold text-sm text-[#011575] cursor-pointer transition-colors peer-checked:bg-[#E0F3FF] select-none min-w-[75px] hover:bg-[#E0F3FF]"
+                        >
+                          90 count
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -760,11 +801,11 @@
                       $7.5
                     </h3>
                   </div>
-                  <button
-                    class="bg-[#0070E3] w-[calc(100%+24px)] max-w-[558px] h-10 absolute bottom-2 lg:bottom-6 left-1/2 transform -translate-x-1/2 rounded-lg text-[#FFFFFF] font-extrabold font-manrope text-sm lg:text-base leading-4 lg:leading-[18px] cursor-none"
+                  <div
+                    class="bg-[#0070E3] w-[calc(100%+24px)] max-w-[558px] h-10 absolute bottom-2 lg:bottom-6 left-1/2 transform -translate-x-1/2 rounded-lg text-[#FFFFFF] font-extrabold font-manrope text-sm lg:text-base leading-4 lg:leading-[18px] flex items-center justify-center"
                   >
                     You save $669.00 on your medication
-                  </button>
+                  </div>
                 </div>
                 <h6
                   class="text-[#334C66] font-medium font-manrope text-[12px] lg:text-sm leading-[19px] lg:leading-[22px] text-center w-full lg:w-full px-4 desktop:px-0 tablet:px-0"
@@ -781,7 +822,7 @@
                     Cost breakdown
                   </h1>
                   <div
-                    class="flex lg:flex-row flex-col items-center justify-center gap-5 px-0 w-full"
+                    class="flex lg:flex-row flex-col items-center justify-center gap-5 px-0 w-full save $42"
                   >
                     <div
                       class="flex flex-col items-center justify-center text-center w-[119px]"
@@ -803,7 +844,7 @@
                       </h4>
                     </div>
                     <div
-                      class="flex flex-col items-center justify-center text-center w-[119px]"
+                      class="flex flex-col items-center justify-center text-center w-[119px] save $42"
                     >
                       <div
                         class="w-12 h-12 bg-[#FFE680] rounded-full flex items-center justify-center"
@@ -822,7 +863,7 @@
                       </h4>
                     </div>
                     <div
-                      class="flex flex-col items-center justify-center text-center w-[119px]"
+                      class="flex flex-col items-center justify-center text-center w-[119px] save $42"
                     >
                       <div
                         class="w-12 h-12 bg-[#FFE680] rounded-full flex items-center justify-center"
@@ -841,7 +882,7 @@
                       </h4>
                     </div>
                     <div
-                      class="flex flex-col items-center justify-center text-center"
+                      class="flex flex-col items-center justify-center text-center w-[130px]"
                     >
                       <div
                         class="w-12 h-12 bg-[#FFE680] rounded-full flex items-center justify-center"
