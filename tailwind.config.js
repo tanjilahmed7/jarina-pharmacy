@@ -9,6 +9,15 @@ module.exports = {
         'laptop': '1200px',
         'desktop': '1440px',
       },
+      scrollbarGutter: {
+        stable: 'stable',
+      },
+      colors: {
+        scrollbar: {
+          DEFAULT: '#DDE7F6',
+          hover: '#B8CDE6',
+        },
+      },
       
       boxShadow: {
         custom: '0px 4px 20px 0px rgba(0, 0, 0, 0.1)',
