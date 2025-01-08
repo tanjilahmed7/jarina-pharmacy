@@ -10,6 +10,7 @@ function showModalInventory() {
       modal.showModal();
     }
   }
+
   function showModalPrescription2() {
     const modal = document.getElementById('my_modal_prescription2');
     const modal2 = document.getElementById('my_modal_prescription');
@@ -19,3 +20,9 @@ function showModalInventory() {
     } 
   }
   
+  function closeModalDashboard() {
+    const modal = document.getElementById('my_modal_prescription2');
+    if (modal) {
+      modal.close(); 
+    }
+  }

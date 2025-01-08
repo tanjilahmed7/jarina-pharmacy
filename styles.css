@@ -204,6 +204,9 @@ input[type="number"] {
   font-weight: 800;
   color: #013366 !important;
 }
+.activeSidebar {
+  background-color: #0000004d !important;
+}
 
 .scrollbar::-webkit-scrollbar {
   height: 8px;

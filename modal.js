@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log('rijvi')
+
     const firstModal = document.getElementById("my_modal_3");
     const secondModal = document.getElementById("my_modal_2");
     const thirdModal = document.getElementById("my_modal_4");
