@@ -69,9 +69,6 @@ navLinks.forEach((link) => {
   }
 });
 
-
-
-
 function toggleAccordionContent() {
   const content = document.getElementById("accordion-content");
   content.classList.toggle("hidden");
