@@ -171,20 +171,18 @@
             class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
           />
           <div
-            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
           >
             <input
-              id="passwordInput"
               type="password"
               placeholder="Password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
-              id="eyeIcon"
               src="./assets/passeye.svg"
-              class="absolute right-4 top-4 cursor-pointer"
-              alt="Password Visibility"
-              onclick="togglePasswordVisibility()"
+              alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
             />
           </div>
 
@@ -252,17 +250,18 @@
             class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
           />
           <div
-            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
           >
             <input
               type="password"
               placeholder="Password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
               src="./assets/passeye.svg"
-              class="absolute right-4 top-4"
               alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
             />
           </div>
           <div class="flex items-center gap-2 mt-2">

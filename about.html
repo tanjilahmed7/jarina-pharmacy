@@ -69,7 +69,7 @@
             </div>
             <div class="flex gap-3">
               <button
-                class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] hover:border-[#011575] delay-100"
+                class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] hover:border-[#011575] delay-100 hover:text-[#00BFFF]"
               >
                 Log in
               </button>
@@ -159,7 +159,9 @@
           class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
         >
           Already have an account?
-          <span class="font-bold underline cursor-pointer" id="loginAcc"
+          <span
+            class="font-bold underline cursor-pointer hover:text-[#00BFFF]"
+            id="loginAcc"
             >Log in</span
           >
         </p>
@@ -170,17 +172,18 @@
             class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
           />
           <div
-            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
           >
             <input
               type="password"
               placeholder="Password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
               src="./assets/passeye.svg"
-              class="absolute right-4 top-4"
-              alt=""
+              alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
             />
           </div>
 
@@ -194,7 +197,7 @@
           </div>
           <button
             type="submit"
-            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2 hover:text-[#00BFFF]"
           >
             Create account
           </button>
@@ -224,16 +227,19 @@
             />
           </button>
         </form>
-        <h3
+        <h
           class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px]"
         >
           Log in
-        </h3>
+        </h>
         <p
           class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
         >
           Don’t have an account?
-          <a class="font-bold underline cursor-pointer" id="createAcc">
+          <a
+            class="font-bold underline cursor-pointer hover:text-[#00BFFF]"
+            id="createAcc"
+          >
             Create account
           </a>
         </p>
@@ -245,17 +251,18 @@
             class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
           />
           <div
-            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
           >
             <input
               type="password"
               placeholder="Password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
               src="./assets/passeye.svg"
-              class="absolute right-4 top-4"
               alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
             />
           </div>
           <div class="flex items-center gap-2 mt-2">
@@ -275,7 +282,7 @@
           <a
             href="#"
             id="forgetPass"
-            class="font-semibold font-manrope text-[#011575] text-[15px] leading-[24px] lg:text-start text-center"
+            class="font-semibold font-manrope text-[#011575] text-[15px] leading-[24px] lg:text-start text-center hover:text-[#00BFFF]"
             >Forgot password?</a
           >
         </form>
@@ -328,7 +335,7 @@
 
           <button
             type="submit"
-            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px]"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px] hover:text-[#00BFFF]"
           >
             Send email
           </button>
@@ -337,7 +344,7 @@
     </dialog>
     <!-- Fourth Modal -->
     <dialog id="my_modal_5" class="modal">
-      <div class="modal-box relative overflow-visible p-[56px]">
+      <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
         <form method="dialog">
           <button
             class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
@@ -401,7 +408,7 @@
           </div>
           <button
             type="submit"
-            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px] w-[154px]"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px] w-[154px] hover:text-[#00BFFF]"
           >
             Reset password
           </button>
@@ -410,7 +417,7 @@
     </dialog>
     <!-- Fifth -->
     <dialog id="my_modal_6" class="modal">
-      <div class="modal-box relative overflow-visible p-[56px]">
+      <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
         <form method="dialog">
           <button
             class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
@@ -478,7 +485,7 @@
           </div>
           <button
             type="submit"
-            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2 hover:text-[#00BFFF]"
           >
             Create account
           </button>
@@ -494,7 +501,7 @@
           class="lg:max-w-[1290px] flex gap-12 laptop:justify-start laptop:gap-[80px] tablet:gap-0 tablet:justify-between desktop:justify-start desktop:gap-[150px] items-center desktop:flex-row tablet:flex-row flex-col lg:justify-start lg:gap-[50px] tablet:w-full"
         >
           <div
-            class="desktop:w-[630px] laptop:w-[630px] tablet:w-[500px] w-full flex flex-col gap-6 lg:w-[630px] tablet:pl-5 lg:pl-5 laptop:pl-10 desktop:px-0 laptop:px-0 lg:px-0 px-2 z-50 overflow-auto"
+            class="desktop:w-[630px] laptop:w-[630px] tablet:w-[500px] w-full flex flex-col gap-6 lg:w-[630px] tablet:pl-5 lg:pl-5 laptop:pl-10 desktop:px-0 laptop:px-0 lg:px-0 px-4 z-50 overflow-auto"
           >
             <h1
               class="text-[#011575] desktop:text-[40px] tablet:text-[40px] laptop:text-[40px] desktop:leading-[46px] font-extrabold font-manrope text-[30px] leading-[36px] w-full lg:leading-[46px] flex flex-col tablet:leading-[46px]"
@@ -723,7 +730,7 @@
     <!-- OUR IMPACT SECTION  -->
     <section>
       <div
-        class="relative min-w-[360px] desktop:w-full h-[1757px] tablet:h-[1657px] laptop:h-[1220px] desktop:h-[1220px] lg:h-[1657px] bg-[#FFFFFF] desktop:my-0 laptop:my-0 tablet:my-0"
+        class="relative min-w-[360px] desktop:w-full h-[1757px] sm:h-[1457px] md:h-[1457px] tablet:h-[1657px] laptop:h-[1220px] desktop:h-[1220px] lg:h-[1657px] bg-[#FFFFFF] desktop:my-0 laptop:my-0 tablet:my-0 flex items-center justify-center border-2 border-black"
       >
         <img
           src="./assets//Vector 1 2.png"
@@ -736,7 +743,7 @@
           alt=""
         />
         <div
-          class="absolute z-50 w-full desktop:w-full h-full tablet:h-full tablet:w-full desktop:h-full laptop:h-full flex laptop:flex-col flex-col items-center justify-center gap-[80px] desktop:py-[120px] laptop:px-5"
+          class="absolute z-50 w-full tablet:w-full md:h-full flex laptop:flex-col flex-col items-center justify-between desktop:py-[120px] laptop:px-5 border-2 border-red-500"
         >
           <div
             class="flex desktop:flex-row flex-col laptop:flex-row tablet:flex-col items-center justify-between w-full desktop:w-[1290px] desktop:gap-0 laptop:gap-5 gap-6"
@@ -983,5 +990,6 @@
     </footer>
     <script src="./modal.js"></script>
     <script src="./index.js"></script>
+    <script src="./showPass.js"></script>
   </body>
 </html>

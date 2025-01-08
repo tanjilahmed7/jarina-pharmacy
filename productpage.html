@@ -71,7 +71,7 @@
             </div>
             <div class="flex gap-3">
               <button
-                class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] hover:border-[#011575] delay-100"
+                class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] hover:border-[#011575] delay-100 hover:text-[#00BFFF]"
               >
                 Log in
               </button>
@@ -105,12 +105,12 @@
       class="myNav absolute top-16 right-0 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] w-0 overflow-x-hidden h-auto transition-all duration-500 mt-[64px] rounded-t-[32px]"
     >
       <ul
-        class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-[200px]"
+        class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-10"
       >
         <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
+        <a href="./about.html">About us</a>
         <a href="./list.html">Medications</a>
-        <a href="./index.html">Help</a>
+        <a href="./doctor.html">Contact doctor</a>
       </ul>
 
       <div
@@ -161,7 +161,9 @@
           class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
         >
           Already have an account?
-          <span class="font-bold underline cursor-pointer" id="loginAcc"
+          <span
+            class="font-bold underline cursor-pointer hover:text-[#00BFFF]"
+            id="loginAcc"
             >Log in</span
           >
         </p>
@@ -172,17 +174,18 @@
             class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
           />
           <div
-            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
           >
             <input
               type="password"
               placeholder="Password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
               src="./assets/passeye.svg"
-              class="absolute right-4 top-4"
-              alt=""
+              alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
             />
           </div>
 
@@ -196,7 +199,7 @@
           </div>
           <button
             type="submit"
-            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2 hover:text-[#00BFFF]"
           >
             Create account
           </button>
@@ -226,16 +229,19 @@
             />
           </button>
         </form>
-        <h3
+        <h
           class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px]"
         >
           Log in
-        </h3>
+        </h>
         <p
           class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
         >
           Don’t have an account?
-          <a class="font-bold underline cursor-pointer" id="createAcc">
+          <a
+            class="font-bold underline cursor-pointer hover:text-[#00BFFF]"
+            id="createAcc"
+          >
             Create account
           </a>
         </p>
@@ -247,17 +253,18 @@
             class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
           />
           <div
-            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
           >
             <input
               type="password"
               placeholder="Password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
               src="./assets/passeye.svg"
-              class="absolute right-4 top-4"
               alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
             />
           </div>
           <div class="flex items-center gap-2 mt-2">
@@ -277,7 +284,7 @@
           <a
             href="#"
             id="forgetPass"
-            class="font-semibold font-manrope text-[#011575] text-[15px] leading-[24px] lg:text-start text-center"
+            class="font-semibold font-manrope text-[#011575] text-[15px] leading-[24px] lg:text-start text-center hover:text-[#00BFFF]"
             >Forgot password?</a
           >
         </form>
@@ -330,7 +337,7 @@
 
           <button
             type="submit"
-            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px]"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px] hover:text-[#00BFFF]"
           >
             Send email
           </button>
@@ -339,7 +346,7 @@
     </dialog>
     <!-- Fourth Modal -->
     <dialog id="my_modal_5" class="modal">
-      <div class="modal-box relative overflow-visible p-[56px]">
+      <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
         <form method="dialog">
           <button
             class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
@@ -403,7 +410,7 @@
           </div>
           <button
             type="submit"
-            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px] w-[154px]"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px] w-[154px] hover:text-[#00BFFF]"
           >
             Reset password
           </button>
@@ -412,7 +419,7 @@
     </dialog>
     <!-- Fifth -->
     <dialog id="my_modal_6" class="modal">
-      <div class="modal-box relative overflow-visible p-[56px]">
+      <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
         <form method="dialog">
           <button
             class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
@@ -480,7 +487,7 @@
           </div>
           <button
             type="submit"
-            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2 hover:text-[#00BFFF]"
           >
             Create account
           </button>
@@ -1067,4 +1074,5 @@
   </body>
   <script src="./modal.js"></script>
   <script src="./index.js"></script>
+  <script src="./showPass.js"></script>
 </html>
