@@ -76,33 +76,68 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="laptop:hidden flex">
-          <button onclick="toggleFuncMenu()" id="openMenuButton" class="block">
-            <img src="./assets/Frame 3.svg" alt="Menu Open" />
-          </button>
-          <button
-            onclick="toggleFuncMenu()"
-            id="closeMenuButton"
-            class="hidden"
-          >
-            <img src="./assets/menu.png" alt="Menu Close" />
-          </button>
+        <div class="laptop:hidden flex items-center justify-center gap-4">
+          <div class="flex gap-3">
+            <a
+              href="./cart.html"
+              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-7 h-7 flex items-center justify-center hover:bg-[#E5E5E5]"
+            >
+              <img class="w-4 h-4" src="./assets/Frame (1) 4.svg" alt="" />
+            </a>
+            <button
+              class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-7 h-7 flex items-center justify-center hover:bg-[#E5E5E5]"
+            >
+              <img class="w-4 h-4" src="./assets/Frame 5.svg" alt="" />
+            </button>
+          </div>
+          <div class="flex items-center w-5 h-5">
+            <button
+              onclick="toggleFuncMenu()"
+              id="openMenuButton"
+              class="block"
+            >
+              <img src="./assets/Frame 3.svg" alt="Menu Open" />
+            </button>
+            <button
+              onclick="toggleFuncMenu()"
+              id="closeMenuButton"
+              class="hidden"
+            >
+              <img src="./assets/menu.png" alt="Menu Close" />
+            </button>
+          </div>
         </div>
       </div>
-
-      <!-- Mobile menu content -->
-      <div
-        id="mobileMenu"
-        class="menu hidden lg:hidden fixed top-0 left-0 right-0 bottom-0 bg-white overflow-y-auto z-[9999]"
-      >
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./list.html">Medications</a></li>
-          <li><a href="./index.html">Help</a></li>
-        </ul>
-      </div>
     </header>
+    <!-- Mobile Navigation -->
+    <div
+      class="myNav absolute top-16 right-0 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] w-0 overflow-x-hidden h-auto transition-all duration-500 mt-[64px] rounded-t-[32px]"
+    >
+      <ul
+        class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-10"
+      >
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About us</a>
+        <a href="./list.html">Medications</a>
+        <a href="./doctor.html">Contact doctor</a>
+      </ul>
+
+      <div
+        class="flex flex-col-reverse gap-4 items-center justify-center mt-10"
+      >
+        <button
+          class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+        >
+          Log in
+        </button>
+        <button
+          class="bg-[#011575] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#FFFFFF] font-manrope font-semibold text-[15px] w-[260px]"
+          onclick="showModal()"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
 
     <!-- SHIPPING ADDRESS SECTION  -->
     <section>
@@ -328,7 +363,7 @@
                 Use as billing address
               </div>
               <button
-                class="font-manrope font-bold text-sm leading-[22px] text-[#011575] underline"
+                class="font-manrope font-bold text-sm leading-[22px] text-[#011575] underline hover:text-[#00BFFF]"
                 onclick="my_modal_1.showModal()"
               >
                 Add billing address
@@ -588,5 +623,6 @@
       </div>
     </footer>
   </body>
+  <script src="./index.js"></script>
   <script src="./dropdown.js"></script>
 </html>

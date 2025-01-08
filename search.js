@@ -20,7 +20,6 @@ let suggestedMedicines = [
         item.title.toLowerCase().includes(input.toLowerCase())|| 
       item.subtitle.toLowerCase().includes(input.toLowerCase())
       );
-      console.log(result);
     }
   
     displaySearchResult(result);

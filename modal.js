@@ -1,5 +1,4 @@
 
-
 document.addEventListener("DOMContentLoaded", () => {
   console.log('rijvi')
     const firstModal = document.getElementById("my_modal_3");
@@ -50,35 +49,9 @@ function toggleFunc() {
     modal.close();
   }
 }
-function toggleFunc() {
-  const modal = document.getElementById('my_modal_3');
-  if (modal) {
-    modal.close();
-  }
-}
 
 
 
-function showModalInventory() {
-  const modal = document.getElementById('my_modal_inventory');
-  if (modal) {
-    modal.showModal();
-  }
-}
-function showModalDashboard() {
-  const modal = document.getElementById('my_modal_prescription');
-  if (modal) {
-    modal.showModal();
-  }
-}
 
-function showModalPrescription2() {
-  const modal = document.getElementById('my_modal_prescription2');
-  const modal2 = document.getElementById('my_modal_prescription');
-  if (modal) {
-    modal2.close();
-    modal.showModal();
-  } 
-}
 
 
