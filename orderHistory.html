@@ -69,10 +69,25 @@
             </a>
             <button
               class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-10 h-10 flex items-center justify-center hover:bg-[#E5E5E5]"
-              onclick="showModal()"
+              onclick="toggleDropdown(event, 'helpDropdown')"
             >
               <img class="w-5 h-5" src="./assets/Frame 5.svg" alt="" />
             </button>
+            <ul
+              id="helpDropdown"
+              class="hidden absolute bg-[#FFFFFF] rounded-lg top-full py-2 flex flex-col z-20 w-[240px] right-[75px]"
+            >
+              <li
+                class="px-4 py-2 cursor-pointer font-manrope font-medium text-base leading-[25px] hover:text-[#00BFFF] text-[#334C66]"
+              >
+                Order history
+              </li>
+              <li
+                class="px-4 py-2 cursor-pointer font-manrope font-medium text-base leading-[25px] hover:text-[#00BFFF] text-[#334C66]"
+              >
+                Log out
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -87,10 +102,25 @@
             </a>
             <button
               class="bg-[#FFFFFF] rounded-[80px] border border-[#E5E5E5] w-7 h-7 flex items-center justify-center hover:bg-[#E5E5E5]"
-              onclick="showModal()"
+              onclick="toggleDropdown(event, 'helpDropdown2')"
             >
               <img class="w-4 h-4" src="./assets/Frame 5.svg" alt="" />
             </button>
+            <ul
+              id="helpDropdown2"
+              class="hidden absolute bg-[#FFFFFF] rounded-lg top-full py-2 flex flex-col z-20 w-[240px] right-[0px]"
+            >
+              <li
+                class="px-4 py-2 cursor-pointer font-manrope font-medium text-base leading-[25px] hover:text-[#00BFFF] text-[#334C66]"
+              >
+                Order history
+              </li>
+              <li
+                class="px-4 py-2 cursor-pointer font-manrope font-medium text-base leading-[25px] hover:text-[#00BFFF] text-[#334C66]"
+              >
+                Log out
+              </li>
+            </ul>
           </div>
           <div class="flex items-center w-5 h-5">
             <button
@@ -129,6 +159,7 @@
       >
         <button
           class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+          onclick="showLoginModal()"
         >
           Log in
         </button>
@@ -410,13 +441,14 @@
           >
             <input
               type="password"
-              placeholder="Confirm password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              placeholder="Password"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
               src="./assets/passeye.svg"
-              class="absolute right-4 top-4"
               alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
             />
           </div>
           <button
@@ -479,7 +511,7 @@
             <input
               type="password"
               placeholder="Password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
               src="./assets/passeye.svg"
@@ -586,11 +618,11 @@
                       Medicine name
                     </td>
                     <td class="w-[243px] text-center">
-                      <button
+                      <span
                         class="bg-[#9AFFA7] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
                       >
                         Delivered
-                      </button>
+                      </span>
                     </td>
                     <td class="w-[243px] text-center">$7.50</td>
                     <td class="w-[243px] text-center">1</td>
@@ -609,11 +641,11 @@
                       Medicine name
                     </td>
                     <td class="w-[243px] text-center text-[#334C66]">
-                      <button
+                      <span
                         class="bg-[#FFFF9A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
                       >
                         In progress
-                      </button>
+                      </span>
                     </td>
                     <td class="w-[243px] text-center">$7.50</td>
                     <td class="w-[243px] text-center">1</td>
@@ -632,11 +664,11 @@
                       Medicine name
                     </td>
                     <td class="w-[243px] text-center text-[#334C66]">
-                      <button
+                      <span
                         class="bg-[#FFC69A] py-1 px-2 font-manrope font-medium text-sm rounded-[90px]"
                       >
                         Canceled
-                      </button>
+                      </span>
                     </td>
                     <td class="w-[243px] text-center">$7.50</td>
                     <td class="w-[243px] text-center">1</td>

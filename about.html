@@ -62,14 +62,16 @@
           </ul>
 
           <div class="flex gap-5">
-            <div
+            <a
+              href="./cart.html"
               class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer hover:bg-[#E5E5E5] delay-200"
             >
               <img src="./assets/cart.svg" alt="" />
-            </div>
+            </a>
             <div class="flex gap-3">
               <button
                 class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] hover:border-[#011575] delay-100 hover:text-[#00BFFF]"
+                onclick="showLoginModal()"
               >
                 Log in
               </button>
@@ -116,6 +118,7 @@
       >
         <button
           class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+          onclick="showLoginModal()"
         >
           Log in
         </button>
@@ -384,12 +387,13 @@
             <input
               type="password"
               placeholder="Password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
               src="./assets/passeye.svg"
-              class="absolute right-4 top-4"
               alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
             />
           </div>
           <div
@@ -466,12 +470,13 @@
             <input
               type="password"
               placeholder="Password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
               src="./assets/passeye.svg"
-              class="absolute right-4 top-4"
               alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
             />
           </div>
           <div class="flex items-center gap-2 mt-2">
@@ -743,14 +748,19 @@
           alt=""
         />
         <div
-          class="absolute z-50 w-full desktop:w-full h-[1757px] md:h-full sm:h-[1557px] tablet:h-full tablet:w-full desktop:h-full lg:h-full laptop:h-full flex laptop:flex-col flex-col items-center justify-center gap-[80px] desktop:py-[120px] laptop:px-5"
+          class="absolute z-50 w-full desktop:w-full h-[1757px] md:h-full sm:h-[1557px] tablet:h-full tablet:w-full desktop:h-full lg:h-full laptop:h-full flex laptop:flex-col flex-col items-center justify-center gap-[60px] desktop:py-[120px] laptop:px-5 py-10 lg:py-0 md:py-0 laptop:py-0 sm:py-0"
         >
           <div
             class="flex desktop:flex-row flex-col laptop:flex-row tablet:flex-col items-center justify-between w-full desktop:w-[1290px] desktop:gap-0 laptop:gap-5 gap-6"
           >
             <img
               src="./assets/image 2.png"
-              class="desktop:pr-[70px] object-fill lg:object-cover h-[430px] lg:h-[430px] px-4"
+              class="desktop:pr-[70px] laptop:pr-0 tablet:pr-0 pr-0 desktop:block hidden laptop:block sm:block tablet:block"
+              alt=""
+            />
+            <img
+              src="./assets/small-image.png"
+              class="desktop:hidden block sm:hidden tablet:hidden laptop:hidden"
               alt=""
             />
 
@@ -785,7 +795,12 @@
           >
             <img
               src="./assets/image (1) 2.png"
-              class="desktop:pl-[70px] object-fill lg:object-cover h-[430px] lg:h-[430px] px-4"
+              class="desktop:pl-[70px] desktop:block hidden tablet:block laptop:block"
+              alt=""
+            />
+            <img
+              src="./assets/small-image2.png"
+              class="desktop:hidden laptop:hidden block tablet:hidden"
               alt=""
             />
 

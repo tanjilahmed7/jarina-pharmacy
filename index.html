@@ -61,14 +61,16 @@
           </ul>
 
           <div class="flex gap-5">
-            <div
+            <a
+              href="./cart.html"
               class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer hover:bg-[#E5E5E5] delay-200"
             >
               <img src="./assets/cart.svg" alt="" />
-            </div>
+            </a>
             <div class="flex gap-3">
               <button
                 class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] hover:border-[#011575] delay-100 hover:text-[#00BFFF]"
+                onclick="showLoginModal()"
               >
                 Log in
               </button>
@@ -115,6 +117,7 @@
       >
         <button
           class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+          onclick="showLoginModal()"
         >
           Log in
         </button>
@@ -383,12 +386,13 @@
             <input
               type="password"
               placeholder="Password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
               src="./assets/passeye.svg"
-              class="absolute right-4 top-4"
               alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
             />
           </div>
           <div
@@ -465,12 +469,13 @@
             <input
               type="password"
               placeholder="Password"
-              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
             />
             <img
               src="./assets/passeye.svg"
-              class="absolute right-4 top-4"
               alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
             />
           </div>
           <div class="flex items-center gap-2 mt-2">

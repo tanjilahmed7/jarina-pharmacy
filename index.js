@@ -41,22 +41,6 @@ function toggleFuncMenu() {
   }
 }
 
-function toggleDropdown(event) {
-  event.stopPropagation();
-  const dropdown = document.getElementById("helpDropdown");
-
-  if (dropdown.classList.contains("hidden")) {
-    dropdown.classList.remove("hidden");
-  } else {
-    dropdown.classList.add("hidden");
-  }
-  document.addEventListener("click", function handleClickOutside(event) {
-    if (!dropdown.contains(event.target)) {
-      dropdown.classList.add("hidden");
-      document.removeEventListener("click", handleClickOutside);
-    }
-  });
-}
 // ACTIVE NAVBAR 
 const navLinks = document.querySelectorAll("#nav-list li a");
 const currentPath = window.location.pathname; 
@@ -72,4 +56,24 @@ navLinks.forEach((link) => {
 function toggleAccordionContent() {
   const content = document.getElementById("accordion-content");
   content.classList.toggle("hidden");
+}
+
+
+function toggleDropdown(event, dropdownId) {
+  event.stopPropagation();
+  const dropdown = document.getElementById(dropdownId);
+
+  if (dropdown.classList.contains("hidden")) {
+    dropdown.classList.remove("hidden");
+  } else {
+    dropdown.classList.add("hidden");
+  }
+
+  document.addEventListener("click", function handleClickOutside(event) {
+    if (!dropdown.contains(event.target)) {
+      dropdown.classList.add("hidden");
+      document.removeEventListener("click", handleClickOutside);
+    }
+  });
+
 }

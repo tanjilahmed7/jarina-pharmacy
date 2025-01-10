@@ -21,478 +21,483 @@
  
   </head>
   <body class="overflow-x-hidden">
-  <!-- HEADER SECTION  -->
-  <header class="bg-[#FAFAFA] w-full h-16 sticky top-0 z-[99999]">
-    <div
-      class="flex justify-between items-center w-full h-full lg:px-[75px] px-4"
-    >
-      <a href="./index.html" class="flex items-center gap-2 h-[23px] group">
-        <img
-          class="w-[22px] h-[22px] object-contain group-hover:filter group-hover:invert group-hover:sepia-0 group-hover:saturate-100 group-hover:hue-rotate-[340deg]"
-          src="./assets/Group 1.svg"
-          alt=""
-        />
-        <h2 class="font-oswald font-medium text-[28.01px] leading-[44px]">
-          Find Med
-        </h2>
-      </a>
-
-      <!-- Desktop Menu -->
-      <div class="laptop:flex gap-[56px] hidden">
-        <ul class="flex items-center gap-10" id="nav-list">
-          <li
-            class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
-          >
-            <a href="./index.html">Home</a>
-          </li>
-          <li
-            class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
-          >
-            <a href="./about.html">About us</a>
-          </li>
-          <li
-            class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
-          >
-            <a href="./list.html">Medications</a>
-          </li>
-          <li
-            class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
-          >
-            <a href="./doctor.html">Contact doctor</a>
-          </li>
-        </ul>
-
-        <div class="flex gap-5">
-          <div
-            class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer hover:bg-[#E5E5E5] delay-200"
-          >
-            <img src="./assets/cart.svg" alt="" />
-          </div>
-          <div class="flex gap-3">
-            <button
-              class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] hover:border-[#011575] delay-100 hover:text-[#00BFFF]"
-            >
-              Log in
-            </button>
-            <button
-              class="bg-[#011575] text-[#FFFFFF] py-[7px] px-5 rounded-[80px] font-manrope font-semibold text-[15px] hover:text-[#00BFFF]"
-              onclick="showModal()"
-            >
-              Sign up
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div class="laptop:hidden flex">
-        <button onclick="toggleFuncMenu()" id="openMenuButton" class="block">
-          <img src="./assets/Frame 3.svg" alt="Menu Open" />
-        </button>
-        <button
-          onclick="toggleFuncMenu()"
-          id="closeMenuButton"
-          class="hidden"
-        >
-          <img src="./assets/menu.png" alt="Menu Close" />
-        </button>
-      </div>
-    </div>
-  </header>
-  <!-- Mobile Navigation -->
-  <div
-    class="myNav absolute top-16 right-0 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] w-0 overflow-x-hidden h-auto transition-all duration-500 mt-[64px] rounded-t-[32px]"
-  >
-    <ul
-      class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-10"
-    >
-      <a href="./index.html">Home</a>
-      <a href="./about.html">About us</a>
-      <a href="./list.html">Medications</a>
-      <a href="./doctor.html">Contact doctor</a>
-    </ul>
-
-    <div
-      class="flex flex-col-reverse gap-4 items-center justify-center mt-10"
-    >
-      <button
-        class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+    <!-- HEADER SECTION  -->
+    <header class="bg-[#FAFAFA] w-full h-16 sticky top-0 z-[99999]">
+      <div
+        class="flex justify-between items-center w-full h-full lg:px-[75px] px-4"
       >
-        Log in
-      </button>
-      <button
-        class="bg-[#011575] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#FFFFFF] font-manrope font-semibold text-[15px] w-[260px]"
-        onclick="showModal()"
-      >
-        Sign up
-      </button>
-    </div>
-  </div>
-  <!-- First Modal -->
-  <dialog id="my_modal_3" class="modal">
-    <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
-      <form method="dialog">
-        <button
-          class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
-        >
+        <a href="./index.html" class="flex items-center gap-2 h-[23px] group">
           <img
-            src="./assets/Close.svg"
-            class="w-6 h-6 object-contain"
-            alt="Close"
+            class="w-[22px] h-[22px] object-contain group-hover:filter group-hover:invert group-hover:sepia-0 group-hover:saturate-100 group-hover:hue-rotate-[340deg]"
+            src="./assets/Group 1.svg"
+            alt=""
           />
-        </button>
-        <button
-          class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
-        >
-          <img
-            src="./assets/Close.svg"
-            class="w-6 h-6 object-contain absolute z-50"
-            alt="Close"
-          />
-        </button>
-      </form>
-      <h3
-        class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px]"
-      >
-        Create your account
-      </h3>
-      <p
-        class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
-      >
-        Already have an account?
-        <span
-          class="font-bold underline cursor-pointer hover:text-[#00BFFF]"
-          id="loginAcc"
-          >Log in</span
-        >
-      </p>
-      <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
-        <input
-          type="email"
-          placeholder="Your email address"
-          class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
-        />
-        <div
-          class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
-        >
-          <input
-            type="password"
-            placeholder="Password"
-            class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
-          />
-          <img
-            src="./assets/passeye.svg"
-            alt="Show Password"
-            class="eye-icon cursor-pointer w-6 h-6"
-            onclick="togglePasswordVisibility(this)"
-          />
-        </div>
-
-        <div class="flex items-center gap-2 mt-2">
-          <input type="checkbox" class="border border-[#011575] w-5 h-5" />
-          <p
-            class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
-          >
-            I agree to Find Med company’s terms & conditions, Privacy policy.
-          </p>
-        </div>
-        <button
-          type="submit"
-          class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2 hover:text-[#00BFFF]"
-        >
-          Create account
-        </button>
-      </form>
-    </div>
-  </dialog>
-  <!-- Second Modal -->
-  <dialog id="my_modal_2" class="modal">
-    <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
-      <form method="dialog">
-        <button
-          class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
-        >
-          <img
-            src="./assets/Close.svg"
-            class="w-6 h-6 object-contain"
-            alt="Close"
-          />
-        </button>
-        <button
-          class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
-        >
-          <img
-            src="./assets/Close.svg"
-            class="w-6 h-6 object-contain absolute z-50"
-            alt="Close"
-          />
-        </button>
-      </form>
-      <h
-        class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px]"
-      >
-        Log in
-      </h>
-      <p
-        class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
-      >
-        Don’t have an account?
-        <a
-          class="font-bold underline cursor-pointer hover:text-[#00BFFF]"
-          id="createAcc"
-        >
-          Create account
+          <h2 class="font-oswald font-medium text-[28.01px] leading-[44px]">
+            Find Med
+          </h2>
         </a>
-      </p>
 
-      <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
-        <input
-          type="email"
-          placeholder="Your email address"
-          class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
-        />
-        <div
-          class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
-        >
-          <input
-            type="password"
-            placeholder="Password"
-            class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
-          />
-          <img
-            src="./assets/passeye.svg"
-            alt="Show Password"
-            class="eye-icon cursor-pointer w-6 h-6"
-            onclick="togglePasswordVisibility(this)"
-          />
+        <!-- Desktop Menu -->
+        <div class="laptop:flex gap-[56px] hidden">
+          <ul class="flex items-center gap-10" id="nav-list">
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./about.html">About us</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./list.html">Medications</a>
+            </li>
+            <li
+              class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+            >
+              <a href="./doctor.html">Contact doctor</a>
+            </li>
+          </ul>
+
+          <div class="flex gap-5">
+            <a
+              href="./cart.html"
+              class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer hover:bg-[#E5E5E5] delay-200"
+            >
+              <img src="./assets/cart.svg" alt="" />
+            </a>
+            <div class="flex gap-3">
+              <button
+                class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] hover:border-[#011575] delay-100 hover:text-[#00BFFF]"
+                onclick="showLoginModal()"
+              >
+                Log in
+              </button>
+              <button
+                class="bg-[#011575] text-[#FFFFFF] py-[7px] px-5 rounded-[80px] font-manrope font-semibold text-[15px] hover:text-[#00BFFF]"
+                onclick="showModal()"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center gap-2 mt-2">
-          <input type="checkbox" class="border border-[#011575] w-5 h-5" />
-          <p
-            class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+
+        <!-- Mobile Menu -->
+        <div class="laptop:hidden flex">
+          <button onclick="toggleFuncMenu()" id="openMenuButton" class="block">
+            <img src="./assets/Frame 3.svg" alt="Menu Open" />
+          </button>
+          <button
+            onclick="toggleFuncMenu()"
+            id="closeMenuButton"
+            class="hidden"
           >
-            Remember me for this device.
-          </p>
+            <img src="./assets/menu.png" alt="Menu Close" />
+          </button>
         </div>
+      </div>
+    </header>
+    <!-- Mobile Navigation -->
+    <div
+      class="myNav absolute top-16 right-0 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] w-0 overflow-x-hidden h-auto transition-all duration-500 mt-[64px] rounded-t-[32px]"
+    >
+      <ul
+        class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-10"
+      >
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About us</a>
+        <a href="./list.html">Medications</a>
+        <a href="./doctor.html">Contact doctor</a>
+      </ul>
+
+      <div
+        class="flex flex-col-reverse gap-4 items-center justify-center mt-10"
+      >
         <button
-          type="submit"
-          class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+          class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+          onclick="showLoginModal()"
         >
           Log in
         </button>
-        <a
-          href="#"
-          id="forgetPass"
-          class="font-semibold font-manrope text-[#011575] text-[15px] leading-[24px] lg:text-start text-center hover:text-[#00BFFF]"
-          >Forgot password?</a
+        <button
+          class="bg-[#011575] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#FFFFFF] font-manrope font-semibold text-[15px] w-[260px]"
+          onclick="showModal()"
         >
-      </form>
+          Sign up
+        </button>
+      </div>
     </div>
-  </dialog>
-  <!-- Third Modal -->
-  <dialog id="my_modal_4" class="modal">
-    <div class="modal-box relative overflow-visible py-6 px-4 lg:p-[56px]">
-      <form method="dialog">
-        <button
-          class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
-        >
-          <img
-            src="./assets/Close.svg"
-            class="w-6 h-6 object-contain"
-            alt="Close"
-          />
-        </button>
-        <button
-          class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
-        >
-          <img
-            src="./assets/Close.svg"
-            class="w-6 h-6 object-contain absolute z-50"
-            alt="Close"
-          />
-        </button>
-      </form>
-      <a class="flex gap-2 cursor-pointer" href="#" id="back">
-        <img src="./assets/Frame (4).svg" alt="" /> Back
-      </a>
-      <h3
-        class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px] lg:pt-6"
-      >
-        Reset your password
-      </h3>
-      <p
-        class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
-      >
-        Please enter your email address. We will send you an email to reset
-        your password.
-      </p>
-
-      <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-6">
-        <input
-          type="email"
-          placeholder="Your email address"
-          class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
-        />
-
-        <button
-          type="submit"
-          class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px] hover:text-[#00BFFF]"
-        >
-          Send email
-        </button>
-      </form>
-    </div>
-  </dialog>
-  <!-- Fourth Modal -->
-  <dialog id="my_modal_5" class="modal">
-    <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
-      <form method="dialog">
-        <button
-          class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
-        >
-          <img
-            src="./assets/Close.svg"
-            class="w-6 h-6 object-contain"
-            alt="Close"
-          />
-        </button>
-        <button
-          class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
-        >
-          <img
-            src="./assets/Close.svg"
-            class="w-6 h-6 object-contain absolute z-50"
-            alt="Close"
-          />
-        </button>
-      </form>
-
-      <h3
-        class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px] pt-6"
-      >
-        Change Your Password
-      </h3>
-      <p
-        class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
-      >
-        Create a new password below to change your password.
-      </p>
-
-      <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-6">
-        <div
-          class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
-        >
-          <input
-            type="password"
-            placeholder="Password"
-            class="outline-none text-[#334C66] text-sm font-medium font-manrope"
-          />
-          <img
-            src="./assets/passeye.svg"
-            class="absolute right-4 top-4"
-            alt="Show Password"
-          />
-        </div>
-        <div
-          class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
-        >
-          <input
-            type="password"
-            placeholder="Confirm password"
-            class="outline-none text-[#334C66] text-sm font-medium font-manrope"
-          />
-          <img
-            src="./assets/passeye.svg"
-            class="absolute right-4 top-4"
-            alt="Show Password"
-          />
-        </div>
-        <button
-          type="submit"
-          class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px] w-[154px] hover:text-[#00BFFF]"
-        >
-          Reset password
-        </button>
-      </form>
-    </div>
-  </dialog>
-  <!-- Fifth -->
-  <dialog id="my_modal_6" class="modal">
-    <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
-      <form method="dialog">
-        <button
-          class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
-        >
-          <img
-            src="./assets/Close.svg"
-            class="w-6 h-6 object-contain"
-            alt="Close"
-          />
-        </button>
-        <button
-          class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
-        >
-          <img
-            src="./assets/Close.svg"
-            class="w-6 h-6 object-contain absolute z-50"
-            alt="Close"
-          />
-        </button>
-      </form>
-      <p
-        class="bg-[#EFFFEA] text-[#1A7501] text-sm font-manrope font-medium leading-[22px] px-4 py-[9px] mb-6 rounded-lg"
-      >
-        We’ve sent you a magic link to your email address
-      </p>
-      <h3
-        class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
-      >
-        Create your account
-      </h3>
-      <p
-        class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
-      >
-        Already have an account?
-        <a class="font-bold underline cursor-pointer" id="loginAcc">Log in</a>
-      </p>
-      <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
-        <input
-          type="email"
-          placeholder="Your email address"
-          class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
-        />
-        <div
-          class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
-        >
-          <input
-            type="password"
-            placeholder="Password"
-            class="outline-none text-[#334C66] text-sm font-medium font-manrope"
-          />
-          <img
-            src="./assets/passeye.svg"
-            class="absolute right-4 top-4"
-            alt="Show Password"
-          />
-        </div>
-        <div class="flex items-center gap-2 mt-2">
-          <input type="checkbox" class="border border-[#011575] w-5 h-5" />
-          <p
-            class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+    <!-- First Modal -->
+    <dialog id="my_modal_3" class="modal">
+      <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
+        <form method="dialog">
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
           >
-            I agree to Find Med company’s terms & conditions, <br />
-            Privacy policy.
-          </p>
-        </div>
-        <button
-          type="submit"
-          class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2 hover:text-[#00BFFF]"
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain"
+              alt="Close"
+            />
+          </button>
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain absolute z-50"
+              alt="Close"
+            />
+          </button>
+        </form>
+        <h3
+          class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px]"
         >
-          Create account
-        </button>
-      </form>
-    </div>
-  </dialog>
+          Create your account
+        </h3>
+        <p
+          class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+        >
+          Already have an account?
+          <span
+            class="font-bold underline cursor-pointer hover:text-[#00BFFF]"
+            id="loginAcc"
+            >Log in</span
+          >
+        </p>
+        <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+          />
+          <div
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
+          >
+            <input
+              type="password"
+              placeholder="Password"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
+            />
+            <img
+              src="./assets/passeye.svg"
+              alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
+            />
+          </div>
+
+          <div class="flex items-center gap-2 mt-2">
+            <input type="checkbox" class="border border-[#011575] w-5 h-5" />
+            <p
+              class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+            >
+              I agree to Find Med company’s terms & conditions, Privacy policy.
+            </p>
+          </div>
+          <button
+            type="submit"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2 hover:text-[#00BFFF]"
+          >
+            Create account
+          </button>
+        </form>
+      </div>
+    </dialog>
+    <!-- Second Modal -->
+    <dialog id="my_modal_2" class="modal">
+      <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
+        <form method="dialog">
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain"
+              alt="Close"
+            />
+          </button>
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain absolute z-50"
+              alt="Close"
+            />
+          </button>
+        </form>
+        <h
+          class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px]"
+        >
+          Log in
+        </h>
+        <p
+          class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+        >
+          Don’t have an account?
+          <a
+            class="font-bold underline cursor-pointer hover:text-[#00BFFF]"
+            id="createAcc"
+          >
+            Create account
+          </a>
+        </p>
+
+        <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+          />
+          <div
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
+          >
+            <input
+              type="password"
+              placeholder="Password"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
+            />
+            <img
+              src="./assets/passeye.svg"
+              alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
+            />
+          </div>
+          <div class="flex items-center gap-2 mt-2">
+            <input type="checkbox" class="border border-[#011575] w-5 h-5" />
+            <p
+              class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+            >
+              Remember me for this device.
+            </p>
+          </div>
+          <button
+            type="submit"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+          >
+            Log in
+          </button>
+          <a
+            href="#"
+            id="forgetPass"
+            class="font-semibold font-manrope text-[#011575] text-[15px] leading-[24px] lg:text-start text-center hover:text-[#00BFFF]"
+            >Forgot password?</a
+          >
+        </form>
+      </div>
+    </dialog>
+    <!-- Third Modal -->
+    <dialog id="my_modal_4" class="modal">
+      <div class="modal-box relative overflow-visible py-6 px-4 lg:p-[56px]">
+        <form method="dialog">
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain"
+              alt="Close"
+            />
+          </button>
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain absolute z-50"
+              alt="Close"
+            />
+          </button>
+        </form>
+        <a class="flex gap-2 cursor-pointer" href="#" id="back">
+          <img src="./assets/Frame (4).svg" alt="" /> Back
+        </a>
+        <h3
+          class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px] lg:pt-6"
+        >
+          Reset your password
+        </h3>
+        <p
+          class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+        >
+          Please enter your email address. We will send you an email to reset
+          your password.
+        </p>
+
+        <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-6">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+          />
+
+          <button
+            type="submit"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px] hover:text-[#00BFFF]"
+          >
+            Send email
+          </button>
+        </form>
+      </div>
+    </dialog>
+    <!-- Fourth Modal -->
+    <dialog id="my_modal_5" class="modal">
+      <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
+        <form method="dialog">
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain"
+              alt="Close"
+            />
+          </button>
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain absolute z-50"
+              alt="Close"
+            />
+          </button>
+        </form>
+
+        <h3
+          class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px] pt-6"
+        >
+          Change Your Password
+        </h3>
+        <p
+          class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+        >
+          Create a new password below to change your password.
+        </p>
+
+        <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-6">
+          <div
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+          >
+            <input
+              type="password"
+              placeholder="Password"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
+            />
+            <img
+              src="./assets/passeye.svg"
+              alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
+            />
+          </div>
+          <div
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+          >
+            <input
+              type="password"
+              placeholder="Confirm password"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+            />
+            <img
+              src="./assets/passeye.svg"
+              class="absolute right-4 top-4"
+              alt="Show Password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px] w-[154px] hover:text-[#00BFFF]"
+          >
+            Reset password
+          </button>
+        </form>
+      </div>
+    </dialog>
+    <!-- Fifth -->
+    <dialog id="my_modal_6" class="modal">
+      <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
+        <form method="dialog">
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain"
+              alt="Close"
+            />
+          </button>
+          <button
+            class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+          >
+            <img
+              src="./assets/Close.svg"
+              class="w-6 h-6 object-contain absolute z-50"
+              alt="Close"
+            />
+          </button>
+        </form>
+        <p
+          class="bg-[#EFFFEA] text-[#1A7501] text-sm font-manrope font-medium leading-[22px] px-4 py-[9px] mb-6 rounded-lg"
+        >
+          We’ve sent you a magic link to your email address
+        </p>
+        <h3
+          class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
+        >
+          Create your account
+        </h3>
+        <p
+          class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+        >
+          Already have an account?
+          <a class="font-bold underline cursor-pointer" id="loginAcc">Log in</a>
+        </p>
+        <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+          />
+          <div
+            class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+          >
+            <input
+              type="password"
+              placeholder="Password"
+              class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
+            />
+            <img
+              src="./assets/passeye.svg"
+              alt="Show Password"
+              class="eye-icon cursor-pointer w-6 h-6"
+              onclick="togglePasswordVisibility(this)"
+            />
+          </div>
+          <div class="flex items-center gap-2 mt-2">
+            <input type="checkbox" class="border border-[#011575] w-5 h-5" />
+            <p
+              class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+            >
+              I agree to Find Med company’s terms & conditions, <br />
+              Privacy policy.
+            </p>
+          </div>
+          <button
+            type="submit"
+            class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2 hover:text-[#00BFFF]"
+          >
+            Create account
+          </button>
+        </form>
+      </div>
+    </dialog>
     <!-- PRODUCT LIST HERO SECTION  -->
     <section>
       <div
@@ -543,7 +548,7 @@
                   </div>
                   <!-- RESULT BOX  -->
                   <div class="shadow-custom rounded-lg hover:bg-[#F5F7FA]">
-                    <div class="result rounded-lg bg-[#FFFFFF] max-h-[250px] overflow-y-auto flex flex-col gap-[6px] "></div>
+                    <div class="result rounded-lg bg-[#FFFFFF] max-h-[250px] overflow-y-auto flex flex-col gap-[6px] custom-scrollbar"></div>
                   </div>
                 </div>
               </div>
