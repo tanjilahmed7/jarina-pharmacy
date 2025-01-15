@@ -17,7 +17,9 @@
     <section>
       <div class="flex bg-[#F5F8FA]">
         <!-- SIDBAR  -->
-        <div class="bg-[#237AFF] min-w-[280px] min-h-screen p-6">
+        <div
+          class="bg-[#237AFF] min-w-[280px] min-h-screen p-6 hidden laptop:block desktop:block tablet:block"
+        >
           <div class="flex gap-2 items-start">
             <a href="./index.html" class="flex items-center gap-2 h-[23px]">
               <img
@@ -29,7 +31,7 @@
               <h2
                 class="font-oswald font-medium text-[22.02px] leading-[36px] text-[#FFFFFF]"
               >
-                Find Med
+                Jarina Pharmacy
               </h2>
             </a>
             <small
@@ -60,11 +62,10 @@
           <!-- HEADER  -->
           <!-- NOTIFICATION BUTTON -->
           <div
-            class="w-full flex items-center justify-end gap-10 border-b border-[#E5E5E5] py-3"
+            class="w-full desktop:flex laptop:flex tablet:flex hidden items-center justify-end gap-10 border-b border-[#E5E5E5] py-3"
           >
             <button
-              id="notiButton"
-              class="w-10 h-10 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center"
+              class="w-10 h-10 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center notiButton"
             >
               <img src="./assets//mdcnicon.svg" alt="" />
             </button>
@@ -74,10 +75,101 @@
               Leslie Alexander
             </p>
           </div>
+          <!-- SMALL HEADER  -->
+          <div
+            class="laptop:hidden desktop:hidden tablet:hidden h-[64px] w-full fixed bg-[#F5F8FA] flex justify-between items-center px-3 top-0 border-b border-[#E5E5E5]"
+          >
+            <div
+              class="flex gap-2 items-start laptop:hidden desktop:hidden tablet:hidden"
+            >
+              <a href="./index.html" class="flex items-center gap-2 h-[23px]">
+                <img
+                  class="w-[22px] h-[22px] object-contain"
+                  src="./assets/dashboard-logo.svg"
+                  alt=""
+                />
+
+                <h2
+                  class="font-oswald font-medium text-[15px] leading-[36px] text-[#000000]"
+                >
+                  Jarina Pharmacy
+                </h2>
+              </a>
+              <small
+                class="text-[#000000] font-manrope font-medium text-[8px] p-0 m-0 leading-4 mt-[9px]"
+                >Admin panel</small
+              >
+            </div>
+            <div class="flex w-[160px]">
+              <div
+                class="flex gap-2 laptop:gap-10 desktop:gap-10 tablet:gap-10 items-center"
+              >
+                <button
+                  class="w-8 h-8 bg-[#F1F3F4] rounded-[35px] flex items-center justify-center notiButton"
+                >
+                  <img src="./assets//mdcnicon.svg" class="w-4 h-4" alt="" />
+                </button>
+                <p
+                  class="text-[#334C66] font-manrope laptop:text-sm desktop:text-sm tablet:text-sm text-[10px] leading-[22px] font-semibold mr-4"
+                >
+                  Leslie Alexander
+                </p>
+              </div>
+
+              <!-- hamburger  -->
+              <div class="laptop:hidden flex tablet:hidden desktop:hidden">
+                <button
+                  onclick="dashboardFuncMenu()"
+                  id="openMenuButton"
+                  class="block"
+                >
+                  <img src="./assets/Frame 3.svg" alt="Menu Open" />
+                </button>
+                <button
+                  onclick="dashboardFuncMenu()"
+                  id="closeMenuButton"
+                  class="hidden"
+                >
+                  <img src="./assets/menu.png" alt="Menu Close" />
+                </button>
+              </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div
+              class="myNav absolute top-16 right-0 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] w-0 overflow-x-hidden h-auto transition-all duration-500 mt-[64px]"
+            >
+              <ul
+                class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-10"
+              >
+                <a href="./dashboard.html" class="block">Dashboard</a>
+                <a href="./orders.html" class="block">Orders</a>
+                <a href="./inventory.html" class="block">Inventory</a>
+              </ul>
+
+              <div
+                class="flex flex-col-reverse gap-4 items-center justify-center mt-10"
+              >
+                <button
+                  class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+                  onclick="showLoginModal()"
+                >
+                  Log in
+                </button>
+                <button
+                  class="bg-[#011575] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#FFFFFF] font-manrope font-semibold text-[15px] w-[260px]"
+                  onclick="showModal()"
+                >
+                  Sign up
+                </button>
+              </div>
+            </div>
+          </div>
+
           <!-- NOTIFICATION  -->
           <div
             id="notiBox"
-            class="bg-[#FFFFFF] w-[450px] h-auto max-h-[350px] absolute rounded-lg right-6 p-4 z-50 flex flex-col gap-4 overflow-y-auto hidden"
+            class="bg-[#FFFFFF] max-w-[450px] laptop:w-[450px] desktop:w-[450px] tablet:w-[450px] h-auto max-h-[350px] absolute rounded-lg laptop:right-6 desktop:right-6 tablet:right-0 right-4 p-4 z-50 flex flex-col gap-4 overflow-y-auto hidden top-16"
           >
             <div class="flex justify-between">
               <h1 class="text-[#12366C] text-lg font-manrope font-bold">
@@ -191,10 +283,10 @@
             </div>
           </div>
           <div
-            class="mx-6 mt-6 flex flex-col gap-4 desktop:items-center desktop:justify-center"
+            class="mx-6 laptop:mt-6 desktop:mt-6 tablet:mt-6 flex flex-col gap-4 desktop:items-center desktop:justify-center mt-[100px]"
           >
             <div
-              class="flex gap-4 tablet:flex-wrap tablet:items-center tablet:justify-center"
+              class="flex gap-4 tablet:flex-wrap flex-wrap items-center justify-center tablet:items-center tablet:justify-center"
             >
               <div
                 class="bg-[#E0ECFF] p-4 flex flex-col rounded-lg gap-1 w-[259px]"
@@ -277,4 +369,5 @@
   </body>
   <script src="./sideBar.js"></script>
   <script src="./notification.js"></script>
+  <script src="./dashboardMenu.js"></script>
 </html>

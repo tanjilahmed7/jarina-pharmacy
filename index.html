@@ -514,21 +514,28 @@
           >
             Find the best prices for your medicines with ease
           </h6>
-          <div
-            class="flex items-center justify-between min-w-[342px] lg:w-[535px] h-[56px] rounded-[80px] bg-[#FFFF] lg:pl-8 pl-4 pr-1 py-1"
-          >
-            <input
-              type="text"
-              class="font-manrope font-normal text-base bg-none w-full outline-none"
-              placeholder="Search for medicine, brand name..."
-            />
-            <div class="bg-[#53DDFF] py-3 px-[12.05px] rounded-[80px]">
-              <img
-                class="w-6 h-6 object-contain"
-                src="./assets/search-icon.svg"
-                alt=""
+          <div class="flex flex-col relative">
+            <div
+              class="flex items-center justify-between min-w-[342px] lg:w-[535px] h-[56px] rounded-[80px] bg-[#FFFF] lg:pl-8 pl-4 pr-1 py-1 relative z-50"
+            >
+              <input
+                id="medicine-search-box"
+                type="text"
+                class="font-manrope font-normal text-base bg-none w-full outline-none"
+                placeholder="Search for medicine, brand name..."
               />
+              <div class="bg-[#53DDFF] py-3 px-[12.05px] rounded-[80px]">
+                <img
+                  class="w-6 h-6 object-contain"
+                  src="./assets/search-icon.svg"
+                  alt=""
+                />
+              </div>
             </div>
+            <!-- Result -->
+            <div
+              class="result absolute left-0 desktop:w-[535px] laptop:w-[535px] tablet:max-w-[535px] w-[340px] md:w-[350px] mt-2 shadow-custom rounded-lg bg-[#FFFFFF] max-h-[130px] lg:w-[535px] overflow-y-auto flex flex-col gap-[6px] custom-scrollbar top-[50px] z-[99999999]"
+            ></div>
           </div>
         </div>
         <!-- CENTER ITEM  -->
@@ -579,7 +586,7 @@
       </div>
 
       <div
-        class="desktop:h-[142px] bg-[#0070E3] rounded-b-[32px] flex items-center justify-center h-[298px]"
+        class="desktop:h-[142px] bg-[#0070E3] rounded-b-[32px] flex items-center justify-center h-[298px] -z-10"
       >
         <div
           class="flex flex-col lg:flex-row items-center justify-center lg:w-[984px] w-[375px]"
@@ -1977,4 +1984,5 @@
   <script src="./index.js"></script>
   <script src="./swiperSlider.js"></script>
   <script src="./showPass.js "></script>
+  <script src="./search.js"></script>
 </html>
