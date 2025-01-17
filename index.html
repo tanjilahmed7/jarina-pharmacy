@@ -497,9 +497,9 @@
       </div>
     </dialog>
     <!-- BANNER SECTION  -->
-    <section class="overflow-x-hidden">
+    <section class="overflow-x-hidden relative">
       <div
-        class="bg-[#E3EFF7] h-[586px] relative flex items-center justify-center flex-col rounded-t-[32px] min-w-[360px] lg:w-full overflow-hidden"
+        class="bg-[#E3EFF7] h-[586px] flex items-center justify-center flex-col rounded-t-[32px] min-w-[360px] lg:w-full relative"
       >
         <!-- CENTER ITEM  -->
         <div class="flex flex-col items-center justify-center">
@@ -514,15 +514,20 @@
           >
             Find the best prices for your medicines with ease
           </h6>
-          <div class="flex flex-col relative">
+          <div
+            class="lg:w-full w-[342px] h-[56px] rounded-[80px] bg-[#FFFFFF] mb-4 lg:mb-0"
+          >
+            <!-- SEARCH BOX  -->
             <div
-              class="flex items-center justify-between min-w-[342px] lg:w-[535px] h-[56px] rounded-[80px] bg-[#FFFF] lg:pl-8 pl-4 pr-1 py-1 relative z-50"
+              class="flex items-center justify-between rounded-[80px] bg-[#FFFFFF] lg:pl-8 pl-4 pr-1 py-1"
+              onclick=""
             >
               <input
                 id="medicine-search-box"
                 type="text"
-                class="font-manrope font-normal text-base bg-none w-full outline-none"
+                class="font-manrope font-normal text-sm lg:text-base bg-none w-full outline-none bg-[#FFFFFF] leading-[22px] lg:leading-[25px]"
                 placeholder="Search for medicine, brand name..."
+                autocomplete="off"
               />
               <div class="bg-[#53DDFF] py-3 px-[12.05px] rounded-[80px]">
                 <img
@@ -532,10 +537,12 @@
                 />
               </div>
             </div>
-            <!-- Result -->
-            <div
-              class="result absolute left-0 desktop:w-[535px] laptop:w-[535px] tablet:max-w-[535px] w-[340px] md:w-[350px] mt-2 shadow-custom rounded-lg bg-[#FFFFFF] max-h-[130px] lg:w-[535px] overflow-y-auto flex flex-col gap-[6px] custom-scrollbar top-[50px] z-[99999999]"
-            ></div>
+            <!-- RESULT BOX  -->
+            <div class="shadow-custom rounded-lg hover:bg-[#F5F7FA]">
+              <div
+                class="result relative z-50 rounded-lg bg-[#FFFFFF] max-h-[500px] overflow-y-auto flex flex-col gap-[6px] custom-scrollbar"
+              ></div>
+            </div>
           </div>
         </div>
         <!-- CENTER ITEM  -->
@@ -544,11 +551,13 @@
         >
           <img src="./assets/list-banner.png" alt="" />
         </div>
-        <div class="absolute top-[230px] left-[33px] lg:block hidden img3">
+        <div
+          class="absolute tablet:left-[0px] tablet:top-[200px] top-[230px] left-[33px] lg:block tablet:block hidden img3 z-0 tablet:w-[168px]"
+        >
           <img class=" " src="./assets/Group 14.svg" alt="" />
         </div>
         <div
-          class="absolute left-[85px] top-[292px] w-[156px] h-[197px] lg:block hidden"
+          class="absolute tablet:left-[20px] tablet:top-[250px] left-[85px] top-[292px] w-[156px] h-[197px] lg:block tablet:block hidden"
         >
           <img
             class="absolute object-contain right-0"
@@ -566,7 +575,9 @@
           />
           <img src="./assets/Vector 3.png" alt="" />
         </div>
-        <div class="absolute bottom-[48px] flex gap-[6px]">
+        <div
+          class="absolute desktop:bottom-[29px] laptop:bottom-[29px] tablet:bottom-[29px] bottom-12 flex gap-[6px]"
+        >
           <div class="flex items-center justify-center gap-3">
             <div class="flex items-center">
               <img src="./assets/Frame (3).svg" alt="" />
@@ -586,7 +597,7 @@
       </div>
 
       <div
-        class="desktop:h-[142px] bg-[#0070E3] rounded-b-[32px] flex items-center justify-center h-[298px] -z-10"
+        class="desktop:h-[142px] bg-[#0070E3] rounded-b-[32px] flex items-center justify-center h-[298px]"
       >
         <div
           class="flex flex-col lg:flex-row items-center justify-center lg:w-[984px] w-[375px]"
@@ -649,397 +660,401 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- POPULAR MEDICINES SECTION  -->
-    <section
-      class="relative lg:w-full min-w-[360px] lg:h-[1127px] h-full bg-[#FAFAFA] bg-no-repeat bg-contain"
-    >
-      <img
-        src="./assets/vector1.png"
-        alt="Pattern"
-        class="absolute w-full lg:block hidden"
-      />
-      <!-- small device pattern  -->
-      <img
-        src="./assets/vector13.png"
-        class="absolute z-10 w-full lg:hidden block object-contain"
-        alt="Pattern"
-      />
-      <img
-        src="./assets/Vector 4 (1).png"
-        class="absolute right-0 bottom-0 z-0 lg:block hidden"
-        alt="Pattern"
-      />
+
+      <!-- POPULAR MEDICINES SECTION  -->
       <div
-        class="w-full h-full flex flex-col items-center py-10 lg:py-[120px] overflow-hidden gap-[120px] z-50"
+        class="relative lg:w-full min-w-[360px] z-10 lg:h-[1127px] h-full bg-[#FAFAFA] bg-no-repeat bg-contain"
       >
-        <!-- SLIDER ONE  -->
-        <div class="laptop:h-[380px] tablet:h-[380px] laptop:w-[1290px] z-50">
-          <h1
-            class="text-[#013366] text-center font-manrope font-extrabold text-[32px] lg:text-[40px] p-0"
-          >
-            Popular Medicines
-          </h1>
-          <!-- SLIDER  -->
-          <div class="flex items-center flex-col justify-center relative mt-8">
-            <div class="swiper1 mySwiper1 flex items-center justify-center">
-              <div class="swiper-wrapper">
-                <div
-                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
-                >
-                  <img
-                    src="./assets/image.png"
-                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
-                    alt="Slide Image"
-                  />
-                  <div class="flex flex-col items-center p-3">
-                    <h1
-                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
-                    >
-                      Paracetamol
-                    </h1>
-                    <div class="flex items-center mt-1 mb-3 gap-2">
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >10 tablet</span
+        <img
+          src="./assets/vector1.png"
+          alt="Pattern"
+          class="absolute w-full lg:block hidden"
+        />
+        <!-- small device pattern  -->
+        <img
+          src="./assets/vector13.png"
+          class="absolute z-10 w-full lg:hidden block object-contain"
+          alt="Pattern"
+        />
+        <img
+          src="./assets/Vector 4 (1).png"
+          class="absolute right-0 bottom-0 z-0 lg:block hidden"
+          alt="Pattern"
+        />
+        <div
+          class="w-full h-full flex flex-col items-center py-10 lg:py-[120px] overflow-hidden gap-[120px] z-50"
+        >
+          <!-- SLIDER ONE  -->
+          <div class="laptop:h-[380px] tablet:h-[380px] laptop:w-[1290px] z-50">
+            <h1
+              class="text-[#013366] text-center font-manrope font-extrabold text-[32px] lg:text-[40px] p-0"
+            >
+              Popular Medicines
+            </h1>
+            <!-- SLIDER  -->
+            <div
+              class="flex items-center flex-col justify-center relative mt-8"
+            >
+              <div class="swiper1 mySwiper1 flex items-center justify-center">
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                  >
+                    <img
+                      src="./assets/image.png"
+                      class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                      alt="Slide Image"
+                    />
+                    <div class="flex flex-col items-center p-3">
+                      <h1
+                        class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
                       >
-                      <img src="./assets/Ellipse 10.svg" alt="" />
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >20 mg</span
+                        Paracetamol
+                      </h1>
+                      <div class="flex items-center mt-1 mb-3 gap-2">
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >10 tablet</span
+                        >
+                        <img src="./assets/Ellipse 10.svg" alt="" />
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >20 mg</span
+                        >
+                      </div>
+                      <h2
+                        class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
                       >
+                        $10
+                      </h2>
                     </div>
-                    <h2
-                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
-                    >
-                      $10
-                    </h2>
                   </div>
-                </div>
-                <div
-                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
-                >
-                  <img
-                    src="./assets/image (1).png"
-                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
-                    alt="Slide Image"
-                  />
-                  <div class="flex flex-col items-center p-3">
-                    <h1
-                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
-                    >
-                      Invokana
-                    </h1>
-                    <div class="flex items-center mt-1 mb-3 gap-2">
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >10 tablet</span
+                  <div
+                    class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                  >
+                    <img
+                      src="./assets/image (1).png"
+                      class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                      alt="Slide Image"
+                    />
+                    <div class="flex flex-col items-center p-3">
+                      <h1
+                        class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
                       >
-                      <img src="./assets/Ellipse 10.svg" alt="" />
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >20 mg</span
+                        Invokana
+                      </h1>
+                      <div class="flex items-center mt-1 mb-3 gap-2">
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >10 tablet</span
+                        >
+                        <img src="./assets/Ellipse 10.svg" alt="" />
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >20 mg</span
+                        >
+                      </div>
+                      <h2
+                        class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
                       >
+                        $10
+                      </h2>
                     </div>
-                    <h2
-                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
-                    >
-                      $10
-                    </h2>
                   </div>
-                </div>
-                <div
-                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
-                >
-                  <img
-                    src="./assets/image (2).png"
-                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
-                    alt="Slide Image"
-                  />
-                  <div class="flex flex-col items-center p-3">
-                    <h1
-                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
-                    >
-                      Canagliflozin
-                    </h1>
-                    <div class="flex items-center mt-1 mb-3 gap-2">
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >10 tablet</span
+                  <div
+                    class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                  >
+                    <img
+                      src="./assets/image (2).png"
+                      class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                      alt="Slide Image"
+                    />
+                    <div class="flex flex-col items-center p-3">
+                      <h1
+                        class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
                       >
-                      <img src="./assets/Ellipse 10.svg" alt="" />
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >20 mg</span
+                        Canagliflozin
+                      </h1>
+                      <div class="flex items-center mt-1 mb-3 gap-2">
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >10 tablet</span
+                        >
+                        <img src="./assets/Ellipse 10.svg" alt="" />
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >20 mg</span
+                        >
+                      </div>
+                      <h2
+                        class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
                       >
+                        $10
+                      </h2>
                     </div>
-                    <h2
-                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
-                    >
-                      $10
-                    </h2>
                   </div>
-                </div>
-                <div
-                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
-                >
-                  <img
-                    src="./assets/image (3).png"
-                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
-                    alt="Slide Image"
-                  />
-                  <div class="flex flex-col items-center p-3">
-                    <h1
-                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
-                    >
-                      Paracetamol
-                    </h1>
-                    <div class="flex items-center mt-1 mb-3 gap-2">
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >10 tablet</span
+                  <div
+                    class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                  >
+                    <img
+                      src="./assets/image (3).png"
+                      class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                      alt="Slide Image"
+                    />
+                    <div class="flex flex-col items-center p-3">
+                      <h1
+                        class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
                       >
-                      <img src="./assets/Ellipse 10.svg" alt="" />
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >20 mg</span
+                        Paracetamol
+                      </h1>
+                      <div class="flex items-center mt-1 mb-3 gap-2">
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >10 tablet</span
+                        >
+                        <img src="./assets/Ellipse 10.svg" alt="" />
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >20 mg</span
+                        >
+                      </div>
+                      <h2
+                        class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
                       >
+                        $10
+                      </h2>
                     </div>
-                    <h2
-                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
-                    >
-                      $10
-                    </h2>
                   </div>
-                </div>
-                <div
-                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
-                >
-                  <img
-                    src="./assets/image (5).png"
-                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
-                    alt="Slide Image"
-                  />
-                  <div class="flex flex-col items-center p-3">
-                    <h1
-                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
-                    >
-                      Abiraterone Acetate
-                    </h1>
-                    <div class="flex items-center mt-1 mb-3 gap-2">
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >10 tablet</span
+                  <div
+                    class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                  >
+                    <img
+                      src="./assets/image (5).png"
+                      class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                      alt="Slide Image"
+                    />
+                    <div class="flex flex-col items-center p-3">
+                      <h1
+                        class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
                       >
-                      <img src="./assets/Ellipse 10.svg" alt="" />
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >20 mg</span
+                        Abiraterone Acetate
+                      </h1>
+                      <div class="flex items-center mt-1 mb-3 gap-2">
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >10 tablet</span
+                        >
+                        <img src="./assets/Ellipse 10.svg" alt="" />
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >20 mg</span
+                        >
+                      </div>
+                      <h2
+                        class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
                       >
+                        $10
+                      </h2>
                     </div>
-                    <h2
-                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
-                    >
-                      $10
-                    </h2>
                   </div>
-                </div>
-                <div
-                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
-                >
-                  <img
-                    src="./assets/image.png"
-                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
-                    alt="Slide Image"
-                  />
-                  <div class="flex flex-col items-center p-3">
-                    <h1
-                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
-                    >
-                      Acetate
-                    </h1>
-                    <div class="flex items-center mt-1 mb-3 gap-2">
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >10 tablet</span
+                  <div
+                    class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                  >
+                    <img
+                      src="./assets/image.png"
+                      class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                      alt="Slide Image"
+                    />
+                    <div class="flex flex-col items-center p-3">
+                      <h1
+                        class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
                       >
-                      <img src="./assets/Ellipse 10.svg" alt="" />
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >20 mg</span
+                        Acetate
+                      </h1>
+                      <div class="flex items-center mt-1 mb-3 gap-2">
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >10 tablet</span
+                        >
+                        <img src="./assets/Ellipse 10.svg" alt="" />
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >20 mg</span
+                        >
+                      </div>
+                      <h2
+                        class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
                       >
+                        $10
+                      </h2>
                     </div>
-                    <h2
-                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
-                    >
-                      $10
-                    </h2>
                   </div>
-                </div>
-                <div
-                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
-                >
-                  <img
-                    src="./assets/image (5).png"
-                    class="w-[220px] h-[120px] object-cover rounded-t-[16px]"
-                    alt="Slide Image"
-                  />
-                  <div class="flex flex-col items-center p-3">
-                    <h1
-                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
-                    >
-                      Paracetamol
-                    </h1>
-                    <div class="flex items-center mt-1 mb-3 gap-2">
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >10 tablet</span
+                  <div
+                    class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col items-center justify-center"
+                  >
+                    <img
+                      src="./assets/image (5).png"
+                      class="w-[220px] h-[120px] object-cover rounded-t-[16px]"
+                      alt="Slide Image"
+                    />
+                    <div class="flex flex-col items-center p-3">
+                      <h1
+                        class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
                       >
-                      <img src="./assets/Ellipse 10.svg" alt="" />
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >20 mg</span
+                        Paracetamol
+                      </h1>
+                      <div class="flex items-center mt-1 mb-3 gap-2">
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >10 tablet</span
+                        >
+                        <img src="./assets/Ellipse 10.svg" alt="" />
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >20 mg</span
+                        >
+                      </div>
+                      <h2
+                        class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
                       >
+                        $10
+                      </h2>
                     </div>
-                    <h2
-                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
-                    >
-                      $10
-                    </h2>
-                  </div>
 
-                  class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col
-                  items-center justify-center" >
-                  <img
-                    src="./assets/image.png"
-                    class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
-                    alt="Slide Image"
-                  />
-                  <div class="flex flex-col items-center p-3">
-                    <h1
-                      class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
-                    >
-                      Paracetamol
-                    </h1>
-                    <div class="flex items-center mt-1 mb-3 gap-2">
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >10 tablet</span
+                    class="swiper-slide rounded-2xl bg-[#FFFFFF] flex flex-col
+                    items-center justify-center" >
+                    <img
+                      src="./assets/image.png"
+                      class="rounded-t-[16px] w-[220px] h-[120px] object-cover"
+                      alt="Slide Image"
+                    />
+                    <div class="flex flex-col items-center p-3">
+                      <h1
+                        class="font-manrope font-bold text-lg leading-[23px] text-[#013366]"
                       >
-                      <img src="./assets/Ellipse 10.svg" alt="" />
-                      <span
-                        class="font-medium text-sm leading-[16px] text-[#334C66]"
-                        >20 mg</span
+                        Paracetamol
+                      </h1>
+                      <div class="flex items-center mt-1 mb-3 gap-2">
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >10 tablet</span
+                        >
+                        <img src="./assets/Ellipse 10.svg" alt="" />
+                        <span
+                          class="font-medium text-sm leading-[16px] text-[#334C66]"
+                          >20 mg</span
+                        >
+                      </div>
+                      <h2
+                        class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
                       >
+                        $10
+                      </h2>
                     </div>
-                    <h2
-                      class="font-manrope font-extrabold text-[20px] leading-[23px] text-[#0070E3]"
-                    >
-                      $10
-                    </h2>
                   </div>
                 </div>
+
+                <button
+                  class="custom-next-one absolute desktop:right-0 desktop:top-[123px] tablet:bottom-10 laptop:bottom-10 bottom-10 -mr-16 laptop:-mr-16 desktop:mr-0 transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5] delay-2000"
+                >
+                  <img src="./assets/Frame (5).svg" alt="" />
+                </button>
+                <button
+                  class="custom-prev-one absolute desktop:left-0 desktop:top-[123px] tablet:bottom-10 laptop:bottom-10 bottom-10 -ml-16 desktop:-ml-0 transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center delay-2000"
+                >
+                  <img src="./assets/Frame (4).svg" alt="" />
+                </button>
               </div>
-
               <button
-                class="custom-next-one absolute desktop:right-0 desktop:top-[123px] tablet:bottom-10 laptop:bottom-10 bottom-10 -mr-16 laptop:-mr-16 desktop:mr-0 transform -translate-y-1/2 bg-[#FFFFFF] w-10 h-10 rounded-full flex items-center justify-center border border-[#E5E5E5] delay-2000"
+                class="desktop:mt-10 mt-[104px] tablet:mt-[104px] laptop:mt-[104px] py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px] hover:text-[#00BFFF] delay-100 desktop:w-[170px] laptop:w-[170px] w-[260px] tablet:w-[260px]"
               >
-                <img src="./assets/Frame (5).svg" alt="" />
-              </button>
-              <button
-                class="custom-prev-one absolute desktop:left-0 desktop:top-[123px] tablet:bottom-10 laptop:bottom-10 bottom-10 -ml-16 desktop:-ml-0 transform -translate-y-1/2 bg-[#FFFFFF] border border-[#E5E5E5] w-10 h-10 rounded-full flex items-center justify-center delay-2000"
-              >
-                <img src="./assets/Frame (4).svg" alt="" />
+                View all medicines
               </button>
             </div>
-            <button
-              class="desktop:mt-10 mt-[104px] tablet:mt-[104px] laptop:mt-[104px] py-[7px] px-5 bg-[#011575] text-[#FFFFFF] font-semibold font-manrope text-[15px] leading-[24px] rounded-[80px] hover:text-[#00BFFF] delay-100 desktop:w-[170px] laptop:w-[170px] w-[260px] tablet:w-[260px]"
-            >
-              View all medicines
-            </button>
           </div>
-        </div>
-        <!-- EFFORTLESS  CONTAINER -->
-        <div
-          class="desktop:max-w-[1180px] laptop:max-w-[1180px] h-[989px] desktop:h-[387px] mb-20"
-        >
-          <div>
-            <h1
-              class="text-center text-[#013366] font-manrope font-extrabold lg:text-[40px] text-[32px] leading-[46px]"
-            >
-              It simply works, <br class="lg:hidden visible" />
-              effortless.
-            </h1>
-            <div
-              class="flex lg:flex-row flex-col items-center justify-center lg:gap-0 desktop:gap-4 laptop:gap-4 gap-10 lg:mt-12 mt-10 z-50 lg:px-4"
-            >
-              <div
-                class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
+          <!-- EFFORTLESS  CONTAINER -->
+          <div
+            class="desktop:max-w-[1180px] laptop:max-w-[1180px] h-[989px] desktop:h-[387px] mb-20"
+          >
+            <div>
+              <h1
+                class="text-center text-[#013366] font-manrope font-extrabold lg:text-[40px] text-[32px] leading-[46px]"
               >
-                <div class="relative w-[180px] h-[180px]">
-                  <img src="./assets/Group 19.svg" alt="" class="rotating" />
-                  <img
-                    class="absolute top-[42px] left-[42px]"
-                    src="./assets/12891941.svg"
-                    alt=""
-                  />
-                </div>
-                <h1
-                  class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
-                >
-                  1. Order your medicine
-                </h1>
-                <p
-                  class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
-                >
-                  Visit our website to browse medications and place your order.
-                </p>
-              </div>
+                It simply works, <br class="lg:hidden visible" />
+                effortless.
+              </h1>
               <div
-                class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
+                class="flex lg:flex-row flex-col items-center justify-center lg:gap-0 desktop:gap-4 laptop:gap-4 gap-10 lg:mt-12 mt-10 z-50 lg:px-4"
               >
-                <div class="relative w-[180px] h-[180px]">
-                  <img src="./assets/Group 20.svg" alt="" class="rotating" />
-                  <img
-                    class="absolute top-[42px] left-[42px]"
-                    src="./assets/10476458.svg"
-                    alt=""
-                  />
+                <div
+                  class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
+                >
+                  <div class="relative w-[180px] h-[180px]">
+                    <img src="./assets/Group 19.svg" alt="" class="rotating" />
+                    <img
+                      class="absolute top-[42px] left-[42px]"
+                      src="./assets/12891941.svg"
+                      alt=""
+                    />
+                  </div>
+                  <h1
+                    class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
+                  >
+                    1. Order your medicine
+                  </h1>
+                  <p
+                    class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
+                  >
+                    Visit our website to browse medications and place your
+                    order.
+                  </p>
                 </div>
-                <h1
-                  class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
+                <div
+                  class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
                 >
-                  2. Processing for approval
-                </h1>
-                <p
-                  class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
-                >
-                  One of our licensed prescribers will review your medical
-                  information.
-                </p>
-              </div>
-              <div
-                class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
-              >
-                <div class="relative w-[180px] h-[180px]">
-                  <img src="./assets/Group 21.svg" alt="" class="rotating" />
-                  <img
-                    class="absolute top-[42px] left-[42px]"
-                    src="./assets/2749687.svg"
-                    alt=""
-                  />
+                  <div class="relative w-[180px] h-[180px]">
+                    <img src="./assets/Group 20.svg" alt="" class="rotating" />
+                    <img
+                      class="absolute top-[42px] left-[42px]"
+                      src="./assets/10476458.svg"
+                      alt=""
+                    />
+                  </div>
+                  <h1
+                    class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
+                  >
+                    2. Processing for approval
+                  </h1>
+                  <p
+                    class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
+                  >
+                    One of our licensed prescribers will review your medical
+                    information.
+                  </p>
                 </div>
-                <h1
-                  class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
+                <div
+                  class="w-[364px] h-[293px] flex items-center flex-col justify-center z-50"
                 >
-                  3. Receive your medicine
-                </h1>
-                <p
-                  class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
-                >
-                  Get your essential medication delivered to your door by the
-                  next day
-                </p>
+                  <div class="relative w-[180px] h-[180px]">
+                    <img src="./assets/Group 21.svg" alt="" class="rotating" />
+                    <img
+                      class="absolute top-[42px] left-[42px]"
+                      src="./assets/2749687.svg"
+                      alt=""
+                    />
+                  </div>
+                  <h1
+                    class="mt-6 mb-4 text-center text-lg font-bold font-manrope leading-[20px]"
+                  >
+                    3. Receive your medicine
+                  </h1>
+                  <p
+                    class="text-center font-manrope text-base font-medium leading-[25px] w-[300px]"
+                  >
+                    Get your essential medication delivered to your door by the
+                    next day
+                  </p>
+                </div>
               </div>
             </div>
           </div>

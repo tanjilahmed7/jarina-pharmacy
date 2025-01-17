@@ -11,6 +11,7 @@ module.exports = {
         'laptop': '1200px',
         'desktop': '1440px',
       },
+   
       scrollbarGutter: {
         stable: 'stable',
       },

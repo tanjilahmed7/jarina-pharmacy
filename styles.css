@@ -235,3 +235,63 @@ input[type="number"] {
   border-radius: 32px;
   color: #334c6633 40%;
 }
+/* @layer utilities {
+  .result {
+    @apply absolute inset-x-0 mx-auto mt-2 shadow-custom rounded-lg bg-[#FFFFFF] max-h-[430px] overflow-y-auto flex flex-col gap-[6px] custom-scrollbar z-[99999999];
+    top: calc(100% + -280px);
+  }
+  @media (min-width: 360px) {
+    .result {
+      width: 342px;
+      top: calc(100% + -378px);
+    }
+  }
+  @media (min-width: 390px) {
+    .result {
+      width: 342px;
+      top: calc(100% + -400px);
+    }
+  }
+  @media (min-width: 480px) {
+    .result {
+      width: 342px;
+      top: calc(100% + -425px);
+      left: -1%;
+      transform: translateX(1%);
+    }
+  }
+  @media (min-width: 700px) {
+    .result {
+      width: 342px;
+      top: calc(100% + -425px);
+      left: -1%;
+      transform: translateX(1%);
+    }
+  }
+  @media (min-width: 1024px) {
+    .result {
+      width: 535px;
+      top: calc(100% + -403px);
+      left: -8%;
+      transform: translateX(8%);
+    }
+  }
+  @media (min-width: 1200px) {
+    .result {
+      width: 535px;
+      top: calc(100% + -403px);
+      left: -4%;
+      transform: translateX(5%);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .result {
+      width: 535px;
+      top: calc(100% + -403px);
+
+      left: -2%;
+      transform: translateX(5%);
+    }
+  }
+} */

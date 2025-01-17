@@ -6,6 +6,7 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
+  
   let suggestedMedicines = [
     { title: "Amiloride HCl", subtitle: "Generic for Midamor" },
     { title: "Amiloride-Hydrochlorothiazide", subtitle: "Generic for Moduretic" },
