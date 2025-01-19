@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="icon" type="image/png" href="./assets/Group 1.svg" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+ 
+<body>
+        <!-- HEADER SECTION  -->
+        <header class="bg-[#FAFAFA] w-full h-16 sticky top-0 z-[99999]">
+            <div
+              class="flex justify-between items-center w-full h-full lg:px-[75px] px-4"
+            >
+              <a href="./index.html" class="flex items-center gap-2 h-[23px] group">
+                <img
+                  class="w-[22px] h-[22px] object-contain group-hover:filter group-hover:invert group-hover:sepia-0 group-hover:saturate-100 group-hover:hue-rotate-[340deg]"
+                  src="./assets/Group 1.svg"
+                  alt=""
+                />
+                <h2 class="font-oswald font-medium text-[28.01px] leading-[44px]">
+                  Find Med
+                </h2>
+              </a>
+      
+              <!-- Desktop Menu -->
+              <div class="laptop:flex gap-[56px] hidden">
+                <ul class="flex items-center gap-10" id="nav-list">
+                  <li
+                    class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+                  >
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li
+                    class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+                  >
+                    <a href="./about.html">About us</a>
+                  </li>
+                  <li
+                    class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+                  >
+                    <a href="./list.html">Medications</a>
+                  </li>
+                  <li
+                    class="font-manrope font-semibold text-[15px] text-[#334C66] hover:text-[#00BFFF]"
+                  >
+                    <a href="./doctor.html">Contact doctor</a>
+                  </li>
+                </ul>
+      
+                <div class="flex gap-5">
+                  <a
+                    href="./cart.html"
+                    class="w-10 h-10 border border-[#E5E5E5] rounded-[80px] flex items-center justify-center cursor-pointer hover:bg-[#E5E5E5] delay-200"
+                  >
+                    <img src="./assets/cart.svg" alt="" />
+                  </a>
+                  <div class="flex gap-3">
+                    <button
+                      class="bg-[#FFFFFF] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px] hover:border-[#011575] delay-100 hover:text-[#00BFFF]"
+                      onclick="showLoginModal()"
+                    >
+                      Log in
+                    </button>
+                    <button
+                      class="bg-[#011575] text-[#FFFFFF] py-[7px] px-5 rounded-[80px] font-manrope font-semibold text-[15px] hover:text-[#00BFFF]"
+                      onclick="showModal()"
+                    >
+                      Sign up
+                    </button>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Mobile Menu -->
+              <div class="laptop:hidden flex">
+                <button onclick="toggleFuncMenu()" id="openMenuButton" class="block">
+                  <img src="./assets/Frame 3.svg" alt="Menu Open" />
+                </button>
+                <button
+                  onclick="toggleFuncMenu()"
+                  id="closeMenuButton"
+                  class="hidden"
+                >
+                  <img src="./assets/menu.png" alt="Menu Close" />
+                </button>
+              </div>
+            </div>
+          </header>
+          <!-- Mobile Navigation -->
+          <div
+            class="myNav absolute top-16 right-0 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] w-0 overflow-x-hidden h-auto transition-all duration-500 mt-[64px] rounded-t-[32px]"
+          >
+            <ul
+              class="flex flex-col items-center gap-10 font-manrope font-semibold text-[15px] text-[#013366] mt-10"
+            >
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About us</a>
+              <a href="./list.html">Medications</a>
+              <a href="./doctor.html">Contact doctor</a>
+            </ul>
+      
+            <div
+              class="flex flex-col-reverse gap-4 items-center justify-center mt-10"
+            >
+              <button
+                class="bg-[#FFFFFF] py-[7px] px-5 w-[260px] rounded-[80px] border border-[#E5E5E5] text-[#334C66] font-manrope font-semibold text-[15px]"
+                onclick="showLoginModal()"
+              >
+                Log in
+              </button>
+              <button
+                class="bg-[#011575] py-[7px] px-5 rounded-[80px] border border-[#E5E5E5] text-[#FFFFFF] font-manrope font-semibold text-[15px] w-[260px]"
+                onclick="showModal()"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+          <!-- First Modal -->
+          <dialog id="my_modal_3" class="modal">
+            <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain"
+                    alt="Close"
+                  />
+                </button>
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain absolute z-50"
+                    alt="Close"
+                  />
+                </button>
+              </form>
+              <h3
+                class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px]"
+              >
+                Create your account
+              </h3>
+              <p
+                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+              >
+                Already have an account?
+                <span
+                  class="font-bold underline cursor-pointer hover:text-[#00BFFF]"
+                  id="loginAcc"
+                  >Log in</span
+                >
+              </p>
+              <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                />
+                <div
+                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
+                >
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
+                  />
+                  <img
+                    src="./assets/passeye.svg"
+                    alt="Show Password"
+                    class="eye-icon cursor-pointer w-6 h-6"
+                    onclick="togglePasswordVisibility(this)"
+                  />
+                </div>
+      
+                <div class="flex items-center gap-2 mt-2">
+                  <input type="checkbox" class="border border-[#011575] w-5 h-5" />
+                  <p
+                    class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+                  >
+                    I agree to Find Med company’s terms & conditions, Privacy policy.
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2 hover:text-[#00BFFF]"
+                >
+                  Create account
+                </button>
+              </form>
+            </div>
+          </dialog>
+          <!-- Second Modal -->
+          <dialog id="my_modal_2" class="modal">
+            <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain"
+                    alt="Close"
+                  />
+                </button>
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain absolute z-50"
+                    alt="Close"
+                  />
+                </button>
+              </form>
+              <h
+                class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px]"
+              >
+                Log in
+              </h>
+              <p
+                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+              >
+                Don’t have an account?
+                <a
+                  class="font-bold underline cursor-pointer hover:text-[#00BFFF]"
+                  id="createAcc"
+                >
+                  Create account
+                </a>
+              </p>
+      
+              <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                />
+                <div
+                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative flex justify-between"
+                >
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
+                  />
+                  <img
+                    src="./assets/passeye.svg"
+                    alt="Show Password"
+                    class="eye-icon cursor-pointer w-6 h-6"
+                    onclick="togglePasswordVisibility(this)"
+                  />
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <input type="checkbox" class="border border-[#011575] w-5 h-5" />
+                  <p
+                    class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+                  >
+                    Remember me for this device.
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px] mt-2"
+                >
+                  Log in
+                </button>
+                <a
+                  href="#"
+                  id="forgetPass"
+                  class="font-semibold font-manrope text-[#011575] text-[15px] leading-[24px] lg:text-start text-center hover:text-[#00BFFF]"
+                  >Forgot password?</a
+                >
+              </form>
+            </div>
+          </dialog>
+          <!-- Third Modal -->
+          <dialog id="my_modal_4" class="modal">
+            <div class="modal-box relative overflow-visible py-6 px-4 lg:p-[56px]">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain"
+                    alt="Close"
+                  />
+                </button>
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain absolute z-50"
+                    alt="Close"
+                  />
+                </button>
+              </form>
+              <a class="flex gap-2 cursor-pointer" href="#" id="back">
+                <img src="./assets/Frame (4).svg" alt="" /> Back
+              </a>
+              <h3
+                class="text-[#011575] font-extrabold font-manrope text-[28px] lg:text-[32px] leading-[36px] lg:pt-6"
+              >
+                Reset your password
+              </h3>
+              <p
+                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+              >
+                Please enter your email address. We will send you an email to reset
+                your password.
+              </p>
+      
+              <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-6">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                />
+      
+                <button
+                  type="submit"
+                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-full lg:w-[151px] text-[#FFFFFF] rounded-[80px] hover:text-[#00BFFF]"
+                >
+                  Send email
+                </button>
+              </form>
+            </div>
+          </dialog>
+          <!-- Fourth Modal -->
+          <dialog id="my_modal_5" class="modal">
+            <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain"
+                    alt="Close"
+                  />
+                </button>
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain absolute z-50"
+                    alt="Close"
+                  />
+                </button>
+              </form>
+      
+              <h3
+                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px] pt-6"
+              >
+                Change Your Password
+              </h3>
+              <p
+                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+              >
+                Create a new password below to change your password.
+              </p>
+      
+              <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-6">
+                <div
+                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+                >
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
+                  />
+                  <img
+                    src="./assets/passeye.svg"
+                    alt="Show Password"
+                    class="eye-icon cursor-pointer w-6 h-6"
+                    onclick="togglePasswordVisibility(this)"
+                  />
+                </div>
+                <div
+                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+                >
+                  <input
+                    type="password"
+                    placeholder="Confirm password"
+                    class="outline-none text-[#334C66] text-sm font-medium font-manrope"
+                  />
+                  <img
+                    src="./assets/passeye.svg"
+                    class="absolute right-4 top-4"
+                    alt="Show Password"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 text-[#FFFFFF] rounded-[80px] w-[154px] hover:text-[#00BFFF]"
+                >
+                  Reset password
+                </button>
+              </form>
+            </div>
+          </dialog>
+          <!-- Fifth -->
+          <dialog id="my_modal_6" class="modal">
+            <div class="modal-box relative overflow-visible px-4 py-6 lg:p-[56px]">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute left-1/2 lg:right-[-30px] transform -translate-x-1/2 -top-[40px] z-50 lg:hidden"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain"
+                    alt="Close"
+                  />
+                </button>
+                <button
+                  class="btn btn-sm hover:bg-transparent focus:outline-none bg-transparent border-none absolute right-1/2 lg:right-[-30px] top-[-38px] z-50 hidden lg:block"
+                >
+                  <img
+                    src="./assets/Close.svg"
+                    class="w-6 h-6 object-contain absolute z-50"
+                    alt="Close"
+                  />
+                </button>
+              </form>
+              <p
+                class="bg-[#EFFFEA] text-[#1A7501] text-sm font-manrope font-medium leading-[22px] px-4 py-[9px] mb-6 rounded-lg"
+              >
+                We’ve sent you a magic link to your email address
+              </p>
+              <h3
+                class="text-[#011575] font-extrabold font-manrope text-[32px] leading-[36px]"
+              >
+                Create your account
+              </h3>
+              <p
+                class="text-sm font-medium font-manrope leading-[22px] text-[#011575] mt-4"
+              >
+                Already have an account?
+                <a class="font-bold underline cursor-pointer" id="loginAcc">Log in</a>
+              </p>
+              <form method="dialog" class="mt-6 w-full inline-flex flex-col gap-4">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="py-[13px] px-4 w-full outline-none border border-[#E5E5E5] rounded-lg text-[#334C66] text-sm font-medium font-manrope"
+                />
+                <div
+                  class="py-[13px] px-4 w-full border border-[#E5E5E5] rounded-lg relative"
+                >
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="outline-none text-[#334C66] text-sm font-medium font-manrope w-5/6"
+                  />
+                  <img
+                    src="./assets/passeye.svg"
+                    alt="Show Password"
+                    class="eye-icon cursor-pointer w-6 h-6"
+                    onclick="togglePasswordVisibility(this)"
+                  />
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                  <input type="checkbox" class="border border-[#011575] w-5 h-5" />
+                  <p
+                    class="text-[#011575] font-manrope font-medium text-sm leading-[22px]"
+                  >
+                    I agree to Find Med company’s terms & conditions, <br />
+                    Privacy policy.
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-[#011575] text-[15px] font-semibold leading-6 font-manrope py-[7px] px-5 w-[151px] text-[#FFFFFF] rounded-[80px] mt-2 hover:text-[#00BFFF]"
+                >
+                  Create account
+                </button>
+              </form>
+            </div>
+          </dialog>
+     <!-- SHOP HERO SECTION  -->
+    <section class="overflow-x-hidden">
+        <div
+          class="bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA]  flex items-center justify-center lg:flex-col flex-col rounded-t-[32px] desktop:w-full laptop:w-full tablet:w-full  overflow-x-hidden "
+        >
+          <div
+            class="lg:max-w-[1290px] flex gap-12 laptop:justify-center laptop:items-center laptop:gap-[80px] tablet:gap-0  desktop:justify-center desktop:items-center desktop:gap-[150px] items-center desktop:flex-row tablet:flex-row flex-col  lg:gap-[50px] tablet:w-full laptop:h-[488px] desktop:h-[488px] h-[400px]  relative  small:items-center small:justify-center  justify-center small:w-full tablet:items-center tablet:justify-center lg:items-center lg:justify-center "
+          >
+            <div
+              class="desktop:w-[630px] laptop:w-[630px] tablet:w-[500px] max-w-[500px] flex flex-col gap-6 lg:w-[630px] tablet:pl-5 lg:pl-5 laptop:pl-10 desktop:px-0 laptop:px-0 lg:px-0 px-4 z-50 text-center pt-10 tablet:pt-10 laptop:pt-0 desktop:pt-0 "
+            >
+              <h1
+                class="text-[#011575] desktop:text-[40px] tablet:text-[40px] laptop:text-[40px] desktop:leading-[46px] font-extrabold font-manrope text-[30px] leading-[36px] w-full lg:leading-[46px] flex flex-col tablet:leading-[46px]"
+              >
+              Find necessary products
+              </h1>
+              <div class="lg:w-full  w-full h-[56px] rounded-[80px] bg-[#FFFFFF] mb-4 lg:mb-0 ">
+                <!-- SEARCH BOX  -->
+                <div
+                  class="flex items-center justify-between rounded-[80px] bg-[#FFFFFF] lg:pl-8 pl-4 pr-1 py-1 "
+                  onclick=""
+                >
+                  <input
+                    id="medicine-search-box"
+                    type="text"
+                    class="font-manrope font-normal text-sm lg:text-base bg-none w-full outline-none bg-[#FFFFFF] leading-[22px] lg:leading-[25px]"
+                    placeholder="Search for medicine, products name..."
+                    autocomplete="off"
+                  />
+                  <div class="bg-[#53DDFF] py-3 px-[12.05px] rounded-[80px]">
+                    <img
+                      class="w-6 h-6 object-contain"
+                      src="./assets/search-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <!-- RESULT BOX  -->
+                <div class="shadow-custom rounded-lg hover:bg-[#F5F7FA]">
+                  <div class="result rounded-lg bg-[#FFFFFF] max-h-[500px] overflow-y-auto flex flex-col gap-[6px] custom-scrollbar text-start shadow-lg"></div>
+                </div>
+              </div>
+            </div>
+            <div class="absolute desktop:left-5 laptop:left-5 left-0 bottom-0 -rotate-12 desktop:bottom-10  laptop:bottom-10 hidden lg:block desktop:block laptop:block">
+                <img src="./assets/supplement1.png" class="h-[200px] img1" alt="">
+            </div>
+            <div class="absolute laptop:right-10 desktop:right-10 -right-20  rotate-12 top-10 hidden lg:block desktop:block laptop:block ">
+                <img src="./assets/oral-health.png" class="h-[250px] img2" alt="">
+            </div>          
+          </div>
+          <div class=" w-full desktop:px-10 laptop:px-10 tablet:px-0 px-5 min-h-full flex   max-w-[1300px] mb-20 ">
+            <!-- DESKTOP SIDEBAR CONTENT -->
+             <div class=" w-[400px] min-h-screen grid  grid-cols-1 grid-rows-3 mx-[50px] laptop:block desktop:block tablet:block hidden ">
+                <!-- CATEGORIES  -->
+                <div class="bg-[#FAFAFA] rounded-lg py-5 shadow-sm">
+                    <h1 class="text-2xl text-[#011575] font-manrope font-extrabold pl-5">Categories</h1>
+                    <ul class="flex flex-col mt-7 gap-3 overflow-y-scroll max-h-[200px] custom-scrollbar pl-5">
+                        <a href="#" class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">All Other Supplements</a>
+                        <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Calcium</a>
+                        <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Letter Vitamins A-K</a>
+                        <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Minerals</a>
+                        <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Multivitamins</a>
+                        <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Vitamin C</a>
+                        <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Vitamins & Supplements</a>
+                        <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Wellness Supplements</a>
+                        <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Zinc</a>
+    
+                    </ul>
+                </div>
+              <!-- FILTERING  -->
+                <div class="my-10 shopFilter bg-[#FAFAFA] p-5 rounded-lg shadow-sm">
+                    <h1 class="text-xl text-[#011575] font-manrope font-bold ">Filter by Price</h1>
+                  <div class=" overflow-hidden pt-5">
+                 
+                      <div class="slider-range  h-[5px] relative rounded-md bg-[#ddd]">
+                        <div class="progress"></div>
+                      </div>
+                      <div class="range-input">
+                        <input type="range" class="range-min " min="0" max="10000" value="2500" step="100">
+                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                      </div>
+                      <div class="price-input flex items-center justify-center text-[#011575] text-base w-full font-manrope font-medium  mt-5">
+                        Price: 
+                        <div class=" flex w-full gap-2 ">
+                            <div class="field w-10 ml-2 font-bold text-base">
+                          
+                                <input type="number" class="input-min bg-transparent" value="2500">
+                              </div>
+                             <span>-</span>
+                              <div class="field w-10 font-bold text-base">
+                                <input type="number" class="input-max bg-transparent disabled" value="7500">
+                              </div>
+                        </div>
+                       
+                      </div>
+                  </div>
+                </div>
+                <!-- PRODUCTS  -->
+                <div class="flex flex-col gap-5 bg-[#FAFAFA] rounded-lg py-5 shadow-md">
+                    <h1 class="text-xl px-5 text-[#011575] font-manrope font-bold ">Products</h1>
+                    <!-- PRODUCTS  -->
+                     <div class="flex flex-col gap-4 max-h-[200px] overflow-y-scroll custom-scrollbar py-5">
+                        <a href="#" class="flex items-center cursor-pointer">
+                            <img src="./assets/oral-health.png" class="w-[60px] h-[60px]" alt="">
+                            <div class="flex flex-col gap-1 hover:underline text-[#011575]">
+                                <h5>Oral Health Pro-Tec Capsules</h5>
+                        <p>$20.00</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex items-center cursor-pointer">
+                            <img src="./assets/oral-health.png" class="w-[60px] h-[60px]" alt="">
+                            <div class="flex flex-col gap-1 hover:underline text-[#011575]">
+                                <h5>Oral Health Pro-Tec Capsules</h5>
+                        <p>$20.00</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex items-center cursor-pointer">
+                            <img src="./assets/oral-health.png" class="w-[60px] h-[60px]" alt="">
+                            <div class="flex flex-col gap-1 hover:underline text-[#011575]">
+                                <h5>Oral Health Pro-Tec Capsules</h5>
+                        <p>$20.00</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex items-center cursor-pointer">
+                            <img src="./assets/oral-health.png" class="w-[60px] h-[60px]" alt="">
+                            <div class="flex flex-col gap-1 hover:underline text-[#011575]">
+                                <h5>Oral Health Pro-Tec Capsules</h5>
+                        <p>$20.00</p>
+                            </div>
+                        </a>
+                     </div>
+                 
+                    <div>
+
+                    </div>
+                </div>
+              
+              
+                
+                  
+             </div>
+             <div class="min-h-screen w-full  flex flex-col gap-5">
+                <div class="flex justify-between desktop:mx-0  mt-5 tablet:mx-5 lg:mx-5  desktop:justify-end laptop:justify-end lg:justify-end desktop:items-end tablet:items-end tablet:justify-end laptop:items-end lg:items-end">
+                    <button
+                    id="openShopMenuButton"
+                    onclick="toggleFuncMenuShop()"
+                    class="text-[15px] cursor-pointer font-bold text-[#011575] flex items-center gap-2 desktop:hidden laptop:hidden tablet:hover: lg:hidden"
+                  >
+                    Show Sidebar
+                    <img src="./assets/Frame 3.svg" alt="Menu Open" />
+                  </button>
+
+                    <button class="text-[15px] cursor-pointer font-bold text-[#011575] hover:text-[#00BFFF]">Filter +</button>
+                </div>
+                <div class=" w-full grid desktop:grid-cols-3 laptop:grid-cols-2 tablet:grid-cols-1 lg:grid-cols-2 grid-cols-1 laptop:gap-10 desktop:gap-10 lg:gap-10 gap-10 place-content-center place-items-center">
+                    <div class="flex flex-col items-center w-[265px] bg-[#FAFAFA] pb-5 px-5 rounded-[10px] shadow-sm">
+                        <img src="./assets/oral-health.png" class="w-[262px] h-[262px] object-contain" alt="">
+
+                        <div class="flex flex-col gap-3">
+                            <h1 class="text-center text-[15px] font-extrabold font-manrope text-[#011575]">Bone Strength Take Care, Calcium Supplement</h1>
+                            <div class="group relative w-full flex items-center justify-center ">
+                              
+                                <p class="transition-opacity duration-300 ease-in-out group-hover:opacity-0 text-[#011575] font-manrope font-medium text-base">$52.99</p>
+                            
+                              
+                                <p class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out underline group-hover:opacity-100 text-[#011575] font-manrope font-medium text-base cursor-pointer">
+                                    Add to cart
+                                </p>
+                            </div>
+                        </div>
+                     
+                        
+                        
+                    </div>
+                    <div class="flex flex-col items-center w-[265px] bg-[#FAFAFA] pb-5 px-5 rounded-[10px] shadow-sm">
+                        <img src="./assets/supplement1.png" class="w-[262px] h-[262px] object-contain" alt="">
+
+                        <div class="flex flex-col gap-3">
+                            <h1 class="text-center text-[15px] font-extrabold font-manrope text-[#011575]">Bone Strength Take Care, Calcium Supplement</h1>
+                            <div class="group relative w-full flex items-center justify-center">
+                              
+                                <p class="transition-opacity duration-300 ease-in-out group-hover:opacity-0 text-[#011575] font-manrope font-medium text-base">$52.99</p>
+                            
+                              
+                                <p class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out underline group-hover:opacity-100 text-[#011575] font-manrope font-medium text-base cursor-pointer">
+                                    Add to cart
+                                </p>
+                            </div>
+                        </div>
+                     
+                        
+                        
+                    </div>
+                    <div class="flex flex-col items-center w-[265px] bg-[#FAFAFA] pb-5 px-5 rounded-[10px] shadow-sm">
+                        <img src="./assets/oral-health.png" class="w-[262px] h-[262px] object-contain" alt="">
+
+                        <div class="flex flex-col gap-3">
+                            <h1 class="text-center text-[15px] font-extrabold font-manrope text-[#011575]">Bone Strength Take Care, Calcium Supplement</h1>
+                            <div class="group relative w-full flex items-center justify-center">
+                              
+                                <p class="transition-opacity duration-300 ease-in-out group-hover:opacity-0 text-[#011575] font-manrope font-medium text-base">$52.99</p>
+                            
+                              
+                                <p class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out underline group-hover:opacity-100 text-[#011575] font-manrope font-medium text-base cursor-pointer">
+                                    Add to cart
+                                </p>
+                            </div>
+                        </div>
+                     
+                        
+                        
+                    </div>
+                    <div class="flex flex-col items-center w-[265px] bg-[#FAFAFA] pb-5 px-5 rounded-[10px] shadow-sm">
+                        <img src="./assets/supplement1.png" class="w-[262px] h-[262px] object-contain" alt="">
+
+                        <div class="flex flex-col gap-3">
+                            <h1 class="text-center text-[15px] font-extrabold font-manrope text-[#011575]">Bone Strength Take Care, Calcium Supplement</h1>
+                            <div class="group relative w-full flex items-center justify-center">
+                              
+                                <p class="transition-opacity duration-300 ease-in-out group-hover:opacity-0 text-[#011575] font-manrope font-medium text-base">$52.99</p>
+                            
+                              
+                                <p class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out underline group-hover:opacity-100 text-[#011575] font-manrope font-medium text-base cursor-pointer">
+                                    Add to cart
+                                </p>
+                            </div>
+                        </div>
+                     
+                        
+                        
+                    </div>
+                    <div class="flex flex-col items-center w-[265px] bg-[#FAFAFA] pb-5 px-5 rounded-[10px] shadow-sm">
+                        <img src="./assets/oral-health.png" class="w-[262px] h-[262px] object-contain" alt="">
+
+                        <div class="flex flex-col gap-3">
+                            <h1 class="text-center text-[15px] font-extrabold font-manrope text-[#011575]">Bone Strength Take Care, Calcium Supplement</h1>
+                            <div class="group relative w-full flex items-center justify-center">
+                              
+                                <p class="transition-opacity duration-300 ease-in-out group-hover:opacity-0 text-[#011575] font-manrope font-medium text-base">$52.99</p>
+                            
+                              
+                                <p class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out underline group-hover:opacity-100 text-[#011575] font-manrope font-medium text-base cursor-pointer">
+                                    Add to cart
+                                </p>
+                            </div>
+                        </div>
+                     
+                        
+                        
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>
+          <!-- CATEGORIED SIDEBAR  -->
+        
+         <div id="categorySidebar" class=" max-w-[450px]  min-h-screen  mx-[50px] laptop:hidden desktop:hidden tablet:hidden  fixed top-16 bg-gradient-to-b from-[#E3EBF7] to-[#FAFAFA] z-50 -left-12  p-5 rounded-t-2xl transition-all duration-500 overflow-x-hidden hidden ">
+            <!-- CATEGORY  -->
+            <div class="bg-[#FAFAFA] rounded-lg py-5 shadow-sm">
+                <div class="flex justify-between items-center px-5">
+                    <h1 class="text-2xl text-[#011575] font-manrope font-extrabold ">Categories</h1>
+                    <button  onclick="toggleFuncMenuShop()"    id="closeShopMenuButton" class="text-[15px] cursor-pointer font-bold text-[#011575] flex items-center gap-2 ">Close    <img src="./assets/menu.png" class="w-3 h-3 mt-[2px]" alt="Menu Close" /></button>
+                </div>
+                <ul class="flex flex-col mt-7 gap-3 overflow-y-scroll max-h-[200px] custom-scrollbar pl-5">
+                    <a href="#" class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">All Other Supplements</a>
+                    <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Calcium</a>
+                    <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Letter Vitamins A-K</a>
+                    <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Minerals</a>
+                    <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Multivitamins</a>
+                    <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Vitamin C</a>
+                    <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Vitamins & Supplements</a>
+                    <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Wellness Supplements</a>
+                    <a href="#"  class="font-manrope font-semibold text-[#334C66] text-[15px] cursor-pointer hover:text-[#00BFFF]">Zinc</a>
+
+                </ul>
+            </div>
+          <!-- PRICE FILTERING  -->
+            <div class="my-10 shopFilter bg-[#FAFAFA] p-5 rounded-lg shadow-sm">
+                <h1 class="text-xl text-[#011575] font-manrope font-bold ">Filter by Price</h1>
+              <div class=" overflow-hidden pt-5">
+             
+                  <div class="slider-range  h-[5px] relative rounded-md bg-[#ddd]">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="range-input">
+                    <input type="range" class="range-min " min="0" max="1000" value="2500" step="1"  >
+                    <input type="range" class="range-max outline-none border-none" min="0" max="1000" value="500" step="1" readonly>
+                  </div>
+                  <div class="price-input flex items-center justify-center text-[#011575] text-base w-full font-manrope font-medium  mt-5">
+                    Price: 
+                    <div class=" flex w-full gap-2 ">
+                        <div class="field w-10 ml-2 font-bold text-base">
+                      
+                            <input type="number" class="input-min bg-transparent" value="2500">
+                          </div>
+                         <span>-</span>
+                          <div class="field w-10 font-bold text-base">
+                            <input type="number" class="input-max bg-transparent disabled" value="7500">
+                          </div>
+                    </div>
+                   
+                  </div>
+              </div>
+            </div>
+            <!-- PRODUCTS  -->
+            <div class="flex flex-col gap-5 bg-[#FAFAFA] rounded-lg py-5 shadow-md">
+                <h1 class="text-xl px-5 text-[#011575] font-manrope font-bold ">Products</h1>
+              
+                 <div class="flex flex-col gap-4 max-h-[230px] overflow-y-scroll custom-scrollbar pr-5 pb-5  m-0">
+                    <a href="#" class="flex items-center cursor-pointer">
+                        <img src="./assets/oral-health.png" class="w-[60px] h-[60px]" alt="">
+                        <div class="flex flex-col gap-1 hover:underline text-[#011575]">
+                            <h5>Oral Health Pro-Tec Capsules</h5>
+                    <p>$20.00</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex items-center cursor-pointer">
+                        <img src="./assets/oral-health.png" class="w-[60px] h-[60px]" alt="">
+                        <div class="flex flex-col gap-1 hover:underline text-[#011575]">
+                            <h5>Oral Health Pro-Tec Capsules</h5>
+                    <p>$20.00</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex items-center cursor-pointer">
+                        <img src="./assets/oral-health.png" class="w-[60px] h-[60px]" alt="">
+                        <div class="flex flex-col gap-1 hover:underline text-[#011575]">
+                            <h5>Oral Health Pro-Tec Capsules</h5>
+                    <p>$20.00</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex items-center cursor-pointer">
+                        <img src="./assets/oral-health.png" class="w-[60px] h-[60px]" alt="">
+                        <div class="flex flex-col gap-1 hover:underline text-[#011575]">
+                            <h5>Oral Health Pro-Tec Capsules</h5>
+                    <p>$20.00</p>
+                        </div>
+                    </a>
+                 </div>
+             
+                <div>
+
+                </div>
+            </div>
+
+         </div>
+     
+      </section>
+    
+
+       <!-- FOOTER SECTION  -->
+       <footer>
+        <div
+          class="bg-[#001933] w-full lg:min-h-[555px] relative flex lg:flex-row flex-col justify-between px-4 desktop:px-[75px] laptop:px-[75px] pt-20 pb-[50px]"
+        >
+          <img
+            class="absolute bottom-0 lg:block hidden left-0"
+            src="./assets/Vector 4.png"
+            alt="Vector"
+          />
+          <img
+            src="./assets/v6.png"
+            alt="Vector"
+            class="absolute bottom-0 left-0 lg:hidden block"
+          />
+          <div class="flex flex-col lg:w-[517px] lg:justify-between lg:h-[425px]">
+            <div class="flex flex-col gap-2 w-[321px] lg:w-full">
+              <div class="flex items-center gap-2">
+                <img
+                  class="w-[22px] h-[22px] object-contain"
+                  src="./assets/Group 1.svg"
+                  alt=""
+                />
+                <h1
+                  class="font-medium text-[28px] leading-[44px] font-oswald text-[#FFFFFF]"
+                >
+                  Find Med
+                </h1>
+              </div>
+  
+              <h3
+                class="text-[32px] lg:text-[40px] leading-[38px] lg:leading-[48px] font-manrope font-medium text-[#D8D8D8] mt-[39px]"
+              >
+                Your trusted <br />
+                medicine partner
+              </h3>
+            </div>
+            <div class="flex gap-6 flex-col lg:mt-0 mt-5">
+              <p
+                class="text-[#D8D8D8] font-medium font-manrope text-sm lg:text-base leading-[25px] max-w-[517px]"
+              >
+                We are a dedicated team of healthcare professionals, technology
+                innovators, and customer service experts.
+              </p>
+              <p
+                class="text-[#D8D8D899] font-manrope font-medium text-sm leading-[22px] hidden lg:block"
+              >
+                All right reserved by the company 2024
+              </p>
+            </div>
+          </div>
+          <div
+            class="desktop:w-[475px] laptop:w-[475px] laptop:h-[416px] desktop:h-[416px] flex flex-col desktop:justify-between laptop:justify-between justify-center lg:mt-0 mt-10"
+          >
+            <div
+              class="flex justify-between tablet:justify-center tablet:gap-[200px] h-[416px] lg:h-full"
+            >
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"
+                >
+                  Home
+                </h1>
+                <div class="flex flex-col gap-3">
+                  <small
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
+                    >Home</small
+                  >
+                  <small
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
+                    >About us</small
+                  >
+                  <small
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
+                    >Medications</small
+                  >
+                  <small
+                    class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
+                    >Help</small
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col gap-12">
+                <div class="flex gap-4 flex-col">
+                  <h1
+                    class="font-extrabold text-base lg:text-lg leading-7 font-manrope text-[#FFFFFF]"
+                  >
+                    Contact us
+                  </h1>
+                  <div class="flex flex-col gap-3">
+                    <small
+                      class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer"
+                      >Northern hill, New york, USA</small
+                    >
+                    <a
+                      href="tel:+8801723998977"
+                      class="font-manrope text-sm lg:text-[15px] leading-6 font-medium text-[#D9D9D9] cursor-pointer hover:text-[#1A6ED3]"
+                      >+88 01723998977</a
+                    >
+                  </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                  <h1
+                    class="font-extrabold text-base lg:text-lg text-[#FFFFFF] leading-7 font-manrope lg:pb-4"
+                  >
+                    Find us on
+                  </h1>
+                  <div class="flex gap-6">
+                    <button class="group">
+                      <img
+                        src="./assets/Frame (7).svg"
+                        alt=""
+                        class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                      />
+                    </button>
+  
+                    <button class="group">
+                      <img
+                        src="./assets/Frame (8).svg"
+                        alt=""
+                        class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                      />
+                    </button>
+                    <button class="group">
+                      <img
+                        src="./assets/Frame (9).svg"
+                        alt=""
+                        class="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-12 lg:pb-0 pb-10 items-center justify-center">
+              <small
+                class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
+                >Privacy policy</small
+              >
+              <small
+                class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
+                >T&C
+              </small>
+              <small
+                class="text-[#D8D8D899] font-medium font-manrope text-sm leading-[22px] hover:text-[#1A6ED3]"
+                >Cookie policy</small
+              >
+            </div>
+            <p
+              class="text-sm font-medium font-manrope leading-[22px] text-[#D8D8D899] text-center pb-10 lg:hidden"
+            >
+              All right reserved by the company 2024
+            </p>
+          </div>
+        </div>
+      </footer>
+</body>
+<script src="./modal.js"></script>
+<script src="./index.js"></script>
+<script src="./showPass.js "></script>
+<script src="./search.js"></script>
+<script src="./shop.js"></script>
+</html>

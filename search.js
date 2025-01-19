@@ -1,10 +1,3 @@
-
-
-
-
- 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   
   let suggestedMedicines = [
