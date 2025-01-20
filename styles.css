@@ -293,6 +293,36 @@ input[type="range"]::-moz-range-thumb {
   background-color: #f9f9f9;
   font-size: 14px;
   color: #333;
-  cursor: default; /* Makes it clear the text is not interactive */
-  user-select: none; /* Prevents the user from selecting the text */
+  cursor: default;
+  user-select: none;
+}
+
+.group {
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+}
+
+.group button {
+  transition: all 0.5s ease-in-out;
+}
+
+.group button:first-child {
+  transform: translateY(0);
+}
+
+.group:hover button:first-child {
+  transform: translateY(-100%);
+}
+
+.group button:last-child {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.group:hover button:last-child {
+  opacity: 1;
+  transform: translateY(0);
 }
