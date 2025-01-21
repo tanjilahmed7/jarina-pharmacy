@@ -1,14 +1,33 @@
-function toggleFuncMenuShop() {
-  console.log("rijvi");
-  const sidebar = document.getElementById("categorySidebar");
-  const openButton = document.getElementById("openShopMenuButton");
+// function toggleFuncMenuShop() {
+//   console.log("rijvi");
+//   const sidebar = document.getElementById("categorySidebar");
+//   const openButton = document.getElementById("openShopMenuButton");
 
-  if (sidebar.classList.contains("hidden")) {
-    sidebar.classList.remove("hidden");
+//   if (sidebar.classList.contains("hidden")) {
+//     sidebar.classList.remove("hidden");
+//   } else {
+//     sidebar.classList.add("hidden");
+//   }
+// }
+
+
+// MENU
+function toggleFuncMenuShop() {
+  const nav = document.querySelector(".categorySidebar");
+  const openButton = document.getElementById("openShopMenuButton");
+  const closeButton = document.getElementById("closeShopMenuButton");
+
+  if (nav.style.width === "100%") {
+    nav.style.width = "0";
+    openButton.classList.remove("hidden");
+    closeButton.classList.add("hidden");
   } else {
-    sidebar.classList.add("hidden");
+    nav.style.width = "100%";
+    openButton.classList.add("hidden");
+    closeButton.classList.remove("hidden");
   }
 }
+
 
 document.querySelectorAll(".shopFilter").forEach((filterContainer) => {
     const rangeInput = filterContainer.querySelectorAll(".range-input input");
