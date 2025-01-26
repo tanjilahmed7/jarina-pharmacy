@@ -2492,10 +2492,6 @@ details.collapse summary::-webkit-details-marker {
   top: -40px;
 }
 
-.-top-\[6px\] {
-  top: -6px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -2735,11 +2731,6 @@ details.collapse summary::-webkit-details-marker {
 .my-\[7px\] {
   margin-top: 7px;
   margin-bottom: 7px;
-}
-
-.mx-\[80px\] {
-  margin-left: 80px;
-  margin-right: 80px;
 }
 
 .-ml-16 {
